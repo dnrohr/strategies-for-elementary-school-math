@@ -60,13 +60,28 @@ export function renderMarkdown(markdown) {
   };
   const flush = () => { flushParagraph(); flushList(); flushQuote(); };
 
-  for (const line of lines) {
+  const tableRow = line => line.trim().replace(/^\||\|$/g, "").split("|").map(cell => cell.trim());
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     const heading = line.match(/^(#{1,4})\s+(.+)$/);
     const bullet = line.match(/^[-*]\s+(.*)$/);
     const ordered = line.match(/^\d+\.\s+(.*)$/);
     const blockquote = line.match(/^>\s?(.*)$/);
+    const separator = lines[index + 1]?.trim().match(/^\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)+\|?$/);
     if (!line.trim()) { flush(); continue; }
-    if (heading) {
+    if (line.trim().startsWith("|") && separator) {
+      flush();
+      const headers = tableRow(line);
+      const rows = [];
+      index += 2;
+      while (index < lines.length && lines[index].trim().startsWith("|")) {
+        rows.push(tableRow(lines[index]));
+        index += 1;
+      }
+      index -= 1;
+      html.push(`<table><thead><tr>${headers.map(cell => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${headers.map((_header, cellIndex) => `<td>${inlineMarkdown(row[cellIndex] ?? "")}</td>`).join("")}</tr>`).join("")}</tbody></table>`);
+    } else if (heading) {
       flush();
       const level = heading[1].length;
       const id = heading[2].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

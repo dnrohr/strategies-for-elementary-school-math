@@ -32,7 +32,16 @@ test("renderer escapes raw HTML while rendering basic Markdown", () => {
   assert(!rendered.includes("<script>"));
   assert(rendered.includes("&lt;script&gt;"));
   assert(rendered.includes("<strong>bold</strong>"));
-  assert.equal(escapeHtml('a&\"b'), "a&amp;&quot;b");
+  assert.equal(escapeHtml('a&"b'), "a&amp;&quot;b");
+});
+
+test("renderer converts pipe-delimited Markdown tables to semantic HTML", () => {
+  const rendered = renderMarkdown("| Route | Format |\n| --- | --- |\n| Count | Spatial |\n| Retrieve | Abstract |");
+  assert(rendered.includes("<table>"));
+  assert(rendered.includes("<thead>"));
+  assert(rendered.includes("<th>Route</th>"));
+  assert(rendered.includes("<td>Spatial</td>"));
+  assert(!rendered.includes("| Route | Format |"));
 });
 
 test("research CSV parser handles quoted commas and validates records", () => {

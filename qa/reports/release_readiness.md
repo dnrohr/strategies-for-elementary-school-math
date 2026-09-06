@@ -40,7 +40,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Editorial QA for CH01–CH07 found short constructed-account blocks below the 40-word template target; no filler edits were made and the issue is recorded in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09 Method 09 needs an exact half-unit endpoint check if rendered on a 20-unit line.
-- The cross-classification tables in several generated pages appear as literal pipe-delimited paragraphs in the current renderer and need layout review.
+- The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
 - No GitHub Pages deployment result is recorded for this release batch.
 
 ## Worker batch status

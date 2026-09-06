@@ -8,7 +8,7 @@ Scope: CH08–CH14 and regression checks for CH00–CH07
 
 The repository validates and builds successfully. All production manuscript entries have the required front matter and chapter sections; every authored method uses the required six-part method schema. The generated explorer routes for the front matter, a fraction chapter, the flagship multiplication chapter, and the final fraction chapter returned HTTP 200 during local-server inspection.
 
-One arithmetic presentation blocker remains in CH12. It is confined to the displayed equation in Method 06; the first-person account, steps, and mathematical note give the correct transformation, so this should be corrected before calling the chapter review-ready.
+The previously reported CH12 Method 06 arithmetic presentation blocker is resolved in the current manuscript: the displayed equation now includes the valid associative and compensating transformations. Final art, accessibility, and citation work remain open.
 
 ## Checks run
 
@@ -20,13 +20,12 @@ One arithmetic presentation blocker remains in CH12. It is confined to the displ
 
 ## Findings
 
-### [P1] CH12 Method 06 displays a false equality
+### [x] CH12 Method 06 displayed a false equality — resolved
 
 - File: `book/manuscript/12_three_addends.md:21` (Method 06 Math line)
-- Current text: `378+596+247 = (378+622)+599 = 1,000+221=1,221`
-- Problem: `(378+622)+599` equals 1,599, not 1,221. The intended valid derivation is `378+(596+247) = 378+843 = (378+622)+(843−622) = 1,000+221 = 1,221`.
-- Evidence: the method's own steps and mathematical note use the valid `596+247=843` and `378+843 = 1,000+(843−622)` route.
-- Proposed resolution: replace only the displayed Math line with the valid decomposition; retain the existing account and steps.
+- Current text: `378+596+247 = 378+(596+247) = 378+843 = (378+622)+(843−622) = 1,000+221 = 1,221`
+- Resolution verified: the displayed line now matches the valid derivation used by the method's steps and mathematical note.
+- The existing account and steps were retained.
 
 ### [P2] CH09 Method 09 needs an illustration precision check
 
@@ -48,5 +47,5 @@ One arithmetic presentation blocker remains in CH12. It is confined to the displ
 
 ## Handoff
 
-Status: `review blocked by one correctable P1 manuscript equation; otherwise build/schema QA passes`.  
+Status: `draft; the former P1 is resolved, while art/accessibility/citation evidence remains open`.
 No manuscript or shared-file edits were made by this QA worker. No commit or push was performed.

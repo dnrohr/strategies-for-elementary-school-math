@@ -72,7 +72,7 @@ All listed hashes were verified against `origin/main` at the time of their respe
 
 ## GitHub Pages deployment
 
-The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34067587797` for `Publish book explorer` is `in_progress` for head SHA `3eb17c3ca571b60527a6b4afb9325db353c0f311`; the immediately preceding run `34067463428` completed with `success` for head SHA `e3e8e2a60321a1b0769e5be4e50de180ce7272d5`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067587797.
+The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34067611421` for `Publish book explorer` completed with `success` for head SHA `55e1b5e980832d9b1fc974b5c5d20712fbf5f92a`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067611421.
 
 ## Release decision
 

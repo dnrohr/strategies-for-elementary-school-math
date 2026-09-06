@@ -58,8 +58,10 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `50a3e6e3901f054f7b0c43edd4cbd7f9bd03a186` — semantic Markdown table rendering and math QA audit.
 - `7b20d773d1ba81d3dc817def7d6635afd456d01c` — citation QA audit.
 - `6d41381c25e4d3531cf7bf9e6660c649efe73269` — duplicate-heading fix and site QA audit.
+- `e81f8b3137fdd4549785a5ac2f80f81afd44f675` — deployment and screenshot-evidence documentation.
+- `a52c569a9f4655c29217306f8fb2392bcc5bd8b7` — chapter art production manifest.
 
-All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `6d41381c25e4d3531cf7bf9e6660c649efe73269`.
+All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `a52c569a9f4655c29217306f8fb2392bcc5bd8b7`.
 
 ## GitHub Pages deployment
 

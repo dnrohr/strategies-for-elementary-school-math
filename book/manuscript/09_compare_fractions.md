@@ -3,7 +3,7 @@ chapter: 9
 slug: compare-three-fifths-five-eighths
 title: "Which is larger: 3/5 or 5/8?"
 part: "III — Fractions, parts, proportions"
-status: scaffold
+status: draft
 strategy_target: "10-16"
 ---
 
@@ -11,21 +11,197 @@ strategy_target: "10-16"
 
 ## Opening spread
 
-Compare without assuming that the fraction with the larger numbers is larger.
+Compare two fractions with the same whole. `3/5 = 0.6`; `5/8 = 0.625`, so `5/8` is larger. A larger numerator or denominator alone is not enough. These first-person accounts are constructed examples, not quotations.
 
 ## Strategy gallery
 
-Inventory: fraction bars; number line; compare to one half; common denominator; cross products; optional decimals; area; distance from one; benchmarks; proportional intuition.
+## Method 01 — Equal fraction bars
+**Strategy class:** part–whole comparison
+**Phenomenology:** visual-concrete
+**Math:** `3/5 = 0.600` and `5/8 = 0.625`
+### First-person account
+> A solver might say: “I put both fractions on bars the same length. Three of five pieces covers a little less than five of eight pieces, so the eighths picture reaches farther.”
+### Steps
+1. Draw equal whole bars. 2. Partition one into fifths and shade 3. 3. Partition one into eighths and shade 5. 4. Compare lengths.
+### Illustration brief
+Two equal bars with exact fifth/eighth partitions, shading plus outline texture; endpoints aligned.
+### Mathematical note
+Equal wholes make shaded lengths comparable; partitions need not have the same count.
+### Research note
+Area reasoning is constructed. R03-010 is screened and cannot support a strong instructional-effect claim.
+### Tags
+`fraction-bar`, `part-whole`, `visual`
+
+## Method 02 — Number-line placement
+**Strategy class:** magnitude / measure
+**Phenomenology:** spatial
+**Math:** `3/5 = 0.6`; `5/8 = 0.625`; `5/8 > 3/5`
+### First-person account
+> “I treat each fraction as one point between zero and one. The point for five-eighths sits just to the right of three-fifths.”
+### Steps
+1. Mark 0 and 1. 2. Locate 3/5 at 0.6. 3. Locate 5/8 at 0.625. 4. Read left-to-right order.
+### Illustration brief
+Vector number line with equal tick spacing and labeled points; 5/8 slightly right of 3/5.
+### Mathematical note
+Fractions are numbers with magnitudes and can be ordered as points.
+### Research note
+R03-005 and R03-007 are verified intervention evidence for tested tasks, not one preferred inner image.
+### Tags
+`number-line`, `magnitude`, `spatial`
+
+## Method 03 — Compare each to one half
+**Strategy class:** benchmark comparison
+**Phenomenology:** verbal + relational
+**Math:** `3/5 − 1/2 = 1/10`; `5/8 − 1/2 = 1/8`; `1/8 > 1/10`
+### First-person account
+> “Both are above one half. Three-fifths is one tenth above it, while five-eighths is one eighth above it. An eighth is the bigger extra piece.”
+### Steps
+1. Find `3/5 − 1/2 = 1/10`. 2. Find `5/8 − 1/2 = 1/8`. 3. Compare the two excesses.
+### Illustration brief
+Common line centered at 1/2 with exact gap brackets labeled 1/10 and 1/8.
+### Mathematical note
+Subtracting the same benchmark reduces the comparison to gap size.
+### Research note
+R03-001 describes whole-number bias as possible interference, not a fixed trait.
+### Tags
+`benchmark`, `relational`, `half`
+
+## Method 04 — Rename both in fortieths
+**Strategy class:** equivalence / common denominator
+**Phenomenology:** symbolic
+**Math:** `3/5 = 24/40`; `5/8 = 25/40`
+### First-person account
+> “I ask for a common unit. Forty works: three-fifths is twenty-four fortieths, and five-eighths is twenty-five. Twenty-five wins.”
+### Steps
+1. Choose 40, common to 5 and 8. 2. `3/5 = 24/40`. 3. `5/8 = 25/40`. 4. Compare.
+### Illustration brief
+Equal bars repartitioned into 40 fine units; preserve total length and label 24 versus 25.
+### Mathematical note
+Renaming preserves value while making units alike.
+### Research note
+R03-010 is screened; R03-014 supports unit-fraction composition in tested addition contexts, not this exact comparison.
+### Tags
+`equivalence`, `common-denominator`, `symbolic`
+
+## Method 05 — Cross products
+**Strategy class:** relational algorithm
+**Phenomenology:** visual-symbolic
+**Math:** `3×8 = 24`; `5×5 = 25`; `3/5 < 5/8`
+### First-person account
+> “I draw an X across the fractions. Three times eight is twenty-four; five times five is twenty-five. The cross-products compare them without changing either value.”
+### Steps
+1. Multiply 3 by 8. 2. Multiply 5 by 5. 3. Compare 24 and 25. 4. State the inequality.
+### Illustration brief
+Fraction pair with crossing arrows and exact products; explain the arrows as common-denominator shorthand.
+### Mathematical note
+These products compare the two numerators after expressing both over 40.
+### Research note
+Valid procedure does not alone demonstrate magnitude understanding; R03-012 is screened.
+### Tags
+`cross-product`, `algorithm`, `symbolic`
+
+## Method 06 — Convert to decimals
+**Strategy class:** quotient / decimal conversion
+**Phenomenology:** verbal + symbolic
+**Math:** `3 ÷ 5 = 0.6`; `5 ÷ 8 = 0.625`
+### First-person account
+> “I hear each fraction as a division problem. Six tenths is smaller than six hundred twenty-five thousandths, so five-eighths is larger.”
+### Steps
+1. Divide 3 by 5. 2. Divide 5 by 8. 3. Compare 0.600 and 0.625.
+### Illustration brief
+Two aligned decimal scales showing trailing zeros; equal whole reference.
+### Mathematical note
+Decimal notation gives both fractions a common base-ten representation.
+### Research note
+Exact conversion here; no developmental frequency claim is made.
+### Tags
+`decimal`, `quotient`, `base-ten`
+
+## Method 07 — Compare missing pieces to one
+**Strategy class:** complement reasoning
+**Phenomenology:** spatial + relational
+**Math:** `1−3/5=2/5=0.4`; `1−5/8=3/8=0.375`
+### First-person account
+> “I look at what each fraction still needs to reach one. Five-eighths leaves the smaller gap, so it must be the larger fraction.”
+### Steps
+1. Compute `1 − 3/5 = 0.4`. 2. Compute `1 − 5/8 = 0.375`. 3. Choose the smaller gap.
+### Illustration brief
+Equal bars ending at 1, with gaps labeled 0.4 and 0.375 using outlines and hatching.
+### Mathematical note
+For fractions below one, smaller complement means larger value.
+### Research note
+Complement route is mathematical inference, not a claim about typical strategy.
+### Tags
+`complement`, `benchmark-one`, `spatial`
+
+## Method 08 — Retrieve and check
+**Strategy class:** direct retrieval + verification
+**Phenomenology:** abstract
+**Math:** `3/5 = 0.6`; `5/8 = 0.625`
+### First-person account
+> “The ordering arrives quietly: 0.6, then 0.625. I explain it afterward by dividing each numerator by its denominator.”
+### Steps
+1. Retrieve decimal values. 2. Order them. 3. Verify by division or a bar.
+### Illustration brief
+Minimal numeral sequence with verification inset; do not portray retrieval as fixed ability.
+### Mathematical note
+Retrieval supplies a result; checking exposes an auditable route.
+### Research note
+Related magnitude evidence in R03-004 and R03-007 does not license this phenomenological claim.
+### Tags
+`retrieval`, `abstract`, `verification`
+
+## Method 09 — Use twentieths
+**Strategy class:** common-unit concrete model
+**Phenomenology:** visual-concrete
+**Math:** `3/5 = 12/20`; `5/8 = 12.5/20`
+### First-person account
+> “I use twenty equal units. Three-fifths fills twelve; five-eighths fills twelve and a half. The half-piece makes the difference visible.”
+### Steps
+1. Repartition a whole into 20 units. 2. Show `3/5 = 12/20`. 3. Show `5/8 = 12.5/20`. 4. Compare.
+### Illustration brief
+Equal bars with 20ths; 5/8 ends halfway through the thirteenth unit, not at 13 full units.
+### Mathematical note
+A common unit may produce fractional counts; exact subdivision matters.
+### Research note
+Constructed diagram; R03-010 remains screened.
+### Tags
+`common-unit`, `concrete`, `equivalence`
+
+## Method 10 — Estimate, then prove
+**Strategy class:** benchmark estimation + exact confirmation
+**Phenomenology:** mixed spatial + verbal
+**Math:** `24/40 < 25/40`
+### First-person account
+> “Both are just above one-half, so I expect a close comparison. Then I rename them in fortieths and find the one-unit difference.”
+### Steps
+1. Estimate from 1/2. 2. Choose denominator 40. 3. Compare 24/40 and 25/40. 4. Confirm.
+### Illustration brief
+Two-stage spread: approximate line, then exact 40-unit bars; second panel resolves the gap.
+### Mathematical note
+Estimation guides attention; equivalence supplies proof.
+### Research note
+R03-007 supports immediate gains from feedback in tested tasks; this combined route is constructed.
+### Tags
+`estimation`, `equivalence`, `mixed`
 
 ## Cross-classification
 
-Compare a visual benchmark argument with an exact symbolic equivalence while varying representation.
+| Route | Verbal | Visual-symbolic | Concrete | Spatial | Motor | Abstract |
+|---|---|---|---|---|---|---|
+| Common denominator | explain 24 vs 25 | `24/40 < 25/40` | repartition bars | one-unit gap | trace units | preserved value |
+
+Magnitude, benchmark gaps, and common units can yield the same conclusion. Representation is not itself a strategy category.
 
 ## Research notes
 
-Verify fraction magnitude, whole-number bias, and number-line claims.
+Verified anchors: R03-004 and R03-005–R03-007. Screened leads: R03-001–R03-003, R03-009–R03-010, and R03-012. “Whole-number bias” is an umbrella description with competing explanations, not a fixed trait. Accounts here are constructed.
 
 ## Chapter QA
 
-- [ ] All compared wholes are the same size.
-- [ ] `5/8` is consistently identified as larger.
+- [x] `5/8` is consistently larger.
+- [x] Wholes and partitions are exact.
+- [x] Ten nontrivial routes are present.
+- [x] Research caveats and disclosure are present.
+- [ ] Generate and inspect final art assets.
+- [ ] Complete citation and layout review.

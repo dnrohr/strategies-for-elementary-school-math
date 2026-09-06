@@ -13,7 +13,7 @@ All entries use the existing chapter-scoped brief as source. Mathematical struct
 | CH02 | `art/prompts/ch02/README.md` | removal/distance paired diagrams; 1200×800 | 15 − 8 = 7; removal and gap paths stay distinct | explicit “remove”/“distance” labels; dashed path distinction |
 | CH03 | `art/prompts/ch03/README.md` | base-ten, money, and number-line composites; 1200×800 | 37 + 48 = 85; regroup ten ones as one ten | place-value labels; no color-only carry cue |
 | CH04 | `art/prompts/ch04/paired-removal-distance.md` | paired regrouping and gap diagrams; 1200×800 | 72 − 39 = 33; jumps +1, +30, +2 | semantic labels and line styles distinguish models |
-| CH05 | `art/prompts/ch05/ch05_flagship_prompt.md` | flagship arrays, area, factor, and motion panels; 1200×800 | 11 × 12 = 132; arrays are 11×12 | exact counts in captions; no eleven-finger depiction |
+| CH05 | `art/prompts/ch05/ch05_flagship_prompt.md`; implemented `art/vectors/ch05/eleven-by-twelve.svg` | flagship arrays, area, factor, and motion panels; 1200×800 | exactly 11 rows × 12 columns = 132; distributive split 110 + 22 | SVG title/description; exact counts in labels; no eleven-finger depiction |
 | CH06 | `art/prompts/ch06/README.md` | sharing/grouping and partition diagrams; 1200×800 | 24 ÷ 6 = 4; six groups or four groups as specified | group labels and outlines; reading order follows distribution |
 | CH07 | `art/prompts/ch07/ch07_area_visual_system.md` | 7×9 area grid and partitions; 1200×800 | exactly 63 unit squares | row/column labels; texture/outline supplements color |
 | CH08 | `art/prompts/ch08/README.md` | fraction bars, groups, and operator flow; 1200×800 | 3/4 of 20 = 15; four equal parts, three selected | equal-part labels; selected state uses outline plus tone |

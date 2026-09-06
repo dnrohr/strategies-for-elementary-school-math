@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Eleven groups of twelve equal 132</title>
+  <desc id="desc">An array with exactly eleven rows and twelve columns of circles, totaling 132 units. A second panel partitions each row into ten and two columns, showing 11 times 10 equals 110 and 11 times 2 equals 22; together they equal 132.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 1.5; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 1.5; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    .label { font: 30px Georgia, serif; }
+    .math { font: 36px Georgia, serif; font-weight: 700; }
+    .small { font: 22px Georgia, serif; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="72" class="ink math">11 × 12 = 132</text>
+  <text x="68" y="112" class="muted small">Equal groups can be seen as rows, columns, or a partitioned rectangle.</text>
+
+  <rect x="68" y="152" width="650" height="470" rx="16" class="panel"/>
+  <text x="92" y="192" class="ink label">11 rows × 12 columns</text>
+  <text x="94" y="238" class="muted small">12</text>
+  <path d="M145 224h528" stroke="#24312d" stroke-width="2"/>
+  <path d="M145 217v14 M193 217v14 M241 217v14 M289 217v14 M337 217v14 M385 217v14 M433 217v14 M481 217v14 M529 217v14 M577 217v14 M625 217v14 M673 217v14" stroke="#24312d" stroke-width="2"/>
+  <text x="92" y="282" class="muted small">11</text>
+  <path d="M128 300v288" stroke="#24312d" stroke-width="2"/>
+  <path d="M121 300h14 M121 329h14 M121 358h14 M121 387h14 M121 416h14 M121 445h14 M121 474h14 M121 503h14 M121 532h14 M121 561h14 M121 590h14" stroke="#24312d" stroke-width="2"/>
+  <g aria-label="132 units in 11 rows of 12">
+    <circle class="orange" cx="160" cy="300" r="9"/><circle class="orange" cx="208" cy="300" r="9"/><circle class="orange" cx="256" cy="300" r="9"/><circle class="orange" cx="304" cy="300" r="9"/><circle class="orange" cx="352" cy="300" r="9"/><circle class="orange" cx="400" cy="300" r="9"/><circle class="orange" cx="448" cy="300" r="9"/><circle class="orange" cx="496" cy="300" r="9"/><circle class="orange" cx="544" cy="300" r="9"/><circle class="orange" cx="592" cy="300" r="9"/><circle class="orange" cx="640" cy="300" r="9"/><circle class="orange" cx="688" cy="300" r="9"/>
+    <use href="#r2"/>
+    <use href="#r2" transform="translate(0,29)"/>
+    <use href="#r2" transform="translate(0,58)"/>
+    <use href="#r2" transform="translate(0,87)"/>
+    <use href="#r2" transform="translate(0,116)"/>
+    <use href="#r2" transform="translate(0,145)"/>
+    <use href="#r2" transform="translate(0,174)"/>
+    <use href="#r2" transform="translate(0,203)"/>
+    <use href="#r2" transform="translate(0,232)"/>
+    <use href="#r2" transform="translate(0,261)"/>
+  </g>
+  <defs>
+    <g id="r2"><circle class="orange" cx="160" cy="329" r="9"/><circle class="orange" cx="208" cy="329" r="9"/><circle class="orange" cx="256" cy="329" r="9"/><circle class="orange" cx="304" cy="329" r="9"/><circle class="orange" cx="352" cy="329" r="9"/><circle class="orange" cx="400" cy="329" r="9"/><circle class="orange" cx="448" cy="329" r="9"/><circle class="orange" cx="496" cy="329" r="9"/><circle class="orange" cx="544" cy="329" r="9"/><circle class="orange" cx="592" cy="329" r="9"/><circle class="orange" cx="640" cy="329" r="9"/><circle class="orange" cx="688" cy="329" r="9"/></g>
+  </defs>
+  <g class="orange" opacity="0"><rect x="0" y="0" width="1" height="1"/></g>
+  <text x="92" y="676" class="ink label">11 equal rows · 132 total units</text>
+
+  <rect x="770" y="152" width="362" height="470" rx="16" class="panel"/>
+  <text x="794" y="198" class="ink label">Split 12</text>
+  <rect x="794" y="238" width="230" height="92" rx="8" class="orange"/>
+  <rect x="1024" y="238" width="46" height="92" rx="8" class="green"/>
+  <text x="860" y="290" class="ink label">10</text>
+  <text x="1041" y="290" class="ink small">2</text>
+  <text x="794" y="382" class="ink label">11 × 10 = 110</text>
+  <text x="794" y="432" class="ink label">11 × 2 = 22</text>
+  <path d="M794 464h276" stroke="#24312d" stroke-width="2"/>
+  <text x="794" y="510" class="ink label">110 + 22 = 132</text>
+  <text x="794" y="566" class="muted small">Same array, new grouping.</text>
+</svg>

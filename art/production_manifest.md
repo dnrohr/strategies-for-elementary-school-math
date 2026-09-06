@@ -17,7 +17,7 @@ All entries use the existing chapter-scoped brief as source. Mathematical struct
 | CH06 | `art/prompts/ch06/README.md` | sharing/grouping and partition diagrams; 1200×800 | 24 ÷ 6 = 4; six groups or four groups as specified | group labels and outlines; reading order follows distribution |
 | CH07 | `art/prompts/ch07/ch07_area_visual_system.md` | 7×9 area grid and partitions; 1200×800 | exactly 63 unit squares | row/column labels; texture/outline supplements color |
 | CH08 | `art/prompts/ch08/README.md` | fraction bars, groups, and operator flow; 1200×800 | 3/4 of 20 = 15; four equal parts, three selected | equal-part labels; selected state uses outline plus tone |
-| CH09 | `art/prompts/ch09/README.md` | fraction comparison bars/number lines; 1200×800 | 3/5 = 24/40; 5/8 = 25/40; half-unit endpoint where used | numerator/denominator text; no color-only comparison |
+| CH09 | `art/prompts/ch09/README.md`; implemented `art/vectors/ch09/fraction-comparison.svg` | fraction comparison bars/number lines; 1200×800 | 3/5 = 24/40; 5/8 = 25/40; half-unit endpoint where used | SVG title/description; numerator/denominator text; no color-only comparison |
 | CH10 | `art/prompts/ch10/README.md` | sharing, remainder, and fractional-quotient panels; 1200×800 | 23 = 5×4 + 3; distinguish 4 R3 from 4 3/5 | separate textual labels for remainder and fractional share |
 | CH11 | `art/prompts/ch11/README.md` | multi-digit arrays, area strips, and algorithm panels; 1200×800 | 27 × 46 = 1,242; 27×40 + 27×6 | place-value annotations; exact row/column count in alt text |
 | CH12 | `art/prompts/ch12/README.md` | addend regrouping and place-value diagrams; 1200×800 | 378 + 596 + 247 = 1,221 | equation remains selectable; approximation labeled separately |

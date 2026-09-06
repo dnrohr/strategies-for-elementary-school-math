@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Compare three fifths and five eighths</title>
+  <desc id="desc">Two equal whole bars are divided into forty units. Three fifths fills twenty-four units and five eighths fills twenty-five units, so five eighths is larger by one fortieth. A separate twentieths bar ends five eighths halfway through the thirteenth unit, at twelve and a half twentieths.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .accent-a { fill: #d98b2b; }
+    .accent-b { fill: #347c5a; }
+    .whole { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    .unit { stroke: #24312d; stroke-width: 1; opacity: .38; }
+    .guide { stroke: #24312d; stroke-width: 2; stroke-dasharray: 7 7; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 28px; }
+    .small { font-size: 22px; }
+    .math { font-size: 34px; font-weight: 700; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="72" y="76" class="ink math">Same whole · common fortieths</text>
+  <text x="72" y="118" class="muted small">The bars share one length; the vertical marks show equal units.</text>
+
+  <text x="72" y="196" class="ink label">3/5 = 24/40</text>
+  <rect x="72" y="220" width="1000" height="74" rx="10" class="whole"/>
+  <rect x="72" y="220" width="600" height="74" rx="10" class="accent-a"/>
+  <g class="unit">
+    <path d="M97 220v74 M122 220v74 M147 220v74 M172 220v74 M197 220v74 M222 220v74 M247 220v74 M272 220v74 M297 220v74 M322 220v74 M347 220v74 M372 220v74 M397 220v74 M422 220v74 M447 220v74 M472 220v74 M497 220v74 M522 220v74 M547 220v74 M572 220v74 M597 220v74 M622 220v74 M647 220v74 M672 220v74 M697 220v74 M722 220v74 M747 220v74 M772 220v74 M797 220v74 M822 220v74 M847 220v74 M872 220v74 M897 220v74 M922 220v74 M947 220v74 M972 220v74 M997 220v74 M1022 220v74 M1047 220v74"/>
+  </g>
+  <text x="72" y="334" class="muted small">24 filled units</text>
+
+  <text x="72" y="410" class="ink label">5/8 = 25/40</text>
+  <rect x="72" y="434" width="1000" height="74" rx="10" class="whole"/>
+  <rect x="72" y="434" width="625" height="74" rx="10" class="accent-b"/>
+  <g class="unit">
+    <path d="M97 434v74 M122 434v74 M147 434v74 M172 434v74 M197 434v74 M222 434v74 M247 434v74 M272 434v74 M297 434v74 M322 434v74 M347 434v74 M372 434v74 M397 434v74 M422 434v74 M447 434v74 M472 434v74 M497 434v74 M522 434v74 M547 434v74 M572 434v74 M597 434v74 M622 434v74 M647 434v74 M672 434v74 M697 434v74 M722 434v74 M747 434v74 M772 434v74 M797 434v74 M822 434v74 M847 434v74 M872 434v74 M897 434v74 M922 434v74 M947 434v74 M972 434v74 M997 434v74 M1022 434v74 M1047 434v74"/>
+  </g>
+  <text x="72" y="548" class="muted small">25 filled units · one fortieth more</text>
+
+  <text x="72" y="624" class="ink label">20ths check: 5/8 = 12.5/20</text>
+  <line x1="72" y1="666" x2="1072" y2="666" stroke="#24312d" stroke-width="12" stroke-linecap="round"/>
+  <line x1="72" y1="666" x2="697" y2="666" stroke="#347c5a" stroke-width="12" stroke-linecap="round"/>
+  <line x1="697" y1="646" x2="697" y2="686" class="guide"/>
+  <text x="72" y="720" class="muted small">0</text>
+  <text x="684" y="720" class="ink small">12.5/20</text>
+  <text x="842" y="720" class="muted small">13 full units would be farther right</text>
+</svg>

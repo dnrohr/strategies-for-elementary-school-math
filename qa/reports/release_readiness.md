@@ -42,8 +42,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Editorial QA for CH01–CH07 found short constructed-account blocks below the 40-word template target; no filler edits were made and the issue is recorded in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09 Method 09 needs an exact half-unit endpoint check if rendered on a 20-unit line.
 - The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
-- Site QA fixed duplicate chapter `<h1>` output and added a regression assertion; persistent screenshots, narrow-width keyboard checks, and deployed-base-path verification remain open.
-- No GitHub Pages deployment result is recorded for this release batch.
+- Site QA fixed duplicate chapter `<h1>` output and added a regression assertion; evidence and the persistent-PNG limitation are recorded in `artifacts/ui/site_accessibility_serial/README.md`. Narrow-width keyboard checks remain open.
 
 ## Worker batch status
 
@@ -51,7 +50,19 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 
 ## Commits
 
-- `ee5261f0462c5181130eb37082318a959b6f5235` — coordinator update marking the resolved CH12 audit blocker; verified on `origin/main`.
+- `ee5261f0462c5181130eb37082318a959b6f5235` — coordinator update marking the resolved CH12 audit blocker.
+- `90bf26654fe2a75c396ca8e07faaa529999b34ec` — initial release-readiness report.
+- `65331f0468c9628d8e0b7923168a4eb6fd1ff4f9` — exact visual primitives and accessibility ledger.
+- `2a2f89d3d46aff18e416e3bded0b471d3dd33e2f` — early-chapter editorial audit.
+- `50a3e6e3901f054f7b0c43edd4cbd7f9bd03a186` — semantic Markdown table rendering and math QA audit.
+- `7b20d773d1ba81d3dc817def7d6635afd456d01c` — citation QA audit.
+- `6d41381c25e4d3531cf7bf9e6660c649efe73269` — duplicate-heading fix and site QA audit.
+
+All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `6d41381c25e4d3531cf7bf9e6660c649efe73269`.
+
+## GitHub Pages deployment
+
+The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. A workflow run/deployment ID was not available from the local repository, so final workflow verification remains open.
 
 ## Release decision
 

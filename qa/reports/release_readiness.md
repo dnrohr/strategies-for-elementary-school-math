@@ -63,7 +63,7 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `b4fffebc350b238043e4edb5bd788ae3a99ef131` — final release-ledger reconciliation.
 - `59001319254ba2a7304a528ea5b44e77b5362e85` — keyboard QA and current release-tip reconciliation.
 
-All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `59001319254ba2a7304a528ea5b44e77b5362e85`.
+All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
 

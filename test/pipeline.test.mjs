@@ -44,6 +44,12 @@ test("renderer converts pipe-delimited Markdown tables to semantic HTML", () => 
   assert(!rendered.includes("| Route | Format |"));
 });
 
+test("CH09 twentieths model preserves the half-unit endpoint", async () => {
+  const chapter = await fs.readFile(path.join(ROOT, "book", "manuscript", "09_compare_fractions.md"), "utf8");
+  assert(chapter.includes("5/8 = 12.5/20"));
+  assert.match(chapter, /5\/8 ends halfway through the thirteenth unit, not at 13 full units/);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;

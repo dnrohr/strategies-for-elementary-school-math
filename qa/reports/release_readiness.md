@@ -67,7 +67,7 @@ All listed hashes were verified against `origin/main` at the time of their respe
 
 ## GitHub Pages deployment
 
-The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. A workflow run/deployment ID was not available from the local repository, so final workflow verification remains open.
+The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34066751813` for `Publish book explorer` completed with `success` for head SHA `8bcbd89cd2df7e4bf8fa5ca1edc30644d95518df`: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34066751813.
 
 ## Release decision
 

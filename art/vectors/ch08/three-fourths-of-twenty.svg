@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Three fourths of twenty equals fifteen</title>
+  <desc id="desc">Twenty unit squares are arranged in four equal groups of five. Three groups are selected, representing three fourths of twenty, or fifteen units. One group of five remains unselected.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 32px; }
+    .math { font-size: 40px; font-weight: 700; }
+    .small { font-size: 22px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">3/4 of 20 = 15</text>
+  <text x="68" y="116" class="muted small">Partition the whole into four equal groups, then select three.</text>
+  <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
+  <text x="96" y="208" class="ink label">20 units · 4 equal groups of 5</text>
+  <g aria-label="Three selected groups of five and one unselected group of five">
+    <g class="green">
+      <rect x="112" y="262" width="112" height="64" rx="8"/><rect x="232" y="262" width="112" height="64" rx="8"/><rect x="352" y="262" width="112" height="64" rx="8"/><rect x="472" y="262" width="112" height="64" rx="8"/><rect x="592" y="262" width="112" height="64" rx="8"/>
+      <rect x="112" y="344" width="112" height="64" rx="8"/><rect x="232" y="344" width="112" height="64" rx="8"/><rect x="352" y="344" width="112" height="64" rx="8"/><rect x="472" y="344" width="112" height="64" rx="8"/><rect x="592" y="344" width="112" height="64" rx="8"/>
+      <rect x="112" y="426" width="112" height="64" rx="8"/><rect x="232" y="426" width="112" height="64" rx="8"/><rect x="352" y="426" width="112" height="64" rx="8"/><rect x="472" y="426" width="112" height="64" rx="8"/><rect x="592" y="426" width="112" height="64" rx="8"/>
+    </g>
+    <g class="orange">
+      <rect x="112" y="508" width="112" height="64" rx="8"/><rect x="232" y="508" width="112" height="64" rx="8"/><rect x="352" y="508" width="112" height="64" rx="8"/><rect x="472" y="508" width="112" height="64" rx="8"/><rect x="592" y="508" width="112" height="64" rx="8"/>
+    </g>
+  </g>
+  <path d="M102 242h616 M102 324h616 M102 406h616 M102 488h616 M102 570h616" stroke="#24312d" stroke-width="2" stroke-dasharray="5 7" opacity=".35"/>
+  <text x="96" y="612" class="ink label">selected: 5 + 5 + 5 = 15</text>
+  <rect x="840" y="160" width="292" height="470" rx="16" class="panel"/>
+  <text x="868" y="218" class="ink label">Fraction route</text>
+  <text x="868" y="290" class="ink label">20 ÷ 4 = 5</text>
+  <text x="868" y="350" class="ink label">3 × 5 = 15</text>
+  <path d="M868 382h220" stroke="#24312d" stroke-width="2"/>
+  <text x="868" y="440" class="ink label">3/4 × 20</text>
+  <text x="868" y="500" class="ink label">= 15</text>
+  <text x="868" y="560" class="muted small">one quarter remains: 5</text>
+</svg>

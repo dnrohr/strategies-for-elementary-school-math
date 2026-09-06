@@ -41,7 +41,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
 - Editorial QA for CH01–CH07 is complete for account length and structure; all audited accounts now meet the 40–120-word target, with details in `qa/reports/editorial_ch00_ch07_audit.md`.
-- CH09 Method 09 needs an exact half-unit endpoint check if rendered on a 20-unit line.
+- CH09’s exact half-unit endpoint is now protected by a regression test; final rendered-art inspection must still confirm the visual asset uses 12.5 twentieths rather than 13 full units.
 - The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
 - Site QA fixed duplicate chapter `<h1>` output, added a regression assertion, and captured persistent representative screenshots; evidence is recorded in `artifacts/ui/site_accessibility_serial/README.md`. Narrow-width keyboard checks remain open.
 

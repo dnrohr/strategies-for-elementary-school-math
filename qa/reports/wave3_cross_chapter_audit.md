@@ -27,10 +27,10 @@ The previously reported CH12 Method 06 arithmetic presentation blocker is resolv
 - Resolution verified: the displayed line now matches the valid derivation used by the method's steps and mathematical note.
 - The existing account and steps were retained.
 
-### [P2] CH09 Method 09 needs an illustration precision check
+### [P2] CH09 Method 09 needs an illustration precision check — text guard added
 
 - File: `book/manuscript/09_compare_fractions.md:157-167`
-- `5/8 = 12.5/20` is mathematically correct, but any final 20-unit illustration must show a half-unit endpoint rather than 12 or 13 full units. The manuscript already calls this out in the illustration brief; retain that check during art production.
+- `5/8 = 12.5/20` is mathematically correct, but any final 20-unit illustration must show a half-unit endpoint rather than 12 or 13 full units. The manuscript calls this out in the illustration brief, and `test/pipeline.test.mjs` now guards both the exact value and the half-unit wording. Final visual inspection remains part of art sign-off.
 
 ### [P2] Final art and accessibility passes remain open
 

@@ -36,6 +36,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 ## Remaining blockers
 
 - Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete; current files are production briefs.
+- An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA needs persistent screenshots under `artifacts/ui/<task-id>/` and keyboard/focus verification.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.

@@ -73,6 +73,10 @@ h1, h2, h3 { line-height: 1.04; margin: 0 0 .8em; letter-spacing: -.035em; }
 .prose h2 { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font: 500 2.2rem Georgia, serif; }
 .prose blockquote { margin: 2rem 0; padding: 1rem 2rem; border-left: 5px solid var(--orange); background: var(--card); font: 500 1.25rem Georgia, serif; }
 .prose code { padding: .1rem .35rem; border-radius: .25rem; background: var(--paper-deep); }
+.prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
+.prose th, .prose td { min-width: 10rem; padding: .7rem .85rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.prose th { background: var(--paper-deep); font-weight: 800; }
+.prose td code, .prose th code { white-space: normal; overflow-wrap: anywhere; }
 .chapter-nav { display: flex; justify-content: space-between; gap: 1rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 .chapter-nav a { max-width: 46%; }
 .not-found { max-width: 800px; margin: 8rem auto; padding: 2rem; text-align: center; }

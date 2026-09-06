@@ -1,3 +1,51 @@
 # Working bibliography
 
-Only sources marked `verified` in `source_log.csv` belong here. Do not fabricate or autocomplete bibliographic details.
+This view is generated from `research/source_log.csv`. A verified label means the directly relevant source text and logged claim were inspected; it does not make every claim in that source publication-ready.
+
+## Verified for manuscript use
+
+- **R01-002.** Lemaire, P., & Siegler, R. S. (1995). Four aspects of strategic change: Contributions to children's learning of multiplication. Journal of Experimental Psychology: General, 124(1), 83–97. [Source](https://doi.org/10.1037/0096-3445.124.1.83)
+- **R01-007.** Rittle-Johnson, B., & Alibali, M. W. (1999). Conceptual and procedural knowledge of mathematics: Does one lead to the other? Journal of Educational Psychology, 91(1), 175–189. [Source](https://doi.org/10.1037/0022-0663.91.1.175)
+- **R01-008.** Rittle-Johnson, B., Siegler, R. S., & Alibali, M. W. (2001). Developing conceptual understanding and procedural skill in mathematics: An iterative process. Journal of Educational Psychology, 93(2), 346–362. [Source](https://doi.org/10.1037/0022-0663.93.2.346)
+- **R01-010.** Torbeyns, J., De Smedt, B., Ghesquière, P., & Verschaffel, L. (2009). Jump or compensate? Strategy flexibility in the number domain up to 100. ZDM, 41(5), 581–590. [Source](https://doi.org/10.1007/s11858-009-0187-3)
+- **R01-013.** Imbo, I., & Vandierendonck, A. (2007). The development of strategy use in elementary school children: Working memory and individual differences. Journal of Experimental Child Psychology, 96(4), 284–309. [Source](https://doi.org/10.1016/j.jecp.2006.09.001)
+- **R01-014.** Dowker, A. (2014). Young children's use of derived fact strategies for addition and subtraction. Frontiers in Human Neuroscience, 7, 924. [Source](https://doi.org/10.3389/fnhum.2013.00924)
+- **R02-F01.** Barrocas R; Roesch S; Gawrilow C; Moeller K. (2020). Putting a Finger on Numerical Development: Reviewing the Contributions of Kindergarten Finger Gnosis and Fine Motor Skills to Numerical Abilities. Frontiers in Psychology 11:1012. [Source](https://doi.org/10.3389/fpsyg.2020.01012)
+- **R02-F02.** Neveu M; Geurten M; Durieux N; Rousselle L. (2023). Finger Use and Arithmetic Skills in Children and Adolescents: a Scoping Review. Educational Psychology Review 35:2. [Source](https://doi.org/10.1007/s10648-023-09722-8)
+- **R02-F05.** Reeve R; Humberstone J. (2011). Five- to 7-Year-Olds' Finger Gnosia and Calculation Abilities. Frontiers in Psychology 2:359. [Source](https://doi.org/10.3389/fpsyg.2011.00359)
+- **R02-F07.** Berteletti I; Booth JR. (2015). Perceiving fingers in single-digit arithmetic problems. Frontiers in Psychology 6:226. [Source](https://doi.org/10.3389/fpsyg.2015.00226)
+- **R02-I01.** Alderson-Day B; Fernyhough C. (2015). Inner Speech: Development Cognitive Functions Phenomenology and Neurobiology. Psychological Bulletin 141(5):931-965. [Source](https://doi.org/10.1037/bul0000021)
+- **R02-I04.** Fürst AJ; Hitch GJ. (2000). Separate roles for executive and phonological components of working memory in mental arithmetic. Memory & Cognition 28(5):774-782. [Source](https://doi.org/10.3758/BF03198412)
+- **R02-I05.** Trbovich PL; LeFevre J-A. (2003). Phonological and visual working memory in mental addition. Memory & Cognition 31(5):738-745. [Source](https://doi.org/10.3758/BF03196112)
+- **R02-I06.** Imbo I; Vandierendonck A. (2007). The role of phonological and executive working memory resources in simple arithmetic strategies. European Journal of Cognitive Psychology 19(6):910-933. [Source](https://doi.org/10.1080/09541440601051571)
+- **R02-I07.** Hubber PJ; Gilmore C; Cragg L. (2014). The Roles of the Central Executive and Visuospatial Storage in Mental Arithmetic: A Comparison across Strategies. Quarterly Journal of Experimental Psychology 67(5):936-954. [Source](https://doi.org/10.1080/17470218.2013.838590)
+- **R03-004.** Siegler, R. S., & Pyke, A. A. (2013). Developmental and individual differences in understanding of fractions. Developmental Psychology, 49(10), 1994-2004. [Source](https://doi.org/10.1037/a0031200)
+- **R03-005.** Hamdan, N., & Gunderson, E. A. (2017). The number line is a critical spatial-numerical representation: Evidence from a fraction intervention. Developmental Psychology, 53(3), 587-596. [Source](https://doi.org/10.1037/dev0000252)
+- **R03-006.** Fuchs, L. S., Schumacher, R. F., Long, J., Namkung, J., Hamlett, C. L., Cirino, P. T., Jordan, N. C., Siegler, R., Gersten, R., & Changas, P. (2013). Improving at-risk learners' understanding of fractions. Journal of Educational Psychology, 105(3), 683-700. [Source](https://doi.org/10.1037/a0032446)
+- **R03-007.** Fazio, L. K., Kennedy, C. A., & Siegler, R. S. (2016). Improving children's knowledge of fraction magnitudes. PLOS ONE, 11(10), e0165243. [Source](https://doi.org/10.1371/journal.pone.0165243)
+- **R03-011.** Braithwaite, D. W., Pyke, A. A., & Siegler, R. S. (2017). A computational model of fraction arithmetic. Psychological Review, 124(5), 603-625. [Source](https://doi.org/10.1037/rev0000072)
+- **R03-013.** Braithwaite, D. W., Tian, J., & Siegler, R. S. (2018). Do children understand fraction addition? Developmental Science, 21(4), e12601. [Source](https://doi.org/10.1111/desc.12601)
+- **R03-014.** Braithwaite, D. W., & Siegler, R. S. (2021). Putting fractions together. Journal of Educational Psychology, 113(3), 556-571. [Source](https://doi.org/10.1037/edu0000477)
+
+## Screened — full text still required
+
+- **R01-001.** Carpenter, T. P., & Moser, J. M. (1984). The acquisition of addition and subtraction concepts in grades one through three. Journal for Research in Mathematics Education, 15(3), 179–202. [Source](https://doi.org/10.2307/748348)
+- **R01-003.** Geary, D. C., Hoard, M. K., & Nugent, L. (2012). Independent contributions of the central executive, intelligence, and in-class attentive behavior to developmental change in the strategies used to solve addition problems. Journal of Experimental Child Psychology, 113(1), 49–65. [Source](https://doi.org/10.1016/j.jecp.2012.03.003)
+- **R01-004.** Barrouillet, P., & Lépine, R. (2005). Working memory and children's use of retrieval to solve addition problems. Journal of Experimental Child Psychology, 91(3), 183–204. [Source](https://doi.org/10.1016/j.jecp.2005.03.002)
+- **R01-005.** Canobi, K. H., Reeve, R. A., & Pattison, P. E. (1998). The role of conceptual understanding in children's addition problem solving. Developmental Psychology, 34(5), 882–891. [Source](https://doi.org/10.1037/0012-1649.34.5.882)
+- **R01-006.** Canobi, K. H. (2009). Concept–procedure interactions in children's addition and subtraction. Journal of Experimental Child Psychology, 102(2), 131–149. [Source](https://doi.org/10.1016/j.jecp.2008.07.008)
+- **R01-009.** Torbeyns, J., Verschaffel, L., & Ghesquière, P. (2006). The development of children's adaptive expertise in the number domain 20 to 100. Cognition and Instruction, 24(4), 439–465. [Source](https://doi.org/10.1207/s1532690xci2404_2)
+- **R01-011.** Mulligan, J. T., & Mitchelmore, M. C. (1997). Young children's intuitive models of multiplication and division. Journal for Research in Mathematics Education, 28(3), 309–330. [Source](https://doi.org/10.2307/749783)
+- **R01-012.** Thevenot, C., Barrouillet, P., Castel, C., & Uittenhove, K. (2016). Ten-year-old children strategies in mental addition: A counting model account. Cognition, 146, 48–57. [Source](https://doi.org/10.1016/j.cognition.2015.09.003)
+- **R02-F03.** Noël M-P. (2005). Finger gnosia: a predictor of numerical abilities in children? Child Neuropsychology 11(5):413-430. [Source](https://doi.org/10.1080/09297040590951550)
+- **R02-F04.** Fayol M; Barrouillet P; Marinthe C. (1998). Predicting arithmetical achievement from neuro-psychological performance: a longitudinal study. Cognition 68(2):B63-B70. [Source](https://doi.org/10.1016/S0010-0277(98)00046-8)
+- **R02-F06.** Alibali MW; DiRusso AA. (1999). The function of gesture in learning to count: More than keeping track. Cognitive Development 14(1):37-56. [Source](https://doi.org/10.1016/S0885-2014(99)80017-3)
+- **R02-I02.** Raghubar KP; Barnes MA; Hecht SA. (2010). Working Memory and Mathematics: A Review of Developmental Individual Difference and Cognitive Approaches. Learning and Individual Differences 20(2):110-122. [Source](https://doi.org/10.1016/j.lindif.2009.10.005)
+- **R02-I03.** Logie RH; Gilhooly KJ; Wynn V. (1994). Counting on working memory in arithmetic problem solving. Memory & Cognition 22:395-410. [Source](https://doi.org/10.3758/BF03200866)
+- **R03-001.** Ni, Y., & Zhou, Y.-D. (2005). Teaching and learning fraction and rational numbers: The origins and implications of whole number bias. Educational Psychologist, 40(1), 27-52. [Source](https://doi.org/10.1207/s15326985ep4001_3)
+- **R03-002.** Siegler, R. S., Thompson, C. A., & Schneider, M. (2011). An integrated theory of whole number and fractions development. Cognitive Psychology, 62(4), 273-296. [Source](https://doi.org/10.1016/j.cogpsych.2011.03.001)
+- **R03-003.** Schneider, M., & Siegler, R. S. (2010). Representations of the magnitudes of fractions. Journal of Experimental Psychology: Human Perception and Performance, 36(5), 1227-1238. [Source](https://doi.org/10.1037/a0018170)
+- **R03-008.** Empson, S. B. (1999). Equal sharing and shared meaning: The development of fraction concepts in a first-grade classroom. Cognition and Instruction, 17(3), 283-342. [Source](https://doi.org/10.1207/S1532690XCI1703_3)
+- **R03-009.** Charalambous, C. Y., & Pitta-Pantazi, D. (2007). Drawing on a theoretical model to study students' understandings of fractions. Educational Studies in Mathematics, 64(3), 293-316. [Source](https://doi.org/10.1007/s10649-006-9036-2)
+- **R03-010.** Cramer, K. A., Post, T. R., & delMas, R. C. (2002). Initial fraction learning by fourth- and fifth-grade students: A comparison of the effects of using commercial curricula with the effects of using the Rational Number Project curriculum. Journal for Research in Mathematics Education, 33(2), 111-144. [Source](https://doi.org/10.2307/749646)
+- **R03-012.** Siegler, R. S., & Lortie-Forgues, H. (2015). Conceptual knowledge of fraction arithmetic. Journal of Educational Psychology, 107(3), 909-918. [Source](https://doi.org/10.1037/edu0000025)

@@ -4,7 +4,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { build } from "../scripts/build.mjs";
 import { ROOT, escapeHtml, parseFrontMatter, renderMarkdown } from "../scripts/lib.mjs";
-import { validateChapter, validateRepository } from "../scripts/validate.mjs";
+import { buildBibliography, serializeSourceLog } from "../scripts/merge-research.mjs";
+import { parseCsv, validateChapter, validateRepository, validateSourceCsv } from "../scripts/validate.mjs";
 
 test("front matter parser preserves body and typed chapter number", () => {
   const parsed = parseFrontMatter("---\nchapter: 3\ntitle: \"Example\"\n---\n# Body");
@@ -26,6 +27,18 @@ test("renderer escapes raw HTML while rendering basic Markdown", () => {
   assert(rendered.includes("&lt;script&gt;"));
   assert(rendered.includes("<strong>bold</strong>"));
   assert.equal(escapeHtml('a&\"b'), "a&amp;&quot;b");
+});
+
+test("research CSV parser handles quoted commas and validates records", () => {
+  const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
+  const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
+  assert.equal(parseCsv(source)[1][3], "Author, A. (2026). Title.");
+  assert.deepEqual(validateSourceCsv(source, "example.csv"), []);
+  const duplicateErrors = validateSourceCsv(source, "duplicate.csv", new Set(["R01-001"]));
+  assert(duplicateErrors.some(error => error.includes("duplicate source_id")));
+  const record = Object.fromEntries(parseCsv(source)[0].map((field, index) => [field, parseCsv(source)[1][index]]));
+  assert.equal(parseCsv(serializeSourceLog([record]))[1][3], "Author, A. (2026). Title.");
+  assert(buildBibliography([record]).includes("Verified for manuscript use"));
 });
 
 test("repository validates and build emits every manifest page", async () => {

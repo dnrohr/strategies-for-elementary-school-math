@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/dev.mjs",
+    "research:merge": "node scripts/merge-research.mjs --consume",
     "validate": "node scripts/validate.mjs",
     "test": "node --test",
     "check": "npm run validate && npm test && npm run build"

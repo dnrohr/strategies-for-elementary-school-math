@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <title>Reusable exact arithmetic diagram primitives</title>
+  <desc>Definitions for accessible, vector-first arithmetic diagrams. Symbols contain geometry only; chapter-specific labels remain selectable text in the layout.</desc>
+  <defs>
+    <pattern id="adjustment-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#D97706" stroke-width="4" />
+    </pattern>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#087E8B" />
+    </marker>
+
+    <symbol id="ten-frame" viewBox="0 0 520 120">
+      <title>Ten-frame with ten equal cells</title>
+      <desc>Two rows of five equal cells, exactly ten cells total.</desc>
+      <rect x="2" y="2" width="516" height="116" rx="8" fill="none" stroke="#2764B8" stroke-width="4" />
+      <path d="M54 2V118 M106 2V118 M158 2V118 M210 2V118 M262 2V118 M314 2V118 M366 2V118 M418 2V118 M470 2V118 M2 60H518" fill="none" stroke="#2764B8" stroke-width="3" />
+    </symbol>
+
+    <symbol id="unit-array-4x5" viewBox="0 0 520 420">
+      <title>Four by five unit array</title>
+      <desc>Twenty equal unit cells arranged in four rows and five columns.</desc>
+      <rect x="2" y="2" width="516" height="416" fill="none" stroke="#2764B8" stroke-width="4" />
+      <path d="M106 2V418 M210 2V418 M314 2V418 M418 2V418 M2 106H518 M2 210H518 M2 314H518" fill="none" stroke="#2764B8" stroke-width="3" />
+    </symbol>
+
+    <symbol id="fraction-bar-12" viewBox="0 0 612 100">
+      <title>Twelve-part fraction bar</title>
+      <desc>Twelve equal vertical units for exact twelfths partitioning.</desc>
+      <rect x="2" y="2" width="608" height="96" rx="6" fill="none" stroke="#7652A8" stroke-width="4" />
+      <path d="M53 2V98 M104 2V98 M155 2V98 M206 2V98 M257 2V98 M308 2V98 M359 2V98 M410 2V98 M461 2V98 M512 2V98 M563 2V98" fill="none" stroke="#7652A8" stroke-width="3" />
+    </symbol>
+
+    <symbol id="number-line-ticks" viewBox="0 0 720 100">
+      <title>Number line with eleven unit intervals</title>
+      <desc>Horizontal number line with twelve equally spaced tick positions.</desc>
+      <path d="M20 50H700" fill="none" stroke="#087E8B" stroke-width="4" marker-end="url(#arrow-teal)" />
+      <path d="M20 34V66 M82 34V66 M144 34V66 M206 34V66 M268 34V66 M330 34V66 M392 34V66 M454 34V66 M516 34V66 M578 34V66 M640 34V66 M700 34V66" fill="none" stroke="#087E8B" stroke-width="3" />
+    </symbol>
+
+    <symbol id="transform-arrow" viewBox="0 0 240 80">
+      <title>Transformation connector</title>
+      <desc>Dotted purple connector ending in a directional arrow.</desc>
+      <path d="M8 40H220" fill="none" stroke="#7652A8" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round" marker-end="url(#arrow-teal)" />
+    </symbol>
+  </defs>
+</svg>

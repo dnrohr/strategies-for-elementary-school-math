@@ -28,7 +28,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
-- `npm run check` passed: validation, 6 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 7 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Representative visual evidence was captured in the coordinator session; persistent screenshot artifacts are still open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
@@ -37,7 +37,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 - Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete; current files are production briefs.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
-- Accessibility and responsive QA needs persistent screenshots under `artifacts/ui/<task-id>/` and keyboard/focus verification.
+- Accessibility and responsive QA needs persistent screenshots under `artifacts/ui/<task-id>/` and narrow-width keyboard/focus verification; desktop focus order has been checked.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
 - Editorial QA for CH01–CH07 found short constructed-account blocks below the 40-word template target; no filler edits were made and the issue is recorded in `qa/reports/editorial_ch00_ch07_audit.md`.

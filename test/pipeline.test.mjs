@@ -39,7 +39,7 @@ test("renderer converts pipe-delimited Markdown tables to semantic HTML", () => 
   const rendered = renderMarkdown("| Route | Format |\n| --- | --- |\n| Count | Spatial |\n| Retrieve | Abstract |");
   assert(rendered.includes("<table>"));
   assert(rendered.includes("<thead>"));
-  assert(rendered.includes("<th>Route</th>"));
+  assert(rendered.includes('<th scope="col">Route</th>'));
   assert(rendered.includes("<td>Spatial</td>"));
   assert(!rendered.includes("| Route | Format |"));
 });

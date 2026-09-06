@@ -14,6 +14,7 @@ Status: `route and structure checks complete; persistent screenshot capture rema
 - Desktop layout metrics for the flagship route showed document width 1265px against a 1280px viewport, with no horizontal overflow in the inspected state.
 - Keyboard focus inspection on the explorer reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order.
 - Semantic tables now have responsive horizontal scrolling within the prose region, with readable borders, header contrast, and wrapping code labels.
+- Table headers now carry `scope="col"` for assistive technology.
 
 ## Open checks
 

@@ -12,7 +12,7 @@ The previously reported CH12 Method 06 arithmetic presentation blocker is resolv
 
 ## Checks run
 
-- `npm run check` — passed: validation, 6 tests, and production build.
+- `npm run check` — passed: validation, 8 tests, and production build.
 - Method-schema scan across CH01–CH14 — passed. Counts: CH08 10, CH09 10, CH10 10, CH11 18, CH12 11, CH13 10, CH14 10; all required method subsections are present.
 - Required level-two sections across the manifest — passed, including CH00 and CH99.
 - Local route smoke test — passed with HTTP 200 for `/`, `/chapters/three-fourths-of-20/`, `/chapters/27-times-46/`, and `/chapters/add-three-fractions/`.

@@ -28,7 +28,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
-- `npm run check` passed: validation, 7 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 8 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.

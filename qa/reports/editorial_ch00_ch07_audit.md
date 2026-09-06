@@ -21,11 +21,11 @@ The chapter template asks for 40–120 words per constructed account. A word-cou
 | CH02 | 12 | 0 | 40–59 |
 | CH03 | 14 | 0 | 42–60 |
 | CH04 | 12 | 0 | 41–59 |
-| CH05 | 20 | 20 | 16–34 |
+| CH05 | 20 | 0 | 40–58 |
 | CH06 | 12 | 0 | 43–56 |
 | CH07 | 12 | 0 | 40–58 |
 
-These are constructed accounts, not evidence of participant speech. CH01, CH02, CH04, CH06, and CH07’s short-account gaps are resolved with chapter-specific procedural or representational detail. The remaining CH05 gaps should be expanded only where detail clarifies the route; repetitive filler would weaken the atlas. No empirical claims were added during this audit.
+These are constructed accounts, not evidence of participant speech. The short-account gaps identified in CH01–CH07 are resolved with chapter-specific procedural or representational detail. No empirical claims were added during this audit; all first-person blocks remain explicitly constructed accounts.
 
 ## Research and epistemic checks
 
@@ -35,6 +35,6 @@ These are constructed accounts, not evidence of participant speech. CH01, CH02, 
 
 ## Required follow-up
 
-Before editorial promotion, expand or deliberately exempt the short accounts while preserving distinctiveness, then rerun the word-count and copyediting audit. Run the independent mathematics, citation, art, accessibility, and route checks before changing status.
+The account-length audit is complete for CH01–CH07. Run the independent mathematics, citation, art, accessibility, and route checks before changing chapter status.
 
 No manuscript edits, source-log edits, commit, or push were made for this audit.

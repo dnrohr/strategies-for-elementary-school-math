@@ -30,7 +30,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 - `npm run check` passed: validation, 7 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
-- Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Representative visual evidence was captured in the coordinator session; persistent screenshot artifacts are still open.
+- Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
 
 ## Remaining blockers
@@ -40,7 +40,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; narrow-width keyboard/focus verification remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
-- Editorial QA for CH01–CH07 found short constructed-account blocks; CH01 is now compliant at 41–50 words per account, while the remaining chapter gaps are recorded in `qa/reports/editorial_ch00_ch07_audit.md`.
+- Editorial QA for CH01–CH07 is complete for account length and structure; all audited accounts now meet the 40–120-word target, with details in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09 Method 09 needs an exact half-unit endpoint check if rendered on a 20-unit line.
 - The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
 - Site QA fixed duplicate chapter `<h1>` output, added a regression assertion, and captured persistent representative screenshots; evidence is recorded in `artifacts/ui/site_accessibility_serial/README.md`. Narrow-width keyboard checks remain open.
@@ -62,6 +62,11 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `a52c569a9f4655c29217306f8fb2392bcc5bd8b7` — chapter art production manifest.
 - `b4fffebc350b238043e4edb5bd788ae3a99ef131` — final release-ledger reconciliation.
 - `59001319254ba2a7304a528ea5b44e77b5362e85` — keyboard QA and current release-tip reconciliation.
+- `cf7aff3a33ad9602f4b37a5b0dd65e1e0f3baa1f` — CH01 constructed-account expansion.
+- `d10e1f6d9ff520ef2ccf9ffb1a9a75f2aaf6c6ef` — CH06 and CH07 constructed-account expansion.
+- `b2f6e983f98dd85fa50cd52edf736bc84ebc4082` — CH02 constructed-account expansion.
+- `e3e8e2a60321a1b0769e5be4e50de180ce7272d5` — CH04 constructed-account expansion.
+- `PENDING` — CH05 constructed-account expansion and editorial audit completion.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 

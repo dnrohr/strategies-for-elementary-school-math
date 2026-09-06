@@ -143,7 +143,7 @@ R01-007 and R01-008 support conceptual/procedural distinction; written procedure
 ## Method 06 — I make a thousand first
 **Strategy class:** benchmark decomposition
 **Phenomenology:** abstract + spatial
-**Math:** `378+596+247 = (378+622)+599 = 1,000+221=1,221`
+**Math:** `378+596+247 = 378+(596+247) = 378+843 = (378+622)+(843−622) = 1,000+221 = 1,221`
 
 ### First-person account
 > “I ask how much 378 needs to reach 1,000: 622. I take 596 and 247 together, which is 843, so after supplying 622, 221 remains. One thousand plus 221 is 1,221.”

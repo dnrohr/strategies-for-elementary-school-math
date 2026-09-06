@@ -66,13 +66,13 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `d10e1f6d9ff520ef2ccf9ffb1a9a75f2aaf6c6ef` — CH06 and CH07 constructed-account expansion.
 - `b2f6e983f98dd85fa50cd52edf736bc84ebc4082` — CH02 constructed-account expansion.
 - `e3e8e2a60321a1b0769e5be4e50de180ce7272d5` — CH04 constructed-account expansion.
-- `PENDING` — CH05 constructed-account expansion and editorial audit completion.
+- `3eb17c3ca571b60527a6b4afb9325db353c0f311` — CH05 constructed-account expansion, editorial audit completion, and release-report reconciliation.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
 
-The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34066751813` for `Publish book explorer` completed with `success` for head SHA `8bcbd89cd2df7e4bf8fa5ca1edc30644d95518df`: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34066751813.
+The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34067587797` for `Publish book explorer` is `in_progress` for head SHA `3eb17c3ca571b60527a6b4afb9325db353c0f311`; the immediately preceding run `34067463428` completed with `success` for head SHA `e3e8e2a60321a1b0769e5be4e50de180ce7272d5`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067587797.
 
 ## Release decision
 

@@ -66,6 +66,11 @@ test("repository validates and build emits every manifest page", async () => {
   assert.deepEqual(await validateRepository(), []);
   await build();
   const manifest = JSON.parse(await fs.readFile(path.join(ROOT, "book", "CHAPTERS.json"), "utf8"));
+  const explorer = await fs.readFile(path.join(ROOT, "_site", "index.html"), "utf8");
+  assert.match(explorer, /class="skip-link"[^>]*href="#content"/);
+  assert.match(explorer, /<label class="search">[\s\S]*<span>Filter chapters<\/span>[\s\S]*<input[^>]+data-chapter-search/);
+  assert.match(explorer, /<button[^>]+aria-label="Switch color theme"/);
+  assert.match(explorer, /href="chapters\/frontmatter\/"/);
   for (const chapter of manifest) {
     const page = await fs.readFile(path.join(ROOT, "_site", "chapters", chapter.slug, "index.html"), "utf8");
     assert(page.includes(chapter.title.replaceAll("&", "&amp;")));

@@ -2,7 +2,7 @@
 
 Task ID: `SITE-A11Y-QA`  
 Audit date: 2026-09-06  
-Status: `route and structure checks complete; persistent screenshot capture remains open`
+Status: `route, structure, responsive screenshot, and desktop keyboard checks complete`
 
 ## Verified
 
@@ -15,10 +15,10 @@ Status: `route and structure checks complete; persistent screenshot capture rema
 - Keyboard focus inspection on the explorer reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order.
 - Semantic tables now have responsive horizontal scrolling within the prose region, with readable borders, header contrast, and wrapping code labels.
 - Table headers now carry `scope="col"` for assistive technology.
+- Persistent headless-Chrome screenshots now verify narrow explorer and back-matter wrapping plus desktop fraction layout; the mobile headline sizing was corrected and rechecked visually.
 
 ## Open checks
 
-- Capture persistent screenshots under `artifacts/ui/<task-id>/` at representative desktop and narrow widths.
 - Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint; the desktop focus sequence is recorded above.
 - Recheck asset loading, figure descriptions, contrast, and overflow after production art is added.
 - Verify the deployed GitHub Pages base path and live workflow result after the final release batch.

@@ -37,13 +37,13 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 - Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete; current files are production briefs.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
-- Accessibility and responsive QA needs persistent screenshots under `artifacts/ui/<task-id>/` and narrow-width keyboard/focus verification; desktop focus order has been checked.
+- Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; narrow-width keyboard/focus verification remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
 - Editorial QA for CH01–CH07 found short constructed-account blocks below the 40-word template target; no filler edits were made and the issue is recorded in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09 Method 09 needs an exact half-unit endpoint check if rendered on a 20-unit line.
 - The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
-- Site QA fixed duplicate chapter `<h1>` output and added a regression assertion; evidence and the persistent-PNG limitation are recorded in `artifacts/ui/site_accessibility_serial/README.md`. Narrow-width keyboard checks remain open.
+- Site QA fixed duplicate chapter `<h1>` output, added a regression assertion, and captured persistent representative screenshots; evidence is recorded in `artifacts/ui/site_accessibility_serial/README.md`. Narrow-width keyboard checks remain open.
 
 ## Worker batch status
 

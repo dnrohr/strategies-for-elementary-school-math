@@ -17,7 +17,7 @@ The chapter template asks for 40–120 words per constructed account. A word-cou
 
 | Chapter | Accounts | Below 40 words | Range |
 | --- | ---: | ---: | ---: |
-| CH01 | 14 | 14 | 28–39 |
+| CH01 | 14 | 0 | 41–50 |
 | CH02 | 12 | 6 | 34–50 |
 | CH03 | 14 | 0 | 42–60 |
 | CH04 | 12 | 12 | 21–39 |
@@ -25,7 +25,7 @@ The chapter template asks for 40–120 words per constructed account. A word-cou
 | CH06 | 12 | 1 | 37–48 |
 | CH07 | 12 | 3 | 38–52 |
 
-These are constructed accounts, not evidence of participant speech. They should be expanded with chapter-specific sensory or procedural detail only where it clarifies the route; repetitive filler would weaken the atlas. No empirical claims were added during this audit.
+These are constructed accounts, not evidence of participant speech. CH01’s short-account gap is resolved with chapter-specific procedural or representational detail. The remaining short blocks should be expanded only where detail clarifies the route; repetitive filler would weaken the atlas. No empirical claims were added during this audit.
 
 ## Research and epistemic checks
 

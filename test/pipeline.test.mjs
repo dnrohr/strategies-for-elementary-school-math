@@ -21,6 +21,12 @@ test("chapter validator reports schema drift", () => {
   assert(errors.some(error => error.includes("missing section")));
 });
 
+test("chapter validator enforces the method schema when methods are present", () => {
+  const parsed = { data: { chapter: 1, slug: "one", title: "One", part: "I", status: "draft", strategy_target: "12" }, body: "## Opening spread\n## Strategy gallery\n## Cross-classification\n## Research notes\n## Chapter QA\n## Method 01\n### First-person account\n### Steps\n### Illustration brief\n### Mathematical note\n### Research note\n### Tags" };
+  assert.deepEqual(validateChapter({ chapter: 1, slug: "one" }, parsed), []);
+  assert(validateChapter({ chapter: 1, slug: "one" }, { ...parsed, body: parsed.body.replace("### Tags", "") }).some(error => error.includes("method schema")));
+});
+
 test("renderer escapes raw HTML while rendering basic Markdown", () => {
   const rendered = renderMarkdown("## Safe\n\n<script>alert(1)</script> and **bold**");
   assert(!rendered.includes("<script>"));

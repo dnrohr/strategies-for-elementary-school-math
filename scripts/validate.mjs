@@ -56,6 +56,13 @@ export function validateChapter(entry, parsed) {
   if (parsed.data.slug !== entry.slug) errors.push(`slug must match manifest (${entry.slug})`);
   if (!VALID_STATUSES.has(parsed.data.status)) errors.push(`invalid status ${parsed.data.status}`);
   for (const section of REQUIRED_SECTIONS) if (!parsed.body.includes(`## ${section}`)) errors.push(`missing section ${section}`);
+  const methods = (parsed.body.match(/^## Method \d+/gm) || []).length;
+  if (methods) {
+    for (const subsection of ["First-person account", "Steps", "Illustration brief", "Mathematical note", "Research note", "Tags"]) {
+      const count = (parsed.body.match(new RegExp(`^### ${subsection}$`, "gm")) || []).length;
+      if (count !== methods) errors.push(`method schema: expected ${methods} ${subsection} sections, found ${count}`);
+    }
+  }
   return errors;
 }
 

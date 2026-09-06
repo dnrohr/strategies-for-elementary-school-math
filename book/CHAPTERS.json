@@ -1,0 +1,18 @@
+[
+  {"chapter":0,"task":"CH00","slug":"frontmatter","file":"00_frontmatter.md","title":"One answer, many minds","part":"Front matter","strategyTarget":"n/a"},
+  {"chapter":1,"task":"CH01","slug":"7-plus-5","file":"01_7_plus_5.md","title":"7 + 5 = ?","part":"I — Number","strategyTarget":"12-18"},
+  {"chapter":2,"task":"CH02","slug":"15-minus-8","file":"02_15_minus_8.md","title":"15 − 8 = ?","part":"I — Number","strategyTarget":"12-18"},
+  {"chapter":3,"task":"CH03","slug":"37-plus-48","file":"03_37_plus_48.md","title":"37 + 48 = ?","part":"I — Number","strategyTarget":"12-18"},
+  {"chapter":4,"task":"CH04","slug":"72-minus-39","file":"04_72_minus_39.md","title":"72 − 39 = ?","part":"I — Number","strategyTarget":"12-18"},
+  {"chapter":5,"task":"CH05","slug":"11-times-12","file":"05_11_times_12.md","title":"11 × 12 = ?","part":"II — Groups, multiplication, division, space","strategyTarget":"18-25"},
+  {"chapter":6,"task":"CH06","slug":"24-divided-by-6","file":"06_24_div_6.md","title":"24 ÷ 6 = ?","part":"II — Groups, multiplication, division, space","strategyTarget":"10-16"},
+  {"chapter":7,"task":"CH07","slug":"area-7-by-9","file":"07_area_7x9.md","title":"A 7 × 9 rectangle","part":"II — Groups, multiplication, division, space","strategyTarget":"10-16"},
+  {"chapter":8,"task":"CH08","slug":"three-fourths-of-20","file":"08_three_fourths_of_20.md","title":"3/4 of 20 = ?","part":"III — Fractions, parts, proportions","strategyTarget":"10-16"},
+  {"chapter":9,"task":"CH09","slug":"compare-three-fifths-five-eighths","file":"09_compare_fractions.md","title":"Which is larger: 3/5 or 5/8?","part":"III — Fractions, parts, proportions","strategyTarget":"10-16"},
+  {"chapter":10,"task":"CH10","slug":"23-shared-by-5","file":"10_23_shared_by_5.md","title":"23 candies shared among 5 children","part":"III — Fractions, parts, proportions","strategyTarget":"10-16"},
+  {"chapter":11,"task":"CH11","slug":"27-times-46","file":"11_27_times_46.md","title":"27 × 46 = ?","part":"IV — Coordinating transformations","strategyTarget":"18-25"},
+  {"chapter":12,"task":"CH12","slug":"three-addends","file":"12_three_addends.md","title":"378 + 596 + 247 = ?","part":"IV — Coordinating transformations","strategyTarget":"10-16"},
+  {"chapter":13,"task":"CH13","slug":"add-two-thirds-five-eighths","file":"13_add_2_3_and_5_8.md","title":"2/3 + 5/8 = ?","part":"IV — Coordinating transformations","strategyTarget":"10-16"},
+  {"chapter":14,"task":"CH14","slug":"add-three-fractions","file":"14_three_fractions.md","title":"3/4 + 2/3 + 5/12 = ?","part":"IV — Coordinating transformations","strategyTarget":"10-16"},
+  {"chapter":99,"task":"CH99","slug":"notes-bibliography","file":"99_notes_bibliography.md","title":"Notes and bibliography","part":"Back matter","strategyTarget":"n/a"}
+]

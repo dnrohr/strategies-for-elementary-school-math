@@ -1,0 +1,17 @@
+{
+  "name": "how-we-think-about-arithmetic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Production workspace and static explorer for How We Think About Arithmetic",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test",
+    "check": "npm run validate && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

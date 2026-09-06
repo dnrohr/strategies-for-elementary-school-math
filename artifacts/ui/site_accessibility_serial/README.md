@@ -10,5 +10,6 @@ The coordinator inspected the rendered explorer, flagship chapter, fraction chap
 - `backmatter-narrow.png` — 500px narrow CH99; verifies back-matter title wrapping and content flow.
 - `ch09-fraction-comparison.png` — 1200×800 rendered SVG; verifies exact 40ths comparison and the 12.5/20 half-unit endpoint.
 - `ch05-eleven-by-twelve.png` — 1200×800 rendered SVG; verifies an exact 11×12 array and the 110 + 22 distributive split.
+- `ch07-area-seven-by-nine.png` — 1200×800 rendered SVG; verifies exactly 63 unit squares and the 35 + 28 area partition.
 
 DOM inspection verified one `h1`, semantic tables, skip navigation, labeled controls, and no horizontal overflow in the inspected desktop state. Desktop keyboard focus reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order. Narrow keyboard interaction and final art-asset review remain open.

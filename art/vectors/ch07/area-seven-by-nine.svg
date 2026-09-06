@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">A seven by nine rectangle has area 63</title>
+  <desc id="desc">A rectangle contains exactly seven rows and nine columns of unit squares, for 63 square units. A partition after five columns shows 7 times 5 equals 35 and 7 times 4 equals 28; together they equal 63.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 30px; }
+    .math { font-size: 38px; font-weight: 700; }
+    .small { font-size: 22px; }
+  </style>
+  <defs>
+    <rect id="unit" width="48" height="48" rx="3"/>
+  </defs>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="72" class="ink math">7 × 9 = 63 square units</text>
+  <text x="68" y="112" class="muted small">Area counts the unit squares covering the rectangle.</text>
+  <rect x="68" y="152" width="650" height="510" rx="16" class="panel"/>
+  <text x="92" y="194" class="ink label">7 rows × 9 columns</text>
+  <g aria-label="Exactly 63 unit squares">
+    <use href="#unit" class="orange" x="160" y="236"/><use href="#unit" class="orange" x="210" y="236"/><use href="#unit" class="orange" x="260" y="236"/><use href="#unit" class="orange" x="310" y="236"/><use href="#unit" class="orange" x="360" y="236"/><use href="#unit" class="green" x="410" y="236"/><use href="#unit" class="green" x="460" y="236"/><use href="#unit" class="green" x="510" y="236"/><use href="#unit" class="green" x="560" y="236"/>
+    <use href="#unit" class="orange" x="160" y="286"/><use href="#unit" class="orange" x="210" y="286"/><use href="#unit" class="orange" x="260" y="286"/><use href="#unit" class="orange" x="310" y="286"/><use href="#unit" class="orange" x="360" y="286"/><use href="#unit" class="green" x="410" y="286"/><use href="#unit" class="green" x="460" y="286"/><use href="#unit" class="green" x="510" y="286"/><use href="#unit" class="green" x="560" y="286"/>
+    <use href="#unit" class="orange" x="160" y="336"/><use href="#unit" class="orange" x="210" y="336"/><use href="#unit" class="orange" x="260" y="336"/><use href="#unit" class="orange" x="310" y="336"/><use href="#unit" class="orange" x="360" y="336"/><use href="#unit" class="green" x="410" y="336"/><use href="#unit" class="green" x="460" y="336"/><use href="#unit" class="green" x="510" y="336"/><use href="#unit" class="green" x="560" y="336"/>
+    <use href="#unit" class="orange" x="160" y="386"/><use href="#unit" class="orange" x="210" y="386"/><use href="#unit" class="orange" x="260" y="386"/><use href="#unit" class="orange" x="310" y="386"/><use href="#unit" class="orange" x="360" y="386"/><use href="#unit" class="green" x="410" y="386"/><use href="#unit" class="green" x="460" y="386"/><use href="#unit" class="green" x="510" y="386"/><use href="#unit" class="green" x="560" y="386"/>
+    <use href="#unit" class="orange" x="160" y="436"/><use href="#unit" class="orange" x="210" y="436"/><use href="#unit" class="orange" x="260" y="436"/><use href="#unit" class="orange" x="310" y="436"/><use href="#unit" class="orange" x="360" y="436"/><use href="#unit" class="green" x="410" y="436"/><use href="#unit" class="green" x="460" y="436"/><use href="#unit" class="green" x="510" y="436"/><use href="#unit" class="green" x="560" y="436"/>
+    <use href="#unit" class="orange" x="160" y="486"/><use href="#unit" class="orange" x="210" y="486"/><use href="#unit" class="orange" x="260" y="486"/><use href="#unit" class="orange" x="310" y="486"/><use href="#unit" class="orange" x="360" y="486"/><use href="#unit" class="green" x="410" y="486"/><use href="#unit" class="green" x="460" y="486"/><use href="#unit" class="green" x="510" y="486"/><use href="#unit" class="green" x="560" y="486"/>
+    <use href="#unit" class="orange" x="160" y="536"/><use href="#unit" class="orange" x="210" y="536"/><use href="#unit" class="orange" x="260" y="536"/><use href="#unit" class="orange" x="310" y="536"/><use href="#unit" class="orange" x="360" y="536"/><use href="#unit" class="green" x="410" y="536"/><use href="#unit" class="green" x="460" y="536"/><use href="#unit" class="green" x="510" y="536"/><use href="#unit" class="green" x="560" y="536"/>
+  </g>
+  <text x="92" y="612" class="ink label">5 columns: 35 · 4 columns: 28 · total: 63</text>
+  <rect x="770" y="152" width="362" height="510" rx="16" class="panel"/>
+  <text x="794" y="202" class="ink label">Partition after 5</text>
+  <text x="794" y="280" class="ink label">7 × 5 = 35</text>
+  <text x="794" y="340" class="ink label">7 × 4 = 28</text>
+  <path d="M794 374h276" stroke="#24312d" stroke-width="2"/>
+  <text x="794" y="430" class="ink label">35 + 28 = 63</text>
+  <text x="794" y="510" class="muted small">The partition changes</text>
+  <text x="794" y="544" class="muted small">the route, not the area.</text>
+</svg>

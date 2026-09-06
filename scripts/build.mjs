@@ -41,7 +41,8 @@ export async function build() {
     const prev = chapters[index - 1];
     const next = chapters[index + 1];
     const nav = `<nav class="chapter-nav" aria-label="Chapter navigation">${prev ? `<a href="../${prev.slug}/">← ${escapeHtml(prev.title)}</a>` : "<span></span>"}${next ? `<a href="../${next.slug}/">${escapeHtml(next.title)} →</a>` : ""}</nav>`;
-    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header><div class="prose">${renderMarkdown(chapter.body)}</div>${nav}</article>`;
+    const manuscriptBody = chapter.body.replace(/^#\s+.+(?:\r?\n)+/, "");
+    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header><div class="prose">${renderMarkdown(manuscriptBody)}</div>${nav}</article>`;
     await writeFileEnsured(path.join(OUTPUT, "chapters", chapter.slug, "index.html"), pageShell({ title: chapter.title, root: "../../", content, description: `${chapter.title}, a chapter in How We Think About Arithmetic.` }));
   }
 

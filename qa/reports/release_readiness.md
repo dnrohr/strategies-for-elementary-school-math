@@ -60,8 +60,9 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `6d41381c25e4d3531cf7bf9e6660c649efe73269` — duplicate-heading fix and site QA audit.
 - `e81f8b3137fdd4549785a5ac2f80f81afd44f675` — deployment and screenshot-evidence documentation.
 - `a52c569a9f4655c29217306f8fb2392bcc5bd8b7` — chapter art production manifest.
+- `b4fffebc350b238043e4edb5bd788ae3a99ef131` — final release-ledger reconciliation.
 
-All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `a52c569a9f4655c29217306f8fb2392bcc5bd8b7`.
+All listed hashes were verified against `origin/main` at the time of their respective pushes; the current remote tip is `b4fffebc350b238043e4edb5bd788ae3a99ef131`.
 
 ## GitHub Pages deployment
 

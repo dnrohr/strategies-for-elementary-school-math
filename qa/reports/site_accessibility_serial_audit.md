@@ -12,11 +12,12 @@ Status: `route and structure checks complete; persistent screenshot capture rema
 - Cross-classification Markdown tables now render as semantic tables with table headers and cells.
 - Current generated pages contain no `<img>` elements, so there are no missing image `alt` attributes in the current build. Final art assets will require a new accessibility pass when introduced.
 - Desktop layout metrics for the flagship route showed document width 1265px against a 1280px viewport, with no horizontal overflow in the inspected state.
+- Keyboard focus inspection on the explorer reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order.
 
 ## Open checks
 
 - Capture persistent screenshots under `artifacts/ui/<task-id>/` at representative desktop and narrow widths.
-- Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint.
+- Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint; the desktop focus sequence is recorded above.
 - Recheck asset loading, figure descriptions, contrast, and overflow after production art is added.
 - Verify the deployed GitHub Pages base path and live workflow result after the final release batch.
 

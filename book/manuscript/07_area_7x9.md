@@ -68,7 +68,7 @@ Constructed account. Screened R01-011 may support only cautious discussion of mo
 **Phenomenology:** visual-spatial + verbal
 
 ### First-person account
-> A solver might describe the experience this way: “I see seven horizontal rows. Each row has nine squares, so I say nine seven times: 9, 18, 27, 36, 45, 54, 63. The rows matter more than individual squares.”
+> A solver might describe the experience this way: “I see seven horizontal rows. Each row has nine squares, so I say nine seven times: 9, 18, 27, 36, 45, 54, 63. The rows matter more than individual squares. I can mark one endpoint per row on a repeated-addition strip to keep the structure visible.”
 
 ### Steps
 1. Identify 7 equal horizontal rows.
@@ -188,7 +188,7 @@ Constructed account. Verified R01-002 supports strategy variation; tactile “ti
 **Phenomenology:** visual-concrete + motor
 
 ### First-person account
-> A solver might describe the experience this way: “I imagine laying square tiles. I make one row of nine, then place seven rows. The finished patch is a rectangle. The area feels like the covered surface: 63 tiles.”
+> A solver might describe the experience this way: “I imagine laying square tiles. I make one row of nine, then place seven rows. The finished patch is a rectangle. The area feels like the covered surface: 63 tiles. I check that the rows touch edge to edge, because gaps would change the covered surface and the count.”
 
 ### Steps
 1. Lay out 9 unit tiles in one row.

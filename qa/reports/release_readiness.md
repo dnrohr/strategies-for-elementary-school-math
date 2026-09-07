@@ -58,6 +58,7 @@ After this batch is committed and pushed, the exact next lane is `ART-CH01-METHO
 
 ## Commits
 
+- `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb` — CH08 method-level visual gallery, method-aware renderer, exactness tests, and responsive evidence.
 - `ee5261f0462c5181130eb37082318a959b6f5235` — coordinator update marking the resolved CH12 audit blocker.
 - `90bf26654fe2a75c396ca8e07faaa529999b34ec` — initial release-readiness report.
 - `65331f0468c9628d8e0b7923168a4eb6fd1ff4f9` — exact visual primitives and accessibility ledger.
@@ -97,6 +98,8 @@ After this batch is committed and pushed, the exact next lane is `ART-CH01-METHO
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34075943244` for `Publish book explorer` completed successfully for CH08 method-art head SHA `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb`; both build and deploy jobs passed. The live CH08 route returned HTTP 200 with all ten ordered `data-method-figure="08-NN"` figures, and the corrected Method 09 SVG returned HTTP 200 with the exact proportion equation. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34075943244. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/three-fourths-of-20/.
 
 GitHub Actions run `34070909227` for `Publish book explorer` completed successfully for substantive release-batch head SHA `1015475393857eb24faca943ced74707171e1f65`; both build and deploy jobs passed. The published CH09 and CH99 routes then returned HTTP 200 and contained the updated R03-012 verification and 24-verified-source inventory text. The workflow emitted a non-failing Node.js 20 deprecation annotation for GitHub-maintained setup/pages actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34070909227.
 

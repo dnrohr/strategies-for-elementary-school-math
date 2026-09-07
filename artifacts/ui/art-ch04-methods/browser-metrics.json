@@ -1,0 +1,158 @@
+{
+  "desktop": {
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "methodFigures": [
+      {
+        "key": "04-01",
+        "loaded": true,
+        "altLength": 173,
+        "width": 720
+      },
+      {
+        "key": "04-02",
+        "loaded": true,
+        "altLength": 214,
+        "width": 720
+      },
+      {
+        "key": "04-03",
+        "loaded": true,
+        "altLength": 212,
+        "width": 720
+      },
+      {
+        "key": "04-04",
+        "loaded": true,
+        "altLength": 177,
+        "width": 720
+      },
+      {
+        "key": "04-05",
+        "loaded": true,
+        "altLength": 213,
+        "width": 720
+      },
+      {
+        "key": "04-06",
+        "loaded": true,
+        "altLength": 171,
+        "width": 720
+      },
+      {
+        "key": "04-07",
+        "loaded": true,
+        "altLength": 236,
+        "width": 720
+      },
+      {
+        "key": "04-08",
+        "loaded": true,
+        "altLength": 200,
+        "width": 720
+      },
+      {
+        "key": "04-09",
+        "loaded": true,
+        "altLength": 186,
+        "width": 720
+      },
+      {
+        "key": "04-10",
+        "loaded": true,
+        "altLength": 206,
+        "width": 720
+      },
+      {
+        "key": "04-11",
+        "loaded": true,
+        "altLength": 203,
+        "width": 720
+      },
+      {
+        "key": "04-12",
+        "loaded": true,
+        "altLength": 233,
+        "width": 720
+      }
+    ]
+  },
+  "narrow": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "methodFigures": [
+      {
+        "key": "04-01",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-02",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-03",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-04",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-05",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-06",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-07",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-08",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-09",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-10",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-11",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "04-12",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      }
+    ]
+  }
+}

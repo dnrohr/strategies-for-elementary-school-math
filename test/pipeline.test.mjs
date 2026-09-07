@@ -251,6 +251,48 @@ test("CH03 has exact vector art for all fourteen methods", async () => {
   assert.equal((afterCoins.match(/<circle\b/g) || []).length, 13);
 });
 
+test("CH04 has exact vector art for all twelve methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch04");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch04_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 12);
+  assert.deepEqual(assets.map(file => file.match(/^ch04_m(\d{2})_/)[1]), ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]);
+  for (const file of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+    for (const value of ["72", "39", "33"]) assert(svg.includes(value), `${file} must include ${value}`);
+  }
+
+  const compensation = await fs.readFile(path.join(vectorDir, "ch04_m02_subtract-forty-repair-one.svg"), "utf8");
+  for (const label of ["−40", "+1", "32", "33", "72 − 40 + 1 = 33"]) assert(compensation.includes(label));
+  const distance = await fs.readFile(path.join(vectorDir, "ch04_m03_measure-the-gap.svg"), "utf8");
+  for (const label of ["+1", "+30", "+2", "distance = 1 + 30 + 2 = 33"]) assert(distance.includes(label));
+
+  const backJumps = await fs.readFile(path.join(vectorDir, "ch04_m06_jump-back-thirty-nine.svg"), "utf8");
+  assert.equal((backJumps.match(/>−(?:30|9)<\/text>/g) || []).length, 2);
+  const blocks = await fs.readFile(path.join(vectorDir, "ch04_m07_unbundle-base-ten.svg"), "utf8");
+  const classCount = (className) => {
+    const group = (blocks.match(new RegExp(`<g class="${className}"[\\s\\S]*?<\\/g>`)) || [""])[0];
+    return (group.match(/<rect\b/g) || []).length;
+  };
+  assert.equal(classCount("before-seven-rods"), 7);
+  assert.equal(classCount("before-two-cubes"), 2);
+  assert.equal(classCount("regroup-six-rods"), 6);
+  assert.equal(classCount("regroup-twelve-cubes"), 12);
+  assert.equal(classCount("after-three-rods"), 3);
+  assert.equal(classCount("after-three-cubes"), 3);
+
+  const change = await fs.readFile(path.join(vectorDir, "ch04_m08_make-change.svg"), "utf8");
+  const dimes = (change.match(/<g class="three-dimes"[\s\S]*?<\/g>/) || [""])[0];
+  const pennies = (change.match(/<g class="three-pennies"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((dimes.match(/<circle\b/g) || []).length, 3);
+  assert.equal((pennies.match(/<circle\b/g) || []).length, 3);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -288,7 +330,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [8, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [8, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));

@@ -68,6 +68,7 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `d83ce45fb9e9f1b598ff2fd4185d2bb875cd768b` — CH05 method-level gallery, two generated-hand composites, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `aa15cf344e49b6ffc7bd8a0868f77dd74a2225ad` — CH04 method-level vector gallery, exactness tests, rebuilt base-ten model, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `c0f062c4e03b3facbc734e4adadc712f7a2f2209` — CH03 method-level vector gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `b13d27275f4afa8f58c0c26969c29c8274b0c7e2` — CH02 method-level visual gallery, two generated-hand composites, exactness tests, chapter QA reconciliation, and responsive evidence.
@@ -112,6 +113,10 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34145259443` for `Publish book explorer` completed successfully for CH05 method-art head SHA `d83ce45fb9e9f1b598ff2fd4185d2bb875cd768b`; both build and deploy jobs passed. The live CH05 route returned HTTP 200 with all twenty ordered `data-method-figure="05-NN"` figures. Both generated-hand composite SVGs returned HTTP 200 with embedded PNG data URLs, and their standalone 2,164,811-byte and 2,141,431-byte provenance rasters returned HTTP 200. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34145259443. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/11-times-12/.
+
+The CH04 evidence-reconciliation head `3efcd3a0678a1b6c8a5949a8c186ccb7d5c211c7` deployed successfully in GitHub Actions run `34120240881`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34120240881.
 
 GitHub Actions run `34120087625` for `Publish book explorer` completed successfully for CH04 method-art head SHA `aa15cf344e49b6ffc7bd8a0868f77dd74a2225ad`; both build and deploy jobs passed. The live CH04 route returned HTTP 200 with all twelve ordered `data-method-figure="04-NN"` figures. The rebuilt Method 07 SVG returned HTTP 200 and contained the tested 7-rod, 12-cube regroup, and final 3-rod/3-cube groups. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34120087625. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/72-minus-39/.
 

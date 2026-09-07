@@ -74,6 +74,7 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `0ae50fc233d4b8dcb31d46925e0c43f73ab8b4a7` — CH09 vector-only fraction-comparison gallery, exactness tests, corrected cross-product/decimal layouts, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `2a4776119d38042557a92179d0609a659a59c912` — CH07 method-level gallery, generated-hand composite, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `5807f4d49e81ced6bd69bc94ee8d4c94c68cb5e1` — CH06 method-level gallery, generated-hand composite, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `d83ce45fb9e9f1b598ff2fd4185d2bb875cd768b` — CH05 method-level gallery, two generated-hand composites, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
@@ -121,6 +122,8 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34166679238` for `Publish book explorer` completed successfully for CH09 method-art head SHA `0ae50fc233d4b8dcb31d46925e0c43f73ab8b4a7`; both build and deploy jobs passed. The live CH09 route returned HTTP 200 with all ten ordered `data-method-figure="09-NN"` figures. The exact Method 09 SVG returned HTTP 200 and retained `12.5/20`, separate start/end half-cell boundaries, and the explicit warning that the endpoint is not 13 full units. The only annotation was the existing non-failing Node.js 20 deprecation warning for GitHub-maintained actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34166679238. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/compare-three-fifths-five-eighths/.
 
 GitHub Actions run `34164594598` for `Publish book explorer` completed successfully for CH07 method-art head SHA `2a4776119d38042557a92179d0609a659a59c912`; both build and deploy jobs passed. The live CH07 route returned HTTP 200 with all twelve ordered `data-method-figure="07-NN"` figures. The generated-hand composite SVG returned HTTP 200 with an embedded PNG data URL, and its standalone 2,313,463-byte provenance raster returned HTTP 200. The only annotation was the existing non-failing Node.js 20 deprecation warning for GitHub-maintained actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34164594598. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/area-7-by-9/.
 

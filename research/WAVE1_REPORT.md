@@ -10,8 +10,8 @@ Wave 1 established a claim-level evidence base for the book's three major resear
 | --- | --- | ---: | ---: | ---: |
 | R01 | Arithmetic strategies and conceptual/procedural development | 7 | 7 | 14 |
 | R02 | Fingers, embodiment, imagery, inner speech, and working memory | 9 | 5 | 14 |
-| R03 | Fraction concepts, magnitude, representations, and arithmetic | 7 | 7 | 14 |
-| **Total** |  | **23** | **19** | **42** |
+| R03 | Fraction concepts, magnitude, representations, and arithmetic | 8 | 6 | 14 |
+| **Total** |  | **24** | **18** | **42** |
 
 Only verified records are ready to support final manuscript claims. Screened records have checked bibliographic metadata and abstracts or authoritative records but still require direct full-text inspection.
 
@@ -20,6 +20,7 @@ Only verified records are ready to support final manuscript claims. Screened rec
 - Cross-lane peer review checked citation/status consistency, DOI/title/year pairs, evidence overreach, and phenomenology claims.
 - R01 removed full-text-style locators from eight screened records and marked every affected finding pending confirmation.
 - Coordinator follow-up inspected the complete PMCID PMC3392437 manuscript and upgraded R01-003 after checking participants, strategy coding, results, and discussion.
+- Coordinator follow-up inspected the complete R03-012 author copy and appended correction, then upgraded the record after checking all three studies, tasks, results, discussion, limitations, and corrected Table 1 values.
 - R02 corrected a scoping-review count and clarified that finger-related fMRI regions were defined using Neurosynth meta-analytic maps rather than participant-specific localizers.
 - Coordinator review prompted the conservative downgrade of seven R03 records whose full articles were not directly inspected and narrowed five screened R02 locators to the abstracts actually checked.
 - All 42 DOI URLs resolved to a destination during automated checking; 23 returned content and 19 publisher destinations denied automated access. None returned a missing-link response.
@@ -36,7 +37,7 @@ Only verified records are ready to support final manuscript claims. Screened rec
 
 ## Remaining research priorities
 
-1. Inspect the 19 screened full texts before their claims enter final chapters.
+1. Inspect the 18 screened full texts before their claims enter final chapters.
 2. Add direct evidence about spontaneous make-ten use and multidigit compensation/decomposition.
 3. Seek child interviews or experience-sampling work that studies arithmetic phenomenology without treating introspection as transparent.
 4. Review finger-strategy training and transfer before making instructional recommendations.
@@ -44,4 +45,4 @@ Only verified records are ready to support final manuscript claims. Screened rec
 
 ## Production readiness
 
-Chapter agents may use the 23 verified records now, with the caveats in each topic note. They may treat screened records only as leads. Any first-person account remains a constructed representative account unless explicitly identified and sourced otherwise.
+Chapter agents may use the 24 verified records now, with the caveats in each topic note. They may treat screened records only as leads. Any first-person account remains a constructed representative account unless explicitly identified and sourced otherwise.

@@ -96,7 +96,7 @@ Fraction pair with crossing arrows and exact products; explain the arrows as com
 ### Mathematical note
 These products compare the two numerators after expressing both over 40.
 ### Research note
-Valid procedure does not alone demonstrate magnitude understanding; R03-012 is screened.
+Valid procedure does not alone demonstrate conceptual understanding; R03-012 is verified for direction-of-effect judgments in its sampled groups.
 ### Tags
 `cross-product`, `algorithm`, `symbolic`
 
@@ -195,7 +195,7 @@ Magnitude, benchmark gaps, and common units can yield the same conclusion. Repre
 
 ## Research notes
 
-Verified anchors: R03-004 and R03-005–R03-007. Screened leads: R03-001–R03-003, R03-009–R03-010, and R03-012. “Whole-number bias” is an umbrella description with competing explanations, not a fixed trait. Accounts here are constructed.
+Verified anchors: R03-004, R03-005–R03-007, and R03-012. Screened leads: R03-001–R03-003 and R03-009–R03-010. “Whole-number bias” is an umbrella description with competing explanations, not a fixed trait. Accounts here are constructed.
 
 ## Chapter QA
 

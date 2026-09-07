@@ -46,13 +46,13 @@ research leads, not support for stronger final prose.
 
 | Chapter | Problem | Verified source IDs used | Screened leads (not settled evidence) |
 | --- | --- | --- | --- |
-| CH08 | `3/4 of 20` | R03-004, R03-005, R03-006, R03-007 | R03-001, R03-002, R03-008, R03-009, R03-010, R03-012 |
-| CH09 | `3/5` versus `5/8` | R03-004, R03-005, R03-006, R03-007 | R03-001, R03-002, R03-003, R03-009, R03-010, R03-012 |
-| CH10 | 23 shared among 5 | none chapter-specific | R03-008, R03-009, R03-012 |
+| CH08 | `3/4 of 20` | R03-004, R03-005, R03-006, R03-007, R03-012 | R03-001, R03-002, R03-008, R03-009, R03-010 |
+| CH09 | `3/5` versus `5/8` | R03-004, R03-005, R03-006, R03-007, R03-012 | R03-001, R03-002, R03-003, R03-009, R03-010 |
+| CH10 | 23 shared among 5 | R03-012 | R03-008, R03-009 |
 | CH11 | `27 × 46` | R01-002, R01-007, R01-008, R01-013, R02-I04, R02-I05, R02-I07 | R01-011 |
 | CH12 | `378 + 596 + 247` | R01-007, R01-008, R01-010, R02-I04, R02-I05, R02-I07 | R01-005 |
-| CH13 | `2/3 + 5/8` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-013, R03-014 | R03-001, R03-009, R03-010, R03-012 |
-| CH14 | `3/4 + 2/3 + 5/12` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-013, R03-014 | R03-001, R03-012 |
+| CH13 | `2/3 + 5/8` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 | R03-001, R03-009, R03-010 |
+| CH14 | `3/4 + 2/3 + 5/12` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 | R03-001 |
 
 The map is an editorial audit, not a claim that every source applies equally
 to every method. A verified paper may support a narrow claim about magnitude,
@@ -77,8 +77,8 @@ Not applicable.
 
 ### Evidence inventory
 
-The Wave 1 ledger contains **42 non-duplicate records**: **23 verified** and
-**19 screened**. Screened records have stable metadata and authoritative
+The Wave 1 ledger contains **42 non-duplicate records**: **24 verified** and
+**18 screened**. Screened records have stable metadata and authoritative
 abstract or record checks, but require direct full-text review before their
 claims can be promoted. The current working bibliography separates these
 groups explicitly.

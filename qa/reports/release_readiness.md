@@ -39,7 +39,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Automated asset QA now verifies every CH00–CH14 SVG has a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no embedded raster image; broad rendered contrast and final per-method visual sign-off remain open.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; generated CH00–CH14 pages load one canonical SVG each with non-empty alt text. The published CH05 route was visually checked at the app's narrow viewport with the figure and caption contained in the content column; narrow keyboard focus and theme-toggle behavior were also verified there. Broader per-page interaction coverage remains open while desktop focus order is complete.
-- Citation QA remains open for screened records; R01-003 is now verified after full-text review, and CH99 records 19 screened items requiring inspection before stronger claims or final promotion.
+- Citation QA remains open for screened records; R01-003 and R03-012 are now verified after full-text review, and CH99 records 18 screened items requiring inspection before stronger claims or final promotion.
 - Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
 - Editorial QA for CH01–CH07 is complete for account length and structure; all audited accounts now meet the 40–120-word target, with details in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09’s exact half-unit endpoint is now protected by a regression test; final rendered-art inspection must still confirm the visual asset uses 12.5 twentieths rather than 13 full units.
@@ -85,6 +85,7 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `51302be` — published CH05 narrow-viewport figure and caption verification recorded.
 - `3796c3b` — narrow keyboard focus and theme-toggle verification recorded.
 - `2913062` — accessibility evidence and live-deployment notes reconciled.
+- `0df92cd` — R01-003 full-text verification and source-status consistency test.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 

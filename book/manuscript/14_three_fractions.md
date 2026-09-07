@@ -130,7 +130,7 @@ Use a vector equation layout with alignment guides and a note explaining why den
 ### Mathematical note
 Numerators can be added only after unit sizes match.
 ### Research note
-Procedural fluency is not treated as conceptual proof; see verified R03-011 and screened R03-012.
+Procedural fluency is not treated as conceptual proof; see verified R03-011 and R03-012.
 ### Tags
 `algorithm`, `written`, `unit-alignment`
 
@@ -197,8 +197,8 @@ The same algorithm can be spoken, written, tiled, walked, or experienced as a re
 
 ## Research notes
 
-- **Verified anchors:** R03-004, R03-005, R03-006, R03-011, R03-013, and R03-014.
-- **Screened leads:** R03-001, R03-002, R03-003, R03-008, R03-009, R03-010, and R03-012 remain leads pending full-text checks.
+- **Verified anchors:** R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, and R03-014.
+- **Screened leads:** R03-001, R03-002, R03-003, R03-008, R03-009, and R03-010 remain leads pending full-text checks.
 - First-person accounts are constructed examples, not participant quotations or fixed modality categories.
 
 ## Chapter QA

@@ -198,7 +198,7 @@ The same computation can be objects, a bar, spoken units, or a compressed relati
 
 ## Research notes
 
-R03-004 is verified for associations among fraction magnitude knowledge, division, and fraction arithmetic in its sample. R03-005–R03-007 are verified interventions bounded to their tasks and durations. R03-001, R03-002, R03-008, R03-009, R03-010, and R03-012 are screened leads pending full text. No source supports fixed modality or learning-style categories.
+R03-004 is verified for associations among fraction magnitude knowledge, division, and fraction arithmetic in its sample. R03-005–R03-007 are verified interventions bounded to their tasks and durations. Verified R03-012 supports a bounded distinction between procedural accuracy and direction-of-effect knowledge. R03-001, R03-002, R03-008, R03-009, and R03-010 are screened leads pending full text. No source supports fixed modality or learning-style categories.
 
 ## Chapter QA
 

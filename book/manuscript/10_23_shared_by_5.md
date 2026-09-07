@@ -130,7 +130,7 @@ Vector written algorithm with arrows from 4×5 to 20 and remainder 3; numerals a
 ### Mathematical note
 The algorithm records the same quotient–remainder decomposition as physical sharing.
 ### Research note
-Procedural success should not be treated as complete conceptual understanding; see caveats in screened R03-012.
+Procedural success should not be treated as complete conceptual understanding; verified R03-012 supports that bounded distinction for its fraction-arithmetic tasks and samples.
 ### Tags
 `long-division`, `algorithm`, `written`
 

@@ -25,6 +25,7 @@ This view is generated from `research/source_log.csv`. A verified label means th
 - **R03-006.** Fuchs, L. S., Schumacher, R. F., Long, J., Namkung, J., Hamlett, C. L., Cirino, P. T., Jordan, N. C., Siegler, R., Gersten, R., & Changas, P. (2013). Improving at-risk learners' understanding of fractions. Journal of Educational Psychology, 105(3), 683-700. [Source](https://doi.org/10.1037/a0032446)
 - **R03-007.** Fazio, L. K., Kennedy, C. A., & Siegler, R. S. (2016). Improving children's knowledge of fraction magnitudes. PLOS ONE, 11(10), e0165243. [Source](https://doi.org/10.1371/journal.pone.0165243)
 - **R03-011.** Braithwaite, D. W., Pyke, A. A., & Siegler, R. S. (2017). A computational model of fraction arithmetic. Psychological Review, 124(5), 603-625. [Source](https://doi.org/10.1037/rev0000072)
+- **R03-012.** Siegler, R. S., & Lortie-Forgues, H. (2015). Conceptual knowledge of fraction arithmetic. Journal of Educational Psychology, 107(3), 909-918. [Source](https://doi.org/10.1037/edu0000025)
 - **R03-013.** Braithwaite, D. W., Tian, J., & Siegler, R. S. (2018). Do children understand fraction addition? Developmental Science, 21(4), e12601. [Source](https://doi.org/10.1111/desc.12601)
 - **R03-014.** Braithwaite, D. W., & Siegler, R. S. (2021). Putting fractions together. Journal of Educational Psychology, 113(3), 556-571. [Source](https://doi.org/10.1037/edu0000477)
 
@@ -48,4 +49,3 @@ This view is generated from `research/source_log.csv`. A verified label means th
 - **R03-008.** Empson, S. B. (1999). Equal sharing and shared meaning: The development of fraction concepts in a first-grade classroom. Cognition and Instruction, 17(3), 283-342. [Source](https://doi.org/10.1207/S1532690XCI1703_3)
 - **R03-009.** Charalambous, C. Y., & Pitta-Pantazi, D. (2007). Drawing on a theoretical model to study students' understandings of fractions. Educational Studies in Mathematics, 64(3), 293-316. [Source](https://doi.org/10.1007/s10649-006-9036-2)
 - **R03-010.** Cramer, K. A., Post, T. R., & delMas, R. C. (2002). Initial fraction learning by fourth- and fifth-grade students: A comparison of the effects of using commercial curricula with the effects of using the Rational Number Project curriculum. Journal for Research in Mathematics Education, 33(2), 111-144. [Source](https://doi.org/10.2307/749646)
-- **R03-012.** Siegler, R. S., & Lortie-Forgues, H. (2015). Conceptual knowledge of fraction arithmetic. Journal of Educational Psychology, 107(3), 909-918. [Source](https://doi.org/10.1037/edu0000025)

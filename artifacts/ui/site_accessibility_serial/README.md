@@ -13,5 +13,6 @@ The coordinator inspected the rendered explorer, flagship chapter, fraction chap
 - `ch07-area-seven-by-nine.png` — 1200×800 rendered SVG; verifies exactly 63 unit squares and the 35 + 28 area partition.
 - `ch08-three-fourths-of-twenty.png` — 1200×800 rendered SVG; verifies 20 units in four equal groups, three selected groups, and total 15.
 - `ch06-twenty-four-divided-by-six.png` — 1200×800 rendered SVG; verifies 24 units in six groups of four and the inverse multiplication check.
+- `ch10-twenty-three-shared-by-five.png` — 1200×800 rendered SVG; verifies five groups of four plus three remainder units and the distinct fractional reading.
 
 DOM inspection verified one `h1`, semantic tables, skip navigation, labeled controls, and no horizontal overflow in the inspected desktop state. Desktop keyboard focus reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order. Narrow keyboard interaction and final art-asset review remain open.

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Twenty-three shared by five is four remainder three or four and three fifths</title>
+  <desc id="desc">Twenty-three units are arranged as five complete groups of four with three units left over. Whole-unit sharing gives 4 remainder 3. If the three leftover units are shared equally among the five groups, each receives three fifths, giving 4 and 3/5.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    .group { fill: none; stroke: #24312d; stroke-width: 3; stroke-dasharray: 7 5; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 31px; }
+    .math { font-size: 39px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">23 ÷ 5 = 4 R3 = 4 3/5</text>
+  <text x="68" y="116" class="muted small">The notation changes when the leftover units are shared again.</text>
+  <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
+  <text x="96" y="208" class="ink label">Whole-unit sharing</text>
+  <g aria-label="Five groups of four and three remainder units">
+    <rect class="group" x="102" y="250" width="190" height="105" rx="12"/><rect class="group" x="314" y="250" width="190" height="105" rx="12"/><rect class="group" x="526" y="250" width="190" height="105" rx="12"/>
+    <rect class="group" x="208" y="390" width="190" height="105" rx="12"/><rect class="group" x="420" y="390" width="190" height="105" rx="12"/>
+    <g class="green">
+      <circle cx="132" cy="300" r="17"/><circle cx="182" cy="300" r="17"/><circle cx="232" cy="300" r="17"/><circle cx="282" cy="300" r="17"/>
+      <circle cx="344" cy="300" r="17"/><circle cx="394" cy="300" r="17"/><circle cx="444" cy="300" r="17"/><circle cx="494" cy="300" r="17"/>
+      <circle cx="556" cy="300" r="17"/><circle cx="606" cy="300" r="17"/><circle cx="656" cy="300" r="17"/><circle cx="706" cy="300" r="17"/>
+      <circle cx="238" cy="440" r="17"/><circle cx="288" cy="440" r="17"/><circle cx="338" cy="440" r="17"/><circle cx="388" cy="440" r="17"/>
+      <circle cx="450" cy="440" r="17"/><circle cx="500" cy="440" r="17"/><circle cx="550" cy="440" r="17"/><circle cx="600" cy="440" r="17"/>
+    </g>
+    <g class="orange"><circle cx="264" cy="560" r="17"/><circle cx="314" cy="560" r="17"/><circle cx="364" cy="560" r="17"/></g>
+  </g>
+  <text x="96" y="612" class="ink label">5 groups of 4, remainder 3</text>
+  <rect x="840" y="160" width="292" height="470" rx="16" class="panel"/>
+  <text x="868" y="218" class="ink label">Two readings</text>
+  <text x="868" y="294" class="ink label">5 × 4 = 20</text>
+  <text x="868" y="350" class="ink label">20 + 3 = 23</text>
+  <path d="M868 382h220" stroke="#24312d" stroke-width="2"/>
+  <text x="868" y="438" class="ink label">4 R3</text>
+  <text x="868" y="494" class="muted small">whole groups plus</text>
+  <text x="868" y="526" class="muted small">unshared units</text>
+  <text x="868" y="578" class="ink label">4 3/5</text>
+  <text x="964" y="578" class="muted small">shared leftovers</text>
+</svg>

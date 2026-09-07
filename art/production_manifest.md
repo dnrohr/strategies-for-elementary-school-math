@@ -21,7 +21,7 @@ All entries use the existing chapter-scoped brief as source. Mathematical struct
 | CH10 | `art/prompts/ch10/README.md`; implemented `art/vectors/ch10/twenty-three-shared-by-five.svg` | sharing, remainder, and fractional-quotient panels; 1200×800 | exactly 23 = 5×4 + 3; distinguish 4 R3 from 4 3/5 | SVG title/description; separate textual labels for remainder and fractional share |
 | CH11 | `art/prompts/ch11/README.md`; implemented `art/vectors/ch11/twenty-seven-times-forty-six.svg` | multi-digit arrays, area strips, and algorithm panels; 1200×800 | `46 = 40 + 6`; 27×40 + 27×6 = 1,242 | SVG title/description; place-value annotations and exact partial products |
 | CH12 | `art/prompts/ch12/README.md`; implemented `art/vectors/ch12/three-addends-regrouping.svg` | addend regrouping and place-value diagrams; 1200×800 | exact column totals 21, 22, 12; 378 + 596 + 247 = 1,221 | SVG title/description; equation and carry path remain selectable |
-| CH13 | `art/prompts/ch13/README.md` | common-denominator fraction panels; 1200×800 | 2/3 = 16/24; 5/8 = 15/24; total 31/24 | denominator and unit labels; no unlike-partition overlay |
+| CH13 | `art/prompts/ch13/README.md`; implemented `art/vectors/ch13/add-two-thirds-five-eighths.svg` | common-denominator fraction panels; 1200×800 | `2/3 = 16/24`; `5/8 = 15/24`; total `31/24 = 1 7/24` | SVG title/description; denominator and unit labels; no unlike-partition overlay |
 | CH14 | `art/prompts/ch14/README.md` | twelfths partition and pairing panels; 1200×800 | 3/4 + 2/3 + 5/12 = 22/12 = 11/6 | twelve equal units labeled; pattern and outline cues |
 
 ## Production gate

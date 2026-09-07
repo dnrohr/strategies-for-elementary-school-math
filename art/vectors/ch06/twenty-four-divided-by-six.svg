@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Twenty-four divided into six groups equals four</title>
+  <desc id="desc">Twenty-four unit circles are arranged in six outlined groups of four. Sharing all 24 units equally among six groups gives four units in each group, so 24 divided by 6 equals 4.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    .group { fill: none; stroke: #24312d; stroke-width: 3; stroke-dasharray: 7 5; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 32px; }
+    .math { font-size: 40px; font-weight: 700; }
+    .small { font-size: 22px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">24 ÷ 6 = 4</text>
+  <text x="68" y="116" class="muted small">Equal sharing asks how many units each of six groups receives.</text>
+  <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
+  <text x="96" y="208" class="ink label">24 units · 6 equal groups</text>
+  <g aria-label="Six equal groups of four units">
+    <rect class="group" x="102" y="252" width="196" height="116" rx="12"/>
+    <rect class="group" x="318" y="252" width="196" height="116" rx="12"/>
+    <rect class="group" x="534" y="252" width="196" height="116" rx="12"/>
+    <rect class="group" x="102" y="410" width="196" height="116" rx="12"/>
+    <rect class="group" x="318" y="410" width="196" height="116" rx="12"/>
+    <rect class="group" x="534" y="410" width="196" height="116" rx="12"/>
+    <g class="green">
+      <circle cx="138" cy="292" r="17"/><circle cx="188" cy="292" r="17"/><circle cx="238" cy="292" r="17"/><circle cx="288" cy="292" r="17"/>
+      <circle cx="354" cy="292" r="17"/><circle cx="404" cy="292" r="17"/><circle cx="454" cy="292" r="17"/><circle cx="504" cy="292" r="17"/>
+      <circle cx="570" cy="292" r="17"/><circle cx="620" cy="292" r="17"/><circle cx="670" cy="292" r="17"/><circle cx="720" cy="292" r="17"/>
+      <circle cx="138" cy="450" r="17"/><circle cx="188" cy="450" r="17"/><circle cx="238" cy="450" r="17"/><circle cx="288" cy="450" r="17"/>
+      <circle cx="354" cy="450" r="17"/><circle cx="404" cy="450" r="17"/><circle cx="454" cy="450" r="17"/><circle cx="504" cy="450" r="17"/>
+      <circle cx="570" cy="450" r="17"/><circle cx="620" cy="450" r="17"/><circle cx="670" cy="450" r="17"/><circle cx="720" cy="450" r="17"/>
+    </g>
+  </g>
+  <text x="96" y="584" class="ink label">6 groups × 4 units = 24 units</text>
+  <rect x="840" y="160" width="292" height="470" rx="16" class="panel"/>
+  <text x="868" y="218" class="ink label">Share equally</text>
+  <text x="868" y="292" class="ink label">24 ÷ 6</text>
+  <text x="868" y="352" class="ink label">= 4 each</text>
+  <path d="M868 384h220" stroke="#24312d" stroke-width="2"/>
+  <text x="868" y="446" class="ink label">6 × 4 = 24</text>
+  <text x="868" y="532" class="muted small">quotient: units in</text>
+  <text x="868" y="566" class="muted small">one equal group</text>
+</svg>

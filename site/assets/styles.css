@@ -69,6 +69,9 @@ h1, h2, h3 { line-height: 1.04; margin: 0 0 .8em; letter-spacing: -.035em; }
 .chapter-hero h1 { max-width: 750px; font: 500 clamp(3.4rem, 9vw, 7rem) Georgia, serif; }
 .strategy-target { color: var(--muted); }
 .prose { max-width: 720px; margin: 4rem auto; font-size: 1.08rem; }
+.chapter-figure { max-width: min(100%, 60rem); margin: 2rem auto 3rem; padding: 1rem; background: var(--paper); border: 1px solid var(--line); border-radius: 1rem; }
+.chapter-figure img { display: block; width: 100%; height: auto; }
+.chapter-figure figcaption { margin-top: .75rem; color: var(--muted); font-family: var(--sans); font-size: .85rem; letter-spacing: .04em; }
 .prose h1 { display: none; }
 .prose h2 { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font: 500 2.2rem Georgia, serif; }
 .prose blockquote { margin: 2rem 0; padding: 1rem 2rem; border-left: 5px solid var(--orange); background: var(--card); font: 500 1.25rem Georgia, serif; }

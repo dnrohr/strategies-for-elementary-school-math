@@ -17,6 +17,22 @@ function chapterCard(chapter) {
   </article>`;
 }
 
+async function chapterFigure(chapter) {
+  if (chapter.chapter < 0 || chapter.chapter > 14) return "";
+  const code = String(chapter.chapter).padStart(2, "0");
+  const sourceDir = path.join(ROOT, "art", "vectors", `ch${code}`);
+  const assets = (await fs.readdir(sourceDir)).filter(file => file.endsWith(".svg"));
+  if (assets.length !== 1) return "";
+  const asset = assets[0];
+  const source = await fs.readFile(path.join(sourceDir, asset), "utf8");
+  const title = source.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() || chapter.title;
+  const description = source.match(/<desc[^>]*>([\s\S]*?)<\/desc>/i)?.[1]?.trim() || title;
+  const destinationDir = path.join(OUTPUT, "assets", "figures", `ch${code}`);
+  await fs.mkdir(destinationDir, { recursive: true });
+  await fs.copyFile(path.join(sourceDir, asset), path.join(destinationDir, asset));
+  return `<figure class="chapter-figure"><img src="../../assets/figures/ch${code}/${asset}" alt="${escapeHtml(description)}" loading="lazy"><figcaption>${escapeHtml(title)}</figcaption></figure>`;
+}
+
 export async function build() {
   await fs.rm(OUTPUT, { recursive: true, force: true });
   const chapters = await loadChapters();
@@ -42,7 +58,8 @@ export async function build() {
     const next = chapters[index + 1];
     const nav = `<nav class="chapter-nav" aria-label="Chapter navigation">${prev ? `<a href="../${prev.slug}/">← ${escapeHtml(prev.title)}</a>` : "<span></span>"}${next ? `<a href="../${next.slug}/">${escapeHtml(next.title)} →</a>` : ""}</nav>`;
     const manuscriptBody = chapter.body.replace(/^#\s+.+(?:\r?\n)+/, "");
-    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header><div class="prose">${renderMarkdown(manuscriptBody)}</div>${nav}</article>`;
+    const figure = await chapterFigure(chapter);
+    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header>${figure}<div class="prose">${renderMarkdown(manuscriptBody)}</div>${nav}</article>`;
     await writeFileEnsured(path.join(OUTPUT, "chapters", chapter.slug, "index.html"), pageShell({ title: chapter.title, root: "../../", content, description: `${chapter.title}, a chapter in How We Think About Arithmetic.` }));
   }
 

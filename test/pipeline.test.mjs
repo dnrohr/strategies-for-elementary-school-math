@@ -91,5 +91,9 @@ test("repository validates and build emits every manifest page", async () => {
     const page = await fs.readFile(path.join(ROOT, "_site", "chapters", chapter.slug, "index.html"), "utf8");
     assert(page.includes(chapter.title.replaceAll("&", "&amp;")));
     assert.equal((page.match(/<h1\b/g) || []).length, 1, `${chapter.slug} should have one h1`);
+    if (chapter.chapter >= 0 && chapter.chapter <= 14) {
+      assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
+      assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
+    }
   }
 });

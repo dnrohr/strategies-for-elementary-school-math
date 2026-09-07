@@ -10,7 +10,7 @@ Status: `route, structure, responsive screenshot, and desktop keyboard checks co
 - The explorer exposes skip navigation, a labeled search field, a theme control, chapter links, and chapter navigation.
 - The generated chapter pages now contain exactly one `<h1>`; the manuscript's duplicate top-level heading is removed at build time and covered by a regression test.
 - Cross-classification Markdown tables now render as semantic tables with table headers and cells.
-- Generated CH00–CH14 pages now each include one canonical SVG figure with non-empty alt text; CH99 remains text-only. The vector suite and generated-page figure contract are covered by automated tests. Final narrow-width figure inspection remains open.
+- Generated CH00–CH14 pages now each include one canonical SVG figure with non-empty alt text; CH99 remains text-only. The vector suite and generated-page figure contract are covered by automated tests. The published CH05 route was also inspected at the app's narrow viewport: the figure and caption remain inside the content column with no visible horizontal overflow.
 - Desktop layout metrics for the flagship route showed document width 1265px against a 1280px viewport, with no horizontal overflow in the inspected state.
 - Keyboard focus inspection on the explorer reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order.
 - Semantic tables now have responsive horizontal scrolling within the prose region, with readable borders, header contrast, and wrapping code labels.
@@ -19,7 +19,7 @@ Status: `route, structure, responsive screenshot, and desktop keyboard checks co
 
 ## Open checks
 
-- Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint; the desktop focus sequence is recorded above.
+- Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint; the desktop focus sequence is recorded above. The narrow figure layout check is complete for the representative published CH05 route, while broader per-page interaction coverage remains open.
 - Recheck asset loading, figure descriptions, contrast, and overflow after production art is added.
 - Verify the deployed GitHub Pages base path and live workflow result after the final release batch.
 

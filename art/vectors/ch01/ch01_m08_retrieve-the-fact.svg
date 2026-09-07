@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Method 8: Retrieve seven plus five as twelve</title>
+  <desc id="desc">A sparse symbolic diagram shows seven plus five traveling by one direct arrow to a double-outlined result twelve. A small dashed route labeled check afterward is secondary. No counters or sensory imagery appear.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#087E8B"/></marker></defs>
+  <style>text{font-family:"Trebuchet MS",Arial,sans-serif;fill:#24312D}.eyebrow{font-size:22px;font-weight:700;letter-spacing:2px}.heading{font-size:42px;font-weight:700}.sub{font-size:25px;fill:#52615B}.label{font-size:23px;font-weight:700}.source{font-size:64px;font-weight:700}.answer{font-size:92px;font-weight:700;fill:#287A55}</style>
+  <rect width="1200" height="800" fill="#FFFDF8"/><text x="70" y="62" class="eyebrow">METHOD 08 · RETRIEVAL</text><text x="70" y="116" class="heading">The fact comes directly</text><text x="70" y="154" class="sub">A later check can explain the result without being the experienced route.</text>
+  <rect x="64" y="190" width="1072" height="450" rx="28" fill="#F6F1E8" stroke="#D7D0C4" stroke-width="4"/>
+  <rect x="140" y="300" width="340" height="190" rx="28" fill="#E9F0FA" stroke="#2764B8" stroke-width="6"/><text x="310" y="418" class="source" text-anchor="middle">7 + 5</text>
+  <path d="M510 395H735" fill="none" stroke="#087E8B" stroke-width="9" marker-end="url(#arrow)"/><text x="622" y="355" class="label" text-anchor="middle">answer appears</text>
+  <rect x="770" y="280" width="260" height="230" rx="34" fill="#E6F2EA" stroke="#287A55" stroke-width="7"/><rect x="786" y="296" width="228" height="198" rx="25" fill="none" stroke="#287A55" stroke-width="4"/><text x="900" y="428" class="answer" text-anchor="middle">12</text>
+  <path d="M310 515C390 605 780 605 900 520" fill="none" stroke="#7652A8" stroke-width="5" stroke-dasharray="4 14" marker-end="url(#arrow)"/><text x="605" y="595" class="label" text-anchor="middle">optional: check afterward</text>
+  <rect x="70" y="682" width="1060" height="76" rx="20" fill="#E6F2EA" stroke="#287A55" stroke-width="6"/><text x="600" y="732" class="source" text-anchor="middle" style="font-size:40px">7 + 5 = 12</text>
+</svg>

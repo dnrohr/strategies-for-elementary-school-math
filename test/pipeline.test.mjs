@@ -110,6 +110,55 @@ test("CH08 has one accessible production SVG for every method", async () => {
   }
 });
 
+test("CH01 has exact vector and composite art for all fourteen methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch01");
+  const compositeDir = path.join(ROOT, "art", "composites", "ch01");
+  const vectorAssets = (await fs.readdir(vectorDir)).filter(file => /^ch01_m\d{2}_[a-z0-9-]+\.svg$/.test(file));
+  const compositeAssets = (await fs.readdir(compositeDir)).filter(file => /^ch01_m\d{2}_[a-z0-9-]+\.svg$/.test(file));
+  const assets = [...vectorAssets.map(file => ({ file, directory: vectorDir })), ...compositeAssets.map(file => ({ file, directory: compositeDir }))].sort((left, right) => left.file.localeCompare(right.file));
+  assert.equal(assets.length, 14);
+  assert.deepEqual(assets.map(({ file }) => file.match(/^ch01_m(\d{2})_/)[1]), ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"]);
+
+  for (const { file, directory } of assets) {
+    const svg = await fs.readFile(path.join(directory, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    if (file.includes("m04")) assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch01\/ch01_m04_fingers-make-ten_raster\.png"/);
+    else assert(!/<image\b/i.test(svg), `${file} must remain vector-only`);
+  }
+
+  const circleCounts = {
+    "ch01_m01_count-every-object.svg": 12,
+    "ch01_m05_make-ten.svg": 12,
+    "ch01_m06_five-plus-five.svg": 12,
+    "ch01_m07_double-seven-subtract-two.svg": 14,
+    "ch01_m09_see-dot-chunks.svg": 12
+  };
+  for (const [file, expected] of Object.entries(circleCounts)) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.equal((svg.match(/<circle\b/g) || []).length, expected, `${file} quantity circles`);
+  }
+
+  const unitLabelCounts = {
+    "ch01_m02_count-on-from-seven.svg": 5,
+    "ch01_m03_count-on-from-five.svg": 7,
+    "ch01_m10_number-line-hops.svg": 5
+  };
+  for (const [file, expected] of Object.entries(unitLabelCounts)) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.equal((svg.match(/>\+1<\/text>/g) || []).length, expected, `${file} unit-jump labels`);
+  }
+  const rhythm = await fs.readFile(path.join(vectorDir, "ch01_m12_counting-rhythm.svg"), "utf8");
+  assert.equal((rhythm.match(/>tap [1-5]<\/text>/g) || []).length, 5);
+
+  const raster = await fs.readFile(path.join(ROOT, "art", "raster", "ch01", "ch01_m04_fingers-make-ten_raster.png"));
+  assert.equal(raster.readUInt32BE(16), 1536);
+  assert.equal(raster.readUInt32BE(20), 1024);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -147,14 +196,21 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    if (chapter.chapter === 8) {
-      const figures = [...page.matchAll(/data-method-figure="08-(\d{2})"/g)].map(match => match[1]);
-      assert.deepEqual(figures, ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]);
+    const methodArtCounts = new Map([[1, 14], [8, 10]]);
+    if (methodArtCounts.has(chapter.chapter)) {
+      const code = String(chapter.chapter).padStart(2, "0");
+      const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));
+      const figures = [...page.matchAll(new RegExp(`data-method-figure="${code}-(\\d{2})"`, "g"))].map(match => match[1]);
+      assert.deepEqual(figures, expected);
       for (const method of figures) {
         const headingIndex = page.indexOf(`id="method-${method}-`);
-        const figureIndex = page.indexOf(`data-method-figure="08-${method}"`);
-        assert(headingIndex >= 0 && figureIndex > headingIndex, `CH08 Method ${method} figure should follow its heading`);
+        const figureIndex = page.indexOf(`data-method-figure="${code}-${method}"`);
+        assert(headingIndex >= 0 && figureIndex > headingIndex, `CH${code} Method ${method} figure should follow its heading`);
       }
     }
   }
+  const ch01Output = path.join(ROOT, "_site", "assets", "figures", "ch01");
+  const composite = await fs.readFile(path.join(ch01Output, "ch01_m04_fingers-make-ten.svg"), "utf8");
+  assert.match(composite, /<image href="data:image\/png;base64,/);
+  await fs.access(path.join(ch01Output, "ch01_m04_fingers-make-ten_raster.png"));
 });

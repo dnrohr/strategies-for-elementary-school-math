@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Seven fingers become ten, with two counters remaining</title>
+  <desc id="desc">Three panels use the same anatomically plausible pair of hands. The first shows five raised fingers on one hand and two on the other, totaling seven. The second shows all ten fingers raised with exactly three upward arrows marking the fingers added to make ten. The third keeps ten fingers raised and adds exactly two separate orange counters, giving twelve.</desc>
+  <image href="../../raster/ch01/ch01_m04_fingers-make-ten_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid meet"/>
+  <g font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#24312D">
+    <g transform="translate(55 30)"><rect width="290" height="62" rx="31" fill="#FFFDF8" stroke="#2764B8" stroke-width="4"/><text x="145" y="41">7 fingers</text></g>
+    <g transform="translate(455 30)"><rect width="290" height="62" rx="31" fill="#FFFDF8" stroke="#087E8B" stroke-width="4"/><text x="145" y="41">add 3 → make 10</text></g>
+    <g transform="translate(855 30)"><rect width="290" height="62" rx="31" fill="#FFFDF8" stroke="#287A55" stroke-width="5"/><text x="145" y="41">10 + 2 = 12</text></g>
+  </g>
+</svg>

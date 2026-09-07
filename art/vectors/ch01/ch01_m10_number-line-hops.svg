@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Method 10: Hop five unit intervals from seven to twelve</title>
+  <desc id="desc">An exact number line labeled zero through thirteen marks seven as the start and twelve as the result. Exactly five identical rightward arcs travel from seven to eight, eight to nine, nine to ten, ten to eleven, and eleven to twelve. Each arc is labeled plus one.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5 0 9Z" fill="#087E8B"/></marker></defs>
+  <style>text{font-family:"Trebuchet MS",Arial,sans-serif;fill:#24312D}.eyebrow{font-size:22px;font-weight:700;letter-spacing:2px}.heading{font-size:42px;font-weight:700}.sub{font-size:25px;fill:#52615B}.label{font-size:21px;font-weight:700}.n{font-size:22px;font-weight:700;text-anchor:middle}.math{font-size:38px;font-weight:700}</style>
+  <rect width="1200" height="800" fill="#FFFDF8"/><text x="70" y="62" class="eyebrow">METHOD 10 · SPATIAL NUMBER LINE</text><text x="70" y="116" class="heading">Five equal hops to the right</text><text x="70" y="154" class="sub">The endpoint records the sum; equal spacing records unit size.</text>
+  <rect x="64" y="190" width="1072" height="450" rx="28" fill="#F6F1E8" stroke="#D7D0C4" stroke-width="4"/>
+  <line x1="100" y1="468" x2="1100" y2="468" stroke="#68707A" stroke-width="5" marker-end="url(#arrow)"/>
+  <g stroke="#68707A" stroke-width="4"><path d="M120 446v44 M194 446v44 M268 446v44 M342 446v44 M416 446v44 M490 446v44 M564 446v44 M638 438v60 M712 446v44 M786 446v44 M860 446v44 M934 446v44 M1008 438v60 M1082 446v44"/></g>
+  <g class="n"><text x="120" y="530">0</text><text x="194" y="530">1</text><text x="268" y="530">2</text><text x="342" y="530">3</text><text x="416" y="530">4</text><text x="490" y="530">5</text><text x="564" y="530">6</text><text x="638" y="530">7</text><text x="712" y="530">8</text><text x="786" y="530">9</text><text x="860" y="530">10</text><text x="934" y="530">11</text><text x="1008" y="530">12</text><text x="1082" y="530" fill="#68707A">13</text></g>
+  <circle cx="638" cy="468" r="18" fill="#2764B8" stroke="#174478" stroke-width="5"/><circle cx="1008" cy="468" r="22" fill="#E6F2EA" stroke="#287A55" stroke-width="7"/>
+  <g fill="none" stroke="#087E8B" stroke-width="6" marker-end="url(#arrow)"><path d="M645 432Q675 362 705 432"/><path d="M719 432Q749 362 779 432"/><path d="M793 432Q823 362 853 432"/><path d="M867 432Q897 362 927 432"/><path d="M941 432Q971 362 1001 432"/></g>
+  <g class="label" text-anchor="middle"><text x="675" y="380">+1</text><text x="749" y="380">+1</text><text x="823" y="380">+1</text><text x="897" y="380">+1</text><text x="971" y="380">+1</text><text x="638" y="590">start</text><text x="1008" y="590">landing</text></g>
+  <rect x="124" y="232" width="952" height="72" rx="18" fill="#E9F0FA" stroke="#2764B8" stroke-width="4"/><text x="600" y="279" class="math" text-anchor="middle">7 → 8 → 9 → 10 → 11 → 12</text>
+  <rect x="70" y="682" width="1060" height="76" rx="20" fill="#E6F2EA" stroke="#287A55" stroke-width="6"/><text x="105" y="731" class="math">7 + 5 = 12</text><text x="1092" y="730" class="label" text-anchor="end">5 identical +1 hops</text>
+</svg>

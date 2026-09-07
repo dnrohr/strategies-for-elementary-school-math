@@ -31,18 +31,36 @@ function figureMarkup({ className, src, title, description, methodKey = "" }) {
 async function chapterArt(chapter) {
   if (chapter.chapter < 0 || chapter.chapter > 14) return { chapterFigure: "", methodFigures: new Map() };
   const code = String(chapter.chapter).padStart(2, "0");
-  const sourceDir = path.join(ROOT, "art", "vectors", `ch${code}`);
-  const assets = (await fs.readdir(sourceDir)).filter(file => file.endsWith(".svg"));
+  const sourceDirectories = [
+    path.join(ROOT, "art", "vectors", `ch${code}`),
+    path.join(ROOT, "art", "composites", `ch${code}`)
+  ];
+  const assets = [];
+  for (const sourceDir of sourceDirectories) {
+    try {
+      for (const file of await fs.readdir(sourceDir)) if (file.endsWith(".svg")) assets.push({ file, sourceDir });
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+    }
+  }
   const destinationDir = path.join(OUTPUT, "assets", "figures", `ch${code}`);
   await fs.mkdir(destinationDir, { recursive: true });
   const methodFigures = new Map();
   const methodPattern = new RegExp(`^ch${code}_m(\\d{2})_[a-z0-9-]+\\.svg$`);
   const anchors = [];
 
-  for (const asset of assets.sort()) {
-    const source = await fs.readFile(path.join(sourceDir, asset), "utf8");
+  for (const { file: asset, sourceDir } of assets.sort((left, right) => left.file.localeCompare(right.file))) {
+    let source = await fs.readFile(path.join(sourceDir, asset), "utf8");
     const metadata = readSvgMetadata(source, chapter.title);
-    await fs.copyFile(path.join(sourceDir, asset), path.join(destinationDir, asset));
+    const rasterReference = source.match(new RegExp(`href="\\.\\.\\/\\.\\.\\/raster\\/ch${code}\\/([a-z0-9_-]+\\.png)"`));
+    if (rasterReference) {
+      const rasterFile = rasterReference[1];
+      const rasterPath = path.join(ROOT, "art", "raster", `ch${code}`, rasterFile);
+      const raster = await fs.readFile(rasterPath);
+      await fs.copyFile(rasterPath, path.join(destinationDir, rasterFile));
+      source = source.replace(rasterReference[0], `href="data:image/png;base64,${raster.toString("base64")}"`);
+    }
+    await fs.writeFile(path.join(destinationDir, asset), source, "utf8");
     const methodMatch = asset.match(methodPattern);
     if (methodMatch) {
       const methodNumber = methodMatch[1];

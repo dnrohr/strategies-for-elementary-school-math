@@ -207,6 +207,50 @@ test("CH02 has exact vector and composite art for all twelve methods", async () 
   }
 });
 
+test("CH03 has exact vector art for all fourteen methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch03");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch03_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 14);
+  assert.deepEqual(assets.map(file => file.match(/^ch03_m(\d{2})_/)[1]), ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"]);
+
+  for (const file of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+  }
+
+  const split = await fs.readFile(path.join(vectorDir, "ch03_m01_split-tens-and-ones.svg"), "utf8");
+  for (const equation of ["30 + 40", "7 + 8", "70 + 15 = 85"]) assert(split.includes(equation));
+
+  const jump = await fs.readFile(path.join(vectorDir, "ch03_m02_add-forty-then-eight.svg"), "utf8");
+  const unitArrows = (jump.match(/<g stroke="#087E8B"[^>]*marker-end="url\(#a\)">[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((unitArrows.match(/<path\b/g) || []).length, 8);
+  const transfer = await fs.readFile(path.join(vectorDir, "ch03_m05_transfer-three.svg"), "utf8");
+  assert.equal((transfer.match(/<circle\b/g) || []).length, 3);
+
+  const exchange = await fs.readFile(path.join(vectorDir, "ch03_m07_exchange-ten-ones.svg"), "utf8");
+  const beforeExchange = exchange.slice(exchange.indexOf('<g transform="translate(55 130)">'), exchange.indexOf('<path d="M575 405H655"'));
+  const afterExchange = exchange.slice(exchange.indexOf('<g transform="translate(685 130)">'));
+  assert.equal((beforeExchange.match(/<rect\b/g) || []).length, 23);
+  assert.equal((afterExchange.match(/<rect\b/g) || []).length, 14);
+
+  const rods = await fs.readFile(path.join(vectorDir, "ch03_m08_rods-and-loose-ones.svg"), "utf8");
+  const rodGroup = (rods.match(/<g fill="#2764B8"[\s\S]*?<\/g>/) || [""])[0];
+  const oneGroup = (rods.match(/<g fill="#D97706"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((rodGroup.match(/<rect\b/g) || []).length, 7);
+  assert.equal((oneGroup.match(/<rect\b/g) || []).length, 15);
+
+  const coins = await fs.readFile(path.join(vectorDir, "ch03_m09_eighty-five-cents.svg"), "utf8");
+  const beforeCoins = coins.slice(coins.indexOf('<g transform="translate(55 135)">'), coins.indexOf('<path d="M580 405H645"'));
+  const afterCoins = coins.slice(coins.indexOf('<g transform="translate(675 135)">'));
+  assert.equal((beforeCoins.match(/<circle\b/g) || []).length, 22);
+  assert.equal((afterCoins.match(/<circle\b/g) || []).length, 13);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -244,7 +288,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [8, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [8, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));

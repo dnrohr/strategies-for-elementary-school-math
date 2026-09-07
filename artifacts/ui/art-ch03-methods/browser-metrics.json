@@ -1,0 +1,182 @@
+{
+  "desktop": {
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "methodFigures": [
+      {
+        "key": "03-01",
+        "loaded": true,
+        "altLength": 230,
+        "width": 720
+      },
+      {
+        "key": "03-02",
+        "loaded": true,
+        "altLength": 176,
+        "width": 720
+      },
+      {
+        "key": "03-03",
+        "loaded": true,
+        "altLength": 192,
+        "width": 720
+      },
+      {
+        "key": "03-04",
+        "loaded": true,
+        "altLength": 185,
+        "width": 720
+      },
+      {
+        "key": "03-05",
+        "loaded": true,
+        "altLength": 182,
+        "width": 720
+      },
+      {
+        "key": "03-06",
+        "loaded": true,
+        "altLength": 229,
+        "width": 720
+      },
+      {
+        "key": "03-07",
+        "loaded": true,
+        "altLength": 201,
+        "width": 720
+      },
+      {
+        "key": "03-08",
+        "loaded": true,
+        "altLength": 230,
+        "width": 720
+      },
+      {
+        "key": "03-09",
+        "loaded": true,
+        "altLength": 240,
+        "width": 720
+      },
+      {
+        "key": "03-10",
+        "loaded": true,
+        "altLength": 199,
+        "width": 720
+      },
+      {
+        "key": "03-11",
+        "loaded": true,
+        "altLength": 196,
+        "width": 720
+      },
+      {
+        "key": "03-12",
+        "loaded": true,
+        "altLength": 222,
+        "width": 720
+      },
+      {
+        "key": "03-13",
+        "loaded": true,
+        "altLength": 222,
+        "width": 720
+      },
+      {
+        "key": "03-14",
+        "loaded": true,
+        "altLength": 248,
+        "width": 720
+      }
+    ]
+  },
+  "narrow": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "methodFigures": [
+      {
+        "key": "03-01",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-02",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-03",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-04",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-05",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-06",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-07",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-08",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-09",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-10",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-11",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-12",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-13",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "03-14",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      }
+    ]
+  }
+}

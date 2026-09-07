@@ -293,6 +293,78 @@ test("CH04 has exact vector art for all twelve methods", async () => {
   assert.equal((pennies.match(/<circle\b/g) || []).length, 3);
 });
 
+test("CH05 has exact accessible art for all twenty methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch05");
+  const compositeDir = path.join(ROOT, "art", "composites", "ch05");
+  const vectorAssets = (await fs.readdir(vectorDir)).filter(file => /^ch05_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  const compositeAssets = (await fs.readdir(compositeDir)).filter(file => /^ch05_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  const assets = [...vectorAssets, ...compositeAssets].sort();
+  assert.equal(assets.length, 20);
+  assert.deepEqual(assets.map(file => file.match(/^ch05_m(\d{2})_/)[1]), Array.from({ length: 20 }, (_value, index) => String(index + 1).padStart(2, "0")));
+  for (const file of assets) {
+    const directory = compositeAssets.includes(file) ? compositeDir : vectorDir;
+    const svg = await fs.readFile(path.join(directory, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    for (const value of ["11", "12", "132"]) assert(svg.includes(value), `${file} must include ${value}`);
+    if (directory === vectorDir) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+    else assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch05\/ch05_m(?:17|18)_[a-z0-9_-]+_raster\.png"/);
+  }
+
+  const squareMinusRow = await fs.readFile(path.join(vectorDir, "ch05_m04_square-minus-row.svg"), "utf8");
+  assert.match(squareMinusRow, /pattern id="g" x="300" y="125" width="50" height="45"/);
+  assert.match(squareMinusRow, /width="600" height="540" fill="url\(#g\)"/);
+  const splitArea = await fs.readFile(path.join(vectorDir, "ch05_m05_eleven-tens-and-twos.svg"), "utf8");
+  assert.match(splitArea, /pattern id="ten-grid" x="130" y="155" width="75" height="40"/);
+  assert.match(splitArea, /pattern id="two-grid" x="880" y="155" width="75" height="40"/);
+  assert.match(splitArea, /width="750" height="440" fill="url\(#ten-grid\)"/);
+  assert.match(splitArea, /width="150" height="440" fill="url\(#two-grid\)"/);
+
+  const repeated = await fs.readFile(path.join(vectorDir, "ch05_m06_repeated-addition.svg"), "utf8");
+  assert.equal((repeated.match(/>12<\/text>/g) || []).length, 11);
+  const beats = await fs.readFile(path.join(vectorDir, "ch05_m07_skip-count-beats.svg"), "utf8");
+  assert.equal((beats.match(/<circle\b/g) || []).length, 11);
+  const jumps = await fs.readFile(path.join(vectorDir, "ch05_m08_eleven-number-line-jumps.svg"), "utf8");
+  const jumpGroup = (jumps.match(/<g class="eleven-jumps"[\s\S]*?<\/g>/) || [""])[0];
+  const jumpLabels = (jumps.match(/<g class="eleven-jump-labels"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((jumpGroup.match(/<path\b/g) || []).length, 11);
+  assert.equal((jumpLabels.match(/>\+12<\/text>/g) || []).length, 11);
+
+  for (const [file, width, height] of [["ch05_m09_eleven-by-twelve-array.svg", "70", "45"], ["ch05_m10_rectangle-area.svg", "70", "45"]]) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, new RegExp(`<pattern id="g" x="180" y="150" width="${width}" height="${height}"`));
+    assert.match(svg, /width="840" height="495" fill="url\(#g\)"/);
+  }
+  const bags = await fs.readFile(path.join(vectorDir, "ch05_m11_eleven-groups.svg"), "utf8");
+  const bagGroup = (bags.match(/<g class="bags-eleven">[\s\S]*?<\/g>\s*<path/) || [""])[0];
+  const dozen = (bags.match(/<g id="dozen"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((bagGroup.match(/<use href="#bag"/g) || []).length, 11);
+  assert.equal((dozen.match(/<circle\b/g) || []).length, 12);
+  assert.match(bags, /class="total-tray"/);
+
+  const doubled = await fs.readFile(path.join(vectorDir, "ch05_m13_double-and-halve.svg"), "utf8");
+  const sixGroups = (doubled.match(/<g class="six-groups-of-twenty-two"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((sixGroups.match(/<rect\b/g) || []).length, 6);
+  assert.equal((sixGroups.match(/>22<\/text>/g) || []).length, 6);
+  const fingers = await fs.readFile(path.join(compositeDir, "ch05_m17_fingers-group-counter.svg"), "utf8");
+  const tallies = (fingers.match(/<g class="tally-eleven"[\s\S]*?<\/g>/) || [""])[0];
+  const counters = (fingers.match(/<g class="counters-twelve"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((tallies.match(/<line\b/g) || []).length, 11);
+  assert.equal((counters.match(/<circle\b/g) || []).length, 12);
+  const tapping = await fs.readFile(path.join(compositeDir, "ch05_m18_tap-each-twelve.svg"), "utf8");
+  const elevenBeats = (tapping.match(/<g class="beat-eleven"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((elevenBeats.match(/<circle\b/g) || []).length, 11);
+  for (const total of [12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 132]) assert(tapping.includes(`>${total}</text>`));
+  for (const file of ["ch05_m17_fingers-group-counter_raster.png", "ch05_m18_tap-each-twelve_raster.png"]) {
+    const raster = await fs.readFile(path.join(ROOT, "art", "raster", "ch05", file));
+    assert.equal(raster.readUInt32BE(16), 1536);
+    assert.equal(raster.readUInt32BE(20), 1024);
+  }
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -330,7 +402,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [8, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [8, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));
@@ -352,5 +424,11 @@ test("repository validates and build emits every manifest page", async () => {
     const composite = await fs.readFile(path.join(ch02Output, `ch02_${method}.svg`), "utf8");
     assert.match(composite, /<image href="data:image\/png;base64,/);
     await fs.access(path.join(ch02Output, `ch02_${method}_raster.png`));
+  }
+  const ch05Output = path.join(ROOT, "_site", "assets", "figures", "ch05");
+  for (const method of ["m17_fingers-group-counter", "m18_tap-each-twelve"]) {
+    const composite = await fs.readFile(path.join(ch05Output, `ch05_${method}.svg`), "utf8");
+    assert.match(composite, /<image href="data:image\/png;base64,/);
+    await fs.access(path.join(ch05Output, `ch05_${method}_raster.png`));
   }
 });

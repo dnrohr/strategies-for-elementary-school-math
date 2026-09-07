@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Three fourths plus two thirds plus five twelfths equals eleven sixths</title>
+  <desc id="desc">Three fourths is nine twelfths, two thirds is eight twelfths, and five twelfths stays five twelfths. Adding the common units gives twenty-two twelfths, which reduces to eleven sixths, or one and five sixths.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
+    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 2; }
+    .pale { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    .unit { stroke: #24312d; stroke-width: 1; opacity: .45; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 30px; }
+    .math { font-size: 39px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">3/4 + 2/3 + 5/12 = 22/12 = 11/6</text>
+  <text x="68" y="116" class="muted small">Rename every fraction in twelfths before adding equal units.</text>
+  <rect x="68" y="160" width="720" height="470" rx="16" class="pale"/>
+  <text x="96" y="208" class="ink label">Common unit: one twelfth</text>
+  <text x="96" y="270" class="ink label">3/4 = 9/12</text>
+  <rect x="300" y="238" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
+  <rect x="300" y="238" width="324" height="48" rx="7" class="orange"/>
+  <text x="96" y="360" class="ink label">2/3 = 8/12</text>
+  <rect x="300" y="328" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
+  <rect x="300" y="328" width="288" height="48" rx="7" class="green"/>
+  <text x="96" y="450" class="ink label">5/12 = 5/12</text>
+  <rect x="300" y="418" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
+  <rect x="300" y="418" width="180" height="48" rx="7" class="blue"/>
+  <text x="96" y="544" class="ink label">9 + 8 + 5 = 22/12</text>
+  <text x="96" y="588" class="muted small">22/12 = 11/6 = 1 5/6</text>
+  <rect x="840" y="160" width="292" height="470" rx="16" class="pale"/>
+  <text x="868" y="218" class="ink label">Combine equal units</text>
+  <text x="868" y="292" class="ink label">9/12 + 8/12</text>
+  <text x="868" y="346" class="ink label">+ 5/12</text>
+  <path d="M868 378h220" stroke="#24312d" stroke-width="2"/>
+  <text x="868" y="438" class="ink label">22/12</text>
+  <text x="868" y="492" class="ink label">= 11/6</text>
+  <text x="868" y="558" class="muted small">one whole + 5/6</text>
+</svg>

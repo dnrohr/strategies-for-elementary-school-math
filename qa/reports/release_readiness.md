@@ -35,7 +35,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Remaining blockers
 
-- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; coordinator-reviewed vectors now exist for CH05, CH06, CH07, CH08, CH09, CH10, CH11, CH12, and CH13, while the remaining chapters are represented by production briefs.
+- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; coordinator-reviewed vectors now exist for CH05, CH06, CH07, CH08, CH09, CH10, CH11, CH12, CH13, and CH14, while the remaining chapters are represented by production briefs.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; narrow-width keyboard/focus verification remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
@@ -75,6 +75,7 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `1befa4ba65179d28aeac08d4db03381e585d4bfe` — CH11 multiplication area-model vector, provenance, and screenshot evidence.
 - `520dd7fa6ec86b692d8bcf9150f34c62b5d5d355` — CH12 regrouping vector, provenance, and screenshot evidence.
 - `ecb29ce8ee85d2fe0e3dc3cd93b7bfe0b7381b83` — CH13 fraction-addition vector, provenance, and screenshot evidence.
+- `773d5a38dd4894ae7c5938f931e7c6800e1ca926` — CH14 fraction-sum vector, provenance, and screenshot evidence.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 

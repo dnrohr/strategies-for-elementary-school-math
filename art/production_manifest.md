@@ -9,7 +9,7 @@ All entries use the existing chapter-scoped brief as source. Mathematical struct
 | Chapter | Source brief | Intended asset and canonical working size | Exact quantity / structure check | Accessibility notes |
 | --- | --- | --- | --- | --- |
 | CH00 | `art/prompts/ch00/frontmatter_visual_system.md` | visual legend, 1200×800 viewBox | strategy/phenomenology axes remain distinct | labels plus non-color encodings; high-contrast legend |
-| CH01 | `art/prompts/ch01/README.md` | counters, ten-frames, number lines; 1200×800 | 7 + 5 = 12; five unit jumps where shown | count descriptions; pattern and labels supplement color |
+| CH01 | `art/prompts/ch01/README.md`; implemented `art/vectors/ch01/seven-plus-five.svg` | counters, ten-frames, number lines; 1200×800 | exactly 7 + 5 = 12; five +1 jumps where shown | SVG title/description; count labels and outlines supplement color |
 | CH02 | `art/prompts/ch02/README.md`; implemented `art/vectors/ch02/fifteen-minus-eight.svg` | removal/distance paired diagrams; 1200×800 | `15 − 8 = 7`; count-up jumps +1, +4, +2 | SVG title/description; explicit removal/distance labels; dashed path distinction |
 | CH03 | `art/prompts/ch03/README.md`; implemented `art/vectors/ch03/thirty-seven-plus-forty-eight.svg` | base-ten, money, and number-line composites; 1200×800 | `7 + 8 = 15`; regroup ten ones as one ten; `37 + 48 = 85` | SVG title/description; place-value labels; no color-only carry cue |
 | CH04 | `art/prompts/ch04/paired-removal-distance.md`; implemented `art/vectors/ch04/seventy-two-minus-thirty-nine.svg` | paired regrouping and gap diagrams; 1200×800 | `72 − 39 = 33`; distance jumps +1, +30, +2 | SVG title/description; semantic labels and line styles distinguish models |

@@ -66,6 +66,7 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `aa15cf344e49b6ffc7bd8a0868f77dd74a2225ad` — CH04 method-level vector gallery, exactness tests, rebuilt base-ten model, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `c0f062c4e03b3facbc734e4adadc712f7a2f2209` — CH03 method-level vector gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `b13d27275f4afa8f58c0c26969c29c8274b0c7e2` — CH02 method-level visual gallery, two generated-hand composites, exactness tests, chapter QA reconciliation, and responsive evidence.
 - `8b914192820cb578798959d42d88e5ba33acfd5d` — CH01 method-level visual gallery, generated-hand composite, exactness tests, and responsive evidence.
@@ -109,6 +110,8 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34120087625` for `Publish book explorer` completed successfully for CH04 method-art head SHA `aa15cf344e49b6ffc7bd8a0868f77dd74a2225ad`; both build and deploy jobs passed. The live CH04 route returned HTTP 200 with all twelve ordered `data-method-figure="04-NN"` figures. The rebuilt Method 07 SVG returned HTTP 200 and contained the tested 7-rod, 12-cube regroup, and final 3-rod/3-cube groups. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34120087625. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/72-minus-39/.
 
 GitHub Actions run `34118479535` for `Publish book explorer` completed successfully for CH03 method-art head SHA `c0f062c4e03b3facbc734e4adadc712f7a2f2209`; both build and deploy jobs passed. The live CH03 route returned HTTP 200 with all fourteen ordered `data-method-figure="03-NN"` figures. The corrected Method 01 SVG returned HTTP 200 and contained the explicit `30 + 40`, `7 + 8`, and `70 + 15 = 85` chain. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34118479535. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/37-plus-48/.
 

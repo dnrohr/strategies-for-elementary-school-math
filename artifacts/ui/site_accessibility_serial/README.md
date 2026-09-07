@@ -22,5 +22,6 @@ The coordinator inspected the rendered explorer, flagship chapter, fraction chap
 - `ch03-thirty-seven-plus-forty-eight.png` — 1200×800 rendered SVG; verifies the 15-ones regrouping and final 85.
 - `ch02-fifteen-minus-eight.png` — 1200×800 rendered SVG; verifies separate removal/distance routes and exact count-up jumps.
 - `ch01-seven-plus-five.png` — 1200×800 rendered SVG; verifies seven plus five equals twelve and five count-on jumps.
+- `ch00-frontmatter-axes.png` — 1200×800 rendered SVG; verifies separate strategy and mental-representation axes without fixed learner types.
 
 DOM inspection verified one `h1`, semantic tables, skip navigation, labeled controls, and no horizontal overflow in the inspected desktop state. Desktop keyboard focus reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order. Narrow keyboard interaction and final art-asset review remain open.

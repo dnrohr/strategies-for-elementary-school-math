@@ -28,7 +28,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
-- `npm run check` passed: validation, 8 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 9 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
@@ -36,6 +36,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 ## Remaining blockers
 
 - Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; one coordinator-reviewed vector now exists for every authored chapter CH00–CH14, but broader per-method rendering and final sign-off remain open.
+- Automated asset QA now verifies every CH00–CH14 SVG has a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no embedded raster image; rendered contrast and narrow-width review remain open.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; narrow-width keyboard/focus verification remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.

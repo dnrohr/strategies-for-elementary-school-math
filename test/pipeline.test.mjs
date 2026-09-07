@@ -50,6 +50,22 @@ test("CH09 twentieths model preserves the half-unit endpoint", async () => {
   assert.match(chapter, /5\/8 ends halfway through the thirteenth unit, not at 13 full units/);
 });
 
+test("chapter vector assets carry accessible, raster-free metadata", async () => {
+  for (let chapter = 0; chapter <= 14; chapter += 1) {
+    const code = String(chapter).padStart(2, "0");
+    const vectorDir = path.join(ROOT, "art", "vectors", `ch${code}`);
+    const assets = (await fs.readdir(vectorDir)).filter(file => file.endsWith(".svg"));
+    assert.equal(assets.length, 1, `CH${code} should have one canonical SVG asset`);
+    const svg = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b/i.test(svg), `CH${code} SVG must not embed raster images`);
+  }
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;

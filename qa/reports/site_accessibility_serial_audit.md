@@ -10,7 +10,7 @@ Status: `route, structure, responsive screenshot, and desktop keyboard checks co
 - The explorer exposes skip navigation, a labeled search field, a theme control, chapter links, and chapter navigation.
 - The generated chapter pages now contain exactly one `<h1>`; the manuscript's duplicate top-level heading is removed at build time and covered by a regression test.
 - Cross-classification Markdown tables now render as semantic tables with table headers and cells.
-- Current generated pages contain no `<img>` elements, so there are no missing image `alt` attributes in the current build. Final art assets will require a new accessibility pass when introduced.
+- Current generated pages contain no `<img>` elements. The vector asset suite now has an automated metadata gate for CH00–CH14; a page-level figure/alt-text pass remains required if assets are wired into generated pages.
 - Desktop layout metrics for the flagship route showed document width 1265px against a 1280px viewport, with no horizontal overflow in the inspected state.
 - Keyboard focus inspection on the explorer reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order.
 - Semantic tables now have responsive horizontal scrolling within the prose region, with readable borders, header contrast, and wrapping code labels.

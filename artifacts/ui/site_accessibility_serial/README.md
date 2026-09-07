@@ -20,5 +20,6 @@ The coordinator inspected the rendered explorer, flagship chapter, fraction chap
 - `ch14-three-fractions-in-twelfths.png` — 1200×800 rendered SVG; verifies twelfths conversions and total 22/12 = 11/6.
 - `ch04-seventy-two-minus-thirty-nine.png` — 1200×800 rendered SVG; verifies separate removal/distance routes and exact +1, +30, +2 gap jumps.
 - `ch03-thirty-seven-plus-forty-eight.png` — 1200×800 rendered SVG; verifies the 15-ones regrouping and final 85.
+- `ch02-fifteen-minus-eight.png` — 1200×800 rendered SVG; verifies separate removal/distance routes and exact count-up jumps.
 
 DOM inspection verified one `h1`, semantic tables, skip navigation, labeled controls, and no horizontal overflow in the inspected desktop state. Desktop keyboard focus reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order. Narrow keyboard interaction and final art-asset review remain open.

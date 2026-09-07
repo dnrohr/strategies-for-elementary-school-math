@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fifteen minus eight equals seven</title>
+  <desc id="desc">A removal model starts with fifteen units and removes eight, leaving seven. A separate distance model starts at eight and counts one to ten and five more to fifteen, for a gap of seven.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 3; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 3; }
+    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 3; }
+    .pale { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 30px; }
+    .math { font-size: 40px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">15 − 8 = 7</text>
+  <text x="68" y="116" class="muted small">Removal and distance are two routes to the same difference.</text>
+  <rect x="68" y="160" width="520" height="500" rx="16" class="pale"/>
+  <text x="96" y="212" class="ink label">Removal route</text>
+  <text x="96" y="266" class="muted small">start with 15 units</text>
+  <g class="green" aria-label="Seven units remaining"><rect x="96" y="300" width="44" height="44" rx="6"/><rect x="148" y="300" width="44" height="44" rx="6"/><rect x="200" y="300" width="44" height="44" rx="6"/><rect x="252" y="300" width="44" height="44" rx="6"/><rect x="304" y="300" width="44" height="44" rx="6"/><rect x="356" y="300" width="44" height="44" rx="6"/><rect x="408" y="300" width="44" height="44" rx="6"/></g>
+  <g class="orange" aria-label="Eight units removed"><rect x="96" y="370" width="44" height="44" rx="6"/><rect x="148" y="370" width="44" height="44" rx="6"/><rect x="200" y="370" width="44" height="44" rx="6"/><rect x="252" y="370" width="44" height="44" rx="6"/><rect x="304" y="370" width="44" height="44" rx="6"/><rect x="356" y="370" width="44" height="44" rx="6"/><rect x="408" y="370" width="44" height="44" rx="6"/><rect x="460" y="370" width="44" height="44" rx="6"/></g>
+  <path d="M96 462h408" stroke="#24312d" stroke-width="2"/>
+  <text x="96" y="520" class="ink label">15 − 8 = 7 left</text>
+  <text x="96" y="580" class="muted small">7 remaining units are the difference.</text>
+  <rect x="620" y="160" width="512" height="500" rx="16" class="pale"/>
+  <text x="648" y="212" class="ink label">Distance route</text>
+  <text x="648" y="266" class="muted small">start at 8 · count up to 15</text>
+  <line x1="680" y1="356" x2="1070" y2="356" stroke="#24312d" stroke-width="4"/>
+  <circle cx="680" cy="356" r="9" class="blue"/><circle cx="732" cy="356" r="9" class="blue"/><circle cx="940" cy="356" r="9" class="blue"/><circle cx="1070" cy="356" r="9" class="blue"/>
+  <text x="668" y="402" class="ink small">8</text><text x="720" y="402" class="ink small">9</text><text x="928" y="402" class="ink small">13</text><text x="1058" y="402" class="ink small">15</text>
+  <path d="M688 330h36 M740 330h192 M948 330h114" stroke="#467a9b" stroke-width="6"/>
+  <text x="696" y="304" class="ink small">+1</text><text x="818" y="304" class="ink small">+4</text><text x="1002" y="304" class="ink small">+2</text>
+  <path d="M648 470h414" stroke="#24312d" stroke-width="2"/>
+  <text x="648" y="530" class="ink label">1 + 4 + 2 = 7</text>
+  <text x="648" y="590" class="muted small">8 + 7 = 15</text>
+</svg>

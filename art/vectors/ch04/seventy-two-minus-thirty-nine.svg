@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Seventy-two minus thirty-nine equals thirty-three</title>
+  <desc id="desc">A paired model shows removal and distance as distinct routes. In the removal route, 72 trades one ten for ten ones and removes 39, leaving 33. In the distance route, jumps of 1, 30, and 2 go from 39 to 72, totaling 33.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 3; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 3; }
+    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 3; }
+    .pale { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 29px; }
+    .math { font-size: 40px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">72 − 39 = 33</text>
+  <text x="68" y="116" class="muted small">The same difference can be modeled as removing or measuring a gap.</text>
+  <rect x="68" y="160" width="520" height="500" rx="16" class="pale"/>
+  <text x="96" y="212" class="ink label">Removal route</text>
+  <text x="96" y="266" class="ink label">72 = 60 + 12</text>
+  <text x="96" y="318" class="muted small">trade one ten: 6 tens + 12 ones</text>
+  <rect x="96" y="352" width="420" height="58" rx="9" class="orange"/>
+  <text x="120" y="390" class="ink label">12 − 9 = 3 ones</text>
+  <rect x="96" y="430" width="420" height="58" rx="9" class="green"/>
+  <text x="120" y="468" class="ink label">6 tens − 3 tens = 3 tens</text>
+  <path d="M96 524h420" stroke="#24312d" stroke-width="2"/>
+  <text x="96" y="580" class="ink label">3 tens + 3 ones = 33</text>
+  <rect x="620" y="160" width="512" height="500" rx="16" class="pale"/>
+  <text x="648" y="212" class="ink label">Distance route</text>
+  <text x="648" y="266" class="muted small">start at 39 · measure the gap to 72</text>
+  <line x1="668" y1="356" x2="1080" y2="356" stroke="#24312d" stroke-width="4"/>
+  <circle cx="668" cy="356" r="9" class="blue"/><circle cx="716" cy="356" r="9" class="blue"/><circle cx="956" cy="356" r="9" class="blue"/><circle cx="1080" cy="356" r="9" class="blue"/>
+  <text x="650" y="402" class="ink small">39</text><text x="704" y="402" class="ink small">40</text><text x="944" y="402" class="ink small">70</text><text x="1060" y="402" class="ink small">72</text>
+  <path d="M676 330h32 M724 330h224 M964 330h108" stroke="#467a9b" stroke-width="6"/>
+  <text x="680" y="304" class="ink small">+1</text><text x="818" y="304" class="ink small">+30</text><text x="1010" y="304" class="ink small">+2</text>
+  <path d="M668 470h412" stroke="#24312d" stroke-width="2"/>
+  <text x="648" y="530" class="ink label">1 + 30 + 2 = 33</text>
+  <text x="648" y="590" class="muted small">distance, not removal</text>
+</svg>

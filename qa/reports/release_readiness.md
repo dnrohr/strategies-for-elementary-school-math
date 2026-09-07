@@ -35,7 +35,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Remaining blockers
 
-- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; coordinator-reviewed vectors now exist for CH02–CH14, while CH00–CH01 remain represented by production briefs.
+- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; coordinator-reviewed vectors now exist for CH01–CH14, while CH00 remains represented by a production brief.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; narrow-width keyboard/focus verification remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; CH99 records 20 screened items requiring full-text inspection before stronger claims or final promotion.
@@ -79,6 +79,7 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `a3415ce79eb29d1227c52ffe5ffaa6783a9a07a6` — CH04 subtraction vector, provenance, and screenshot evidence.
 - `2dfb312cea2ea47793f086ac068b69ef5e243eb2` — CH03 regrouping vector, provenance, and screenshot evidence.
 - `795611290353f06f577bee4d903eb2bf39542fc0` — CH02 subtraction vector, provenance, and screenshot evidence.
+- `cf711884f86bb97b5a28aa1457b98bb17dcee9be` — CH01 addition vector, provenance, and screenshot evidence.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 

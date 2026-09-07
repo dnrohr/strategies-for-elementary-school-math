@@ -1,0 +1,11 @@
+{
+  "route": "http://localhost:8080/chapters/24-divided-by-6/",
+  "viewport": { "innerWidth": 390, "clientWidth": 375 },
+  "documentScrollWidth": 375,
+  "methodFigureCount": 12,
+  "emptyAltCount": 0,
+  "unloadedFigureIds": [],
+  "commonFigureBounds": { "left": 20, "right": 356, "width": 336, "imageWidth": 307 },
+  "naturalImageWidth": 1200,
+  "methodFigureIds": ["06-01", "06-02", "06-03", "06-04", "06-05", "06-06", "06-07", "06-08", "06-09", "06-10", "06-11", "06-12"]
+}

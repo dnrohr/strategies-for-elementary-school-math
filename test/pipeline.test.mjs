@@ -365,6 +365,64 @@ test("CH05 has exact accessible art for all twenty methods", async () => {
   }
 });
 
+test("CH06 has exact accessible art for all twelve division methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch06");
+  const compositeDir = path.join(ROOT, "art", "composites", "ch06");
+  const vectorAssets = (await fs.readdir(vectorDir)).filter(file => /^ch06_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  const compositeAssets = (await fs.readdir(compositeDir)).filter(file => /^ch06_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  const assets = [...vectorAssets, ...compositeAssets].sort();
+  assert.equal(assets.length, 12);
+  assert.deepEqual(assets.map(file => file.match(/^ch06_m(\d{2})_/)[1]), Array.from({ length: 12 }, (_value, index) => String(index + 1).padStart(2, "0")));
+  for (const file of assets) {
+    const directory = compositeAssets.includes(file) ? compositeDir : vectorDir;
+    const svg = await fs.readFile(path.join(directory, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    if (directory === vectorDir) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+    else assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch06\/ch06_m09_finger-group-counter_raster\.png"/);
+  }
+
+  for (const file of ["ch06_m01_share-into-six.svg", "ch06_m02_four-groups-of-six.svg", "ch06_m06_four-by-six-array.svg", "ch06_m08_six-coin-piles.svg"]) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.equal((svg.match(/<circle\b/g) || []).length, 24, `${file} must show exactly 24 counters`);
+  }
+  const sharing = await fs.readFile(path.join(vectorDir, "ch06_m01_share-into-six.svg"), "utf8");
+  assert.equal((sharing.match(/<rect x="(?:55|430|805)" y="(?:155|425)"/g) || []).length, 6);
+  const grouping = await fs.readFile(path.join(vectorDir, "ch06_m02_four-groups-of-six.svg"), "utf8");
+  assert.equal(((grouping.match(/<g class="four-group-brackets"[\s\S]*?<\/g>/) || [""])[0].match(/<path\b/g) || []).length, 4);
+  const family = await fs.readFile(path.join(vectorDir, "ch06_m03_inverse-six-times-four.svg"), "utf8");
+  for (const fact of ["6 × 4 = 24", "4 × 6 = 24", "24 ÷ 6 = 4"]) assert(family.includes(fact));
+  const jumps = await fs.readFile(path.join(vectorDir, "ch06_m04_skip-count-four-jumps.svg"), "utf8");
+  assert.equal((jumps.match(/Q\d+ 240 \d+ 460/g) || []).length, 4);
+  const ladder = await fs.readFile(path.join(vectorDir, "ch06_m05_subtract-six-four-times.svg"), "utf8");
+  assert.equal((ladder.match(/<circle\b/g) || []).length, 5);
+  assert.equal((ladder.match(/>\d · −6<\/text>/g) || []).length, 4);
+  const decomposition = await fs.readFile(path.join(vectorDir, "ch06_m07_divide-by-two-then-three.svg"), "utf8");
+  const terminalGroups = (decomposition.match(/<g class="six-terminal-groups"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((terminalGroups.match(/<rect\b/g) || []).length, 6);
+  assert.equal((decomposition.match(/>12<\/text>/g) || []).length, 2);
+  assert.equal((decomposition.match(/>4<\/text>/g) || []).length, 6);
+  const bar = await fs.readFile(path.join(vectorDir, "ch06_m10_six-part-bar.svg"), "utf8");
+  assert.equal((bar.match(/>4<\/text>/g) || []).length, 6);
+  assert.equal((bar.match(/M(?:166\.667|333\.334|500|666\.667|833\.334) 0v220/g) || []).length, 5);
+  const table = await fs.readFile(path.join(vectorDir, "ch06_m11_proportion-table.svg"), "utf8");
+  for (const label of [">6</text>", ">24</text>", ">1</text>", ">4</text>", "÷ 6", "× 6", "6 × 4 = 24"]) assert(table.includes(label));
+  assert.match(table, /class="reverse-times-six-arrow"/);
+  const estimate = await fs.readFile(path.join(vectorDir, "ch06_m12_estimate-and-verify.svg"), "utf8");
+  const blocks = (estimate.match(/<g class="four-blocks-of-six"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((blocks.match(/<rect\b/g) || []).length, 4);
+  assert.match(estimate, /class="verification-loop"/);
+  const fingers = await fs.readFile(path.join(compositeDir, "ch06_m09_finger-group-counter.svg"), "utf8");
+  const fourJumps = (fingers.match(/<g class="four-jumps"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((fourJumps.match(/<path\b/g) || []).length, 4);
+  const raster = await fs.readFile(path.join(ROOT, "art", "raster", "ch06", "ch06_m09_finger-group-counter_raster.png"));
+  assert.equal(raster.readUInt32BE(16), 1536);
+  assert.equal(raster.readUInt32BE(20), 1024);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -402,7 +460,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [8, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [8, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));
@@ -431,4 +489,8 @@ test("repository validates and build emits every manifest page", async () => {
     assert.match(composite, /<image href="data:image\/png;base64,/);
     await fs.access(path.join(ch05Output, `ch05_${method}_raster.png`));
   }
+  const ch06Output = path.join(ROOT, "_site", "assets", "figures", "ch06");
+  const ch06Composite = await fs.readFile(path.join(ch06Output, "ch06_m09_finger-group-counter.svg"), "utf8");
+  assert.match(ch06Composite, /<image href="data:image\/png;base64,/);
+  await fs.access(path.join(ch06Output, "ch06_m09_finger-group-counter_raster.png"));
 });

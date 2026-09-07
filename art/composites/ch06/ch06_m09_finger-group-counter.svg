@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Four raised fingers track four groups of six</title>
+  <desc id="desc">One anatomically plausible hand has exactly four raised fingers and a tucked thumb. Above it, a vector number line makes exactly four equal jumps of six from zero to twenty-four, so twenty-four divided by six equals four.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087E8B"/></marker></defs>
+  <image href="../../raster/ch06/ch06_m09_finger-group-counter_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid slice"/>
+  <g font-family="Arial,sans-serif" fill="#24312D" text-anchor="middle">
+    <rect x="42" y="28" width="1116" height="92" rx="24" fill="#FFFDF8" fill-opacity=".94"/><text x="600" y="68" font-size="35" font-weight="700">One raised finger for each group of 6</text><text x="600" y="101" font-size="22">The fingers count groups—not all 24 objects.</text>
+    <rect x="70" y="145" width="1060" height="245" rx="30" fill="#FFFDF8" fill-opacity=".93" stroke="#2764B8" stroke-width="6"/>
+    <path d="M135 320H1065" stroke="#24312D" stroke-width="6"/>
+    <g class="four-jumps" fill="none" stroke="#087E8B" stroke-width="7" marker-end="url(#arrow)"><path d="M140 295Q255 155 370 295"/><path d="M370 295Q485 155 600 295"/><path d="M600 295Q715 155 830 295"/><path d="M830 295Q945 155 1060 295"/></g>
+    <g font-size="23" font-weight="700"><text x="140" y="356">0</text><text x="370" y="356">6</text><text x="600" y="356">12</text><text x="830" y="356">18</text><text x="1060" y="356">24</text></g>
+    <g font-size="20" fill="#087E8B" font-weight="700"><text x="255" y="186">group 1</text><text x="485" y="186">group 2</text><text x="715" y="186">group 3</text><text x="945" y="186">group 4</text></g>
+    <rect x="55" y="600" width="470" height="120" rx="38" fill="#E8F3ED" fill-opacity=".96" stroke="#287A55" stroke-width="7"/><text x="290" y="650" font-size="27" font-weight="700">4 raised fingers = 4 groups</text><text x="290" y="693" font-size="34" font-weight="700">24 ÷ 6 = 4</text>
+  </g>
+</svg>

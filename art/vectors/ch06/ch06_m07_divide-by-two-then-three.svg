@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Divide twenty-four by two and then each half by three</title>
+  <desc id="desc">Twenty-four branches into two equal groups of twelve. Each twelve visibly branches into three equal groups of four, making six terminal groups of four and verifying division by six.</desc>
+  <rect width="1200" height="800" fill="#FFFDF8"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
+    <text x="600" y="55" font-size="36" font-weight="700">Factor 6 as 2 × 3</text>
+    <circle cx="600" cy="135" r="58" fill="#E7EEF8" stroke="#2764B8" stroke-width="7"/><text x="600" y="151" font-size="42" font-weight="700">24</text>
+    <g stroke="#7652A8" stroke-width="6" fill="none"><path d="M565 185L300 285"/><path d="M635 185L900 285"/></g>
+    <g font-size="36" font-weight="700"><rect x="190" y="275" width="220" height="90" rx="20" fill="#F4EBFA" stroke="#7652A8" stroke-width="6"/><text x="300" y="333">12</text><rect x="790" y="275" width="220" height="90" rx="20" fill="#F4EBFA" stroke="#7652A8" stroke-width="6"/><text x="900" y="333">12</text></g>
+    <g class="two-parent-branches" stroke="#287A55" stroke-width="5" fill="none"><path d="M250 365L130 500M300 365L300 500M350 365L470 500"/><path d="M850 365L730 500M900 365L900 500M950 365L1070 500"/></g>
+    <g class="six-terminal-groups" fill="#E8F3ED" stroke="#287A55" stroke-width="6"><rect x="55" y="500" width="150" height="90" rx="18"/><rect x="225" y="500" width="150" height="90" rx="18"/><rect x="395" y="500" width="150" height="90" rx="18"/><rect x="655" y="500" width="150" height="90" rx="18"/><rect x="825" y="500" width="150" height="90" rx="18"/><rect x="995" y="500" width="150" height="90" rx="18"/></g>
+    <g font-size="31" font-weight="700"><text x="130" y="556">4</text><text x="300" y="556">4</text><text x="470" y="556">4</text><text x="730" y="556">4</text><text x="900" y="556">4</text><text x="1070" y="556">4</text></g>
+    <g stroke="#2764B8" stroke-width="6" fill="none"><path d="M55 620v28h490v-28"/><path d="M655 620v28h490v-28"/></g>
+    <g font-size="24" font-weight="700"><text x="300" y="686">12 ÷ 3 → three groups of 4</text><text x="900" y="686">12 ÷ 3 → three groups of 4</text></g>
+    <text x="600" y="760" font-size="29" font-weight="700">six groups of 4 · 24 ÷ 6 = 4</text>
+  </g>
+</svg>

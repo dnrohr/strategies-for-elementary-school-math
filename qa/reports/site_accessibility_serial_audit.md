@@ -19,7 +19,7 @@ Status: `route, structure, responsive screenshot, and desktop keyboard checks co
 
 ## Open checks
 
-- Verify keyboard focus order and theme-toggle behavior interactively at the narrow breakpoint; the desktop focus sequence is recorded above. The narrow figure layout check is complete for the representative published CH05 route, while broader per-page interaction coverage remains open.
+- Narrow keyboard focus and theme-toggle behavior were verified interactively on the published CH05 route: focus proceeds through skip link, brand link, theme toggle, chapter navigation, and footer link in logical order, and the toggle visibly switches and restores the palette. The narrow figure layout check is complete for this representative route; broader per-page interaction coverage remains open.
 - Recheck asset loading, figure descriptions, contrast, and overflow after production art is added.
 - Verify the deployed GitHub Pages base path and live workflow result after the final release batch.
 

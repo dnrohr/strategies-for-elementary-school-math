@@ -5,6 +5,7 @@ This view is generated from `research/source_log.csv`. A verified label means th
 ## Verified for manuscript use
 
 - **R01-002.** Lemaire, P., & Siegler, R. S. (1995). Four aspects of strategic change: Contributions to children's learning of multiplication. Journal of Experimental Psychology: General, 124(1), 83–97. [Source](https://doi.org/10.1037/0096-3445.124.1.83)
+- **R01-003.** Geary, D. C., Hoard, M. K., & Nugent, L. (2012). Independent contributions of the central executive, intelligence, and in-class attentive behavior to developmental change in the strategies used to solve addition problems. Journal of Experimental Child Psychology, 113(1), 49–65. [Source](https://doi.org/10.1016/j.jecp.2012.03.003)
 - **R01-007.** Rittle-Johnson, B., & Alibali, M. W. (1999). Conceptual and procedural knowledge of mathematics: Does one lead to the other? Journal of Educational Psychology, 91(1), 175–189. [Source](https://doi.org/10.1037/0022-0663.91.1.175)
 - **R01-008.** Rittle-Johnson, B., Siegler, R. S., & Alibali, M. W. (2001). Developing conceptual understanding and procedural skill in mathematics: An iterative process. Journal of Educational Psychology, 93(2), 346–362. [Source](https://doi.org/10.1037/0022-0663.93.2.346)
 - **R01-010.** Torbeyns, J., De Smedt, B., Ghesquière, P., & Verschaffel, L. (2009). Jump or compensate? Strategy flexibility in the number domain up to 100. ZDM, 41(5), 581–590. [Source](https://doi.org/10.1007/s11858-009-0187-3)
@@ -30,7 +31,6 @@ This view is generated from `research/source_log.csv`. A verified label means th
 ## Screened — full text still required
 
 - **R01-001.** Carpenter, T. P., & Moser, J. M. (1984). The acquisition of addition and subtraction concepts in grades one through three. Journal for Research in Mathematics Education, 15(3), 179–202. [Source](https://doi.org/10.2307/748348)
-- **R01-003.** Geary, D. C., Hoard, M. K., & Nugent, L. (2012). Independent contributions of the central executive, intelligence, and in-class attentive behavior to developmental change in the strategies used to solve addition problems. Journal of Experimental Child Psychology, 113(1), 49–65. [Source](https://doi.org/10.1016/j.jecp.2012.03.003)
 - **R01-004.** Barrouillet, P., & Lépine, R. (2005). Working memory and children's use of retrieval to solve addition problems. Journal of Experimental Child Psychology, 91(3), 183–204. [Source](https://doi.org/10.1016/j.jecp.2005.03.002)
 - **R01-005.** Canobi, K. H., Reeve, R. A., & Pattison, P. E. (1998). The role of conceptual understanding in children's addition problem solving. Developmental Psychology, 34(5), 882–891. [Source](https://doi.org/10.1037/0012-1649.34.5.882)
 - **R01-006.** Canobi, K. H. (2009). Concept–procedure interactions in children's addition and subtraction. Journal of Experimental Child Psychology, 102(2), 131–149. [Source](https://doi.org/10.1016/j.jecp.2008.07.008)

@@ -41,8 +41,8 @@ No quotations below are intended for publication.
   decomposition, and counting in 275 children. Retrieval and sophisticated counting were
   already present in Grade 1; decomposition increased over grades, and the rate of adoption
   varied with central-executive capacity even after several controls. The study supports
-  overlapping trajectories, not replacement at a single threshold. [R01-003, PubMed abstract;
-  screened, pending full-text confirmation]
+  overlapping trajectories, not replacement at a single threshold. [R01-003, pp. 49–65;
+  Method—Addition Strategy Choices, Results, and Discussion]
 - In Grades 3–4, higher working-memory span was associated with more frequent and faster
   retrieval on single-digit addition, especially as the smaller addend increased. This is an
   association, not proof that working-memory differences cause a child to retrieve facts.
@@ -163,7 +163,7 @@ These are editorial inferences, not direct empirical findings.
 
 ## Questions / leads
 
-- Locate and verify full texts for R01-001, R01-003, R01-004, R01-005, R01-006, R01-009,
+- Locate and verify full texts for R01-001, R01-004, R01-005, R01-006, R01-009,
   R01-011, and R01-012 before chapter drafting uses them.
 - Add a primary study directly comparing count-all, count-on-first, and count-on-larger with
   trial-level observation; Carpenter and Moser provide the longitudinal frame but a more

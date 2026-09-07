@@ -7,5 +7,5 @@
 - Content: 12 complete, non-duplicate methods for `15 − 8 = 7`, including removal, count-back, count-up/difference, decomposition, compensation, inverse addition, distance, fingers, bar model, ten-frame, retrieval, and imagined written work.
 - Checks: `npm run check` passed (validation, 5 tests, and build; 16 production entries and 42 research records validated).
 - Visual inspection: generated `_site/chapters/15-minus-8/index.html` and checked chapter title, method output, and method-12 output. Full browser screenshot remains coordinator-owned.
-- Known gaps: no generated art assets; screened sources R01-003, R01-005, and R01-012 require upgrade before final-status claims; second mathematical review requested for the written-regrouping illustration.
+- Known gaps: screened sources R01-005 and R01-012 require upgrade before final-status claims; R01-003 has been verified. A second mathematical review remains requested for the written-regrouping illustration.
 - Commit: none (worker is not authorized to commit or push).

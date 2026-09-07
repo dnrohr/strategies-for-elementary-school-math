@@ -77,8 +77,8 @@ Not applicable.
 
 ### Evidence inventory
 
-The Wave 1 ledger contains **42 non-duplicate records**: **22 verified** and
-**20 screened**. Screened records have stable metadata and authoritative
+The Wave 1 ledger contains **42 non-duplicate records**: **23 verified** and
+**19 screened**. Screened records have stable metadata and authoritative
 abstract or record checks, but require direct full-text review before their
 claims can be promoted. The current working bibliography separates these
 groups explicitly.

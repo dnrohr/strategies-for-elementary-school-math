@@ -78,6 +78,14 @@ test("research CSV parser handles quoted commas and validates records", () => {
   assert(buildBibliography([record]).includes("Verified for manuscript use"));
 });
 
+test("working bibliography matches canonical source verification statuses", async () => {
+  const source = await fs.readFile(path.join(ROOT, "research", "source_log.csv"), "utf8");
+  const [header, ...rows] = parseCsv(source);
+  const records = rows.map(values => Object.fromEntries(header.map((field, index) => [field, values[index]])));
+  const bibliography = await fs.readFile(path.join(ROOT, "research", "bibliography.md"), "utf8");
+  assert.equal(bibliography, buildBibliography(records));
+});
+
 test("repository validates and build emits every manifest page", async () => {
   assert.deepEqual(await validateRepository(), []);
   await build();

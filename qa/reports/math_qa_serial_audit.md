@@ -6,7 +6,7 @@ Scope: CH00–CH14 and CH99
 
 ## Results
 
-- `npm run check` passed: validation, 9 tests, and build; all 16 manifest entries emitted.
+- `npm run check` passed: validation, 10 tests, and build; all 16 manifest entries emitted.
 - Method counts meet the manifest targets: CH01 14, CH02 12, CH03 14, CH04 12, CH05 20, CH06 12, CH07 12, CH08 10, CH09 10, CH10 10, CH11 18, CH12 11, CH13 10, CH14 10.
 - Route smoke test returned HTTP 200 for `/`, CH01, CH05, CH08, and CH99.
 - The arithmetic inventory was checked across every method math line and mathematical note. No new P0 or P1 arithmetic error was found. CH12 Method 06 uses the corrected valid transformation recorded in `wave3_cross_chapter_audit.md`.

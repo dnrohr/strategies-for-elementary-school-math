@@ -64,6 +64,7 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `c0f062c4e03b3facbc734e4adadc712f7a2f2209` — CH03 method-level vector gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `b13d27275f4afa8f58c0c26969c29c8274b0c7e2` — CH02 method-level visual gallery, two generated-hand composites, exactness tests, chapter QA reconciliation, and responsive evidence.
 - `8b914192820cb578798959d42d88e5ba33acfd5d` — CH01 method-level visual gallery, generated-hand composite, exactness tests, and responsive evidence.
 - `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb` — CH08 method-level visual gallery, method-aware renderer, exactness tests, and responsive evidence.
@@ -106,6 +107,8 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34118479535` for `Publish book explorer` completed successfully for CH03 method-art head SHA `c0f062c4e03b3facbc734e4adadc712f7a2f2209`; both build and deploy jobs passed. The live CH03 route returned HTTP 200 with all fourteen ordered `data-method-figure="03-NN"` figures. The corrected Method 01 SVG returned HTTP 200 and contained the explicit `30 + 40`, `7 + 8`, and `70 + 15 = 85` chain. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34118479535. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/37-plus-48/.
 
 GitHub Actions run `34116752881` for `Publish book explorer` completed successfully for CH02 method-art head SHA `b13d27275f4afa8f58c0c26969c29c8274b0c7e2`; both build and deploy jobs passed. The live CH02 route returned HTTP 200 with all twelve ordered `data-method-figure="02-NN"` figures. Both generated-hand composite SVGs returned HTTP 200 with embedded PNG data URLs, and their standalone 2,220,185-byte and 2,429,793-byte provenance rasters returned HTTP 200. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34116752881. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/15-minus-8/.
 

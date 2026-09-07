@@ -17,20 +17,56 @@ function chapterCard(chapter) {
   </article>`;
 }
 
-async function chapterFigure(chapter) {
-  if (chapter.chapter < 0 || chapter.chapter > 14) return "";
+function readSvgMetadata(source, fallback) {
+  const title = source.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() || fallback;
+  const description = source.match(/<desc[^>]*>([\s\S]*?)<\/desc>/i)?.[1]?.trim() || title;
+  return { title, description };
+}
+
+function figureMarkup({ className, src, title, description, methodKey = "" }) {
+  const dataAttribute = methodKey ? ` data-method-figure="${escapeHtml(methodKey)}"` : "";
+  return `<figure class="${className}"${dataAttribute}><img src="${src}" alt="${escapeHtml(description)}" loading="lazy" decoding="async"><figcaption>${escapeHtml(title)}</figcaption></figure>`;
+}
+
+async function chapterArt(chapter) {
+  if (chapter.chapter < 0 || chapter.chapter > 14) return { chapterFigure: "", methodFigures: new Map() };
   const code = String(chapter.chapter).padStart(2, "0");
   const sourceDir = path.join(ROOT, "art", "vectors", `ch${code}`);
   const assets = (await fs.readdir(sourceDir)).filter(file => file.endsWith(".svg"));
-  if (assets.length !== 1) return "";
-  const asset = assets[0];
-  const source = await fs.readFile(path.join(sourceDir, asset), "utf8");
-  const title = source.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() || chapter.title;
-  const description = source.match(/<desc[^>]*>([\s\S]*?)<\/desc>/i)?.[1]?.trim() || title;
   const destinationDir = path.join(OUTPUT, "assets", "figures", `ch${code}`);
   await fs.mkdir(destinationDir, { recursive: true });
-  await fs.copyFile(path.join(sourceDir, asset), path.join(destinationDir, asset));
-  return `<figure class="chapter-figure"><img src="../../assets/figures/ch${code}/${asset}" alt="${escapeHtml(description)}" loading="lazy"><figcaption>${escapeHtml(title)}</figcaption></figure>`;
+  const methodFigures = new Map();
+  const methodPattern = new RegExp(`^ch${code}_m(\\d{2})_[a-z0-9-]+\\.svg$`);
+  const anchors = [];
+
+  for (const asset of assets.sort()) {
+    const source = await fs.readFile(path.join(sourceDir, asset), "utf8");
+    const metadata = readSvgMetadata(source, chapter.title);
+    await fs.copyFile(path.join(sourceDir, asset), path.join(destinationDir, asset));
+    const methodMatch = asset.match(methodPattern);
+    if (methodMatch) {
+      const methodNumber = methodMatch[1];
+      if (methodFigures.has(methodNumber)) throw new Error(`CH${code} has more than one figure for Method ${methodNumber}`);
+      methodFigures.set(methodNumber, figureMarkup({
+        className: "method-figure",
+        src: `../../assets/figures/ch${code}/${asset}`,
+        title: metadata.title,
+        description: metadata.description,
+        methodKey: `${code}-${methodNumber}`
+      }));
+    } else {
+      anchors.push({ asset, ...metadata });
+    }
+  }
+
+  if (anchors.length > 1) throw new Error(`CH${code} has more than one chapter-level anchor SVG`);
+  const chapterFigure = anchors.length === 1 ? figureMarkup({
+    className: "chapter-figure",
+    src: `../../assets/figures/ch${code}/${anchors[0].asset}`,
+    title: anchors[0].title,
+    description: anchors[0].description
+  }) : "";
+  return { chapterFigure, methodFigures };
 }
 
 export async function build() {
@@ -58,8 +94,19 @@ export async function build() {
     const next = chapters[index + 1];
     const nav = `<nav class="chapter-nav" aria-label="Chapter navigation">${prev ? `<a href="../${prev.slug}/">← ${escapeHtml(prev.title)}</a>` : "<span></span>"}${next ? `<a href="../${next.slug}/">${escapeHtml(next.title)} →</a>` : ""}</nav>`;
     const manuscriptBody = chapter.body.replace(/^#\s+.+(?:\r?\n)+/, "");
-    const figure = await chapterFigure(chapter);
-    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header>${figure}<div class="prose">${renderMarkdown(manuscriptBody)}</div>${nav}</article>`;
+    const { chapterFigure, methodFigures } = await chapterArt(chapter);
+    const manuscriptMethods = [...manuscriptBody.matchAll(/^## Method (\d{2})\b/gm)].map(match => match[1]);
+    if (methodFigures.size && (methodFigures.size !== manuscriptMethods.length || manuscriptMethods.some(method => !methodFigures.has(method)))) {
+      throw new Error(`CH${String(chapter.chapter).padStart(2, "0")} method art must cover every manuscript method once a method-art batch begins`);
+    }
+    const renderedBody = renderMarkdown(manuscriptBody, {
+      afterHeading: ({ level, text }) => {
+        if (level !== 2) return "";
+        const methodNumber = text.match(/^Method (\d{2})\b/)?.[1];
+        return methodNumber ? methodFigures.get(methodNumber) || "" : "";
+      }
+    });
+    const content = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../../">← All chapters</a><p class="eyebrow">${escapeHtml(chapter.part)} · ${chapter.chapter === 0 ? "Introduction" : `Chapter ${chapter.chapter}`}</p><div class="chapter-title-row"><h1>${escapeHtml(chapter.title)}</h1><span class="status status-${chapter.status}">${escapeHtml(chapter.status)}</span></div>${chapter.strategy_target !== "n/a" ? `<p class="strategy-target">Target: ${escapeHtml(chapter.strategy_target)} genuinely distinct approaches</p>` : ""}</header>${chapterFigure}<div class="prose">${renderedBody}</div>${nav}</article>`;
     await writeFileEnsured(path.join(OUTPUT, "chapters", chapter.slug, "index.html"), pageShell({ title: chapter.title, root: "../../", content, description: `${chapter.title}, a chapter in How We Think About Arithmetic.` }));
   }
 

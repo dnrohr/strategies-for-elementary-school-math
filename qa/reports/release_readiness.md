@@ -28,14 +28,16 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
-- `npm run check` passed: validation, 10 tests, and build; 16 production entries and 42 canonical source records validated.
+- `ART-CH08-METHODS` established the method-aware rendering architecture and completed 10/10 CH08 method vectors. The generated chapter now contains one method figure immediately after every Method 01–10 heading, plus its existing opening anchor. All ten method assets use required names, useful alt text, exact vector quantities, selectable text, non-color cues, and a chapter-scoped provenance/QA ledger.
+- Independent CH08 visual review inspected current captures for all ten method figures at 1440 px and a representative method at 390 px. One Method 09 label/equation collision was found and corrected. The page has no document-level overflow at either measured width; evidence is under `artifacts/ui/art-ch08-methods/`.
+- `npm run check` passed: validation, 12 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
 
 ## Remaining blockers
 
-- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide; one coordinator-reviewed vector now exists for every authored chapter CH00–CH14, but broader per-method rendering and final sign-off remain open.
+- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide. CH08 now has 10/10 method vectors and every authored chapter CH00–CH14 retains its opening anchor, but 165 methods in CH01–CH07 and CH09–CH14 still need production visuals and sign-off.
 - Automated asset QA now verifies every CH00–CH14 SVG has a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no embedded raster image; broad rendered contrast and final per-method visual sign-off remain open.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; generated CH00–CH14 pages load one canonical SVG each with non-empty alt text. The published CH05 route was visually checked at the app's narrow viewport with the figure and caption contained in the content column; narrow keyboard focus and theme-toggle behavior were also verified there. Broader per-page interaction coverage remains open while desktop focus order is complete.
@@ -48,7 +50,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Worker batch status
 
-The requested first batch was dispatched with disjoint ownership for `DESIGN`, editorial CH00–CH07, and `QA`. Each worker failed before producing output because the host reported the Codex usage limit. No worker committed or pushed, and no worker changes were integrated.
+`COORD-INVENTORY-ART` completed a read-only coverage audit. `ART-CH08-METHODS` then produced ten CH08 method SVGs and their chapter-scoped prompt/provenance records without editing shared files, committing, or pushing. The coordinator reviewed every asset, corrected the Method 09 overlap and Method 08 text contrast, integrated the renderer/tests/styles, and captured current browser evidence.
+
+## Restart checkpoint
+
+After this batch is committed and pushed, the exact next lane is `ART-CH01-METHODS`, owned to `art/vectors/ch01/**` and `art/prompts/ch01/**`, with the coordinator retaining shared renderer, test, manifest, release-report, evidence, commit, and deployment responsibilities. Produce and integrate all 14 CH01 method visuals as one coherent chapter batch; retain the existing CH01 opening anchor.
 
 ## Commits
 

@@ -39,7 +39,7 @@ function inlineMarkdown(value) {
   return text;
 }
 
-export function renderMarkdown(markdown) {
+export function renderMarkdown(markdown, { afterHeading } = {}) {
   const lines = markdown.split(/\r?\n/);
   const html = [];
   let paragraph = [];
@@ -86,6 +86,8 @@ export function renderMarkdown(markdown) {
       const level = heading[1].length;
       const id = heading[2].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       html.push(`<h${level} id="${id}">${inlineMarkdown(heading[2])}</h${level}>`);
+      const appended = afterHeading?.({ level, text: heading[2], id });
+      if (appended) html.push(appended);
     } else if (bullet || ordered) {
       flushParagraph(); flushQuote();
       const wanted = ordered ? "ol" : "ul";

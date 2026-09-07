@@ -44,6 +44,13 @@ test("renderer converts pipe-delimited Markdown tables to semantic HTML", () => 
   assert(!rendered.includes("| Route | Format |"));
 });
 
+test("renderer can place method art immediately after its matching heading", () => {
+  const rendered = renderMarkdown("## Method 08 — Example\n\nBody", {
+    afterHeading: ({ level, text }) => level === 2 && text.startsWith("Method 08") ? '<figure data-method-figure="08-08"></figure>' : ""
+  });
+  assert.match(rendered, /<h2[^>]*>Method 08[^<]*<\/h2>\n<figure data-method-figure="08-08"><\/figure>\n<p>Body<\/p>/);
+});
+
 test("CH09 twentieths model preserves the half-unit endpoint", async () => {
   const chapter = await fs.readFile(path.join(ROOT, "book", "manuscript", "09_compare_fractions.md"), "utf8");
   assert(chapter.includes("5/8 = 12.5/20"));
@@ -54,8 +61,8 @@ test("chapter vector assets carry accessible, raster-free metadata", async () =>
   for (let chapter = 0; chapter <= 14; chapter += 1) {
     const code = String(chapter).padStart(2, "0");
     const vectorDir = path.join(ROOT, "art", "vectors", `ch${code}`);
-    const assets = (await fs.readdir(vectorDir)).filter(file => file.endsWith(".svg"));
-    assert.equal(assets.length, 1, `CH${code} should have one canonical SVG asset`);
+    const assets = (await fs.readdir(vectorDir)).filter(file => file.endsWith(".svg") && !/^ch\d{2}_m\d{2}_/.test(file));
+    assert.equal(assets.length, 1, `CH${code} should have one chapter-level anchor SVG asset`);
     const svg = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
     assert.match(svg, /viewBox="0 0 1200 800"/);
     assert.match(svg, /role="img"/);
@@ -63,6 +70,43 @@ test("chapter vector assets carry accessible, raster-free metadata", async () =>
     assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
     assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
     assert(!/<image\b/i.test(svg), `CH${code} SVG must not embed raster images`);
+  }
+});
+
+test("CH08 has one accessible production SVG for every method", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch08");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch08_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 10);
+  assert.deepEqual(assets.map(file => file.match(/^ch08_m(\d{2})_/)[1]), ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]);
+  for (const asset of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, asset), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b/i.test(svg), `${asset} must remain vector-only`);
+  }
+
+  const exactChecks = {
+    "ch08_m01_four-equal-trays.svg": ["20 ÷ 4 = 5", "3 × 5 = 15"],
+    "ch08_m02_one-fourth-then-triple.svg": ["1/4 of 20 = 5", "3 copies × 5 = 15"],
+    "ch08_m03_divide-then-multiply.svg": ["÷ 4", "× 3", "(20 ÷ 4) × 3 = 15"],
+    "ch08_m04_multiply-then-divide.svg": ["20 × 3 = 60", "60 ÷ 4 = 15", "(20 × 3) ÷ 4 = 15"],
+    "ch08_m05_fraction-bar.svg": ["WHOLE = 20", "5 + 5 + 5 = 15"],
+    "ch08_m06_four-by-five-array.svg": ["4 × 5 = 20", "3 × 5 = 15"],
+    "ch08_m07_twenty-dollars.svg": ["$5 + $5 + $5 = $15", "all four = $20"],
+    "ch08_m08_three-groups-rhythm.svg": ["5 + 5 + 5 = 15", "quarter left"],
+    "ch08_m09_proportion.svg": ["x / 20 = 3 / 4", "4x = 60", "x = 15"],
+    "ch08_m10_retrieve-and-check.svg": ["3/4 of 20", "three fives = 15", "four fives = 20"]
+  };
+  for (const [asset, fragments] of Object.entries(exactChecks)) {
+    const svg = await fs.readFile(path.join(vectorDir, asset), "utf8");
+    for (const fragment of fragments) assert(svg.includes(fragment), `${asset} should preserve exact label ${fragment}`);
+  }
+  for (const asset of ["ch08_m01_four-equal-trays.svg", "ch08_m06_four-by-five-array.svg", "ch08_m08_three-groups-rhythm.svg"]) {
+    const svg = await fs.readFile(path.join(vectorDir, asset), "utf8");
+    assert.equal((svg.match(/<circle\b/g) || []).length, 20, `${asset} should contain exactly 20 quantity circles`);
   }
 });
 
@@ -102,6 +146,15 @@ test("repository validates and build emits every manifest page", async () => {
     if (chapter.chapter >= 0 && chapter.chapter <= 14) {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
+    }
+    if (chapter.chapter === 8) {
+      const figures = [...page.matchAll(/data-method-figure="08-(\d{2})"/g)].map(match => match[1]);
+      assert.deepEqual(figures, ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]);
+      for (const method of figures) {
+        const headingIndex = page.indexOf(`id="method-${method}-`);
+        const figureIndex = page.indexOf(`data-method-figure="08-${method}"`);
+        assert(headingIndex >= 0 && figureIndex > headingIndex, `CH08 Method ${method} figure should follow its heading`);
+      }
     }
   }
 });

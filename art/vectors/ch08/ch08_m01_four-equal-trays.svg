@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Four equal trays of five counters, with three trays selected</title>
+  <desc id="desc">Twenty counters sit in four outlined trays of five. The first three trays have hatched selected headers and contain fifteen counters altogether; the fourth tray is gray and unselected.</desc>
+  <defs><pattern id="m01-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#287A55" stroke-width="4"/></pattern></defs>
+  <rect width="1200" height="800" fill="#FFFDF8"/>
+  <text x="64" y="72" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#24312D">Four equal groups, then take three</text>
+  <text x="64" y="112" font-family="Arial,sans-serif" font-size="24" fill="#52605A">20 ÷ 4 = 5 in each tray · 3 × 5 = 15 selected</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(64 170)"><rect width="250" height="430" rx="24" fill="#F7F0E5" stroke="#287A55" stroke-width="7"/><rect x="8" y="8" width="234" height="58" rx="15" fill="url(#m01-hatch)"/><text x="125" y="46" font-size="23" font-weight="700" fill="#24312D">SELECTED · 5</text><g fill="#287A55" stroke="#183D2C" stroke-width="4"><circle cx="72" cy="150" r="31"/><circle cx="178" cy="150" r="31"/><circle cx="72" cy="250" r="31"/><circle cx="178" cy="250" r="31"/><circle cx="125" cy="350" r="31"/></g></g>
+    <g transform="translate(338 170)"><rect width="250" height="430" rx="24" fill="#F7F0E5" stroke="#287A55" stroke-width="7"/><rect x="8" y="8" width="234" height="58" rx="15" fill="url(#m01-hatch)"/><text x="125" y="46" font-size="23" font-weight="700" fill="#24312D">SELECTED · 5</text><g fill="#287A55" stroke="#183D2C" stroke-width="4"><circle cx="72" cy="150" r="31"/><circle cx="178" cy="150" r="31"/><circle cx="72" cy="250" r="31"/><circle cx="178" cy="250" r="31"/><circle cx="125" cy="350" r="31"/></g></g>
+    <g transform="translate(612 170)"><rect width="250" height="430" rx="24" fill="#F7F0E5" stroke="#287A55" stroke-width="7"/><rect x="8" y="8" width="234" height="58" rx="15" fill="url(#m01-hatch)"/><text x="125" y="46" font-size="23" font-weight="700" fill="#24312D">SELECTED · 5</text><g fill="#287A55" stroke="#183D2C" stroke-width="4"><circle cx="72" cy="150" r="31"/><circle cx="178" cy="150" r="31"/><circle cx="72" cy="250" r="31"/><circle cx="178" cy="250" r="31"/><circle cx="125" cy="350" r="31"/></g></g>
+    <g transform="translate(886 170)"><rect width="250" height="430" rx="24" fill="#F2F2EF" stroke="#68707A" stroke-width="5" stroke-dasharray="12 9"/><text x="125" y="46" font-size="23" font-weight="700" fill="#52605A">NOT TAKEN · 5</text><g fill="#D9DDDA" stroke="#68707A" stroke-width="4"><circle cx="72" cy="150" r="31"/><circle cx="178" cy="150" r="31"/><circle cx="72" cy="250" r="31"/><circle cx="178" cy="250" r="31"/><circle cx="125" cy="350" r="31"/></g></g>
+  </g>
+  <path d="M74 670H850" stroke="#287A55" stroke-width="7"/><path d="M74 654v32M850 654v32" stroke="#287A55" stroke-width="7"/>
+  <text x="462" y="728" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#287A55">3 trays × 5 = 15</text>
+  <text x="1011" y="700" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#52605A">1 tray remains</text>
+</svg>

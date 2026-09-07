@@ -26,7 +26,7 @@ const server = http.createServer(async (request, response) => {
 server.listen(port, () => console.log(`Book explorer: http://localhost:${port}`));
 
 let timer;
-for (const directory of ["book", "site", "scripts"]) {
+for (const directory of ["art", "book", "site", "scripts"]) {
   fs.watch(path.join(ROOT, directory), { recursive: true }, (_event, filename) => {
     if (!filename || filename.includes("_site")) return;
     clearTimeout(timer);

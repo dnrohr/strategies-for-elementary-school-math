@@ -83,12 +83,13 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `cf711884f86bb97b5a28aa1457b98bb17dcee9be` — CH01 addition vector, provenance, and screenshot evidence.
 - `72b6cc654111faa38a934b339fccfde2bc1cc2aa` — CH00 visual-system vector, provenance, and screenshot evidence.
 - `51302be` — published CH05 narrow-viewport figure and caption verification recorded.
+- `3796c3b` — narrow keyboard focus and theme-toggle verification recorded.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
 
-The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. GitHub Actions run `34067611421` for `Publish book explorer` completed with `success` for head SHA `55e1b5e980832d9b1fc974b5c5d20712fbf5f92a`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067611421.
+The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. The published CH05 route also returned HTTP 200 with the generated figure, alt text, and caption present after the art integration. GitHub Actions run `34067611421` for `Publish book explorer` completed with `success` for head SHA `55e1b5e980832d9b1fc974b5c5d20712fbf5f92a`; a workflow run for the latest report-only commits has not been separately confirmed. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067611421.
 
 ## Release decision
 

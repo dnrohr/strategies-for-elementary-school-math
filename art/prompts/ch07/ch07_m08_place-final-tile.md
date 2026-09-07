@@ -1,0 +1,5 @@
+# CH07 Method 08 generation prompt
+
+Create a warm editorial educational illustration, 3:2 landscape, top-down on a softly textured cream classroom work surface. Show exactly one anatomically plausible human hand entering from the lower-right edge, gently pinching exactly one plain square cream-colored unit tile between thumb and index finger as if about to place it toward the open left-center area. The hand must have correct five-digit anatomy, natural wrist orientation, no fused or duplicated fingers, and soft realistic shadows. Leave the entire left two-thirds and upper-left region clean and uncluttered for a later exact vector 7-by-9 tile grid. Include no other tiles, no grid, no counters, no numbers, no letters, no equations, no arrows, no symbols, no jewelry, and no extra hands. Restrained photographic-collage realism, tactile paper texture, calm modern nonfiction palette, not cartoonish, not glossy stock photography.
+
+Accepted first generation. The exact 7×9 grid, 62-placed-plus-1-held accounting, braces, arrow, and equation are supplied in `art/composites/ch07/ch07_m08_place-final-tile.svg`.

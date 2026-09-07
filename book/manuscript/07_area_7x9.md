@@ -334,4 +334,4 @@ The gallery is a set of constructed, plausible accounts. The research record sup
 - [x] Constructed accounts are not participant quotations.
 - [x] Research notes distinguish verified and screened records and avoid fixed cognitive-style claims.
 - [ ] Full source-text verification of screened R01-011 remains pending.
-- [ ] Art generation, compositing, print-size, contrast, and final math/art review remain for later production passes.
+- [x] All 12 method figures passed exact-quantity, compositing, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch07-methods/`.

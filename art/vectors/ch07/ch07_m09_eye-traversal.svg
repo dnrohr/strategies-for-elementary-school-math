@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Traverse seven rows by jumps of nine</title><desc id="desc">An exact seven-row by nine-column grid has a teal scanning route across every row and exactly six directional moves between successive row endpoints. Totals 9 through 63 mark seven groups of nine.</desc>
+  <defs><pattern id="g" x="210" y="145" width="86" height="70" patternUnits="userSpaceOnUse"><rect width="86" height="70" fill="#FFFDF8" stroke="#24312D" stroke-width="2"/></pattern><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#087E8B"/></marker></defs>
+  <rect width="1200" height="800" fill="#FFFDF8"/><g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D"><text x="600" y="70" font-size="38" font-weight="700">Attention scans one row at a time</text><rect x="210" y="145" width="774" height="490" fill="url(#g)" stroke="#24312D" stroke-width="6"/>
+    <g class="seven-row-scans" fill="none" stroke="#087E8B" stroke-width="6" stroke-dasharray="10 8"><path d="M253 180H941"/><path d="M941 250H253"/><path d="M253 320H941"/><path d="M941 390H253"/><path d="M253 460H941"/><path d="M941 530H253"/><path d="M253 600H941"/></g>
+    <g class="six-row-moves" fill="none" stroke="#087E8B" stroke-width="6" marker-end="url(#arrow)"><path d="M941 188Q1010 215 941 242"/><path d="M253 258Q184 285 253 312"/><path d="M941 328Q1010 355 941 382"/><path d="M253 398Q184 425 253 452"/><path d="M941 468Q1010 495 941 522"/><path d="M253 538Q184 565 253 592"/></g>
+    <g font-size="23" font-weight="700" fill="#287A55"><text x="1080" y="185">9</text><text x="120" y="255">18</text><text x="1080" y="325">27</text><text x="120" y="395">36</text><text x="1080" y="465">45</text><text x="120" y="535">54</text><text x="1080" y="605">63</text></g>
+    <text x="600" y="710" font-size="34" font-weight="700">seven row totals · six moves between rows · endpoint 63</text>
+  </g>
+</svg>

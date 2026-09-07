@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Seven horizontal rows of nine</title><desc id="desc">An exact seven-by-nine grid has seven alternating horizontal bands and nine visible columns. Running row totals are 9, 18, 27, 36, 45, 54, and 63.</desc>
+  <rect width="1200" height="800" fill="#FFFDF8"/><g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
+    <text x="600" y="70" font-size="38" font-weight="700">Seven equal rows, nine in each</text>
+    <g class="seven-row-bands" stroke="#24312D" stroke-width="4"><rect x="190" y="150" width="810" height="70" fill="#E7EEF8"/><rect x="190" y="220" width="810" height="70" fill="#E8F3ED"/><rect x="190" y="290" width="810" height="70" fill="#E7EEF8"/><rect x="190" y="360" width="810" height="70" fill="#E8F3ED"/><rect x="190" y="430" width="810" height="70" fill="#E7EEF8"/><rect x="190" y="500" width="810" height="70" fill="#E8F3ED"/><rect x="190" y="570" width="810" height="70" fill="#E7EEF8"/></g>
+    <path class="nine-column-grid" d="M280 150v490M370 150v490M460 150v490M550 150v490M640 150v490M730 150v490M820 150v490M910 150v490" stroke="#24312D" stroke-width="3"/>
+    <g font-size="24" font-weight="700"><text x="1080" y="195">9</text><text x="1080" y="265">18</text><text x="1080" y="335">27</text><text x="1080" y="405">36</text><text x="1080" y="475">45</text><text x="1080" y="545">54</text><text x="1080" y="615">63</text></g>
+    <text x="600" y="710" font-size="31" font-weight="700">9 + 9 + 9 + 9 + 9 + 9 + 9 = 63</text>
+  </g>
+</svg>

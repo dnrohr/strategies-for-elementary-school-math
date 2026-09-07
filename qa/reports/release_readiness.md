@@ -60,6 +60,7 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `8b914192820cb578798959d42d88e5ba33acfd5d` — CH01 method-level visual gallery, generated-hand composite, exactness tests, and responsive evidence.
 - `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb` — CH08 method-level visual gallery, method-aware renderer, exactness tests, and responsive evidence.
 - `ee5261f0462c5181130eb37082318a959b6f5235` — coordinator update marking the resolved CH12 audit blocker.
 - `90bf26654fe2a75c396ca8e07faaa529999b34ec` — initial release-readiness report.
@@ -100,6 +101,8 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34114544469` for `Publish book explorer` completed successfully for CH01 method-art head SHA `8b914192820cb578798959d42d88e5ba33acfd5d`; both build and deploy jobs passed. The live CH01 route returned HTTP 200 with all fourteen ordered `data-method-figure="01-NN"` figures. The Method 04 composite returned HTTP 200 with an embedded PNG data URL, and its standalone 2,060,224-byte raster also returned HTTP 200. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34114544469. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/7-plus-5/.
 
 GitHub Actions run `34075943244` for `Publish book explorer` completed successfully for CH08 method-art head SHA `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb`; both build and deploy jobs passed. The live CH08 route returned HTTP 200 with all ten ordered `data-method-figure="08-NN"` figures, and the corrected Method 09 SVG returned HTTP 200 with the exact proportion equation. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34075943244. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/three-fourths-of-20/.
 

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Twenty-seven times forty-six equals one thousand two hundred forty-two</title>
+  <desc id="desc">An area model partitions 46 into 40 and 6. The two exact rectangles are 27 by 40, with area 1080, and 27 by 6, with area 162. Their combined area is 1242.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 3; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 3; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 31px; }
+    .math { font-size: 39px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">27 × 46 = 1,242</text>
+  <text x="68" y="116" class="muted small">Partitioning 46 exposes two exact place-value products.</text>
+  <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
+  <text x="96" y="208" class="ink label">Area model · 27 by 46</text>
+  <text x="96" y="260" class="muted small">27 rows</text>
+  <rect x="188" y="278" width="440" height="180" rx="8" class="orange"/>
+  <rect x="628" y="278" width="66" height="180" rx="8" class="green"/>
+  <text x="350" y="370" class="ink label">27 × 40 = 1,080</text>
+  <text x="637" y="370" class="ink small">27 × 6 = 162</text>
+  <text x="188" y="500" class="ink label">46 = 40 + 6</text>
+  <path d="M188 526h506" stroke="#24312d" stroke-width="2"/>
+  <text x="188" y="574" class="ink label">1,080 + 162 = 1,242</text>
+  <rect x="840" y="160" width="292" height="470" rx="16" class="panel"/>
+  <text x="868" y="218" class="ink label">Place-value route</text>
+  <text x="868" y="292" class="ink label">27 × 40</text>
+  <text x="868" y="344" class="ink label">= 1,080</text>
+  <text x="868" y="410" class="ink label">27 × 6</text>
+  <text x="868" y="462" class="ink label">= 162</text>
+  <path d="M868 490h220" stroke="#24312d" stroke-width="2"/>
+  <text x="868" y="548" class="ink label">= 1,242</text>
+  <text x="868" y="588" class="muted small">exact partial products</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Three fifths and five eighths placed on an exact zero-to-one number line</title>
+  <desc id="desc">On an 800-unit number line from zero to one, three fifths is marked at x equals 660, representing 0.600, and five eighths at x equals 680, representing 0.625. Five eighths is exactly 0.025 to the right.</desc>
+  <rect width="1200" height="800" fill="#F8F2E7"/><text x="100" y="115" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#18324A">Fractions are points</text>
+  <path d="M180 420H980" stroke="#18324A" stroke-width="8"/><path d="M180 390v60M980 390v60" stroke="#18324A" stroke-width="6"/><text x="180" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#18324A">0</text><text x="980" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#18324A">1</text>
+  <path d="M660 420V275" stroke="#176B73" stroke-width="7" stroke-dasharray="12 10"/><circle cx="660" cy="420" r="15" fill="#F8F2E7" stroke="#176B73" stroke-width="7"/><text x="640" y="235" text-anchor="end" font-family="Arial, sans-serif" font-size="28" fill="#12545A">3/5 = 0.600</text>
+  <path d="M680 420V555" stroke="#C66A12" stroke-width="7"/><circle cx="680" cy="420" r="15" fill="#C66A12" stroke="#18324A" stroke-width="3"/><text x="700" y="605" font-family="Arial, sans-serif" font-size="28" fill="#8A4308">5/8 = 0.625</text>
+  <path d="M660 335h20" stroke="#B33A3A" stroke-width="5" marker-end="url(#arrow)"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#B33A3A"/></marker></defs><text x="670" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7A2525">0.025 farther right</text>
+</svg>

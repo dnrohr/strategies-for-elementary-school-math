@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Aligned decimals compare zero point six hundred and zero point six two five</title>
+  <desc id="desc">Three fifths converts to 0.600 and five eighths to 0.625. The decimals are aligned by place value; tenths match, while five eighths has two hundredths and five thousandths more.</desc>
+  <rect width="1200" height="800" fill="#F8F2E7"/><text x="100" y="105" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#18324A">Align place values</text>
+  <g font-family="Arial, sans-serif" fill="#18324A"><text x="150" y="265" font-size="28">3/5 = 3 ÷ 5</text><text x="150" y="445" font-size="28">5/8 = 5 ÷ 8</text><text x="470" y="265" font-size="72" font-weight="700">0.600</text><text x="470" y="445" font-size="72" font-weight="700">0.625</text></g>
+  <path d="M615 165V500M700 165V500M785 165V500M870 165V500" stroke="#A7A095" stroke-width="2" stroke-dasharray="8 8"/><g font-family="Arial, sans-serif" font-size="20" fill="#5A6570" text-anchor="middle"><text x="655" y="540">tenths</text><text x="742" y="570">hundredths</text><text x="827" y="600">thousandths</text></g>
+  <rect x="695" y="377" width="176" height="82" rx="10" fill="none" stroke="#C66A12" stroke-width="6"/><text x="600" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#7A2525">0.600 &lt; 0.625</text><text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#5A6570">Trailing zeros keep the places visible.</text>
+</svg>

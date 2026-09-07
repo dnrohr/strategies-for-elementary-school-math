@@ -203,5 +203,5 @@ Verified anchors: R03-004, R03-005–R03-007, and R03-012. Screened leads: R03-0
 - [x] Wholes and partitions are exact.
 - [x] Ten nontrivial routes are present.
 - [x] Research caveats and disclosure are present.
-- [ ] Generate and inspect final art assets.
+- [x] All 10 method figures passed exact-quantity, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch09-methods/`.
 - [ ] Complete citation and layout review.

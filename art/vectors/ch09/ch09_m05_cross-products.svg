@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-products compare three fifths with five eighths</title>
+  <desc id="desc">Crossing arrows connect 3 to 8 and 5 to 5. The exact products are 24 and 25, shorthand for comparing twenty-four fortieths with twenty-five fortieths, so three fifths is smaller.</desc>
+  <defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0l18 9-18 9z" fill="#7652A8"/></marker></defs><rect width="1200" height="800" fill="#F8F2E7"/>
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#18324A">Cross-products are common-denominator shorthand</text>
+  <g font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#18324A" text-anchor="middle"><text x="340" y="315">3</text><text x="340" y="465">5</text><text x="860" y="315">5</text><text x="860" y="465">8</text></g><path d="M285 350h110M805 350h110" stroke="#18324A" stroke-width="7"/>
+  <path d="M390 285C540 180 660 180 810 425" fill="none" stroke="#7652A8" stroke-width="7" marker-end="url(#arrow)"/><path d="M390 430C540 590 660 590 810 285" fill="none" stroke="#C66A12" stroke-width="7" stroke-dasharray="14 10" marker-end="url(#arrow)"/>
+  <text x="380" y="650" font-family="Arial, sans-serif" font-size="31" fill="#553A78">3 × 8 = 24</text><text x="680" y="650" font-family="Arial, sans-serif" font-size="31" fill="#8A4308">5 × 5 = 25</text><text x="600" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#7A2525">24 &lt; 25, so 3/5 &lt; 5/8</text>
+</svg>

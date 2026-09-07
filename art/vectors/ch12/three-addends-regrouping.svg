@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Add 378, 596, and 247 to get 1,221</title>
+  <desc id="desc">A place-value addition model separates the ones, tens, and hundreds columns. The ones total 21 gives 1 ten and 1 one; the tens total including that carried ten is 122 gives 2 hundreds and 2 tens; the hundreds total including that carry is 12 gives 1 thousand and 2 hundreds. The result is 1,221.</desc>
+  <style>
+    .ink { fill: #24312d; }
+    .muted { fill: #5b6962; }
+    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 3; }
+    .green { fill: #347c5a; stroke: #24312d; stroke-width: 3; }
+    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 3; }
+    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
+    text { font-family: Georgia, serif; }
+    .label { font-size: 30px; }
+    .math { font-size: 40px; font-weight: 700; }
+    .small { font-size: 21px; }
+  </style>
+  <rect width="1200" height="800" fill="#fffdf8"/>
+  <text x="68" y="76" class="ink math">378 + 596 + 247 = 1,221</text>
+  <text x="68" y="116" class="muted small">Regroup each place-value column, then carry to the next column.</text>
+  <rect x="68" y="160" width="590" height="470" rx="16" class="panel"/>
+  <text x="96" y="210" class="ink label">Written columns</text>
+  <text x="150" y="278" class="ink label">378</text><text x="150" y="326" class="ink label">596</text><text x="150" y="374" class="ink label">247</text>
+  <path d="M142 398h200" stroke="#24312d" stroke-width="3"/>
+  <text x="150" y="450" class="ink label">1,221</text>
+  <text x="396" y="278" class="muted small">ones: 8 + 6 + 7 = 21</text>
+  <text x="396" y="326" class="muted small">tens: 7 + 9 + 4 + 2 = 22</text>
+  <text x="396" y="374" class="muted small">hundreds: 3 + 5 + 2 + 2 = 12</text>
+  <text x="396" y="450" class="ink small">carries: 2 tens, 2 hundreds</text>
+  <text x="96" y="560" class="muted small">21 ones → 1 one + 2 tens</text>
+  <text x="96" y="594" class="muted small">22 tens → 2 tens + 2 hundreds</text>
+  <rect x="710" y="160" width="422" height="470" rx="16" class="panel"/>
+  <text x="740" y="212" class="ink label">Carry path</text>
+  <rect x="744" y="250" width="330" height="70" rx="10" class="orange"/>
+  <text x="770" y="296" class="ink label">21 ones → 1 + 2 tens</text>
+  <rect x="744" y="350" width="330" height="70" rx="10" class="green"/>
+  <text x="770" y="396" class="ink small">22 tens → 2 + 2 hundreds</text>
+  <rect x="744" y="450" width="330" height="70" rx="10" class="blue"/>
+  <text x="770" y="496" class="ink label">12 hundreds → 1 + 2</text>
+  <path d="M744 548h330" stroke="#24312d" stroke-width="2"/>
+  <text x="744" y="590" class="ink label">total: 1,221</text>
+</svg>

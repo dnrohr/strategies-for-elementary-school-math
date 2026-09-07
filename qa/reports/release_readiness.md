@@ -28,19 +28,21 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
+- `ART-CH02-METHODS` completed 12/12 CH02 method visuals: ten original vectors and two generated-raster/vector composites. Exact regression checks cover staged 15-counter removal, eight backward arrows/beats, eight motor marks, the 15-cell 8+7 bar, the untouched group of five, raster dimensions, and ordered page integration.
+- Independent CH02 visual review inspected all twelve current desktop captures plus the two generated-hand composites at 390 px. The initial Method 08 vector was replaced because eight finger-like shapes contradicted its warning; the accepted composite uses one plausible hand and exactly eight circular vector tracking marks. Method 01 now includes the brief's 3×5 start array and one-hand move into a tray. A Method 08 result-label overflow was corrected before recapture. All figures stay within the measured 390 px document width; evidence is under `artifacts/ui/art-ch02-methods/`.
 - `ART-CH01-METHODS` completed 14/14 CH01 method visuals: thirteen original vectors and one generated-raster/vector composite. The generated chapter contains one ordered method figure after every Method 01–14 heading, plus the existing opening anchor. Exact-quantity tests cover the count-all, make-ten, near-double, compensation, dot-chunking, number-line, and rhythm diagrams; Method 04's PNG dimensions and composite linkage are also tested.
 - Independent CH01 visual review inspected current captures for all fourteen figures at 1440 px and the generated-hand composite at 390 px. The first Method 04 generation was rejected for excess arrows; the accepted version shows 7 raised fingers, exactly 3 add-to-ten arrows, 10 raised fingers, and 2 counters. Review also found and fixed an initially blank published raster subresource and a Method 07 label collision. All figures remain within the measured 390 px document width; evidence is under `artifacts/ui/art-ch01-methods/`.
 - `ART-CH08-METHODS` established the method-aware rendering architecture and completed 10/10 CH08 method vectors. The generated chapter now contains one method figure immediately after every Method 01–10 heading, plus its existing opening anchor. All ten method assets use required names, useful alt text, exact vector quantities, selectable text, non-color cues, and a chapter-scoped provenance/QA ledger.
 - Independent CH08 visual review inspected current captures for all ten method figures at 1440 px and a representative method at 390 px. One Method 09 label/equation collision was found and corrected. The page has no document-level overflow at either measured width; evidence is under `artifacts/ui/art-ch08-methods/`.
-- `npm run check` passed: validation, 13 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 14 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
 
 ## Remaining blockers
 
-- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide. CH01 has 14/14 method visuals, CH08 has 10/10 method vectors, and every authored chapter CH00–CH14 retains its opening anchor, but 151 methods in CH02–CH07 and CH09–CH14 still need production visuals and sign-off.
-- Automated asset QA verifies the vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. CH01 Method 04 is the intentional exception: its generated PNG has verified dimensions, no raster text, recorded provenance/rejection history, and a labelled SVG composite. Broad rendered contrast and final per-method visual sign-off remain open for the unproduced chapters.
+- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide. CH01 has 14/14 method visuals, CH02 has 12/12, CH08 has 10/10, and every authored chapter CH00–CH14 retains its opening anchor, but 139 methods in CH03–CH07 and CH09–CH14 still need production visuals and sign-off.
+- Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Broad rendered contrast and final per-method visual sign-off remain open for the unproduced chapters.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; generated CH00–CH14 pages load one canonical SVG each with non-empty alt text. The published CH05 route was visually checked at the app's narrow viewport with the figure and caption contained in the content column; narrow keyboard focus and theme-toggle behavior were also verified there. Broader per-page interaction coverage remains open while desktop focus order is complete.
 - Citation QA remains open for screened records; R01-003 and R03-012 are now verified after full-text review, and CH99 records 18 screened items requiring inspection before stronger claims or final promotion.
@@ -52,11 +54,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Worker batch status
 
-`COORD-INVENTORY-ART` completed a read-only coverage audit. `ART-CH08-METHODS` produced ten CH08 method SVGs, after which `ART-CH01-METHODS` produced thirteen CH01 method vectors and chapter-scoped records. The CH01 worker stopped after its file pass when its usage limit was reached; the coordinator took over safely, generated and curated Method 04, corrected integration and visual defects, integrated renderer/tests, and captured current browser evidence.
+`COORD-INVENTORY-ART` completed a read-only coverage audit. `ART-CH08-METHODS` produced ten CH08 method SVGs, `ART-CH01-METHODS` produced thirteen CH01 vectors, and `ART-CH02-METHODS` produced twelve initial vectors plus chapter-scoped records. The coordinator generated and curated the required organic composites, independently corrected integration/visual defects, integrated exactness tests, and captured current browser evidence.
 
 ## Restart checkpoint
 
-After this batch is committed, pushed, and verified live, the exact next lane is `ART-CH02-METHODS`, owned to `art/vectors/ch02/**` and `art/prompts/ch02/**`, with the coordinator retaining shared renderer, test, manifest, release-report, evidence, commit, and deployment responsibilities. Produce and integrate all 12 CH02 method visuals as one coherent chapter batch; retain the existing CH02 opening anchor.
+After this batch is committed, pushed, and verified live, the exact next lane is `ART-CH03-METHODS`, owned to `art/vectors/ch03/**` and `art/prompts/ch03/**`, with the coordinator retaining shared renderer, test, manifest, release-report, evidence, commit, and deployment responsibilities. Produce and integrate all 14 CH03 method visuals as one coherent chapter batch; retain the existing CH03 opening anchor.
 
 ## Commits
 
@@ -103,6 +105,8 @@ All listed hashes were verified against `origin/main` at the time of their respe
 ## GitHub Pages deployment
 
 GitHub Actions run `34114544469` for `Publish book explorer` completed successfully for CH01 method-art head SHA `8b914192820cb578798959d42d88e5ba33acfd5d`; both build and deploy jobs passed. The live CH01 route returned HTTP 200 with all fourteen ordered `data-method-figure="01-NN"` figures. The Method 04 composite returned HTTP 200 with an embedded PNG data URL, and its standalone 2,060,224-byte raster also returned HTTP 200. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34114544469. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/7-plus-5/.
+
+The follow-up evidence-only head `870f1267226620af7a3993386a5cfbf778241a30` deployed successfully in GitHub Actions run `34114670410`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34114670410.
 
 GitHub Actions run `34075943244` for `Publish book explorer` completed successfully for CH08 method-art head SHA `9167edf0489e1c44f7f69ddb9aee6f2f27c995cb`; both build and deploy jobs passed. The live CH08 route returned HTTP 200 with all ten ordered `data-method-figure="08-NN"` figures, and the corrected Method 09 SVG returned HTTP 200 with the exact proportion equation. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34075943244. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/three-fourths-of-20/.
 

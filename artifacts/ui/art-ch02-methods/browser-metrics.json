@@ -1,0 +1,158 @@
+{
+  "desktop": {
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "methodFigures": [
+      {
+        "key": "02-01",
+        "loaded": true,
+        "altLength": 308,
+        "width": 720
+      },
+      {
+        "key": "02-02",
+        "loaded": true,
+        "altLength": 188,
+        "width": 720
+      },
+      {
+        "key": "02-03",
+        "loaded": true,
+        "altLength": 192,
+        "width": 720
+      },
+      {
+        "key": "02-04",
+        "loaded": true,
+        "altLength": 204,
+        "width": 720
+      },
+      {
+        "key": "02-05",
+        "loaded": true,
+        "altLength": 190,
+        "width": 720
+      },
+      {
+        "key": "02-06",
+        "loaded": true,
+        "altLength": 196,
+        "width": 720
+      },
+      {
+        "key": "02-07",
+        "loaded": true,
+        "altLength": 221,
+        "width": 720
+      },
+      {
+        "key": "02-08",
+        "loaded": true,
+        "altLength": 259,
+        "width": 720
+      },
+      {
+        "key": "02-09",
+        "loaded": true,
+        "altLength": 214,
+        "width": 720
+      },
+      {
+        "key": "02-10",
+        "loaded": true,
+        "altLength": 223,
+        "width": 720
+      },
+      {
+        "key": "02-11",
+        "loaded": true,
+        "altLength": 223,
+        "width": 720
+      },
+      {
+        "key": "02-12",
+        "loaded": true,
+        "altLength": 229,
+        "width": 720
+      }
+    ]
+  },
+  "narrow": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "methodFigures": [
+      {
+        "key": "02-01",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-02",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-03",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-04",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-05",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-06",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-07",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-08",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-09",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-10",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-11",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      },
+      {
+        "key": "02-12",
+        "left": 19.5,
+        "right": 370.5,
+        "width": 351
+      }
+    ]
+  }
+}

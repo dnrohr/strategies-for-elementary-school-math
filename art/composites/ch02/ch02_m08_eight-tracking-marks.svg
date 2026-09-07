@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">One hand tracks eight backward counts</title>
+  <desc id="desc">One anatomically plausible hand points to a horizontal tracking strip. Exactly eight numbered vector marks correspond to the backward counts fourteen, thirteen, twelve, eleven, ten, nine, eight, and seven. Fifteen is explicitly labeled as the uncounted start.</desc>
+  <image href="../../raster/ch02/ch02_m08_eight-tracking-marks_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid slice"/>
+  <g font-family="Arial,sans-serif" fill="#24312D">
+    <rect x="42" y="28" width="1116" height="86" rx="22" fill="#FFFDF8" fill-opacity=".94"/><text x="65" y="72" font-size="35" font-weight="700">One hand records eight backward steps</text><text x="65" y="101" font-size="21" fill="#52605A">15 is held in mind; each tap marks one decrement.</text>
+    <rect x="56" y="145" width="1088" height="76" rx="22" fill="#FFFDF8" fill-opacity=".9"/><text x="85" y="193" font-size="27" font-weight="700" fill="#2764B8">START: 15</text><text x="310" y="193" font-size="25" font-weight="700">14 → 13 → 12 → 11 → 10 → 9 → 8 → 7</text>
+    <g class="tracking-eight" text-anchor="middle" font-weight="700">
+      <g fill="#FFFDF8" fill-opacity=".93" stroke="#D97706" stroke-width="6"><circle cx="130" cy="515" r="39"/><circle cx="264" cy="515" r="39"/><circle cx="398" cy="515" r="39"/><circle cx="532" cy="515" r="39"/><circle cx="666" cy="515" r="39"/><circle cx="800" cy="515" r="39"/><circle cx="934" cy="515" r="39"/><circle cx="1068" cy="515" r="39"/></g>
+      <g font-size="24"><text x="130" y="523">1</text><text x="264" y="523">2</text><text x="398" y="523">3</text><text x="532" y="523">4</text><text x="666" y="523">5</text><text x="800" y="523">6</text><text x="934" y="523">7</text><text x="1068" y="523">8</text></g>
+      <g font-size="22" fill="#C2413B"><text x="130" y="585">14</text><text x="264" y="585">13</text><text x="398" y="585">12</text><text x="532" y="585">11</text><text x="666" y="585">10</text><text x="800" y="585">9</text><text x="934" y="585">8</text><text x="1068" y="585">7</text></g>
+    </g>
+    <rect x="330" y="680" width="540" height="76" rx="38" fill="#E8F3ED" fill-opacity=".95" stroke="#287A55" stroke-width="7"/><text x="600" y="730" text-anchor="middle" font-size="34" font-weight="700">8 tracked steps · endpoint 7</text>
+  </g>
+</svg>

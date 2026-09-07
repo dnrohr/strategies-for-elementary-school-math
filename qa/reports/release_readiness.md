@@ -86,12 +86,13 @@ The requested first batch was dispatched with disjoint ownership for `DESIGN`, e
 - `3796c3b` — narrow keyboard focus and theme-toggle verification recorded.
 - `2913062` — accessibility evidence and live-deployment notes reconciled.
 - `0df92cd` — R01-003 full-text verification and source-status consistency test.
+- `1015475` — R03-012 full-text and correction verification reconciled across fraction chapters.
 
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
 
-The current published URL `https://dnrohr.github.io/strategies-for-elementary-school-math/` returned HTTP 200 and contained the expected “One answer” explorer content during the 2026-09-06 coordinator check. The published CH05 route also returned HTTP 200 with the generated figure, alt text, and caption present after the art integration. GitHub Actions run `34067611421` for `Publish book explorer` completed with `success` for head SHA `55e1b5e980832d9b1fc974b5c5d20712fbf5f92a`; a workflow run for the latest report-only commits has not been separately confirmed. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34067611421.
+GitHub Actions run `34070909227` for `Publish book explorer` completed successfully for substantive release-batch head SHA `1015475393857eb24faca943ced74707171e1f65`; both build and deploy jobs passed. The published CH09 and CH99 routes then returned HTTP 200 and contained the updated R03-012 verification and 24-verified-source inventory text. The workflow emitted a non-failing Node.js 20 deprecation annotation for GitHub-maintained setup/pages actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34070909227.
 
 ## Release decision
 

@@ -246,12 +246,12 @@ Constructed model; avoid claiming blocks are necessary for place-value understan
 **Math:** ones 21, tens 220, hundreds 1,000 → `1,221`
 
 ### First-person account
-> “I put beads into three lanes: ones, tens, hundreds. The ones lane has 21, so I slide ten into the tens lane; the tens lane becomes 22 tens, and ten of those move to the hundreds. What remains reads 1,221.”
+> “I put beads into three lanes: ones, tens, hundreds. The ones lane has 21, so I trade two groups of ten for 2 more tens. That makes 22 tens; I trade two groups of ten tens for 2 more hundreds, then trade 10 of the 12 hundreds for 1 thousand. What remains reads 1,221.”
 
 ### Steps
-1. Gather 21 ones, 22 tens before final regrouping, and 10 hundreds.
-2. Trade 10 ones for 1 ten and 10 tens for 1 hundred.
-3. Read 1 thousand, 2 hundreds, 2 tens, 1 one.
+1. Gather the raw place sums: 10 hundreds, 20 tens, and 21 ones.
+2. Trade 20 ones for 2 tens, then 20 of the resulting 22 tens for 2 hundreds.
+3. Trade 10 of the resulting 12 hundreds for 1 thousand; read 1 thousand, 2 hundreds, 2 tens, and 1 one.
 
 ### Illustration brief
 Vector three-lane bead board; show exact trades and final place labels.
@@ -311,4 +311,5 @@ R01-007 and R01-008 (verified) support distinguishing conceptual and procedural 
 - [x] Reordering and regrouping are labeled as mathematical transformations.
 - [x] Illustration briefs specify exact quantities and vector overlays.
 - [x] Screened evidence is labeled.
-- [ ] Full art, layout, accessibility, and citation passes remain.
+- [x] Method art, exact-quantity, responsive, grayscale, and integrated alt-text passes are complete.
+- [ ] Full chapter layout and citation passes remain.

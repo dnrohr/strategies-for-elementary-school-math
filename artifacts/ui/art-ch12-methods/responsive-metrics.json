@@ -1,0 +1,21 @@
+{
+  "viewport": {
+    "innerWidth": 390,
+    "innerHeight": 844,
+    "clientWidth": 375
+  },
+  "document": {
+    "scrollWidth": 375,
+    "scrollHeight": 20616
+  },
+  "figureCount": 11,
+  "orderedKeys": [
+    "12-01", "12-02", "12-03", "12-04", "12-05", "12-06",
+    "12-07", "12-08", "12-09", "12-10", "12-11"
+  ],
+  "loaded": 11,
+  "usefulAlt": 11,
+  "overflowing": [],
+  "figureWidths": [336],
+  "imageWidths": [306.8125]
+}

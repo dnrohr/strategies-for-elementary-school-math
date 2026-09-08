@@ -550,6 +550,55 @@ test("CH09 has exact accessible vector art for all ten fraction-comparison metho
   assert(proof.includes("24/40 &lt; 25/40"));
 });
 
+test("CH10 has exact accessible vector art for all ten division-context methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch10");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch10_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 10);
+  assert.deepEqual(assets.map(file => file.match(/^ch10_m(\d{2})_/)[1]), Array.from({ length: 10 }, (_value, index) => String(index + 1).padStart(2, "0")));
+  for (const file of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+  }
+  const m01 = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
+  assert.equal((m01.match(/<use href="#b"/g) || []).length, 5);
+  assert.equal((m01.match(/<use href="#c" x="(?:535|600|665)" y="560"/g) || []).length, 3);
+  assert(m01.includes("23 = 5 × 4 + 3"));
+  const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
+  assert.equal((m02.match(/<path d="M(?:970|770|570|370) 475Q/g) || []).length, 4);
+  assert(m02.includes("23 → 18 → 13 → 8 → 3"));
+  const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
+  assert.equal((m03.match(/<use href="#row"/g) || []).length, 4);
+  assert(m03.includes("5 × 4 = 20") && m03.includes("23 − 20 = 3"));
+  const m04 = await fs.readFile(path.join(vectorDir, assets[3]), "utf8");
+  assert.match(m04, /pattern id="cells" x="200" width="34"/);
+  assert.match(m04, /x="200" y="300" width="782" height="130"/);
+  assert.match(m04, /x="880" y="300" width="102" height="130"/);
+  const m05 = await fs.readFile(path.join(vectorDir, assets[4]), "utf8");
+  assert.equal((m05.match(/<use href="#cut"/g) || []).length, 3);
+  assert.equal((m05.match(/<use href="#b"/g) || []).length, 5);
+  assert(m05.includes("3 × 5 = 15 fifth-pieces") && m05.includes("3 pieces per bowl = 3/5 candy"));
+  const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
+  assert.equal((m06.match(/<path d="M(?:160|340|520|700) 465Q/g) || []).length, 4);
+  for (const value of [">0</text>", ">5</text>", ">10</text>", ">15</text>", ">20</text>", ">23</text>", ">25</text>"]) assert(m06.includes(value));
+  const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
+  for (const value of ["4 × 5 = 20", "23 − 20 = 3", "23 ÷ 5 = 4 R3"]) assert(m07.includes(value));
+  const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
+  assert.equal((m08.match(/<use href="#five"/g) || []).length, 5);
+  assert(m08.includes("25 − 2 = 23") && m08.includes("23 = 5 × 4 + 3"));
+  const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
+  assert.equal((m09.match(/<use href="#b"/g) || []).length, 5);
+  assert(m09.includes("separate remainder plate · 3") && m09.includes("3 &lt; 5"));
+  const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
+  assert.equal((m10.match(/<use href="#share"/g) || []).length, 6);
+  assert.equal((m10.match(/<use href="#fraction-share"/g) || []).length, 5);
+  assert(m10.includes("4 R3") && m10.includes("4 3/5 each"));
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -587,7 +636,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10], [10, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));

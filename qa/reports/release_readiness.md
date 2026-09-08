@@ -28,6 +28,8 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Checks and evidence
 
+- `ART-CH10-METHODS` completed all 10 CH10 method figures as original vector-only assets. Exact regression checks cover five recipients with four wholes each and a separate remainder of three, four `−5` and four `+5` jumps, four five-object groups, the exact 23-cell bar, three leftovers partitioned into 15 fifth-pieces and redistributed as five shares of three pieces, long division, the 25−2 benchmark, fairness, and separated `4 R3` versus `4 3/5` contexts.
+- Independent CH10 review inspected every figure at 1200×800, representative dealing/subtraction/bar/fractional-sharing/skip-counting/algorithm/context figures at 390 px, and Method 10 in grayscale. Integrated measurement found 10/10 loaded figures, useful alt text, and no horizontal overflow; evidence is under `artifacts/ui/art-ch10-methods/`.
 - `ART-CH09-METHODS` completed all 10 CH09 method figures as original vector-only assets. Exact regression checks cover equal-whole 3/5 and 5/8 bars, exact `.600` and `.625` number-line points, half-benchmark gaps of `1/10` and `1/8`, 24-versus-25 fortieths, cross-products, aligned decimals, complements `.400` and `.375`, retrieval verification, the exact `12.5/20` endpoint halfway through cell 13, and estimate-then-prove geometry.
 - Independent CH09 review inspected every figure at 1200×800, Methods 01–07, 09, and 10 at a 390 px placed width, and Method 09 in grayscale. Review corrected cross-product marker occlusion, separated colliding place-value captions, and restored explicit source-fraction labels in the decimal route. Integrated measurement found 10/10 loaded figures, useful alt text, and no horizontal overflow; evidence is under `artifacts/ui/art-ch09-methods/`.
 - `ART-CH07-METHODS` completed all 12 CH07 method figures: eleven original vectors and one generated-hand/vector composite. Exact regression checks cover the 7×9 and rotated 9×7 grids, 7×10−7 compensation, horizontal 5+2 and vertical 5+4 partitions, the 62-placed-plus-final-tile composite, seven scan rows with six transitions, adjacent area parts, the written product grid, and the one-column benchmark difference.
@@ -46,14 +48,14 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Independent CH01 visual review inspected current captures for all fourteen figures at 1440 px and the generated-hand composite at 390 px. The first Method 04 generation was rejected for excess arrows; the accepted version shows 7 raised fingers, exactly 3 add-to-ten arrows, 10 raised fingers, and 2 counters. Review also found and fixed an initially blank published raster subresource and a Method 07 label collision. All figures remain within the measured 390 px document width; evidence is under `artifacts/ui/art-ch01-methods/`.
 - `ART-CH08-METHODS` established the method-aware rendering architecture and completed 10/10 CH08 method vectors. The generated chapter now contains one method figure immediately after every Method 01–10 heading, plus its existing opening anchor. All ten method assets use required names, useful alt text, exact vector quantities, selectable text, non-color cues, and a chapter-scoped provenance/QA ledger.
 - Independent CH08 visual review inspected current captures for all ten method figures at 1440 px and a representative method at 390 px. One Method 09 label/equation collision was found and corrected. The page has no document-level overflow at either measured width; evidence is under `artifacts/ui/art-ch08-methods/`.
-- `npm run check` passed: validation, 20 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 21 tests, and build; 16 production entries and 42 canonical source records validated.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
 
 ## Remaining blockers
 
-- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide. CH01–CH09 have complete method galleries (116/175), and every authored chapter CH00–CH14 retains its opening anchor, but 59 methods in CH10–CH14 still need production visuals and sign-off.
+- Final art assets and per-asset provenance, dimensions, alt text, contrast, and exact-quantity checks are not complete book-wide. CH01–CH10 have complete method galleries (126/175), and every authored chapter CH00–CH14 retains its opening anchor, but 49 methods in CH11–CH14 still need production visuals and sign-off.
 - Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Broad rendered contrast and final per-method visual sign-off remain open for the unproduced chapters.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; generated CH00–CH14 pages load one canonical SVG each with non-empty alt text. The published CH05 route was visually checked at the app's narrow viewport with the figure and caption contained in the content column; narrow keyboard focus and theme-toggle behavior were also verified there. Broader per-page interaction coverage remains open while desktop focus order is complete.
@@ -66,11 +68,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Worker batch status
 
-`COORD-INVENTORY-ART` completed a read-only coverage audit. Chapter batches have produced CH01–CH09 method galleries (116 visuals) plus chapter-scoped records. The coordinator generated required organic composites, independently corrected integration/visual defects, integrated exactness tests, and captured browser/grayscale evidence.
+`COORD-INVENTORY-ART` completed a read-only coverage audit. Chapter batches have produced CH01–CH10 method galleries (126 visuals) plus chapter-scoped records. The coordinator generated required organic composites, independently corrected integration/visual defects, integrated exactness tests, and captured browser/grayscale evidence.
 
 ## Restart checkpoint
 
-After this batch is committed, pushed, and verified live, the exact next lane is `ART-CH10-METHODS`, owned to `art/vectors/ch10/**` and `art/prompts/ch10/**`, with the coordinator retaining shared renderer, test, manifest, release-report, evidence, commit, and deployment responsibilities. Produce and integrate all 10 CH10 method visuals as one coherent chapter batch; retain the existing CH10 opening anchor.
+After this batch is committed, pushed, and verified live, the exact next lane is `ART-CH11-METHODS`, owned to `art/vectors/ch11/**` and `art/prompts/ch11/**`, with the coordinator retaining shared renderer, test, manifest, release-report, evidence, commit, and deployment responsibilities. Produce and integrate all 18 CH11 method visuals as one coherent chapter batch; retain the existing CH11 opening anchor.
 
 ## Commits
 

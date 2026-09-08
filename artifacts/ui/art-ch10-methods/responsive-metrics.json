@@ -1,0 +1,13 @@
+{
+  "viewport": { "requestedWidth": 390, "innerWidth": 390, "clientWidth": 375 },
+  "documentScrollWidth": 375,
+  "figureCount": 10,
+  "emptyAltCount": 0,
+  "unloadedFigures": [],
+  "commonFigureBounds": { "left": 20, "right": 356, "width": 336, "imageWidth": 307 },
+  "naturalWidthByFigure": {
+    "10-01": 1200, "10-02": 1200, "10-03": 1200, "10-04": 1200,
+    "10-05": 1200, "10-06": 1200, "10-07": 1200, "10-08": 1200,
+    "10-09": 1200, "10-10": 1200
+  }
+}

@@ -204,5 +204,5 @@ R03-004 is verified for associations involving whole-number division and fractio
 - [x] Whole-candy and divisible-candy scenarios are explicitly separated.
 - [x] Ten distinct routes are present.
 - [x] Accounts are constructed and research caveats are visible.
-- [ ] Generate and inspect final art assets.
+- [x] All 10 method figures passed exact-quantity, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch10-methods/`.
 - [ ] Complete citation and layout review.

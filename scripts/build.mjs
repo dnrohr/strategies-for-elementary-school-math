@@ -97,7 +97,7 @@ export async function build() {
     <a class="start-link" href="chapters/frontmatter/">Begin with your own mind <span aria-hidden="true">→</span></a>
   </section>
   <section class="atlas" aria-labelledby="atlas-title">
-    <div class="section-heading"><div><p class="eyebrow">The working book</p><h2 id="atlas-title">Explore the chapters</h2></div>
+    <div class="section-heading"><div><p class="eyebrow">The complete book</p><h2 id="atlas-title">Explore the chapters</h2></div>
     <label class="search"><span>Filter chapters</span><input type="search" data-chapter-search placeholder="Try “fractions”"></label></div>
     <p class="search-status" data-search-status aria-live="polite"></p>
     <div class="chapter-grid">${chapters.map(chapterCard).join("\n")}</div>

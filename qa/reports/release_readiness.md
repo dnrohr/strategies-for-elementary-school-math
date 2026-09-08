@@ -5,7 +5,7 @@ Coordinator lane: `COORD-RELEASE`
 
 ## Current chapter status
 
-All authored entries are `final` after editorial, source, mathematics, art, accessibility, and production-export QA passed. Public download verification remains the final deployment gate.
+All authored entries are `final` after editorial, source, mathematics, art, accessibility, production-export, and public-deployment QA passed.
 
 | Entry | Methods | Target | Status |
 | --- | ---: | --- | --- |
@@ -63,9 +63,9 @@ All authored entries are `final` after editorial, source, mathematics, art, acce
 - Editorial review is complete across CH00–CH14. CH01–CH07 account ranges remain 40–60 words; expanded CH08–CH14 ranges are 40–55 words. All 175 accounts satisfy the 40–120-word contract without adding empirical claims, and the invariant is regression-tested.
 - Production export QA passed for a 231-page tagged screen PDF, a 235-page tagged print PDF, and two self-contained HTML editions. All 466 PDF pages were rendered and inspected; full-text extraction found no empty pages or internal production labels. `npm run verify:export` enforces 16 entries, 175 methods, 190 embedded figures, verified-only references, and valid PDF signatures. Evidence is recorded in `qa/reports/export_qa.md`.
 
-## Closed gates and remaining deployment check
+## Closed release gates
 
-- The book-wide method-art gate is complete: CH01–CH14 contain all 175 method figures, every authored entry CH00–CH14 retains its opening anchor, and chapter-scoped provenance, exactness, alt text, full-size, representative narrow, and grayscale evidence is recorded. Editorial finalization and export are complete; only final live verification remains.
+- The book-wide method-art gate is complete: CH01–CH14 contain all 175 method figures, every authored entry CH00–CH14 retains its opening anchor, and chapter-scoped provenance, exactness, alt text, full-size, representative narrow, and grayscale evidence is recorded. Editorial finalization, export, and final live verification are complete.
 - Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Chapter-level, broad site accessibility, and export-rendering sign-off are complete.
 - An auditable chapter-by-chapter art manifest records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; chapter rendering and visual sign-off are complete.
 - Accessibility and responsive QA is complete and has current persistent evidence under `artifacts/ui/site_accessibility_serial/`. All 18 routes passed at 390×844 and 1440×900 for element-bound overflow, unique IDs, heading order, labels, image source/alt coverage, and semantic tables. Representative day/night contrast, narrow keyboard order, announced/persistent theme state, and live search results also passed.
@@ -86,6 +86,7 @@ After the editorial batch is committed, pushed, and verified live, the exact nex
 
 ## Commits
 
+- `536857610db9a2e8ca971f82e4bfc0b3c8093b1a` — final manuscript statuses, screen/print HTML and PDF editions, all-page export QA evidence, downloadable-site integration, export verification, and release-ledger closeout.
 - `f0570bba7ce2072cb0a3224ba46c1b1b419d631b` — full 18-route accessibility audit, unique method-scoped IDs, corrected day/night contrast, announced theme state, emitted-image checks, and current responsive evidence.
 - `51a358653ad7936bda9ac308254be2c37a28942d` — reader-facing citation closeout, verified-only manuscript support, reconciled research handoffs, and source-status regression coverage.
 - `b18930dd997d7e19bb95dc0d5f15f2b1b63d2733` — CH14 vector-only three-fraction synthesis gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence; method-art production reached 175/175.
@@ -143,6 +144,8 @@ All listed hashes were verified against `origin/main` at the time of their respe
 
 ## GitHub Pages deployment
 
+GitHub Actions run `34249847689` completed successfully for final-editions head SHA `536857610db9a2e8ca971f82e4bfc0b3c8093b1a`. The live home page reported all 16 production entries as final and exposed the complete-edition download panel; the About page exposed both PDFs and both self-contained HTML variants; live CH01 retained all 14 ordered method figures and its final status. Publicly downloaded copies of all four editions matched their committed SHA-256 hashes exactly. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34249847689. Live site: https://dnrohr.github.io/strategies-for-elementary-school-math/.
+
 GitHub Actions run `34221760400` completed successfully for accessibility head SHA `f0570bba7ce2072cb0a3224ba46c1b1b419d631b`. The live explorer exposes `aria-pressed="false"` on the theme control and the live CH05 route uses method-scoped heading IDs with no legacy duplicate `id="steps"`; the deployed stylesheet contains the contrast-corrected night palette. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34221760400.
 
 GitHub Actions run `34220076071` completed successfully for citation-closeout head SHA `51a358653ad7936bda9ac308254be2c37a28942d`. The live CH01 route contains the verified-only evidence statement and none of the 18 screened IDs; live CH99 states that abstract-only records are excluded from reader-facing claims. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34220076071.
@@ -185,4 +188,4 @@ GitHub Actions run `34070909227` for `Publish book explorer` completed successfu
 
 ## Release decision
 
-`NOT READY` pending deployment only. The repository is locally build-clean; method-art, mathematics, reader-facing citation, editorial, web accessibility, and production export gates are complete with persistent evidence. Final status becomes `READY` after the release commit deploys and every public download is verified.
+`READY`. The repository is build-clean and synchronized with `origin/main`; method-art, mathematics, reader-facing citation, editorial, web accessibility, production export, deployment, and public-download integrity gates are complete with persistent evidence.

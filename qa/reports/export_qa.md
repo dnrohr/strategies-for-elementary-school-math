@@ -45,4 +45,8 @@ Full-size inspection included the cover, contents, introduction, early and late 
 - bundled Python `pypdf` full-text extraction across both PDFs
 - bundled Poppler `pdfinfo` and `pdftoppm` full-document rendering
 
-Known gaps: none in the local export. Public download verification remains a deployment gate and is recorded in `qa/reports/release_readiness.md`.
+## Public verification
+
+GitHub Pages run `34249847689` successfully built and deployed release commit `536857610db9a2e8ca971f82e4bfc0b3c8093b1a`. Public GET requests returned all four downloads, and downloaded copies matched the SHA-256 values above byte for byte. The live home page exposed all three reader-facing download choices; the About page exposed both PDFs and both HTML editions.
+
+Known gaps: none.

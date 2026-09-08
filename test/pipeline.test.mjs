@@ -599,6 +599,75 @@ test("CH10 has exact accessible vector art for all ten division-context methods"
   assert(m10.includes("4 R3") && m10.includes("4 3/5 each"));
 });
 
+test("CH11 has exact accessible vector art for all eighteen multiplication methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch11");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch11_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 18);
+  assert.deepEqual(assets.map(file => file.match(/^ch11_m(\d{2})_/)[1]), Array.from({ length: 18 }, (_value, index) => String(index + 1).padStart(2, "0")));
+  for (const file of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+    assert(svg.includes("1,242"), `${file} must preserve the exact product`);
+  }
+
+  const m01 = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
+  assert(m01.includes("30 × 40 ≈ 1,200") && m01.includes("Exact 1,242"));
+  const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
+  assert.match(m02, /x="180" y="175" width="696" height="380"/);
+  assert.match(m02, /x="876" y="175" width="104\.4" height="380"/);
+  assert(m02.includes("1,080 + 162 = 1,242"));
+  const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
+  assert.match(m03, /x="250" y="451\.3" width="700" height="103\.7"/);
+  assert(m03.includes("920 + 322 = 1,242"));
+  const m04 = await fs.readFile(path.join(vectorDir, assets[3]), "utf8");
+  assert.equal((m04.match(/M150 \d+h500/g) || []).length, 30);
+  assert.equal((m04.match(/M150 (?:639|656|673)h500/g) || []).length, 3);
+  assert(m04.includes("1,380 − 138") && m04.includes("27 rows remain"));
+  const m05 = await fs.readFile(path.join(vectorDir, assets[4]), "utf8");
+  assert(m05.includes("27 × 50 = 1,350") && m05.includes("27 × 4 = 108") && m05.includes("1,350 − 108"));
+  const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
+  assert.match(m06, /x="250" y="495\.7" width="700" height="59\.3"/);
+  assert(m06.includes("1,058 + 184 = 1,242"));
+  const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
+  assert(m07.includes("54 × 23") && m07.includes("54 × 20 = 1,080") && m07.includes("54 × 3 = 162"));
+  const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
+  assert.equal((m08.match(/<use href="#t"/g) || []).length, 27);
+  assert(m08.includes("10 + 10 + 7 = 27 groups") && m08.includes("460 + 460 + 322"));
+  const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
+  assert.equal((m09.match(/M\d+ 3(?:40v80|50v60)/g) || []).length, 27);
+  for (const milestone of ["10 → 460", "20 → 920", "27 → 1,242"]) assert(m09.includes(milestone));
+  const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
+  assert.match(m10, /x="210" y="170" width="696" height="378"/);
+  assert.match(m10, /x="906" y="170" width="104\.4" height="378"/);
+  assert(m10.includes("27 × 40 = 1,080") && m10.includes("27 × 6") && m10.includes("= 162"));
+  const m11 = await fs.readFile(path.join(vectorDir, assets[10]), "utf8");
+  for (const value of [">162</text>", ">1,080</text>", ">1,242</text>"]) assert(m11.includes(value));
+  const m12 = await fs.readFile(path.join(vectorDir, assets[11]), "utf8");
+  assert(m12.includes("27 × 40 = 1,080") && m12.includes("27 × 6 = 162") && m12.includes("same math, different format"));
+  const m13 = await fs.readFile(path.join(vectorDir, assets[12]), "utf8");
+  assert(m13.includes("27 × [40-unit bundle]") && m13.includes("27 × [6 singles]") && m13.includes("40 units"));
+  const m14 = await fs.readFile(path.join(vectorDir, assets[13]), "utf8");
+  for (const product of ["2×4 = 08", "7×4 = 28", "2×6 = 12", "7×6 = 42"]) assert(m14.includes(product));
+  assert(m14.includes("14 → write 4, carry 1") && m14.includes("12 → write 2, carry 1"));
+  const m15 = await fs.readFile(path.join(vectorDir, assets[14]), "utf8");
+  assert(m15.includes("800 + 120 + 280 + 42 = 1,242"));
+  const m16 = await fs.readFile(path.join(vectorDir, assets[15]), "utf8");
+  for (const value of ["1 thousand", "2 hundreds", "4 tens", "2 ones", "1,000 + 200 + 40 + 2 = 1,242"]) assert(m16.includes(value));
+  assert(m16.includes("trade 10 hundreds") && m16.includes("for 1 thousand"));
+  const m17 = await fs.readFile(path.join(vectorDir, assets[16]), "utf8");
+  assert.equal((m17.match(/<use href="#t"/g) || []).length, 27);
+  assert(m17.includes("10 taps → 460") && m17.includes("7 taps → 322"));
+  const m18 = await fs.readFile(path.join(vectorDir, assets[17]), "utf8");
+  assert(m18.includes("APPROXIMATE") && m18.includes("30 × 40") && m18.includes("≈ 1,200"));
+  assert(m18.includes("EXACT") && m18.includes("27 × 46") && m18.includes("= 1,242") && m18.includes("difference 42"));
+  assert.match(m18, /M880 575v70M900 575v70/);
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -636,7 +705,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10], [10, 10]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10], [10, 10], [11, 18]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));

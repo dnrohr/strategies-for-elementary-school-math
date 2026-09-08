@@ -116,7 +116,7 @@ Constructed account. Verified R01-007 and R01-008 support only a general concept
 **Phenomenology:** visual-symbolic + spatial
 
 ### First-person account
-> A solver might describe the experience this way: “Nine is almost ten. I picture seven rows of ten, which makes 70. Then I remove the extra square at the end of each row—seven squares. Seventy minus seven leaves 63.”
+> A solver might describe the experience this way: “Nine is almost ten. I picture seven rows of ten, which makes 70. Then I remove the extra square at the end of each row—seven squares. Seventy minus seven leaves 63. Each row loses one.”
 
 ### Steps
 1. Extend the width from 9 to 10 squares.

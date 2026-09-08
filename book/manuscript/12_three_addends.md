@@ -21,7 +21,7 @@ Three addends can be kept in their given order, rearranged, decomposed by place 
 **Math:** `378+596=974; 974+247=1,221`
 
 ### First-person account
-> “I start with 378 and 596. I make 974, hold it, then add 247. I keep the running total visible so I do not accidentally add one number twice.”
+> “I start with 378 and 596. I make 974, hold it, then add 247. I keep the running total visible so I do not accidentally add one number twice. I split the last addition at one thousand: 26 reaches 1,000, then the remaining 221 gives 1,221.”
 
 ### Steps
 1. Add `378+596=974`.
@@ -46,7 +46,7 @@ R02-I04 and R02-I07 support cautious discussion of working-memory demands; this 
 **Math:** `378+(596+247)=378+843=1,221`
 
 ### First-person account
-> “The second and third numbers look like a useful pair. I combine 596 and 247 to make 843, then add 378. The parentheses move, but the three quantities do not change.”
+> “The second and third numbers look like a useful pair. I combine 596 and 247 to make 843, then add 378. The parentheses move, but the three quantities do not change. I check the final addition by decomposing 378 into 300, 70, and 8, which brings 843 to 1,221.”
 
 ### Steps
 1. Compute `596+247=843`.
@@ -71,7 +71,7 @@ This is a constructed account; no claim that pairing is universally preferred.
 **Math:** `596+4=600; 247−4=243; 378+600+243=1,221`
 
 ### First-person account
-> “I move four from 247 to 596. One addend becomes the friendly 600, and the other becomes 243. The total stays put because what one addend gains, the other loses.”
+> “I move four from 247 to 596. One addend becomes the friendly 600, and the other becomes 243. The total stays put because what one addend gains, the other loses. Now 378 + 600 + 243 is easier to group, and it still totals 1,221.”
 
 ### Steps
 1. Transfer 4: `596+4=600`, `247−4=243`.
@@ -96,7 +96,7 @@ R01-010 is verified for cautious discussion of compensation flexibility in a dif
 **Math:** `(300+500+200)+(70+90+40)+(8+6+7)=1,221`
 
 ### First-person account
-> “I make three columns in my head: hundreds, tens, and ones. First the hundreds make 1,000, then the tens make 200, then the ones make 21. The columns are easier than carrying three whole numbers.”
+> “I make three columns in my head: hundreds, tens, and ones. First the hundreds make 1,000, then the tens make 200, then the ones make 21. The columns are easier than carrying three whole numbers. Combining those place-value subtotals gives 1,000 + 200 + 21 = 1,221.”
 
 ### Steps
 1. Add hundreds: `300+500+200=1,000`.
@@ -121,7 +121,7 @@ R01-007/008 support separating conceptual and procedural knowledge; account is c
 **Math:** column sums `8+6+7=21`, `7+9+4+2=22`, `3+5+2+2=12` → `1,221`
 
 ### First-person account
-> “I line up the three addends. I add the ones and write 1, carrying 2 tens; then the tens and carry; then the hundreds and carry. The alignment is doing part of the remembering for me.”
+> “I line up the three addends. I add the ones and write 1, carrying 2 tens; then the tens and carry; then the hundreds and carry. The alignment is doing part of the remembering for me. Each carry records ten units traded into the next place, and the final column reads 1,221.”
 
 ### Steps
 1. Ones: 21, write 1 carry 2.
@@ -146,7 +146,7 @@ R01-007 and R01-008 support conceptual/procedural distinction; written procedure
 **Math:** `378+596+247 = 378+(596+247) = 378+843 = (378+622)+(843−622) = 1,000+221 = 1,221`
 
 ### First-person account
-> “I ask how much 378 needs to reach 1,000: 622. I take 596 and 247 together, which is 843, so after supplying 622, 221 remains. One thousand plus 221 is 1,221.”
+> “I ask how much 378 needs to reach 1,000: 622. I take 596 and 247 together, which is 843, so after supplying 622, 221 remains. One thousand plus 221 is 1,221. I check that 622 + 221 rebuilds 843, so no amount was lost in the transfer.”
 
 ### Steps
 1. Compute `596+247=843`.
@@ -171,7 +171,7 @@ Constructed relational route; no empirical frequency claim.
 **Math:** `378+247=625; 625+596=1,221`
 
 ### First-person account
-> “I pair the 378 with 247 because their ones make 15 and their tens make 110. That gives 625. Then I add 596. I have not changed any quantity; I only changed the order.”
+> “I pair the 378 with 247 because their ones make 15 and their tens make 110. That gives 625. Then I add 596. I have not changed any quantity; I only changed the order. The final sum 625 + 596 reaches 1,221, matching the original left-to-right route.”
 
 ### Steps
 1. Pair 378 and 247.
@@ -196,7 +196,7 @@ R01-007 and R01-008 support only the general conceptual/procedural distinction; 
 **Math:** `378+596+247=1,221`, near `400+600+200=1,200`
 
 ### First-person account
-> “Rounded numbers tell me to expect about 1,200. I then calculate exactly with the addends. The estimate is a guardrail: if my exact total were 2,221, I would know to look again.”
+> “Rounded numbers tell me to expect about 1,200. I then calculate exactly with the addends. The estimate is a guardrail: if my exact total were 2,221, I would know to look again. The exact column work gives 1,221, only 21 above the benchmark, so its scale is plausible.”
 
 ### Steps
 1. Estimate `400+600+200=1,200`.
@@ -221,7 +221,7 @@ Constructed account; no claim about estimation’s developmental timing.
 **Math:** 378 + 596 + 247 = 1,221 units
 
 ### First-person account
-> “I make three piles: 378, 596, and 247 blocks. I join hundreds first, then tens, then loose ones. Ten loose blocks become a ten-rod, and ten rods become a hundred-flat. The trades keep the total unchanged.”
+> “I make three piles: 378, 596, and 247 blocks. I join hundreds first, then tens, then loose ones. Ten loose blocks become a ten-rod, and ten rods become a hundred-flat. The trades keep the total unchanged. The regrouped collection contains one thousand, two hundreds, two tens, and one one.”
 
 ### Steps
 1. Model each number with hundreds, tens, and ones.
@@ -271,7 +271,7 @@ Constructed representation; no claim about abacus training or transfer.
 **Math:** `378+596+247=378+600+243=1,221`
 
 ### First-person account
-> “I slide four units from 247 to 596. The two addends become 600 and 243, which are easier to combine. The total is conserved because the arrow has two ends: plus four here, minus four there.”
+> “I slide four units from 247 to 596. The two addends become 600 and 243, which are easier to combine. The total is conserved because the arrow has two ends: plus four here, minus four there. Adding 378 to the transformed pair produces the same 1,221 as the untouched expression.”
 
 ### Steps
 1. Transfer 4 from 247 to 596.
@@ -312,4 +312,4 @@ R01-007 and R01-008 (verified) support distinguishing conceptual and procedural 
 - [x] Illustration briefs specify exact quantities and vector overlays.
 - [x] Screened evidence is labeled.
 - [x] Method art, exact-quantity, responsive, grayscale, and integrated alt-text passes are complete.
-- [ ] Full chapter layout and citation passes remain.
+- [ ] Complete final citation/link and print-layout review during export QA.

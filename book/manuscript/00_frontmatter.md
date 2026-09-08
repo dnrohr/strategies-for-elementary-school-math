@@ -122,4 +122,4 @@ Evidence about inner speech likewise treats it as heterogeneous in condensation,
 - [x] No fixed learning-style, left/right-brain, or diagnostic claims appear.
 - [x] Matrix separates computational strategy from representational format.
 - [ ] Layout review at final print size remains for the production/layout lane.
-- [ ] Color and contrast review remains for the final visual QA pass.
+- [x] Color, grayscale, and web contrast review is complete; print-size layout remains for export QA.

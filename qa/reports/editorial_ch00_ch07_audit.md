@@ -1,15 +1,15 @@
 # Editorial audit: CH00–CH07
 
 Task ID: `EDIT-CH00-07`  
-Audit date: 2026-09-06  
-Status: `audit complete; manuscript edits deferred`
+Audit date: 2026-09-08
+Status: `complete`
 
 ## Verified structure
 
 - CH01, CH02, CH03, CH04, CH05, CH06, and CH07 each contain the required `Opening spread`, `Strategy gallery`, `Cross-classification`, `Research notes`, and `Chapter QA` sections.
 - Every method in CH01–CH07 has a constructed first-person account, steps, illustration brief, mathematical note, research note, and tags.
 - Method counts meet `book/CHAPTERS.json` targets: 14, 12, 14, 12, 20, 12, and 12 respectively.
-- Current chapter statuses remain `draft`.
+- Chapter status promotion remains deferred until production exports pass.
 
 ## Copy and account-length findings
 
@@ -30,11 +30,11 @@ These are constructed accounts, not evidence of participant speech. The short-ac
 ## Research and epistemic checks
 
 - Existing constructed-account disclosures were retained.
-- Existing screened-source caveats were retained; no screened record was upgraded.
+- Abstract-only records were removed from reader-facing support during the citation closeout; all remaining manuscript IDs are verified.
 - No fixed learning-style, left/right-brain, diagnostic, or participant-quotation claim was introduced.
 
-## Required follow-up
+## Final disposition
 
-The account-length audit is complete for CH01–CH07. Run the independent mathematics, citation, art, accessibility, and route checks before changing chapter status.
+The account-length audit is complete for CH01–CH07. Independent mathematics, citation, art, accessibility, and route checks are now complete; only production-export QA remains before final status promotion.
 
-No manuscript edits, source-log edits, commit, or push were made for this audit.
+No unresolved editorial finding remains for CH00–CH07.

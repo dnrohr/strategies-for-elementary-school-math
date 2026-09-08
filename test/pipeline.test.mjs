@@ -27,6 +27,22 @@ test("chapter validator enforces the method schema when methods are present", ()
   assert(validateChapter({ chapter: 1, slug: "one" }, { ...parsed, body: parsed.body.replace("### Tags", "") }).some(error => error.includes("method schema")));
 });
 
+test("all 175 constructed method accounts meet the 40–120 word contract", async () => {
+  const manuscriptDir = path.join(ROOT, "book", "manuscript");
+  const manuscriptFiles = (await fs.readdir(manuscriptDir)).filter(file => /^(?:0[1-9]|1[0-4])_.*\.md$/.test(file)).sort();
+  let accountTotal = 0;
+  for (const file of manuscriptFiles) {
+    const manuscript = await fs.readFile(path.join(manuscriptDir, file), "utf8");
+    const accounts = [...manuscript.matchAll(/### First-person account\s+([\s\S]*?)(?=\s+### Steps)/g)];
+    accountTotal += accounts.length;
+    for (const [index, account] of accounts.entries()) {
+      const wordCount = account[1].replace(/[`*_>#“”‘’]/g, " ").trim().split(/\s+/).filter(Boolean).length;
+      assert(wordCount >= 40 && wordCount <= 120, `${file} Method ${String(index + 1).padStart(2, "0")} has ${wordCount} words`);
+    }
+  }
+  assert.equal(accountTotal, 175);
+});
+
 test("renderer escapes raw HTML while rendering basic Markdown", () => {
   const rendered = renderMarkdown("## Safe\n\n<script>alert(1)</script> and **bold**");
   assert(!rendered.includes("<script>"));

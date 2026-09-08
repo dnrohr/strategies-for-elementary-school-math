@@ -56,10 +56,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Independent CH01 visual review inspected current captures for all fourteen figures at 1440 px and the generated-hand composite at 390 px. The first Method 04 generation was rejected for excess arrows; the accepted version shows 7 raised fingers, exactly 3 add-to-ten arrows, 10 raised fingers, and 2 counters. Review also found and fixed an initially blank published raster subresource and a Method 07 label collision. All figures remain within the measured 390 px document width; evidence is under `artifacts/ui/art-ch01-methods/`.
 - `ART-CH08-METHODS` established the method-aware rendering architecture and completed 10/10 CH08 method vectors. The generated chapter now contains one method figure immediately after every Method 01–10 heading, plus its existing opening anchor. All ten method assets use required names, useful alt text, exact vector quantities, selectable text, non-color cues, and a chapter-scoped provenance/QA ledger.
 - Independent CH08 visual review inspected current captures for all ten method figures at 1440 px and a representative method at 390 px. One Method 09 label/equation collision was found and corrected. The page has no document-level overflow at either measured width; evidence is under `artifacts/ui/art-ch08-methods/`.
-- `npm run check` passed: validation, 27 tests, and build; 16 production entries and 42 canonical source records validated. Regression coverage requires verified reader-facing source IDs, unique output IDs, and resolvable emitted image paths.
+- `npm run check` passed: validation, 28 tests, and build; 16 production entries and 42 canonical source records validated. Regression coverage requires all 175 constructed accounts to remain within 40–120 words.
 - `git diff --check` passed before this report was added.
 - Local route inspection covered home, about, and all 16 production entries at narrow and desktop sizes. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification is complete.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
+- Editorial review is complete across CH00–CH14. CH01–CH07 account ranges remain 40–60 words; expanded CH08–CH14 ranges are 40–55 words. All 175 accounts satisfy the 40–120-word contract without adding empirical claims, and the invariant is regression-tested.
 
 ## Remaining blockers
 
@@ -80,10 +81,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Restart checkpoint
 
-After the accessibility batch is committed, pushed, and verified live, the exact next lane is editorial finalization, followed by production exports. Art, citation source status, and web accessibility are no longer release blockers.
+After the editorial batch is committed, pushed, and verified live, the exact next lane is production export and export-specific citation/layout QA. Art, mathematics, citation source status, editorial, and web accessibility are no longer release blockers.
 
 ## Commits
 
+- `f0570bba7ce2072cb0a3224ba46c1b1b419d631b` — full 18-route accessibility audit, unique method-scoped IDs, corrected day/night contrast, announced theme state, emitted-image checks, and current responsive evidence.
 - `51a358653ad7936bda9ac308254be2c37a28942d` — reader-facing citation closeout, verified-only manuscript support, reconciled research handoffs, and source-status regression coverage.
 - `b18930dd997d7e19bb95dc0d5f15f2b1b63d2733` — CH14 vector-only three-fraction synthesis gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence; method-art production reached 175/175.
 - `b67982aa63f46d3557742cd8619b81ed136a399e` — CH13 vector-only unlike-denominator addition gallery, exactness tests, corrected arrow/benchmark geometry, chapter QA reconciliation, grayscale proof, and responsive evidence.
@@ -140,6 +142,8 @@ All listed hashes were verified against `origin/main` at the time of their respe
 
 ## GitHub Pages deployment
 
+GitHub Actions run `34221760400` completed successfully for accessibility head SHA `f0570bba7ce2072cb0a3224ba46c1b1b419d631b`. The live explorer exposes `aria-pressed="false"` on the theme control and the live CH05 route uses method-scoped heading IDs with no legacy duplicate `id="steps"`; the deployed stylesheet contains the contrast-corrected night palette. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34221760400.
+
 GitHub Actions run `34220076071` completed successfully for citation-closeout head SHA `51a358653ad7936bda9ac308254be2c37a28942d`. The live CH01 route contains the verified-only evidence statement and none of the 18 screened IDs; live CH99 states that abstract-only records are excluded from reader-facing claims. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34220076071.
 
 GitHub Actions run `34218680930` for `Publish book explorer` completed successfully for CH14 method-art head SHA `b18930dd997d7e19bb95dc0d5f15f2b1b63d2733`; both build and deploy jobs passed. The live CH14 route returned HTTP 200 with all ten ordered `data-method-figure="14-NN"` figures. Strategic pairing, number-line accumulation, and whole/remainder SVGs returned HTTP 200 and retained the exact `14/12→7/6`, `9+8+5=22` twelfths, and `12/12+10/12=1 5/6` structures. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34218680930. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/add-three-fractions/.
@@ -180,4 +184,4 @@ GitHub Actions run `34070909227` for `Publish book explorer` completed successfu
 
 ## Release decision
 
-`NOT READY`. The repository is build-clean; method-art, reader-facing citation, and broad web accessibility gates are complete, with persistent evidence recorded. Editorial finalization, production exports, and final live verification remain open.
+`NOT READY`. The repository is build-clean; method-art, mathematics, reader-facing citation, editorial, and broad web accessibility gates are complete, with persistent evidence recorded. Production exports and final live verification remain open.

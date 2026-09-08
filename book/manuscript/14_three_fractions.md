@@ -54,7 +54,7 @@ Constructed route; strategic order is not claimed universally easier. R03-013 is
 **Phenomenology:** verbal + symbolic
 **Math:** `3/4 + 2/3 = 9/12 + 8/12 = 17/12`; `17/12 + 5/12 = 22/12 = 11/6`.
 ### First-person account
-> “I start with the two unlike denominators. Their shared unit is a twelfth, so the pair makes seventeen twelfths. The final five twelfths is already ready. I add five to seventeen and simplify at the end.”
+> “I start with the two unlike denominators. Their shared unit is a twelfth, so the pair makes seventeen twelfths. The final five twelfths is already ready. I add five to seventeen and simplify at the end. The intermediate 17/12 keeps the first pairing visible, and 17/12 + 5/12 gives 22/12.”
 ### Steps
 1. Convert first two addends to twelfths. 2. Add to 17/12. 3. Add 5/12 and reduce.
 ### Illustration brief
@@ -88,7 +88,7 @@ Constructed model; verified R03-006 and R03-014 support only bounded coordinated
 **Phenomenology:** spatial + motor-imagined
 **Math:** `0 + 9/12 + 8/12 + 5/12 = 22/12 = 1 5/6`.
 ### First-person account
-> “On a line divided into twelfths, I move nine steps, then eight, then five. Twelve steps reach one whole. Ten more twelfths remain, which is five sixths. The endpoint is 22/12.”
+> “On a line divided into twelfths, I move nine steps, then eight, then five. Twelve steps reach one whole. Ten more twelfths remain, which is five sixths. The endpoint is 22/12. Every interval has equal length, so the three jumps preserve the common unit from start to finish.”
 ### Steps
 1. Partition a line into twelfths. 2. Move 9, 8, and 5 unit steps. 3. Read 22/12 as 11/6.
 ### Illustration brief
@@ -139,7 +139,7 @@ Procedural fluency is not treated as conceptual proof; see verified R03-011 and 
 **Phenomenology:** concrete + relational
 **Math:** `22/12 = 12/12 + 10/12 = 1 + 5/6 = 11/6`.
 ### First-person account
-> “Twenty-two twelfths is not mysterious. I take twelve pieces as one whole; ten pieces remain. Ten twelfths reduces to five sixths. The mixed number is the same amount written to show the whole and remainder.”
+> “Twenty-two twelfths is not mysterious. I take twelve pieces as one whole; ten pieces remain. Ten twelfths reduces to five sixths. The mixed number is the same amount written to show the whole and remainder. I recombine 12/12 and 10/12 to verify that nothing changed during the rewrite.”
 ### Steps
 1. Separate 12 of 22 units. 2. Name them one whole. 3. Simplify the 10/12 remainder.
 ### Illustration brief
@@ -207,5 +207,5 @@ The same algorithm can be spoken, written, tiled, walked, or experienced as a re
 - [x] Ten complete method schemas present.
 - [x] All visual wholes are equal and partitioned into common units.
 - [x] Cross-classification separates computation from representation.
-- [ ] Full-text verification for screened leads.
+- [x] Abstract-only screened records were removed from reader-facing support.
 - [x] Final illustration quantity, responsive, grayscale, and integrated accessibility review.

@@ -20,7 +20,7 @@ Compare two fractions with the same whole. `3/5 = 0.6`; `5/8 = 0.625`, so `5/8` 
 **Phenomenology:** visual-concrete
 **Math:** `3/5 = 0.600` and `5/8 = 0.625`
 ### First-person account
-> A solver might say: “I put both fractions on bars the same length. Three of five pieces covers a little less than five of eight pieces, so the eighths picture reaches farther.”
+> A solver might say: “I put both fractions on bars the same length. Three of five pieces covers a little less than five of eight pieces, so the eighths picture reaches farther. I align both bars at zero and keep their wholes equal, because different whole lengths would make the visual comparison invalid.”
 ### Steps
 1. Draw equal whole bars. 2. Partition one into fifths and shade 3. 3. Partition one into eighths and shade 5. 4. Compare lengths.
 ### Illustration brief
@@ -37,7 +37,7 @@ Area reasoning is constructed. No instructional-effect claim is attached to this
 **Phenomenology:** spatial
 **Math:** `3/5 = 0.6`; `5/8 = 0.625`; `5/8 > 3/5`
 ### First-person account
-> “I treat each fraction as one point between zero and one. The point for five-eighths sits just to the right of three-fifths.”
+> “I treat each fraction as one point between zero and one. The point for five-eighths sits just to the right of three-fifths. I use the same number line for both points and check their decimal locations, 0.600 and 0.625, rather than judging two separate scales.”
 ### Steps
 1. Mark 0 and 1. 2. Locate 3/5 at 0.6. 3. Locate 5/8 at 0.625. 4. Read left-to-right order.
 ### Illustration brief
@@ -54,7 +54,7 @@ R03-005 and R03-007 are verified intervention evidence for tested tasks, not one
 **Phenomenology:** verbal + relational
 **Math:** `3/5 − 1/2 = 1/10`; `5/8 − 1/2 = 1/8`; `1/8 > 1/10`
 ### First-person account
-> “Both are above one half. Three-fifths is one tenth above it, while five-eighths is one eighth above it. An eighth is the bigger extra piece.”
+> “Both are above one half. Three-fifths is one tenth above it, while five-eighths is one eighth above it. An eighth is the bigger extra piece. Since both extras begin at the same benchmark, the fraction with the larger positive gap must lie farther to the right.”
 ### Steps
 1. Find `3/5 − 1/2 = 1/10`. 2. Find `5/8 − 1/2 = 1/8`. 3. Compare the two excesses.
 ### Illustration brief
@@ -71,7 +71,7 @@ Comparing numerators or denominators as isolated whole numbers can give a wrong 
 **Phenomenology:** symbolic
 **Math:** `3/5 = 24/40`; `5/8 = 25/40`
 ### First-person account
-> “I ask for a common unit. Forty works: three-fifths is twenty-four fortieths, and five-eighths is twenty-five. Twenty-five wins.”
+> “I ask for a common unit. Forty works: three-fifths is twenty-four fortieths, and five-eighths is twenty-five. Twenty-five wins. The denominators now name identical-sized pieces, so comparing the numerators is legitimate and shows a difference of exactly one fortieth unit overall.”
 ### Steps
 1. Choose 40, common to 5 and 8. 2. `3/5 = 24/40`. 3. `5/8 = 25/40`. 4. Compare.
 ### Illustration brief
@@ -88,7 +88,7 @@ R03-014 supports unit-fraction composition in tested addition contexts, not this
 **Phenomenology:** visual-symbolic
 **Math:** `3×8 = 24`; `5×5 = 25`; `3/5 < 5/8`
 ### First-person account
-> “I draw an X across the fractions. Three times eight is twenty-four; five times five is twenty-five. The cross-products compare them without changing either value.”
+> “I draw an X across the fractions. Three times eight is twenty-four; five times five is twenty-five. The cross-products compare them without changing either value. Both denominators are positive, so multiplying by their common product preserves the ordering; twenty-five is greater by one.”
 ### Steps
 1. Multiply 3 by 8. 2. Multiply 5 by 5. 3. Compare 24 and 25. 4. State the inequality.
 ### Illustration brief
@@ -105,7 +105,7 @@ Valid procedure does not alone demonstrate conceptual understanding; R03-012 is 
 **Phenomenology:** verbal + symbolic
 **Math:** `3 ÷ 5 = 0.6`; `5 ÷ 8 = 0.625`
 ### First-person account
-> “I hear each fraction as a division problem. Six tenths is smaller than six hundred twenty-five thousandths, so five-eighths is larger.”
+> “I hear each fraction as a division problem. Six tenths is smaller than six hundred twenty-five thousandths, so five-eighths is larger. I align the decimal places as 0.600 and 0.625 before comparing, which keeps the tenths, hundredths, and thousandths positions from drifting.”
 ### Steps
 1. Divide 3 by 5. 2. Divide 5 by 8. 3. Compare 0.600 and 0.625.
 ### Illustration brief
@@ -122,7 +122,7 @@ Exact conversion here; no developmental frequency claim is made.
 **Phenomenology:** spatial + relational
 **Math:** `1−3/5=2/5=0.4`; `1−5/8=3/8=0.375`
 ### First-person account
-> “I look at what each fraction still needs to reach one. Five-eighths leaves the smaller gap, so it must be the larger fraction.”
+> “I look at what each fraction still needs to reach one. Five-eighths leaves the smaller gap, so it must be the larger fraction. The gaps are 0.400 and 0.375 on the same whole; subtracting less from one leaves the greater starting amount.”
 ### Steps
 1. Compute `1 − 3/5 = 0.4`. 2. Compute `1 − 5/8 = 0.375`. 3. Choose the smaller gap.
 ### Illustration brief
@@ -139,7 +139,7 @@ Complement route is mathematical inference, not a claim about typical strategy.
 **Phenomenology:** abstract
 **Math:** `3/5 = 0.6`; `5/8 = 0.625`
 ### First-person account
-> “The ordering arrives quietly: 0.6, then 0.625. I explain it afterward by dividing each numerator by its denominator.”
+> “The ordering arrives quietly: 0.6, then 0.625. I explain it afterward by dividing each numerator by its denominator. I also rename them as 24/40 and 25/40, so the remembered ordering has an exact fraction check rather than relying only on decimal recall.”
 ### Steps
 1. Retrieve decimal values. 2. Order them. 3. Verify by division or a bar.
 ### Illustration brief
@@ -156,7 +156,7 @@ Related magnitude evidence in R03-004 and R03-007 does not license this phenomen
 **Phenomenology:** visual-concrete
 **Math:** `3/5 = 12/20`; `5/8 = 12.5/20`
 ### First-person account
-> “I use twenty equal units. Three-fifths fills twelve; five-eighths fills twelve and a half. The half-piece makes the difference visible.”
+> “I use twenty equal units. Three-fifths fills twelve; five-eighths fills twelve and a half. The half-piece makes the difference visible. I mark the endpoint halfway through the thirteenth unit, not at thirteen, because 12.5/20 is the exact equivalent of five-eighths.”
 ### Steps
 1. Repartition a whole into 20 units. 2. Show `3/5 = 12/20`. 3. Show `5/8 = 12.5/20`. 4. Compare.
 ### Illustration brief
@@ -173,7 +173,7 @@ Constructed diagram; no curriculum-effect claim is made.
 **Phenomenology:** mixed spatial + verbal
 **Math:** `24/40 < 25/40`
 ### First-person account
-> “Both are just above one-half, so I expect a close comparison. Then I rename them in fortieths and find the one-unit difference.”
+> “Both are just above one-half, so I expect a close comparison. Then I rename them in fortieths and find the one-unit difference. The estimate tells me the result should be close; the exact 24-versus-25 comparison tells me which fraction is larger.”
 ### Steps
 1. Estimate from 1/2. 2. Choose denominator 40. 3. Compare 24/40 and 25/40. 4. Confirm.
 ### Illustration brief
@@ -204,4 +204,4 @@ Verified anchors: R03-004, R03-005–R03-007, R03-012, and R03-014. Abstract-onl
 - [x] Ten nontrivial routes are present.
 - [x] Research caveats and disclosure are present.
 - [x] All 10 method figures passed exact-quantity, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch09-methods/`.
-- [ ] Complete citation and layout review.
+- [ ] Complete final citation/link and print-layout review during export QA.

@@ -185,7 +185,7 @@ Three colored tiles rearrange so 378 and 247 touch; vector braces show pair then
 Addition is commutative, so addends may be reordered.
 
 ### Research note
-R01-005 is screened; use only as a lead about conceptual understanding and order-indifferent strategies.
+R01-007 and R01-008 support only the general conceptual/procedural distinction; the order-indifferent transformation shown here is mathematical.
 
 ### Tags
 `commutativity`, `regrouping`, `symbolic`
@@ -302,7 +302,7 @@ The table compares formats, not fixed kinds of people. A solver can use the same
 
 ## Research notes
 
-R01-007 and R01-008 (verified) support distinguishing conceptual and procedural knowledge. R01-010 (verified) supports cautious discussion of jump/compensation flexibility in a related number domain. R01-005 (screened) is only a lead for order-indifferent and decomposition strategies. R02-I04, R02-I05, and R02-I07 (verified) support limited discussion of verbal, visual, and executive demands varying with format. All first-person accounts are constructed.
+R01-007 and R01-008 (verified) support distinguishing conceptual and procedural knowledge. R01-010 (verified) supports cautious discussion of jump/compensation flexibility in a related number domain. R02-I04, R02-I05, and R02-I07 (verified) support limited discussion of verbal, visual, and executive demands varying with format. Abstract-only screened records are excluded from reader-facing claims. All first-person accounts are constructed.
 
 ## Chapter QA
 

@@ -31,7 +31,7 @@ Vector trays with exactly five counters each; three selected, one muted; overlay
 ### Mathematical note
 One fourth is 5, so three fourths is three copies of 5.
 ### Research note
-Constructed mathematics. R03-008 and R03-009 are screened leads, not settled developmental evidence.
+Constructed mathematics. Verified R03-014 supports a bounded common-unit framework, not a developmental sequence for this method.
 ### Tags
 `equal-sharing`, `operator`, `visual-concrete`
 
@@ -65,7 +65,7 @@ Mental-workspace arrow `20 → ÷4 → 5 → ×3 → 15`; no competing quantitie
 ### Mathematical note
 This creates the equal share before selecting three shares.
 ### Research note
-R03-009 is screened; it describes operator as one mathematical subconstruct, not a learner type.
+“Fraction as operator” is used here as a mathematical description, not as a learner type or empirical classification.
 ### Tags
 `operator`, `symbolic`, `procedural`
 
@@ -116,7 +116,7 @@ Exact 4×5 array; three rows outlined, one muted; braces show five per row.
 ### Mathematical note
 The array makes equal groups spatially parallel.
 ### Research note
-Multiple representations are a design choice; screened R03-010 cannot yet support a strong curriculum-effect claim.
+Multiple representations are a design choice. Verified R03-006 and R03-014 support only bounded claims about coordinated fraction representations and tested interventions, not a single-format curriculum effect.
 ### Tags
 `array`, `spatial`, `equal-groups`
 
@@ -198,7 +198,7 @@ The same computation can be objects, a bar, spoken units, or a compressed relati
 
 ## Research notes
 
-R03-004 is verified for associations among fraction magnitude knowledge, division, and fraction arithmetic in its sample. R03-005–R03-007 are verified interventions bounded to their tasks and durations. Verified R03-012 supports a bounded distinction between procedural accuracy and direction-of-effect knowledge. R03-001, R03-002, R03-008, R03-009, and R03-010 are screened leads pending full text. No source supports fixed modality or learning-style categories.
+R03-004 is verified for associations among fraction magnitude knowledge, division, and fraction arithmetic in its sample. R03-005–R03-007 and R03-014 are verified interventions bounded to their tasks and durations. Verified R03-012 supports a bounded distinction between procedural accuracy and direction-of-effect knowledge. Abstract-only screened records are excluded from reader-facing claims. No source supports fixed modality or learning-style categories.
 
 ## Chapter QA
 

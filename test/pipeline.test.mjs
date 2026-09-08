@@ -843,6 +843,24 @@ test("working bibliography matches canonical source verification statuses", asyn
   assert.equal(bibliography, buildBibliography(records));
 });
 
+test("reader-facing manuscript cites only full-text-verified source records", async () => {
+  const source = await fs.readFile(path.join(ROOT, "research", "source_log.csv"), "utf8");
+  const [header, ...rows] = parseCsv(source);
+  const statusIndex = header.indexOf("verification_status");
+  const statuses = new Map(rows.map(values => [values[0], values[statusIndex]]));
+  const manuscriptDir = path.join(ROOT, "book", "manuscript");
+  const manuscriptFiles = (await fs.readdir(manuscriptDir)).filter(file => file.endsWith(".md"));
+  const failures = [];
+  for (const file of manuscriptFiles) {
+    const manuscript = await fs.readFile(path.join(manuscriptDir, file), "utf8");
+    const sourceIds = new Set(manuscript.match(/R\d{2}-(?:F|I)?\d{2,3}/g) || []);
+    for (const sourceId of sourceIds) {
+      if (statuses.get(sourceId) !== "verified") failures.push(`${file}: ${sourceId} is ${statuses.get(sourceId) || "missing"}`);
+    }
+  }
+  assert.deepEqual(failures, []);
+});
+
 test("repository validates and build emits every manifest page", async () => {
   assert.deepEqual(await validateRepository(), []);
   await build();

@@ -1,11 +1,11 @@
 # Release-readiness report
 
-Audit date: 2026-09-07
+Audit date: 2026-09-08
 Coordinator lane: `COORD-RELEASE`
 
 ## Current chapter status
 
-All authored entries remain `draft`. No chapter is promoted to `review` or `final` because art, accessibility, and citation completion are not yet recorded.
+All authored entries remain `draft`. No chapter is promoted to `review` or `final` until book-wide accessibility/layout, editorial, export, and final release checks are recorded.
 
 | Entry | Methods | Target | Status |
 | --- | ---: | --- | --- |
@@ -56,7 +56,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Independent CH01 visual review inspected current captures for all fourteen figures at 1440 px and the generated-hand composite at 390 px. The first Method 04 generation was rejected for excess arrows; the accepted version shows 7 raised fingers, exactly 3 add-to-ten arrows, 10 raised fingers, and 2 counters. Review also found and fixed an initially blank published raster subresource and a Method 07 label collision. All figures remain within the measured 390 px document width; evidence is under `artifacts/ui/art-ch01-methods/`.
 - `ART-CH08-METHODS` established the method-aware rendering architecture and completed 10/10 CH08 method vectors. The generated chapter now contains one method figure immediately after every Method 01–10 heading, plus its existing opening anchor. All ten method assets use required names, useful alt text, exact vector quantities, selectable text, non-color cues, and a chapter-scoped provenance/QA ledger.
 - Independent CH08 visual review inspected current captures for all ten method figures at 1440 px and a representative method at 390 px. One Method 09 label/equation collision was found and corrected. The page has no document-level overflow at either measured width; evidence is under `artifacts/ui/art-ch08-methods/`.
-- `npm run check` passed: validation, 25 tests, and build; 16 production entries and 42 canonical source records validated.
+- `npm run check` passed: validation, 26 tests, and build; 16 production entries and 42 canonical source records validated. The citation regression test requires every reader-facing source ID to map to a full-text-verified ledger record.
 - `git diff --check` passed before this report was added.
 - Local route inspection reached HTTP-served pages for the explorer, early chapter CH01, fraction chapter CH08, and back matter CH99. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification remains open.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
@@ -64,11 +64,11 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 ## Remaining blockers
 
 - The book-wide method-art gate is complete: CH01–CH14 contain all 175 method figures, every authored entry CH00–CH14 retains its opening anchor, and chapter-scoped provenance, exactness, alt text, full-size, representative narrow, and grayscale evidence is recorded. Remaining release work is editorial, citation, broad accessibility/layout, export, and final live verification rather than illustration production.
-- Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Broad rendered contrast and final per-method visual sign-off remain open for the unproduced chapters.
+- Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Chapter-level rendered contrast and per-method visual sign-off are complete; the broad site/export accessibility pass remains open.
 - An auditable chapter-by-chapter art manifest now records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; final rendering and visual sign-off remain open.
 - Accessibility and responsive QA now has persistent representative screenshots under `artifacts/ui/site_accessibility_serial/`; generated CH00–CH14 pages load one canonical SVG each with non-empty alt text. The published CH05 route was visually checked at the app's narrow viewport with the figure and caption contained in the content column; narrow keyboard focus and theme-toggle behavior were also verified there. Broader per-page interaction coverage remains open while desktop focus order is complete.
-- Citation QA remains open for screened records; R01-003 and R03-012 are now verified after full-text review, and CH99 records 18 screened items requiring inspection before stronger claims or final promotion.
-- Citation ID/status audit found no missing source IDs and confirmed constructed-account disclosures; unresolved screened records are documented in `qa/reports/citation_serial_audit.md`.
+- Citation source-status QA is complete: all reader-facing manuscript IDs map to full-text-verified records, while 18 abstract-only records remain internal leads. The boundary is regression-tested and documented in `qa/reports/citation_serial_audit.md`.
+- Constructed-account disclosures remain intact. The only citation gate still open is the final endnote, link, and quotation-layout pass on production exports.
 - Editorial QA for CH01–CH07 is complete for account length and structure; all audited accounts now meet the 40–120-word target, with details in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09’s exact half-unit endpoint is protected by regression tests and final rendered-art/grayscale inspection confirms 12.5 twentieths rather than 13 full units.
 - The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
@@ -80,7 +80,7 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 
 ## Restart checkpoint
 
-After this batch is committed, pushed, and verified live, the exact next lane is the screened-source citation closeout documented in `qa/reports/citation_serial_audit.md`, followed by remaining book-wide accessibility/layout and export gates. Art production is no longer a release blocker.
+After the citation batch is committed, pushed, and verified live, the exact next lane is the remaining book-wide accessibility/layout audit, followed by production exports. Art production and reader-facing source-status verification are no longer release blockers.
 
 ## Commits
 
@@ -177,4 +177,4 @@ GitHub Actions run `34070909227` for `Publish book explorer` completed successfu
 
 ## Release decision
 
-`NOT READY`. The repository is build-clean and the method-count targets are met, but art, accessibility, citation verification, and persistent visual evidence remain incomplete.
+`NOT READY`. The repository is build-clean, method-art and reader-facing citation gates are complete, and persistent chapter evidence is recorded. Book-wide accessibility/layout, editorial finalization, production exports, and final live verification remain open.

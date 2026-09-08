@@ -28,7 +28,7 @@ Two equal bars with exact fifth/eighth partitions, shading plus outline texture;
 ### Mathematical note
 Equal wholes make shaded lengths comparable; partitions need not have the same count.
 ### Research note
-Area reasoning is constructed. R03-010 is screened and cannot support a strong instructional-effect claim.
+Area reasoning is constructed. No instructional-effect claim is attached to this diagram.
 ### Tags
 `fraction-bar`, `part-whole`, `visual`
 
@@ -62,7 +62,7 @@ Common line centered at 1/2 with exact gap brackets labeled 1/10 and 1/8.
 ### Mathematical note
 Subtracting the same benchmark reduces the comparison to gap size.
 ### Research note
-R03-001 describes whole-number bias as possible interference, not a fixed trait.
+Comparing numerators or denominators as isolated whole numbers can give a wrong answer here; that is a mathematical caution, not a fixed trait claim.
 ### Tags
 `benchmark`, `relational`, `half`
 
@@ -79,7 +79,7 @@ Equal bars repartitioned into 40 fine units; preserve total length and label 24 
 ### Mathematical note
 Renaming preserves value while making units alike.
 ### Research note
-R03-010 is screened; R03-014 supports unit-fraction composition in tested addition contexts, not this exact comparison.
+R03-014 supports unit-fraction composition in tested addition contexts, not this exact comparison; the comparison diagram itself is mathematical.
 ### Tags
 `equivalence`, `common-denominator`, `symbolic`
 
@@ -164,7 +164,7 @@ Equal bars with 20ths; 5/8 ends halfway through the thirteenth unit, not at 13 f
 ### Mathematical note
 A common unit may produce fractional counts; exact subdivision matters.
 ### Research note
-Constructed diagram; R03-010 remains screened.
+Constructed diagram; no curriculum-effect claim is made.
 ### Tags
 `common-unit`, `concrete`, `equivalence`
 
@@ -195,7 +195,7 @@ Magnitude, benchmark gaps, and common units can yield the same conclusion. Repre
 
 ## Research notes
 
-Verified anchors: R03-004, R03-005–R03-007, and R03-012. Screened leads: R03-001–R03-003 and R03-009–R03-010. “Whole-number bias” is an umbrella description with competing explanations, not a fixed trait. Accounts here are constructed.
+Verified anchors: R03-004, R03-005–R03-007, R03-012, and R03-014. Abstract-only screened records are excluded from reader-facing claims. The chapter’s warning against isolated whole-number comparison is mathematical, not a diagnostic label or fixed trait. Accounts here are constructed.
 
 ## Chapter QA
 

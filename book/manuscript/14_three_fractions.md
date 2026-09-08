@@ -62,7 +62,7 @@ Use equation cards `9/12 + 8/12 → 17/12 → 22/12` with a 12-cell check strip.
 ### Mathematical note
 Changing grouping does not change an addition total.
 ### Research note
-Constructed account; R03-008 and R03-010 are screened representation leads.
+Constructed account; verified R03-006 and R03-014 support only bounded discussion of coordinated fraction representations.
 ### Tags
 `staged-addition`, `verbal`, `equivalence`
 
@@ -79,7 +79,7 @@ All bars must be equal length and visibly divided into 12 equal cells; show one 
 ### Mathematical note
 Equal whole lengths are essential for visual addition.
 ### Research note
-Constructed model; R03-010 is a screened coordinated-representation lead.
+Constructed model; verified R03-006 and R03-014 support only bounded coordinated-representation claims.
 ### Tags
 `fraction-bars`, `visual-concrete`, `spatial`
 
@@ -198,7 +198,7 @@ The same algorithm can be spoken, written, tiled, walked, or experienced as a re
 ## Research notes
 
 - **Verified anchors:** R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, and R03-014.
-- **Screened leads:** R03-001, R03-002, R03-003, R03-008, R03-009, and R03-010 remain leads pending full-text checks.
+- **Evidence boundary:** abstract-only screened records are excluded from reader-facing claims; all cited empirical anchors above were checked against full text.
 - First-person accounts are constructed examples, not participant quotations or fixed modality categories.
 
 ## Chapter QA

@@ -28,7 +28,7 @@ Five labeled bowls, four candies each, plus exactly three in a central remainder
 ### Mathematical note
 `4 R3` is exact whole-object division with remainder 3.
 ### Research note
-Equal sharing is a constructed scenario; R03-008 is screened qualitative evidence, not a universal developmental sequence.
+Equal sharing is a constructed mathematical scenario, not evidence for a universal developmental sequence.
 ### Tags
 `sharing`, `remainder`, `concrete`
 
@@ -79,7 +79,7 @@ Exact bar with four equal blocks of 5 and a distinct 3 tail; avoid implying the 
 ### Mathematical note
 The bar makes quotient and remainder parts of one whole.
 ### Research note
-Visual model is constructed; R03-009’s quotient subconstruct is screened.
+The quotient interpretation and visual model are mathematical/editorial constructions, not measured learner categories.
 ### Tags
 `bar-model`, `spatial`, `part-whole`
 
@@ -96,7 +96,7 @@ Three candies subdivided into fifths, with one fifth from each sent to each of f
 ### Mathematical note
 When the material is divisible, the remainder becomes the fraction `3/5` of one candy.
 ### Research note
-R03-008 and R03-009 are screened; the distinction here is mathematical/contextual, not a developmental claim.
+The distinction here is mathematical and contextual, not a developmental claim.
 ### Tags
 `fractional-quotient`, `sharing`, `partition`
 
@@ -181,7 +181,7 @@ Paired spread: whole candies with remainder plate versus three candies cut into 
 ### Mathematical note
 The numerical quotient is the same decomposition; context determines whether the remainder is left over or repartitioned.
 ### Research note
-Equal-sharing and fraction meanings are related but distinct; R03-008 is screened and pending full text.
+Equal-sharing and fraction meanings are related but distinct in the mathematics shown; no developmental sequence is claimed.
 ### Tags
 `context`, `remainder`, `fraction`
 
@@ -196,7 +196,7 @@ The same division can end in two valid notations because the material and answer
 
 ## Research notes
 
-R03-004 is verified for associations involving whole-number division and fraction arithmetic in its sampled ages. R03-005–R03-007 are verified but concern bounded fraction-magnitude interventions. R03-008 and R03-009 are screened leads pending full text. The chapter makes no claim that one sharing model is universally preferred or developmentally first.
+R03-004 is verified for associations involving whole-number division and fraction arithmetic in its sampled ages. R03-005–R03-007 are verified but concern bounded fraction-magnitude interventions. Abstract-only screened records are excluded from reader-facing claims. The chapter makes no claim that one sharing model is universally preferred or developmentally first.
 
 ## Chapter QA
 

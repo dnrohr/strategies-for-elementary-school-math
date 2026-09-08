@@ -58,7 +58,7 @@ Precise vector 7-by-9 grid with a single path visiting all 63 cells once; mark o
 Counting unit squares directly measures area; the count agrees with 7 groups of 9.
 
 ### Research note
-Constructed account. Screened R01-011 may support only cautious discussion of model categories pending full-text verification.
+Constructed account. Full-text-verified R01-002 supplies only broad multiplication-strategy context.
 
 ### Tags
 `counting`, `unit-squares`, `visual-concrete`
@@ -82,7 +82,7 @@ Vector grid with 7 rows in alternating blue/teal bands; overlay `9 + 9 + 9 + 9 +
 Multiplication is compact repeated addition: 7 × 9 is seven groups of 9.
 
 ### Research note
-Constructed account. Screened R01-011 describes repeated-addition models cautiously; it does not establish a developmental sequence for every learner.
+Constructed account. R01-002 documents repeated addition among measured multiplication strategies; it does not establish a developmental sequence for every learner.
 
 ### Tags
 `repeated-addition`, `equal-groups`, `visual-spatial`, `inner-speech`
@@ -106,7 +106,7 @@ Two exact vector rectangles, 7-by-9 and rotated 9-by-7, linked by a rotation arr
 The commutative property gives 7 × 9 = 9 × 7; rotation preserves the unit-square count.
 
 ### Research note
-Constructed account. Screened R01-005 may inform cautious discussion of conceptual understanding, not a claim about this individual method.
+Constructed account. Verified R01-007 and R01-008 support only a general conceptual/procedural distinction, not a claim about this individual method.
 
 ### Tags
 `commutativity`, `rotation`, `equal-groups`, `spatial`
@@ -333,5 +333,5 @@ The gallery is a set of constructed, plausible accounts. The research record sup
 - [x] Rotation and all partitions preserve exactly 63 unit squares.
 - [x] Constructed accounts are not participant quotations.
 - [x] Research notes distinguish verified and screened records and avoid fixed cognitive-style claims.
-- [ ] Full source-text verification of screened R01-011 remains pending.
+- [x] Reader-facing claims rely only on full-text-verified source records.
 - [x] All 12 method figures passed exact-quantity, compositing, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch07-methods/`.

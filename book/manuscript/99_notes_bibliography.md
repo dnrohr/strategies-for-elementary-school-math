@@ -38,21 +38,21 @@ and verification status. The human-readable bibliography is maintained at
 
 **Verified** means that the directly relevant source text (or a complete
 author/institution copy) and the bibliographic record were inspected for the
-logged claim. **Screened** means that metadata and an authoritative abstract or
-record were checked, but the full text was not inspected. Screened entries are
-research leads, not support for stronger final prose.
+logged claim. The internal ledger also retains **screened** abstract-only leads,
+but those records are deliberately excluded from reader-facing chapter claims
+and from the coverage map below.
 
 ### Coverage map for the fraction and coordination chapters
 
-| Chapter | Problem | Verified source IDs used | Screened leads (not settled evidence) |
-| --- | --- | --- | --- |
-| CH08 | `3/4 of 20` | R03-004, R03-005, R03-006, R03-007, R03-012 | R03-001, R03-002, R03-008, R03-009, R03-010 |
-| CH09 | `3/5` versus `5/8` | R03-004, R03-005, R03-006, R03-007, R03-012 | R03-001, R03-002, R03-003, R03-009, R03-010 |
-| CH10 | 23 shared among 5 | R03-012 | R03-008, R03-009 |
-| CH11 | `27 × 46` | R01-002, R01-007, R01-008, R01-013, R02-I04, R02-I05, R02-I07 | R01-011 |
-| CH12 | `378 + 596 + 247` | R01-007, R01-008, R01-010, R02-I04, R02-I05, R02-I07 | R01-005 |
-| CH13 | `2/3 + 5/8` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 | R03-001, R03-009, R03-010 |
-| CH14 | `3/4 + 2/3 + 5/12` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 | R03-001 |
+| Chapter | Problem | Full-text-verified source IDs used |
+| --- | --- | --- |
+| CH08 | `3/4 of 20` | R03-004, R03-005, R03-006, R03-007, R03-012, R03-014 |
+| CH09 | `3/5` versus `5/8` | R03-004, R03-005, R03-006, R03-007, R03-012, R03-014 |
+| CH10 | 23 shared among 5 | R03-004, R03-012 |
+| CH11 | `27 × 46` | R01-002, R01-007, R01-008, R01-013, R02-I04, R02-I05, R02-I07 |
+| CH12 | `378 + 596 + 247` | R01-007, R01-008, R01-010, R02-I04, R02-I05, R02-I07 |
+| CH13 | `2/3 + 5/8` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 |
+| CH14 | `3/4 + 2/3 + 5/12` | R01-007, R01-008, R03-004, R03-005, R03-006, R03-011, R03-012, R03-013, R03-014 |
 
 The map is an editorial audit, not a claim that every source applies equally
 to every method. A verified paper may support a narrow claim about magnitude,
@@ -66,8 +66,8 @@ The same distinction applies to CH00–CH07. Their handoffs identify sources
 used for strategy development, conceptual/procedural interaction, fingers and
 gesture, inner speech, and working-memory resources. Verified anchors include
 R01-002, R01-007, R01-008, R01-010, R01-013, R01-014, R02-F01, R02-F02,
-R02-F05, R02-F07, R02-I01, and R02-I04–R02-I07. Other IDs remain screened
-where listed in the ledger and must not support stronger claims.
+R02-F05, R02-F07, R02-I01, and R02-I04–R02-I07. Screened IDs retained in the
+internal ledger do not support manuscript claims.
 
 ## Cross-classification
 
@@ -136,20 +136,17 @@ resemble an interview transcript:
 
 - [x] The manuscript has the required five level-two sections.
 - [x] Constructed first-person accounts are distinguished from empirical claims.
-- [x] Verified and screened source statuses are defined and kept separate.
+- [x] Verified and screened source statuses are defined and kept separate; only verified records support manuscript claims.
 - [x] CH08–CH14 have explicit source-coverage entries and handoff references.
 - [x] No new citation, participant detail, developmental claim, or quotation was invented.
-- [ ] Upgrade screened records with full-text confirmation.
+- [x] Remove abstract-only screened records from reader-facing manuscript support.
 - [ ] Perform final endnote, link, and quotation checks after substantive edits.
-- [ ] Complete final art, quantity, accessibility, and layout review across the book.
+- [x] Complete final art and quantity review across the book.
+- [ ] Complete final broad accessibility and layout review across the book.
 
 ### Editorial roadmap
 
-1. Upgrade or remove screened records, beginning with sources used by more than
-   one chapter.
-2. Run a chapter-by-chapter claim audit against the source ledger.
-3. Add final endnotes and page locators after layout stabilizes.
-4. Run mathematical and visual quantity QA on every figure brief and generated
-   asset.
-5. Change chapter status from `draft` only after its own QA and citation review
+1. Run a chapter-by-chapter claim audit against the source ledger.
+2. Add final endnotes and page locators after layout stabilizes.
+3. Change chapter status from `draft` only after its own QA and citation review
    are recorded; reserve `final` for the complete production pass.

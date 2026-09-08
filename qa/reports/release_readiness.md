@@ -78,6 +78,8 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `37bfb58181ee4e5ed8170b01e2a7c9b13e8745f9` — CH11 vector-only multi-digit multiplication gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
+- `70504a5cdb852c5803cb2d934c6bc937b6bc06f6` — CH10 live deployment evidence reconciliation.
 - `e6ed0e7cb2879f1694f4f5141cf86e7562f4b8b2` — CH10 vector-only division-context gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `0ae50fc233d4b8dcb31d46925e0c43f73ab8b4a7` — CH09 vector-only fraction-comparison gallery, exactness tests, corrected cross-product/decimal layouts, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `2a4776119d38042557a92179d0609a659a59c912` — CH07 method-level gallery, generated-hand composite, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
@@ -127,6 +129,10 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34182370324` for `Publish book explorer` completed successfully for CH11 method-art head SHA `37bfb58181ee4e5ed8170b01e2a7c9b13e8745f9`; both build and deploy jobs passed. The live CH11 route returned HTTP 200 with all eighteen ordered `data-method-figure="11-NN"` figures. The lattice, place-value-regrouping, and estimate/refine SVGs each returned HTTP 200 and retained their exact cell products/carries, `1 thousand, 2 hundreds, 4 tens, 2 ones` result, and proportional 42-unit endpoint gap. The workflow emitted only the existing non-failing Node.js 20 deprecation warning for GitHub-maintained actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34182370324. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/27-times-46/.
+
+The CH10 evidence-reconciliation head `70504a5cdb852c5803cb2d934c6bc937b6bc06f6` deployed successfully in GitHub Actions run `34180806117`.
 
 GitHub Actions run `34180722936` for `Publish book explorer` completed successfully for CH10 method-art head SHA `e6ed0e7cb2879f1694f4f5141cf86e7562f4b8b2`; both build and deploy jobs passed. The live CH10 route returned HTTP 200 with all ten ordered `data-method-figure="10-NN"` figures. The Method 10 context SVG returned HTTP 200 and retained its hard scenario divider, `INDIVISIBLE` and `DIVISIBLE` headings, `4 R3`, and `4 3/5 each`. The workflow emitted only the existing non-failing Node.js 20 deprecation warnings for GitHub-maintained actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34180722936. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/23-shared-by-5/.
 

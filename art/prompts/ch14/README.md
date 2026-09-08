@@ -7,5 +7,14 @@ Use the book palette: blue, orange, and green for quantities/result, purple for 
 3. **Number line:** proportional 0–2 line with 12 intervals per whole and jumps of 9, 8, and 5 ending at 22/12.
 4. **Improper to mixed:** 22 equal cells shown as one complete 12-cell whole plus 10 cells, then paired into 5 of 6.
 5. **Symbolic column:** clean equation cards for 9/12 + 8/12 + 5/12 = 22/12; no rasterized text.
+6. **Estimate, then exact:** proportional 0–2 benchmark with a dashed estimate near 1.8, separated from the exact `11/6 = 1 5/6 ≈ 1.833` proof.
+7. **Stacked algorithm:** rename all three addends over 12, align only same-sized units, add numerators, and reduce by `2/2`.
+8. **Whole and paired remainder:** one 12-cell bar plus a 10-cell remainder at the same cell width, with five explicit two-cell brackets showing `10/12 = 5/6`.
+9. **Verbal unit story:** speech-like cards repeat the unit name while converting 3/4 and 2/3 and retaining 5/12; label the voice as constructed.
+10. **Abstract common unit:** sparse equation-only transformation with no concrete tokens or claim of a stable cognitive identity.
 
 Every prompt must specify equal wholes, exact cell counts, accessible patterns, and a composite/vector overlay pass.
+
+## Production provenance
+
+Task `ART-CH14-METHODS`; produced 2026-09-08 from this repository brief and the ten manuscript methods. All accepted assets are repository-native, vector-only 1200×800 SVGs. They contain no generated raster, raster text, external content, or empirical participant depiction. The geometric quantities and proportional placements were constructed from exact arithmetic, then independently rendered at full size and representative 390 px placement.

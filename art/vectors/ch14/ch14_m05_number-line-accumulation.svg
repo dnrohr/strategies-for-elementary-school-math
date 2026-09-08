@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Three proportional jumps accumulate 22 twelfths</title>
+<desc id="desc">A proportional line from zero to two has 12 equal intervals per whole. A 9-twelfth jump reaches 9 twelfths, an 8-twelfth jump reaches 17 twelfths, and a 5-twelfth jump ends at 22 twelfths, equal to one and five sixths.</desc>
+  <defs>
+<pattern id="ticks" x="100" width="40" height="54" patternUnits="userSpaceOnUse">
+<path d="M40 0V54" stroke="#18324A" stroke-width="2"/>
+</pattern><marker id="a" markerWidth="18" markerHeight="18" refX="17" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0l18 9-18 9z" fill="#7652A8"/></marker>
+</defs>
+<rect width="1200" height="800" fill="#F8F2E7"/>
+<text x="65" y="80" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#18324A">Walk 9, then 8, then 5 twelfths</text>
+<rect x="100" y="460" width="960" height="54" fill="url(#ticks)"/>
+<path d="M100 487H1060" stroke="#18324A" stroke-width="6"/>
+<path d="M100 445v85M580 440v95M1060 445v85" stroke="#18324A" stroke-width="5"/>
+<g font-family="Arial,sans-serif" font-size="24" text-anchor="middle">
+<text x="100" y="575">0</text>
+<text x="580" y="575">1 = 12/12</text>
+<text x="1060" y="575">2</text>
+</g>
+<path d="M100 380Q280 245 460 380" fill="none" stroke="#176B73" stroke-width="6" marker-end="url(#a)"/>
+<path d="M460 380Q620 185 780 380" fill="none" stroke="#C66A12" stroke-width="6" stroke-dasharray="14 9" marker-end="url(#a)"/>
+<path d="M780 380Q880 275 980 380" fill="none" stroke="#7652A8" stroke-width="6" marker-end="url(#a)"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" font-size="25">
+<text x="280" y="240" fill="#12545A">+9/12</text>
+<text x="620" y="180" fill="#8A4308">+8/12</text>
+<text x="880" y="270" fill="#553A78">+5/12</text>
+<text x="460" y="430">9/12</text>
+<text x="780" y="430">17/12</text>
+</g>
+<circle cx="980" cy="487" r="15" fill="#347C5A" stroke="#18324A" stroke-width="4"/>
+<text x="980" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#347C5A">22/12 = 11/6 = 1 5/6</text>
+<text x="600" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#5A6570">Every horizontal interval is exactly 1/12.</text>
+</svg>

@@ -6,7 +6,7 @@ Scope: the opening image and all 14 reader-facing method images, inspected in th
 
 ## Overall opinion
 
-The ten-frame and dot-group methods are the strongest images. The chapter's repeated oversized arrowheads are the main comprehension problem. The finger sequence is not publication-safe: even where five digits can be reconstructed, overlaps and generated joins make the hands read as fused or extra digits.
+The ten-frame and dot-group methods are the strongest images. The chapter's repeated oversized arrowheads are the main comprehension problem. The finger sequence is not publication-safe: the middle panel's right hand has six visible digits—five raised fingers plus a separate thumb at the inner edge.
 
 ## Priority findings
 
@@ -22,7 +22,7 @@ The ten-frame and dot-group methods are the strongest images. The chapter's repe
 | `art/vectors/ch01/ch01_m01_count-every-object.svg` | Major | The numbered counters are useful, but the looping touch path and large final arrowhead compete with the count order and partially cover the last group. Use a thin path with a tiny dot or arrow at the endpoint. |
 | `art/vectors/ch01/ch01_m02_count-on-from-seven.svg` | Major | Five landings are present, yet the arrowheads are nearly as wide as the intervals and mask the ticks. Small heads above the arcs would make the five increments instantly countable. |
 | `art/vectors/ch01/ch01_m03_count-on-from-five.svg` | Major | The swapped addends are clear; the seven-hop line is not. Repeated oversized heads create a saw-tooth band and make the exact landings hard to see. |
-| `art/composites/ch01/ch01_m04_fingers-make-ten.svg` | Replace | The three-panel story is promising, but overlapping thumbs and AI-smoothed finger joins can be read as fused or extra digits; the middle panel is especially ambiguous. Because the method is about exact fingers, perceptual ambiguity is a correctness failure. |
+| `art/composites/ch01/ch01_m04_fingers-make-ten.svg` | Replace | The middle panel's right hand has six visible digits: five upright fingers plus a separate thumb at the inner edge. This is a definite anatomical error, not merely an ambiguous overlap, so the raster must be replaced or retouched before publication. |
 | `art/vectors/ch01/ch01_m05_make-ten.svg` | Pass | The empty ten-frame cells, three hatched moved tiles, and two residual tiles tell the regrouping cleanly without relying on color alone. |
 | `art/vectors/ch01/ch01_m06_five-plus-five.svg` | Minor | The two familiar fives are clear, but placing the two extras inside the left card makes that card look like a seven-card while it is labeled “five.” Move the extras outside both five groups. |
 | `art/vectors/ch01/ch01_m07_double-seven-subtract-two.svg` | Pass | Two groups of seven and two explicitly crossed-out dots make the compensation visible and countable. |

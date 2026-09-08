@@ -3,7 +3,7 @@ chapter: 8
 slug: three-fourths-of-20
 title: "3/4 of 20 = ?"
 part: "III — Fractions, parts, proportions"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 
@@ -207,4 +207,4 @@ R03-004 is verified for associations among fraction magnitude knowledge, divisio
 - [x] Accounts are explicitly constructed.
 - [x] Verified and screened research are distinguished.
 - [x] Final art assets generated and inspected for quantity, grayscale, and responsive placement.
-- [ ] Complete final citation/link and print-layout review during export QA.
+- [x] Final citation/link and print-layout review completed in both exported editions.

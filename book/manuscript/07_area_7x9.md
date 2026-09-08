@@ -3,7 +3,7 @@ chapter: 7
 slug: area-7-by-9
 title: "A 7 × 9 rectangle"
 part: "II — Groups, multiplication, division, space"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 

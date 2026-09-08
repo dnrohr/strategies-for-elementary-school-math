@@ -3,7 +3,7 @@ chapter: 10
 slug: 23-shared-by-5
 title: "23 candies shared among 5 children"
 part: "III — Fractions, parts, proportions"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 
@@ -205,4 +205,4 @@ R03-004 is verified for associations involving whole-number division and fractio
 - [x] Ten distinct routes are present.
 - [x] Accounts are constructed and research caveats are visible.
 - [x] All 10 method figures passed exact-quantity, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch10-methods/`.
-- [ ] Complete final citation/link and print-layout review during export QA.
+- [x] Final citation/link and print-layout review completed in both exported editions.

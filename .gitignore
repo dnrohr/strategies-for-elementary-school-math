@@ -1,7 +1,10 @@
 node_modules/
 _site/
 .cache/
+tmp/
 .DS_Store
 Thumbs.db
 npm-debug.log*
 art/rejected/*.png
+artifacts/ui/export-qa/screen-pages-*.jpg
+artifacts/ui/export-qa/print-pages-*.jpg

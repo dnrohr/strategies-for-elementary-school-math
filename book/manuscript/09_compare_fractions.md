@@ -3,7 +3,7 @@ chapter: 9
 slug: compare-three-fifths-five-eighths
 title: "Which is larger: 3/5 or 5/8?"
 part: "III — Fractions, parts, proportions"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 
@@ -204,4 +204,4 @@ Verified anchors: R03-004, R03-005–R03-007, R03-012, and R03-014. Abstract-onl
 - [x] Ten nontrivial routes are present.
 - [x] Research caveats and disclosure are present.
 - [x] All 10 method figures passed exact-quantity, placed-size, narrow-width, grayscale/contrast, accessibility, and final math/art review; evidence is recorded in `artifacts/ui/art-ch09-methods/`.
-- [ ] Complete final citation/link and print-layout review during export QA.
+- [x] Final citation/link and print-layout review completed in both exported editions.

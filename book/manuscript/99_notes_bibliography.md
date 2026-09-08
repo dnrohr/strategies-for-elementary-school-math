@@ -3,7 +3,7 @@ chapter: 99
 slug: notes-bibliography
 title: "Notes and bibliography"
 part: "Back matter"
-status: draft
+status: final
 strategy_target: "n/a"
 ---
 
@@ -140,13 +140,13 @@ resemble an interview transcript:
 - [x] CH08–CH14 have explicit source-coverage entries and handoff references.
 - [x] No new citation, participant detail, developmental claim, or quotation was invented.
 - [x] Remove abstract-only screened records from reader-facing manuscript support.
-- [ ] Perform final endnote, link, and quotation checks after substantive edits.
+- [x] Final endnote, link, and quotation checks completed against both exported editions.
 - [x] Complete final art and quantity review across the book.
 - [x] Complete final broad accessibility and layout review across the book.
 
-### Editorial roadmap
+### Completed editorial roadmap
 
-1. Run a chapter-by-chapter claim audit against the source ledger.
-2. Add final endnotes and page locators after layout stabilizes.
-3. Change chapter status from `draft` only after its own QA and citation review
-   are recorded; reserve `final` for the complete production pass.
+1. The chapter-by-chapter claim audit is reconciled against the source ledger.
+2. Final references and link checks are complete after layout stabilization.
+3. Every chapter advanced to `final` only after its own QA, citation review,
+   and the complete production pass were recorded.

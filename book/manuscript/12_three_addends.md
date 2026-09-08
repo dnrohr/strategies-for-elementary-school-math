@@ -3,7 +3,7 @@ chapter: 12
 slug: three-addends
 title: "378 + 596 + 247 = ?"
 part: "IV — Coordinating transformations"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 
@@ -312,4 +312,4 @@ R01-007 and R01-008 (verified) support distinguishing conceptual and procedural 
 - [x] Illustration briefs specify exact quantities and vector overlays.
 - [x] Screened evidence is labeled.
 - [x] Method art, exact-quantity, responsive, grayscale, and integrated alt-text passes are complete.
-- [ ] Complete final citation/link and print-layout review during export QA.
+- [x] Final citation/link and print-layout review completed in both exported editions.

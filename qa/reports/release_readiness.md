@@ -5,26 +5,26 @@ Coordinator lane: `COORD-RELEASE`
 
 ## Current chapter status
 
-All authored entries remain `draft`. No chapter is promoted to `review` or `final` until editorial, export, and final release checks are recorded.
+All authored entries are `final` after editorial, source, mathematics, art, accessibility, and production-export QA passed. Public download verification remains the final deployment gate.
 
 | Entry | Methods | Target | Status |
 | --- | ---: | --- | --- |
-| CH00 Front matter | n/a | n/a | draft |
-| CH01 7 + 5 | 14 | 12–18 | draft |
-| CH02 15 − 8 | 12 | 12–18 | draft |
-| CH03 37 + 48 | 14 | 12–18 | draft |
-| CH04 72 − 39 | 12 | 12–18 | draft |
-| CH05 11 × 12 | 20 | 18–25 | draft |
-| CH06 24 ÷ 6 | 12 | 10–16 | draft |
-| CH07 7 × 9 area | 12 | 10–16 | draft |
-| CH08 3/4 of 20 | 10 | 10–16 | draft |
-| CH09 compare fractions | 10 | 10–16 | draft |
-| CH10 23 shared by 5 | 10 | 10–16 | draft |
-| CH11 27 × 46 | 18 | 18–25 | draft |
-| CH12 three addends | 11 | 10–16 | draft |
-| CH13 2/3 + 5/8 | 10 | 10–16 | draft |
-| CH14 three fractions | 10 | 10–16 | draft |
-| CH99 Notes and bibliography | n/a | n/a | draft |
+| CH00 Front matter | n/a | n/a | final |
+| CH01 7 + 5 | 14 | 12–18 | final |
+| CH02 15 − 8 | 12 | 12–18 | final |
+| CH03 37 + 48 | 14 | 12–18 | final |
+| CH04 72 − 39 | 12 | 12–18 | final |
+| CH05 11 × 12 | 20 | 18–25 | final |
+| CH06 24 ÷ 6 | 12 | 10–16 | final |
+| CH07 7 × 9 area | 12 | 10–16 | final |
+| CH08 3/4 of 20 | 10 | 10–16 | final |
+| CH09 compare fractions | 10 | 10–16 | final |
+| CH10 23 shared by 5 | 10 | 10–16 | final |
+| CH11 27 × 46 | 18 | 18–25 | final |
+| CH12 three addends | 11 | 10–16 | final |
+| CH13 2/3 + 5/8 | 10 | 10–16 | final |
+| CH14 three fractions | 10 | 10–16 | final |
+| CH99 Notes and bibliography | n/a | n/a | final |
 
 ## Checks and evidence
 
@@ -61,18 +61,19 @@ All authored entries remain `draft`. No chapter is promoted to `review` or `fina
 - Local route inspection covered home, about, and all 16 production entries at narrow and desktop sizes. Persistent representative screenshot artifacts are recorded under `artifacts/ui/site_accessibility_serial/`; narrow keyboard/focus verification is complete.
 - The former CH12 Method 06 displayed-equation P1 is resolved and recorded as resolved in `qa/reports/wave3_cross_chapter_audit.md`.
 - Editorial review is complete across CH00–CH14. CH01–CH07 account ranges remain 40–60 words; expanded CH08–CH14 ranges are 40–55 words. All 175 accounts satisfy the 40–120-word contract without adding empirical claims, and the invariant is regression-tested.
+- Production export QA passed for a 231-page tagged screen PDF, a 235-page tagged print PDF, and two self-contained HTML editions. All 466 PDF pages were rendered and inspected; full-text extraction found no empty pages or internal production labels. `npm run verify:export` enforces 16 entries, 175 methods, 190 embedded figures, verified-only references, and valid PDF signatures. Evidence is recorded in `qa/reports/export_qa.md`.
 
-## Remaining blockers
+## Closed gates and remaining deployment check
 
-- The book-wide method-art gate is complete: CH01–CH14 contain all 175 method figures, every authored entry CH00–CH14 retains its opening anchor, and chapter-scoped provenance, exactness, alt text, full-size, representative narrow, and grayscale evidence is recorded. Remaining release work is editorial finalization, export, and final live verification.
-- Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Chapter-level and broad site accessibility sign-off are complete; export rendering remains to be verified.
+- The book-wide method-art gate is complete: CH01–CH14 contain all 175 method figures, every authored entry CH00–CH14 retains its opening anchor, and chapter-scoped provenance, exactness, alt text, full-size, representative narrow, and grayscale evidence is recorded. Editorial finalization and export are complete; only final live verification remains.
+- Automated asset QA verifies vector-only chapter assets have a 1200×800 viewBox, accessible title/description metadata, `role="img"`, and no raster content. The intentional CH01/CH02/CH05/CH06/CH07 composites have verified PNG dimensions, no raster text, recorded generation provenance, labelled SVG overlays, and anatomy review. Chapter-level, broad site accessibility, and export-rendering sign-off are complete.
 - An auditable chapter-by-chapter art manifest records each brief, intended dimensions, exact quantity checks, and accessibility requirements in `art/production_manifest.md`; chapter rendering and visual sign-off are complete.
 - Accessibility and responsive QA is complete and has current persistent evidence under `artifacts/ui/site_accessibility_serial/`. All 18 routes passed at 390×844 and 1440×900 for element-bound overflow, unique IDs, heading order, labels, image source/alt coverage, and semantic tables. Representative day/night contrast, narrow keyboard order, announced/persistent theme state, and live search results also passed.
 - Citation source-status QA is complete: all reader-facing manuscript IDs map to full-text-verified records, while 18 abstract-only records remain internal leads. The boundary is regression-tested and documented in `qa/reports/citation_serial_audit.md`.
-- Constructed-account disclosures remain intact. The only citation gate still open is the final endnote, link, and quotation-layout pass on production exports.
+- Constructed-account disclosures remain intact. Final endnote, link, quotation, and layout passes are complete in both production exports.
 - Editorial QA for CH01–CH07 is complete for account length and structure; all audited accounts now meet the 40–120-word target, with details in `qa/reports/editorial_ch00_ch07_audit.md`.
 - CH09’s exact half-unit endpoint is protected by regression tests and final rendered-art/grayscale inspection confirms 12.5 twentieths rather than 13 full units.
-- The table-rendering defect is now fixed in `scripts/lib.mjs` with a regression test; semantic table output still needs visual review on representative pages.
+- The table-rendering defect is fixed in `scripts/lib.mjs` with a regression test; semantic tables passed representative browser review and final all-page export inspection.
 - Site QA fixed duplicate chapter `<h1>` output and repeated method-subheading IDs, added regression assertions, verified every emitted image path, and captured current representative screenshots; evidence is recorded in `artifacts/ui/site_accessibility_serial/README.md`.
 
 ## Worker batch status
@@ -184,4 +185,4 @@ GitHub Actions run `34070909227` for `Publish book explorer` completed successfu
 
 ## Release decision
 
-`NOT READY`. The repository is build-clean; method-art, mathematics, reader-facing citation, editorial, and broad web accessibility gates are complete, with persistent evidence recorded. Production exports and final live verification remain open.
+`NOT READY` pending deployment only. The repository is locally build-clean; method-art, mathematics, reader-facing citation, editorial, web accessibility, and production export gates are complete with persistent evidence. Final status becomes `READY` after the release commit deploys and every public download is verified.

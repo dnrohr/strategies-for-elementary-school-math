@@ -3,7 +3,7 @@ chapter: 0
 slug: frontmatter
 title: "One answer, many minds"
 part: "Front matter"
-status: draft
+status: final
 strategy_target: "n/a"
 ---
 
@@ -121,5 +121,5 @@ Evidence about inner speech likewise treats it as heterogeneous in condensation,
 - [x] Empirical claims use verified Wave 1 source IDs only: R01-002, R01-007, R01-008, R01-013, and R02-I01.
 - [x] No fixed learning-style, left/right-brain, or diagnostic claims appear.
 - [x] Matrix separates computational strategy from representational format.
-- [ ] Layout review at final print size remains for the production/layout lane.
+- [x] Layout reviewed in the final screen and print editions.
 - [x] Color, grayscale, and web contrast review is complete; print-size layout remains for export QA.

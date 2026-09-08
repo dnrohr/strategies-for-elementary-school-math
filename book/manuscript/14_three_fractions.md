@@ -3,7 +3,7 @@ chapter: 14
 slug: add-three-fractions
 title: "3/4 + 2/3 + 5/12 = ?"
 part: "IV — Coordinating transformations"
-status: draft
+status: final
 strategy_target: "10-16"
 ---
 

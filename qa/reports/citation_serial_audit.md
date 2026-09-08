@@ -14,11 +14,11 @@ Scope: all manuscript research notes, chapter handoffs, and `research/source_log
 - R01-003 was upgraded from screened to verified after the coordinator inspected the complete PMCID PMC3392437 author manuscript, including participants, addition-task strategy coding, multilevel-model results, and Discussion. No unsupported source was added.
 - R03-012 was upgraded after complete author-copy review of all three studies, the General Discussion and limitations, and the appended correction; manuscript claims remain bounded to procedural accuracy and direction-of-effect knowledge in the measured samples.
 
-## Open gaps
+## Export closeout
 
-- Final endnote, link, and quotation-layout review remains open because page locators depend on the production export.
-- Chapters remain `draft`; no promotion is warranted from citation QA alone.
+- Final endnote, link, and quotation-layout review passed in both production exports. The References section contains all 24 full-text-verified records and none of the 18 screened leads.
+- Chapters advanced to `final` only after the independent editorial, mathematical, art, accessibility, and export gates also passed.
 
 ## Handoff
 
-Status: `reader-facing source-status gate complete; 18 screened records retained as internal leads only; final layout-dependent citation check remains open`.
+Status: `complete; reader-facing sources are verified, 18 screened records remain internal leads only, and final layout-dependent citation checks passed`.

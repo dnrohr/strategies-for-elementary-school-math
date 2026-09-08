@@ -102,6 +102,7 @@ export async function build() {
     <p class="search-status" data-search-status aria-live="polite"></p>
     <div class="chapter-grid">${chapters.map(chapterCard).join("\n")}</div>
   </section>
+  <section class="axis-panel" aria-labelledby="edition-title"><p class="eyebrow">Complete edition</p><h2 id="edition-title">Read it your way</h2><p>Explore every strategy here, or download the complete illustrated book.</p><p><a class="start-link" href="downloads/how-we-think-about-arithmetic-screen.pdf">Screen PDF</a> <a class="start-link" href="downloads/how-we-think-about-arithmetic-print.pdf">Print PDF</a> <a class="start-link" href="downloads/how-we-think-about-arithmetic.html">Self-contained HTML</a></p></section>
   <section class="axis-panel"><p class="eyebrow">The recurring question</p><h2>What did you do—and how did it appear?</h2><div class="axis-grid"><article><span aria-hidden="true">A</span><h3>Computational strategy</h3><p>Counting, retrieval, decomposition, compensation, relationship, geometry, embodiment, or pattern.</p></article><article><span aria-hidden="true">B</span><h3>Mental representation</h3><p>Words, numerals, objects, space, movement, abstraction—or a changing mixture.</p></article></div></section>`;
 
   await writeFileEnsured(path.join(OUTPUT, "index.html"), pageShell({ title: "Explore", content: indexContent, description: "Explore many ways minds solve elementary arithmetic." }));
@@ -128,8 +129,23 @@ export async function build() {
     await writeFileEnsured(path.join(OUTPUT, "chapters", chapter.slug, "index.html"), pageShell({ title: chapter.title, root: "../../", content, description: `${chapter.title}, a chapter in How We Think About Arithmetic.` }));
   }
 
-  const about = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../">← All chapters</a><p class="eyebrow">About this edition</p><h1>A book being made in public</h1></header><div class="prose"><p>This explorer is generated directly from the production manuscript. Status labels distinguish scaffolds from drafts and reviewed chapters.</p><h2>Editorial promise</h2><p>First-person descriptions are constructed examples unless explicitly identified as sourced quotations. They make plausible strategies vivid; they are not presented as research-participant testimony.</p><h2>Two independent axes</h2><p>The project distinguishes a solver’s mathematical transformation from the sensory, symbolic, spatial, embodied, or non-sensory format in which it may be experienced.</p></div></article>`;
-  await writeFileEnsured(path.join(OUTPUT, "about", "index.html"), pageShell({ title: "About", root: "../", content: about, description: "Editorial and epistemic notes for the working edition." }));
+  const about = `<article class="manuscript"><header class="chapter-hero"><a class="back-link" href="../">← All chapters</a><p class="eyebrow">About this edition</p><h1>A complete illustrated cognitive atlas</h1></header><div class="prose"><p>This accessible explorer is generated directly from the final production manuscript. It contains 175 distinct methods across fourteen elementary arithmetic problems.</p><h2>Download the book</h2><p><a href="../downloads/how-we-think-about-arithmetic-screen.pdf">Screen-optimized PDF</a> · <a href="../downloads/how-we-think-about-arithmetic-print.pdf">Print-ready PDF</a> · <a href="../downloads/how-we-think-about-arithmetic.html">Self-contained screen HTML</a> · <a href="../downloads/how-we-think-about-arithmetic-print.html">Self-contained print HTML</a></p><h2>Editorial promise</h2><p>First-person descriptions are constructed examples unless explicitly identified as sourced quotations. They make plausible strategies vivid; they are not presented as research-participant testimony.</p><h2>Two independent axes</h2><p>The project distinguishes a solver’s mathematical transformation from the sensory, symbolic, spatial, embodied, or non-sensory format in which it may be experienced.</p></div></article>`;
+  await writeFileEnsured(path.join(OUTPUT, "about", "index.html"), pageShell({ title: "About", root: "../", content: about, description: "Editorial and epistemic notes for the complete edition." }));
+
+  const downloadSources = [
+    path.join(ROOT, "output", "pdf", "how-we-think-about-arithmetic-screen.pdf"),
+    path.join(ROOT, "output", "pdf", "how-we-think-about-arithmetic-print.pdf"),
+    path.join(ROOT, "output", "html", "how-we-think-about-arithmetic.html"),
+    path.join(ROOT, "output", "html", "how-we-think-about-arithmetic-print.html")
+  ];
+  await fs.mkdir(path.join(OUTPUT, "downloads"), { recursive: true });
+  for (const source of downloadSources) {
+    try {
+      await fs.copyFile(source, path.join(OUTPUT, "downloads", path.basename(source)));
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+    }
+  }
 
   await fs.cp(path.join(ROOT, "site", "assets"), path.join(OUTPUT, "assets"), { recursive: true });
   await writeFileEnsured(path.join(OUTPUT, "404.html"), pageShell({ title: "Page not found", content: `<section class="not-found"><p class="eyebrow">404</p><h1>This path has no number line.</h1><p><a class="start-link" href="./">Return to the atlas</a></p></section>`, description: "Page not found." }));

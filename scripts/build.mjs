@@ -102,7 +102,7 @@ export async function build() {
     <p class="search-status" data-search-status aria-live="polite"></p>
     <div class="chapter-grid">${chapters.map(chapterCard).join("\n")}</div>
   </section>
-  <section class="axis-panel"><p class="eyebrow">The recurring question</p><h2>What did you do—and how did it appear?</h2><div class="axis-grid"><article><span>A</span><h3>Computational strategy</h3><p>Counting, retrieval, decomposition, compensation, relationship, geometry, embodiment, or pattern.</p></article><article><span>B</span><h3>Mental representation</h3><p>Words, numerals, objects, space, movement, abstraction—or a changing mixture.</p></article></div></section>`;
+  <section class="axis-panel"><p class="eyebrow">The recurring question</p><h2>What did you do—and how did it appear?</h2><div class="axis-grid"><article><span aria-hidden="true">A</span><h3>Computational strategy</h3><p>Counting, retrieval, decomposition, compensation, relationship, geometry, embodiment, or pattern.</p></article><article><span aria-hidden="true">B</span><h3>Mental representation</h3><p>Words, numerals, objects, space, movement, abstraction—or a changing mixture.</p></article></div></section>`;
 
   await writeFileEnsured(path.join(OUTPUT, "index.html"), pageShell({ title: "Explore", content: indexContent, description: "Explore many ways minds solve elementary arithmetic." }));
 

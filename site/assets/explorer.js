@@ -15,9 +15,17 @@ input?.addEventListener("input", () => {
 
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const savedTheme = localStorage.getItem("book-theme");
-if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+const applyTheme = theme => {
+  document.documentElement.dataset.theme = theme;
+  if (themeToggle) {
+    const night = theme === "night";
+    themeToggle.setAttribute("aria-pressed", String(night));
+    themeToggle.setAttribute("aria-label", `Use ${night ? "light" : "dark"} color theme`);
+  }
+};
+applyTheme(savedTheme === "night" ? "night" : "day");
 themeToggle?.addEventListener("click", () => {
   const theme = document.documentElement.dataset.theme === "night" ? "day" : "night";
-  document.documentElement.dataset.theme = theme;
+  applyTheme(theme);
   localStorage.setItem("book-theme", theme);
 });

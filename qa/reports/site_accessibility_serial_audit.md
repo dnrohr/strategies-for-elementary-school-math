@@ -1,8 +1,8 @@
 # Site and accessibility QA audit
 
 Task ID: `SITE-A11Y-QA`  
-Audit date: 2026-09-06  
-Status: `route, structure, responsive screenshot, and desktop keyboard checks complete`
+Audit date: 2026-09-08
+Status: `complete`
 
 ## Verified
 
@@ -16,11 +16,21 @@ Status: `route, structure, responsive screenshot, and desktop keyboard checks co
 - Semantic tables now have responsive horizontal scrolling within the prose region, with readable borders, header contrast, and wrapping code labels.
 - Table headers now carry `scope="col"` for assistive technology.
 - Persistent headless-Chrome screenshots now verify narrow explorer and back-matter wrapping plus desktop fraction layout; the mobile headline sizing was corrected and rechecked visually.
+- A complete 18-route browser matrix (home, about, all 16 production entries) passed at both 390×844 and 1440×900: no element-bound overflow, duplicate IDs, heading-level skips, unlabeled controls, missing image sources/alt text, or malformed semantic tables were detected.
+- Repeated method-subheading IDs were found during the 390 px sweep and fixed by scoping each level-three heading to its method. Automated output checks now require unique IDs on every production page.
+- Every rendered image reference is now checked against an emitted file during the build test, in addition to source-asset exactness checks.
+- Day and night palettes passed a computed-text WCAG contrast audit on the explorer, flagship CH05, and table-heavy CH99. The day accent was darkened for small text; night-specific semantic colors now maintain contrast against dark surfaces.
+- The theme control exposes pressed state and a state-specific accessible name, and the selected theme persists across page navigation.
+- Narrow keyboard traversal passed on the explorer and flagship chapter. Order begins with skip link, brand, theme control, then page-local navigation; the responsive table scroll region and chapter navigation remain keyboard reachable.
+- The chapter filter remained labeled and announced `3 chapters match “fractions”.` through its polite live region.
+- Reduced-motion CSS disables smooth scrolling and compresses transitions when the user requests reduced motion.
 
-## Open checks
+## Resolved during this pass
 
-- Narrow keyboard focus and theme-toggle behavior were verified interactively on the published CH05 route: focus proceeds through skip link, brand link, theme toggle, chapter navigation, and footer link in logical order, and the toggle visibly switches and restores the palette. The narrow figure layout check is complete for this representative route; broader per-page interaction coverage remains open.
-- Recheck asset loading, figure descriptions, contrast, and overflow after production art is added.
-- Verify the deployed GitHub Pages base path and live workflow result after the final release batch.
+- Removed duplicate method-subheading IDs.
+- Added programmatic emitted-image existence coverage.
+- Corrected day/night semantic color contrast.
+- Added announced theme state.
+- Reconciled the full route matrix after all 175 method figures were integrated.
 
-No chapter status was promoted.
+Final deployment/base-path verification remains a release operation rather than an accessibility defect. No chapter status was promoted by this audit alone.

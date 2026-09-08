@@ -142,7 +142,7 @@ resemble an interview transcript:
 - [x] Remove abstract-only screened records from reader-facing manuscript support.
 - [ ] Perform final endnote, link, and quotation checks after substantive edits.
 - [x] Complete final art and quantity review across the book.
-- [ ] Complete final broad accessibility and layout review across the book.
+- [x] Complete final broad accessibility and layout review across the book.
 
 ### Editorial roadmap
 

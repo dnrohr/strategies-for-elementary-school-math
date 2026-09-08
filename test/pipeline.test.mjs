@@ -51,6 +51,15 @@ test("renderer can place method art immediately after its matching heading", () 
   assert.match(rendered, /<h2[^>]*>Method 08[^<]*<\/h2>\n<figure data-method-figure="08-08"><\/figure>\n<p>Body<\/p>/);
 });
 
+test("renderer gives repeated method subheadings unique scoped IDs", () => {
+  const rendered = renderMarkdown("## Method 01 — First\n### Steps\n## Method 02 — Second\n### Steps\n### Steps");
+  const ids = [...rendered.matchAll(/<h[1-6] id="([^"]+)"/g)].map(match => match[1]);
+  assert.equal(new Set(ids).size, ids.length);
+  assert(ids.includes("method-01-first-steps"));
+  assert(ids.includes("method-02-second-steps"));
+  assert(ids.includes("method-02-second-steps-2"));
+});
+
 test("CH09 twentieths model preserves the half-unit endpoint", async () => {
   const chapter = await fs.readFile(path.join(ROOT, "book", "manuscript", "09_compare_fractions.md"), "utf8");
   assert(chapter.includes("5/8 = 12.5/20"));
@@ -868,12 +877,19 @@ test("repository validates and build emits every manifest page", async () => {
   const explorer = await fs.readFile(path.join(ROOT, "_site", "index.html"), "utf8");
   assert.match(explorer, /class="skip-link"[^>]*href="#content"/);
   assert.match(explorer, /<label class="search">[\s\S]*<span>Filter chapters<\/span>[\s\S]*<input[^>]+data-chapter-search/);
-  assert.match(explorer, /<button[^>]+aria-label="Switch color theme"/);
+  assert.match(explorer, /<button[^>]+aria-label="Use dark color theme"[^>]+aria-pressed="false"/);
+  assert.equal((explorer.match(/<span aria-hidden="true">[AB]<\/span>/g) || []).length, 2);
   assert.match(explorer, /href="chapters\/frontmatter\/"/);
   for (const chapter of manifest) {
     const page = await fs.readFile(path.join(ROOT, "_site", "chapters", chapter.slug, "index.html"), "utf8");
     assert(page.includes(chapter.title.replaceAll("&", "&amp;")));
     assert.equal((page.match(/<h1\b/g) || []).length, 1, `${chapter.slug} should have one h1`);
+    const ids = [...page.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
+    assert.equal(new Set(ids).size, ids.length, `${chapter.slug} should have unique element IDs`);
+    const imageSources = [...page.matchAll(/<img[^>]+src="([^"]+)"/g)].map(match => match[1]);
+    for (const imageSource of imageSources) {
+      await fs.access(path.resolve(ROOT, "_site", "chapters", chapter.slug, imageSource));
+    }
     if (chapter.chapter >= 0 && chapter.chapter <= 14) {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));

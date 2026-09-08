@@ -42,9 +42,11 @@ function inlineMarkdown(value) {
 export function renderMarkdown(markdown, { afterHeading } = {}) {
   const lines = markdown.split(/\r?\n/);
   const html = [];
+  const headingIds = new Map();
   let paragraph = [];
   let listType = null;
   let quote = [];
+  let methodPrefix = "";
 
   const flushParagraph = () => {
     if (paragraph.length) html.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
@@ -84,7 +86,12 @@ export function renderMarkdown(markdown, { afterHeading } = {}) {
     } else if (heading) {
       flush();
       const level = heading[1].length;
-      const id = heading[2].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      const baseId = heading[2].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      if (level === 2) methodPrefix = /^method-\d{2}\b/.test(baseId) ? baseId : "";
+      const scopedId = level > 2 && methodPrefix ? `${methodPrefix}-${baseId}` : baseId;
+      const occurrence = (headingIds.get(scopedId) || 0) + 1;
+      headingIds.set(scopedId, occurrence);
+      const id = occurrence === 1 ? scopedId : `${scopedId}-${occurrence}`;
       html.push(`<h${level} id="${id}">${inlineMarkdown(heading[2])}</h${level}>`);
       const appended = afterHeading?.({ level, text: heading[2], id });
       if (appended) html.push(appended);
@@ -132,7 +139,7 @@ export function pageShell({ title, root = "./", content, description }) {
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="${root}"><span aria-hidden="true" class="brand-mark">7+5</span><span>How We Think<br><strong>About Arithmetic</strong></span></a>
-    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">◐</button>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark color theme" aria-pressed="false">◐</button>
   </header>
   <main id="content">${content}</main>
   <footer><p>Many minds, one problem. <a href="${root}about/">About this edition</a></p></footer>

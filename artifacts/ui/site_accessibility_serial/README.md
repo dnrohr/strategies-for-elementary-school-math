@@ -1,11 +1,13 @@
 # Site accessibility QA evidence
 
 Task ID: `SITE-A11Y-QA`  
-Captured: 2026-09-06
+Captured: 2026-09-08
 
 The coordinator inspected the rendered explorer, flagship chapter, fraction chapter, and back matter. Persistent screenshots verify the narrow explorer, desktop fraction chapter, and narrow back matter:
 
 - `home-narrow-fixed.png` — 500px narrow explorer; verifies mobile hero wrapping and navigation.
+- `home-narrow-final.png` — current 500×900 explorer after unique-ID, contrast, and announced-theme fixes.
+- `ch05-narrow-final.png` — current 500×900 flagship chapter showing contained opening art after the complete responsive audit.
 - `fraction-desktop.png` — 1280px fraction chapter; verifies chapter hero, typography, status badge, spacing, and opening-spread readability.
 - `backmatter-narrow.png` — 500px narrow CH99; verifies back-matter title wrapping and content flow.
 - `ch09-fraction-comparison.png` — 1200×800 rendered SVG; verifies exact 40ths comparison and the 12.5/20 half-unit endpoint.
@@ -24,4 +26,4 @@ The coordinator inspected the rendered explorer, flagship chapter, fraction chap
 - `ch01-seven-plus-five.png` — 1200×800 rendered SVG; verifies seven plus five equals twelve and five count-on jumps.
 - `ch00-frontmatter-axes.png` — 1200×800 rendered SVG; verifies separate strategy and mental-representation axes without fixed learner types.
 
-DOM inspection verified one `h1`, semantic tables, skip navigation, labeled controls, and no horizontal overflow in the inspected desktop state. Desktop keyboard focus reached the skip link, brand link, theme toggle, start link, search field, and chapter links in logical order. The published CH05 route was additionally inspected at the app's narrow viewport after figure integration; its SVG figure and caption stayed within the content column without visible horizontal overflow, and keyboard focus plus theme-toggle behavior remained logical and operable. Broader per-page interaction coverage and final art-asset review remain open.
+DOM inspection now covers all 18 routes at 390×844 and 1440×900. Every route passed element-bound overflow, unique-ID, heading order, labels, image-source/alt, and semantic-table checks. Narrow keyboard order passed on the explorer and CH05; the theme control announces and persists state. Computed-text contrast passed in day and night palettes on the explorer, CH05, and CH99, and the chapter filter's polite live result was verified. Source and output tests cover every production figure.

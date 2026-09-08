@@ -5,7 +5,7 @@
   --ink: #17241f;
   --muted: #5f665f;
   --blue: #2764b8;
-  --orange: #d97706;
+  --orange: #984500;
   --green: #287a55;
   --purple: #7652a8;
   --line: rgba(23, 36, 31, .16);
@@ -14,7 +14,7 @@
   font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
 }
 
-:root[data-theme="night"] { color-scheme: dark; --paper: #17211d; --paper-deep: #1f2c26; --ink: #f5efe3; --muted: #bec8c1; --line: rgba(245,239,227,.18); --card: rgba(37,52,45,.78); --shadow: 0 18px 45px rgba(0,0,0,.2); }
+:root[data-theme="night"] { color-scheme: dark; --paper: #17211d; --paper-deep: #1f2c26; --ink: #f5efe3; --muted: #bec8c1; --blue: #8bb8ff; --orange: #ffb45e; --green: #75d6a7; --purple: #c8a7ff; --line: rgba(245,239,227,.18); --card: rgba(37,52,45,.78); --shadow: 0 18px 45px rgba(0,0,0,.2); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; overflow-x: hidden; color: var(--ink); background: var(--paper); line-height: 1.6; }

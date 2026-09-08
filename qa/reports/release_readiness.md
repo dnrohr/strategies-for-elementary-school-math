@@ -84,6 +84,9 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 
 ## Commits
 
+- `b18930dd997d7e19bb95dc0d5f15f2b1b63d2733` — CH14 vector-only three-fraction synthesis gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence; method-art production reached 175/175.
+- `b67982aa63f46d3557742cd8619b81ed136a399e` — CH13 vector-only unlike-denominator addition gallery, exactness tests, corrected arrow/benchmark geometry, chapter QA reconciliation, grayscale proof, and responsive evidence.
+- `f13e4e7dfa7defc05aea5c26a4b42a5f5efde0b0` — CH12 vector-only three-addend gallery, exactness tests, corrected regrouping/carry/conservation diagrams, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `37bfb58181ee4e5ed8170b01e2a7c9b13e8745f9` — CH11 vector-only multi-digit multiplication gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
 - `70504a5cdb852c5803cb2d934c6bc937b6bc06f6` — CH10 live deployment evidence reconciliation.
 - `e6ed0e7cb2879f1694f4f5141cf86e7562f4b8b2` — CH10 vector-only division-context gallery, exactness tests, chapter QA reconciliation, grayscale proof, and responsive evidence.
@@ -135,6 +138,12 @@ After this batch is committed, pushed, and verified live, the exact next lane is
 All listed hashes were verified against `origin/main` at the time of their respective pushes. The final report-reconciliation commit is recorded by Git after this file update.
 
 ## GitHub Pages deployment
+
+GitHub Actions run `34218680930` for `Publish book explorer` completed successfully for CH14 method-art head SHA `b18930dd997d7e19bb95dc0d5f15f2b1b63d2733`; both build and deploy jobs passed. The live CH14 route returned HTTP 200 with all ten ordered `data-method-figure="14-NN"` figures. Strategic pairing, number-line accumulation, and whole/remainder SVGs returned HTTP 200 and retained the exact `14/12→7/6`, `9+8+5=22` twelfths, and `12/12+10/12=1 5/6` structures. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34218680930. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/add-three-fractions/.
+
+GitHub Actions run `34217335913` for `Publish book explorer` completed successfully for CH13 method-art head SHA `b67982aa63f46d3557742cd8619b81ed136a399e`; both build and deploy jobs passed. The live CH13 route returned HTTP 200 with all ten ordered `data-method-figure="13-NN"` figures. Number-line and compact-rule SVGs returned HTTP 200 and retained fifteen exact twenty-fourth jumps, the `31/24=1 7/24` endpoint, both cross-products, and the explicit not-`3+8` warning. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34217335913. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/add-two-thirds-five-eighths/.
+
+GitHub Actions run `34184001492` for `Publish book explorer` completed successfully for CH12 method-art head SHA `f13e4e7dfa7defc05aea5c26a4b42a5f5efde0b0`; both build and deploy jobs passed. The live CH12 route returned HTTP 200 with all eleven ordered `data-method-figure="12-NN"` figures. Written-addition and staged-place-map SVGs returned HTTP 200 and retained the exact ones/tens/hundreds carry equations and all three valid regrouping trades to `1 thousand, 2 hundreds, 2 tens, 1 one`. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34184001492. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/three-addends/.
 
 GitHub Actions run `34182370324` for `Publish book explorer` completed successfully for CH11 method-art head SHA `37bfb58181ee4e5ed8170b01e2a7c9b13e8745f9`; both build and deploy jobs passed. The live CH11 route returned HTTP 200 with all eighteen ordered `data-method-figure="11-NN"` figures. The lattice, place-value-regrouping, and estimate/refine SVGs each returned HTTP 200 and retained their exact cell products/carries, `1 thousand, 2 hundreds, 4 tens, 2 ones` result, and proportional 42-unit endpoint gap. The workflow emitted only the existing non-failing Node.js 20 deprecation warning for GitHub-maintained actions. Run: https://github.com/dnrohr/strategies-for-elementary-school-math/actions/runs/34182370324. Live route: https://dnrohr.github.io/strategies-for-elementary-school-math/chapters/27-times-46/.
 

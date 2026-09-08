@@ -716,6 +716,62 @@ test("CH12 has exact accessible vector art for all eleven three-addend methods",
   assert(m11.includes("+4 at 596") && m11.includes("−4 at 247") && m11.includes("(596 + 4) + (247 − 4) = 596 + 247"));
 });
 
+test("CH13 has exact accessible vector art for all ten unlike-denominator methods", async () => {
+  const vectorDir = path.join(ROOT, "art", "vectors", "ch13");
+  const assets = (await fs.readdir(vectorDir)).filter(file => /^ch13_m\d{2}_[a-z0-9-]+\.svg$/.test(file)).sort();
+  assert.equal(assets.length, 10);
+  assert.deepEqual(assets.map(file => file.match(/^ch13_m(\d{2})_/)[1]), Array.from({ length: 10 }, (_value, index) => String(index + 1).padStart(2, "0")));
+  for (const file of assets) {
+    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
+    assert.match(svg, /viewBox="0 0 1200 800"/);
+    assert.match(svg, /role="img"/);
+    assert.match(svg, /aria-labelledby="title desc"/);
+    assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
+    assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
+    assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
+    assert(svg.includes("31/24") || /(?:31|thirty-one) twenty-fourths/i.test(svg), `${file} must preserve the exact sum`);
+  }
+  const m01 = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
+  assert.match(m01, /pattern id="g24" x="300" width="30"/);
+  assert.match(m01, /width="480" height="70"/);
+  assert.match(m01, /width="450" height="70"/);
+  assert(m01.includes("16/24 + 15/24 = 31/24"));
+  const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
+  assert(m02.includes("thirds: 8 + 8 + 8 cells") && m02.includes("eighths: 3 cells in each bracket"));
+  assert(m02.includes("16 units + 15 units = 31 units"));
+  const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
+  assert.match(m03, /width="440" height="140"/);
+  assert.match(m03, /x="680" y="155" width="275" height="210"/);
+  assert(m03.includes("separate counts") && m03.includes("24/24 · one whole"));
+  const m04 = await fs.readFile(path.join(vectorDir, assets[3]), "utf8");
+  assert(m04.includes("× 8/8") && m04.includes("× 3/3"));
+  assert.match(m04, /width="220" height="70"/);
+  assert.match(m04, /width="206\.25" height="70"/);
+  assert.match(m04, /markerUnits="userSpaceOnUse"/);
+  const m05 = await fs.readFile(path.join(vectorDir, assets[4]), "utf8");
+  assert.equal((m05.match(/q10-30 20 0/g) || []).length, 15);
+  assert.match(m05, /cx="420" cy="455"/);
+  assert.match(m05, /cx="720" cy="455"/);
+  assert(m05.includes("Eight jumps reach one whole; seven continue beyond it."));
+  const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
+  assert.match(m06, /M684 255v90/);
+  assert(m06.includes("ESTIMATE") && m06.includes("EXACT") && m06.includes("1 7/24 ≈ 1.292"));
+  const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
+  assert(m07.includes("2 × 8 = 16") && m07.includes("5 × 3 = 15") && m07.includes("3 × 8 = 24 — not 3 + 8"));
+  assert.match(m07, /markerUnits="userSpaceOnUse"/);
+  const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
+  assert.match(m08, /width="840" height="100"/);
+  assert.match(m08, /width="245" height="100"/);
+  assert(m08.includes("31/24 = 24/24 + 7/24"));
+  const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
+  assert(m09.includes("1.291666…") && m09.includes("repeating / approximate display"));
+  assert(m09.includes("2/3 = 16/24") && m09.includes("5/8 = 15/24"));
+  const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
+  assert.equal((m10.match(/<rect\b/g) || []).length, 1);
+  assert.equal((m10.match(/marker-end="url\(#a\)"/g) || []).length, 2);
+  assert(m10.includes("Same common-unit mathematics; reported format may differ or be absent."));
+});
+
 test("research CSV parser handles quoted commas and validates records", () => {
   const header = "source_id,topic,chapter,citation,source_type,doi_or_url,locator,claim_supported,evidence_notes,verification_status,verified_by,verified_date";
   const source = `${header}\nR01-001,addition,01,"Author, A. (2026). Title.",study,https://doi.org/10.example/test,Abstract,Claim,Checked,verified,Codex,2026-09-06\n`;
@@ -753,7 +809,7 @@ test("repository validates and build emits every manifest page", async () => {
       assert.match(page, /<figure class="chapter-figure"><img[^>]+alt="[^"]+"/);
       assert.match(page, new RegExp(`assets/figures/ch${String(chapter.chapter).padStart(2, "0")}/[^\"]+\\.svg`));
     }
-    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10], [10, 10], [11, 18], [12, 11]]);
+    const methodArtCounts = new Map([[1, 14], [2, 12], [3, 14], [4, 12], [5, 20], [6, 12], [7, 12], [8, 10], [9, 10], [10, 10], [11, 18], [12, 11], [13, 10]]);
     if (methodArtCounts.has(chapter.chapter)) {
       const code = String(chapter.chapter).padStart(2, "0");
       const expected = Array.from({ length: methodArtCounts.get(chapter.chapter) }, (_value, index) => String(index + 1).padStart(2, "0"));

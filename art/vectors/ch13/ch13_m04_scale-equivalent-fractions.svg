@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Scale numerator and denominator by the same factor</title>
+<desc id="desc">One transformation card multiplies two thirds by eight over eight to make sixteen twenty-fourths. Another multiplies five eighths by three over three to make fifteen twenty-fourths. Exact proportional bars reinforce each unchanged value before the sum becomes 31 twenty-fourths.</desc>
+<defs>
+<marker id="a" markerWidth="18" markerHeight="18" refX="17" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0 0l18 9-18 9z" fill="#7652A8"/>
+</marker>
+</defs>
+<rect width="1200" height="800" fill="#F8F2E7"/>
+<text x="70" y="85" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#18324A">Multiply by 1; rename the pieces</text>
+<rect x="70" y="145" width="1060" height="230" rx="28" fill="#FFFDF8" stroke="#176B73" stroke-width="5"/>
+<text x="155" y="275" font-family="Arial,sans-serif" font-size="44" font-weight="700">2/3</text>
+<path d="M260 260h180" stroke="#7652A8" stroke-width="7" marker-end="url(#a)"/>
+<text x="350" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" fill="#553A78">× 8/8</text>
+<text x="505" y="275" font-family="Arial,sans-serif" font-size="44" font-weight="700">= 16/24</text>
+<rect x="700" y="220" width="330" height="70" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/>
+<rect x="700" y="220" width="220" height="70" fill="#B9D8D5"/>
+<text x="865" y="335" text-anchor="middle" font-family="Arial,sans-serif" font-size="22">same length before and after</text>
+<rect x="70" y="420" width="1060" height="230" rx="28" fill="#FFFDF8" stroke="#C66A12" stroke-width="5" stroke-dasharray="12 8"/>
+<text x="155" y="550" font-family="Arial,sans-serif" font-size="44" font-weight="700">5/8</text>
+<path d="M260 535h180" stroke="#7652A8" stroke-width="7" marker-end="url(#a)"/>
+<text x="350" y="490" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" fill="#553A78">× 3/3</text>
+<text x="505" y="550" font-family="Arial,sans-serif" font-size="44" font-weight="700">= 15/24</text>
+<rect x="700" y="495" width="330" height="70" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/>
+<rect x="700" y="495" width="206.25" height="70" fill="#F2B35F"/>
+<text x="600" y="735" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#347C5A">16/24 + 15/24 = 31/24</text>
+</svg>

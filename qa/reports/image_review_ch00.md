@@ -20,3 +20,7 @@ The legend is conceptually sound and readable, but it occupies only the left hal
 | Image | Disposition | Opinion |
 | --- | --- | --- |
 | `art/vectors/ch00/frontmatter-axes.svg` | Major | The two-axis distinction is clear and the paired panels work, but the artwork uses roughly half the canvas and leaves a conspicuous blank field. Recompose to fill the spread, enlarge the explanatory text, and give the two axes a stronger visual relationship. |
+
+## Resolution notes — `QA-IMAGE-FIXES`
+
+- `art/vectors/ch00/frontmatter-axes.svg` — Resolved 2026-09-08. Applied the recorded readability polish directly to the production SVG, preserving the exact mathematics, selectable text, accessibility metadata, non-color encoding, filename, and manuscript mapping. Desktop (600 px), narrow (360 px), and relevant grayscale evidence were reviewed; **now passes**.

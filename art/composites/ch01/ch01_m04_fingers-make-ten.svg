@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Seven fingers become ten, with two counters remaining</title>
   <desc id="desc">Three panels use the same anatomically plausible pair of hands. The first shows five raised fingers on one hand and two on the other, totaling seven. The second shows all ten fingers raised with exactly three upward arrows marking the fingers added to make ten. The third keeps ten fingers raised and adds exactly two separate orange counters, giving twelve.</desc>
   <image href="../../raster/ch01/ch01_m04_fingers-make-ten_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid meet"/>

@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Method 2: Count on five times from seven</title>
   <desc id="desc">Seven is held as the starting total. Exactly five equal one-unit jumps land on eight, nine, ten, eleven, and twelve. Five aligned tap bars track the five increments. Seven plus five equals twelve.</desc>
-  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5 0 10Z" fill="#087E8B"/></marker></defs>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 10 10"><path d="M0 0L10 5 0 10Z" fill="#087E8B"/></marker></defs>
   <style>text{font-family:"Trebuchet MS",Arial,sans-serif;fill:#24312D}.eyebrow{font-size:22px;font-weight:700;letter-spacing:2px}.heading{font-size:42px;font-weight:700}.sub{font-size:25px;fill:#52615B}.label{font-size:22px;font-weight:700}.n{font-size:27px;font-weight:700;text-anchor:middle}.equation{font-size:38px;font-weight:700}</style>
   <rect width="1200" height="800" fill="#FFFDF8"/><text x="70" y="62" class="eyebrow">METHOD 02 · COUNT-ON</text><text x="70" y="116" class="heading">Keep 7; count five more</text><text x="70" y="154" class="sub">The starting seven is held, not counted again.</text>
   <rect x="64" y="190" width="1072" height="448" rx="28" fill="#F6F1E8" stroke="#D7D0C4" stroke-width="4"/>

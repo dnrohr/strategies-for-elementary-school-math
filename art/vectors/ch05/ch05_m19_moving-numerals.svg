@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Moving numerals show a distributive transformation</title><desc id="desc">A three-stage vector workspace transforms eleven times twelve into ten times twelve plus one times twelve, then into 120 plus 12 and finally 132. Dashed motion paths rearrange symbols while equality is preserved.</desc>
-  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#7652A8"/></marker></defs>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0L12 6L0 12Z" fill="#7652A8"/></marker></defs>
   <rect width="1200" height="800" fill="#FFFDF8"/><g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
     <text x="600" y="72" font-size="38" font-weight="700">The symbols move; the value stays equal</text>
     <rect x="50" y="180" width="280" height="330" rx="34" fill="#E7EEF8" stroke="#2764B8" stroke-width="7"/><text x="190" y="280" font-size="31" font-weight="700">start</text><text x="190" y="390" font-size="50" font-weight="700">11 × 12</text>

@@ -1,40 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">Two thirds plus five eighths equals thirty-one twenty-fourths</title>
-  <desc id="desc">Two thirds is converted to sixteen twenty-fourths and five eighths to fifteen twenty-fourths. Adding the common units gives thirty-one twenty-fourths, or one and seven twenty-fourths.</desc>
-  <style>
-    .ink { fill: #24312d; }
-    .muted { fill: #5b6962; }
-    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
-    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
-    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 2; }
-    .pale { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
-    text { font-family: Georgia, serif; }
-    .label { font-size: 30px; }
-    .math { font-size: 40px; font-weight: 700; }
-    .small { font-size: 21px; }
-  </style>
-  <rect width="1200" height="800" fill="#fffdf8"/>
-  <text x="68" y="76" class="ink math">2/3 + 5/8 = 31/24</text>
-  <text x="68" y="116" class="muted small">Rename both fractions in twenty-fourths before combining equal units.</text>
-  <rect x="68" y="160" width="720" height="470" rx="16" class="pale"/>
-  <text x="96" y="208" class="ink label">Common denominator: 24</text>
-  <text x="96" y="270" class="ink label">2/3 = 16/24</text>
-  <rect x="330" y="238" width="384" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="330" y="238" width="256" height="48" rx="7" class="orange"/>
-  <text x="96" y="360" class="ink label">5/8 = 15/24</text>
-  <rect x="330" y="328" width="384" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="330" y="328" width="240" height="48" rx="7" class="green"/>
-  <text x="96" y="450" class="ink label">16 + 15 = 31/24</text>
-  <rect x="330" y="418" width="384" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="330" y="418" width="384" height="48" rx="7" class="blue"/>
-  <text x="96" y="544" class="muted small">31/24 = 1 whole + 7/24</text>
-  <text x="96" y="588" class="muted small">The total crosses one whole, so it is an improper fraction.</text>
-  <rect x="840" y="160" width="292" height="470" rx="16" class="pale"/>
-  <text x="868" y="218" class="ink label">Rename, then add</text>
-  <text x="868" y="292" class="ink label">2 × 8 = 16</text>
-  <text x="868" y="346" class="ink label">5 × 3 = 15</text>
-  <path d="M868 378h220" stroke="#24312d" stroke-width="2"/>
-  <text x="868" y="438" class="ink label">16 + 15</text>
-  <text x="868" y="492" class="ink label">= 31/24</text>
-  <text x="868" y="560" class="muted small">= 1 7/24</text>
-</svg>
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility"><title id="title">Two thirds plus five eighths in common twenty-fourths</title><desc id="desc">Three large equal-length bars are faintly divided into twenty-fourths. Sixteen filled units represent two thirds, fifteen patterned units represent five eighths, and a result bar shows one whole plus seven twenty-fourths.</desc><rect width="1200" height="800" fill="#F8F2E7"/><text x="64" y="78" font-family="Arial,sans-serif" fill="#18324A" font-size="34" font-weight="700">Rename both fractions in twenty-fourths</text>
+  <defs><pattern id="u" width="32" height="95" patternUnits="userSpaceOnUse"><path d="M32 0V95" stroke="#5A6570" stroke-width="1.5" opacity=".38"/></pattern><pattern id="h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line y2="10" stroke="#C66A12" stroke-width="3"/></pattern></defs>
+  <g font-family="Arial,sans-serif" fill="#18324A" font-size="29"><text x="65" y="230">2/3 = 16/24</text><rect x="300" y="175" width="768" height="95" fill="#FFFDF8" stroke="#18324A" stroke-width="5"/><rect x="300" y="175" width="512" height="95" fill="#B9D8D5"/><rect x="300" y="175" width="768" height="95" fill="url(#u)"/>
+  <text x="65" y="405">5/8 = 15/24</text><rect x="300" y="350" width="768" height="95" fill="#FFFDF8" stroke="#18324A" stroke-width="5"/><rect x="300" y="350" width="480" height="95" fill="url(#h)"/><rect x="300" y="350" width="768" height="95" fill="url(#u)"/></g>
+  <rect x="150" y="540" width="900" height="150" rx="28" fill="#DDEDE4" stroke="#347C5A" stroke-width="5"/><text x="600" y="605" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="37" font-weight="700">16/24 + 15/24 = 31/24</text><text x="600" y="660" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#347C5A">= 1 whole + 7/24</text><text x="600" y="750" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="25">Faint ticks keep every common unit auditable.</text></svg>

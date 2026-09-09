@@ -1,41 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">Three fourths plus two thirds plus five twelfths equals eleven sixths</title>
-  <desc id="desc">Three fourths is nine twelfths, two thirds is eight twelfths, and five twelfths stays five twelfths. Adding the common units gives twenty-two twelfths, which reduces to eleven sixths, or one and five sixths.</desc>
-  <style>
-    .ink { fill: #24312d; }
-    .muted { fill: #5b6962; }
-    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
-    .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
-    .blue { fill: #467a9b; stroke: #24312d; stroke-width: 2; }
-    .pale { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
-    .unit { stroke: #24312d; stroke-width: 1; opacity: .45; }
-    text { font-family: Georgia, serif; }
-    .label { font-size: 30px; }
-    .math { font-size: 39px; font-weight: 700; }
-    .small { font-size: 21px; }
-  </style>
-  <rect width="1200" height="800" fill="#fffdf8"/>
-  <text x="68" y="76" class="ink math">3/4 + 2/3 + 5/12 = 22/12 = 11/6</text>
-  <text x="68" y="116" class="muted small">Rename every fraction in twelfths before adding equal units.</text>
-  <rect x="68" y="160" width="720" height="470" rx="16" class="pale"/>
-  <text x="96" y="208" class="ink label">Common unit: one twelfth</text>
-  <text x="96" y="270" class="ink label">3/4 = 9/12</text>
-  <rect x="300" y="238" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="300" y="238" width="324" height="48" rx="7" class="orange"/>
-  <text x="96" y="360" class="ink label">2/3 = 8/12</text>
-  <rect x="300" y="328" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="300" y="328" width="288" height="48" rx="7" class="green"/>
-  <text x="96" y="450" class="ink label">5/12 = 5/12</text>
-  <rect x="300" y="418" width="432" height="48" rx="7" fill="#fffdf8" stroke="#24312d" stroke-width="2"/>
-  <rect x="300" y="418" width="180" height="48" rx="7" class="blue"/>
-  <text x="96" y="544" class="ink label">9 + 8 + 5 = 22/12</text>
-  <text x="96" y="588" class="muted small">22/12 = 11/6 = 1 5/6</text>
-  <rect x="840" y="160" width="292" height="470" rx="16" class="pale"/>
-  <text x="868" y="218" class="ink label">Combine equal units</text>
-  <text x="868" y="292" class="ink label">9/12 + 8/12</text>
-  <text x="868" y="346" class="ink label">+ 5/12</text>
-  <path d="M868 378h220" stroke="#24312d" stroke-width="2"/>
-  <text x="868" y="438" class="ink label">22/12</text>
-  <text x="868" y="492" class="ink label">= 11/6</text>
-  <text x="868" y="558" class="muted small">one whole + 5/6</text>
-</svg>
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility"><title id="title">Three fourths plus two thirds plus five twelfths</title><desc id="desc">Three spacious twelve-cell bars show nine twelfths, eight twelfths, and five twelfths using color plus distinct patterns. One compact calculation adds the unit counts to twenty-two twelfths and simplifies to eleven sixths.</desc><rect width="1200" height="800" fill="#F8F2E7"/><text x="64" y="78" font-family="Arial,sans-serif" fill="#18324A" font-size="34" font-weight="700">Rename once; add the same-size units</text>
+  <defs><pattern id="g" width="60" height="70" patternUnits="userSpaceOnUse"><path d="M60 0V70" stroke="#18324A" stroke-width="2" opacity=".45"/></pattern><pattern id="h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line y2="10" stroke="#C66A12" stroke-width="3"/></pattern></defs>
+  <g font-family="Arial,sans-serif" fill="#18324A" font-size="28"><text x="65" y="205">3/4 = 9/12</text><rect x="300" y="155" width="720" height="70" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/><rect x="300" y="155" width="540" height="70" fill="#B9D8D5"/><rect x="300" y="155" width="720" height="70" fill="url(#g)"/>
+  <text x="65" y="340">2/3 = 8/12</text><rect x="300" y="290" width="720" height="70" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/><rect x="300" y="290" width="480" height="70" fill="url(#h)"/><rect x="300" y="290" width="720" height="70" fill="url(#g)"/>
+  <text x="65" y="475">5/12</text><rect x="300" y="425" width="720" height="70" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/><rect x="300" y="425" width="300" height="70" fill="#347C5A"/><rect x="300" y="425" width="720" height="70" fill="url(#g)"/></g>
+  <rect x="215" y="575" width="770" height="125" rx="27" fill="#DDEDE4" stroke="#347C5A" stroke-width="5"/><text x="600" y="630" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="34" font-weight="700">(9 + 8 + 5)/12 = 22/12</text><text x="600" y="678" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#347C5A">= 11/6 = 1 5/6</text><text x="600" y="760" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="25">All three bars preserve one equal whole.</text></svg>

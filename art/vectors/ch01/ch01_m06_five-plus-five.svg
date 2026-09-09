@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Method 6: Use five plus five, then add two</title>
   <desc id="desc">Two outlined cards each contain exactly five dots. A separate dashed group contains exactly two more dots. The two fives make ten, then two more make twelve. Seven plus five equals five plus five plus two equals twelve.</desc>
   <defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#FFF3DF"/><line y2="12" stroke="#D97706" stroke-width="5"/></pattern></defs>

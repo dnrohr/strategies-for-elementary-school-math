@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Place the final tile in a seven-by-nine patch</title>
   <desc id="desc">One plausible hand holds the sixty-third square tile beside a precise seven-row by nine-column vector patch. Sixty-two positions are filled and the final outlined target plus the held tile completes sixty-three square units.</desc>
   <defs>
     <pattern id="unit-grid" x="70" y="165" width="70" height="70" patternUnits="userSpaceOnUse"><rect width="70" height="70" fill="#E8F3ED" fill-opacity=".88" stroke="#24312D" stroke-width="3"/></pattern>
-    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#087E8B"/></marker>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 6 6"><path d="M0 0L6 3L0 6Z" fill="#087E8B"/></marker>
   </defs>
-  <image href="../../raster/ch07/ch07_m08_place-final-tile_raster.png" x="300" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid slice"/>
+  <image href="../../raster/ch07/ch07_m08_place-final-tile_raster.png" x="390" y="40" width="1040" height="800" preserveAspectRatio="xMidYMid slice"/>
   <g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
-    <rect x="35" y="25" width="1130" height="92" rx="24" fill="#FFFDF8" fill-opacity=".94"/><text x="600" y="66" font-size="35" font-weight="700">Seven rows of nine unit tiles cover the rectangle</text><text x="600" y="99" font-size="22">62 placed tiles + 1 tile in the hand = 63 square units</text>
+    <rect x="35" y="25" width="1130" height="92" rx="24" fill="#FFFDF8" fill-opacity=".94"/><text x="600" y="66" font-size="35" font-weight="700">Seven rows of nine unit tiles cover the rectangle</text><text x="600" y="99" font-size="25">62 placed tiles + 1 tile in the hand = 63 square units</text>
     <rect class="sixty-three-cell-grid" x="70" y="165" width="630" height="490" fill="url(#unit-grid)" stroke="#2764B8" stroke-width="7"/>
     <rect class="final-tile-target" x="630" y="585" width="70" height="70" fill="#FFFDF8" fill-opacity=".95" stroke="#C2413B" stroke-width="7" stroke-dasharray="10 7"/>
-    <text x="665" y="620" font-size="18" font-weight="700" fill="#C2413B">63</text><text x="665" y="643" font-size="15" fill="#C2413B">target</text>
-    <path d="M965 430Q850 545 710 615" fill="none" stroke="#087E8B" stroke-width="6" stroke-dasharray="12 9" marker-end="url(#arrow)"/>
+    <text x="665" y="620" font-size="24" font-weight="700" fill="#C2413B">63</text><text x="665" y="643" font-size="15" fill="#C2413B">target</text>
+    <path d="M965 455Q845 550 710 615" fill="none" stroke="#087E8B" stroke-width="4" stroke-dasharray="12 9" marker-end="url(#arrow)"/>
     <path d="M70 690v28h630v-28" fill="none" stroke="#2764B8" stroke-width="7"/><text x="385" y="758" font-size="27" font-weight="700">9 columns · 7 rows · 7 × 9 = 63</text>
     <path d="M35 165H15v490h20" fill="none" stroke="#2764B8" stroke-width="7"/><text x="28" y="420" font-size="24" font-weight="700" transform="rotate(-90 28 420)">7 rows</text>
   </g>

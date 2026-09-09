@@ -129,10 +129,12 @@ test("CH08 has one accessible production SVG for every method", async () => {
     const svg = await fs.readFile(path.join(vectorDir, asset), "utf8");
     for (const fragment of fragments) assert(svg.includes(fragment), `${asset} should preserve exact label ${fragment}`);
   }
-  for (const asset of ["ch08_m01_four-equal-trays.svg", "ch08_m06_four-by-five-array.svg", "ch08_m08_three-groups-rhythm.svg"]) {
+  for (const asset of ["ch08_m01_four-equal-trays.svg", "ch08_m06_four-by-five-array.svg"]) {
     const svg = await fs.readFile(path.join(vectorDir, asset), "utf8");
     assert.equal((svg.match(/<circle\b/g) || []).length, 20, `${asset} should contain exactly 20 quantity circles`);
   }
+  const rhythm = await fs.readFile(path.join(vectorDir, "ch08_m08_three-groups-rhythm.svg"), "utf8");
+  assert.equal((rhythm.match(/<circle\b/g) || []).length, 18, "M08 should contain 15 counters and 3 aligned beat marks");
 });
 
 test("CH01 has exact vector and composite art for all fourteen methods", async () => {
@@ -213,7 +215,7 @@ test("CH02 has exact vector and composite art for all twelve methods", async () 
   const countBack = await fs.readFile(path.join(vectorDir, "ch02_m02_count-back-eight-beats.svg"), "utf8");
   const arrowGroup = (countBack.match(/<g stroke="#087E8B"[^>]*marker-end="url\(#a\)">[\s\S]*?<\/g>/) || [""])[0];
   assert.equal((arrowGroup.match(/<path\b/g) || []).length, 8);
-  const beatGroup = (countBack.match(/<g text-anchor="middle" font-size="21" font-weight="700" fill="#D97706">[\s\S]*?<\/g>/) || [""])[0];
+  const beatGroup = (countBack.match(/<g text-anchor="middle" font-size="24" font-weight="700" fill="#D97706">[\s\S]*?<\/g>/) || [""])[0];
   assert.equal((beatGroup.match(/<text\b/g) || []).length, 8);
 
   const tracking = await fs.readFile(path.join(compositeDir, "ch02_m08_eight-tracking-marks.svg"), "utf8");
@@ -335,8 +337,8 @@ test("CH05 has exact accessible art for all twenty methods", async () => {
     assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
     assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
     for (const value of ["11", "12", "132"]) assert(svg.includes(value), `${file} must include ${value}`);
-    if (directory === vectorDir) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must remain vector-only`);
-    else assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch05\/ch05_m(?:17|18)_[a-z0-9_-]+_raster\.png"/);
+    if (directory === vectorDir || file.includes("m17")) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must not contain raster imagery`);
+    else assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch05\/ch05_m18_[a-z0-9_-]+_raster\.png"/);
   }
 
   const squareMinusRow = await fs.readFile(path.join(vectorDir, "ch05_m04_square-minus-row.svg"), "utf8");
@@ -353,22 +355,19 @@ test("CH05 has exact accessible art for all twenty methods", async () => {
   const beats = await fs.readFile(path.join(vectorDir, "ch05_m07_skip-count-beats.svg"), "utf8");
   assert.equal((beats.match(/<circle\b/g) || []).length, 11);
   const jumps = await fs.readFile(path.join(vectorDir, "ch05_m08_eleven-number-line-jumps.svg"), "utf8");
-  const jumpGroup = (jumps.match(/<g class="eleven-jumps"[\s\S]*?<\/g>/) || [""])[0];
-  const jumpLabels = (jumps.match(/<g class="eleven-jump-labels"[\s\S]*?<\/g>/) || [""])[0];
-  assert.equal((jumpGroup.match(/<path\b/g) || []).length, 11);
-  assert.equal((jumpLabels.match(/>\+12<\/text>/g) || []).length, 11);
+  assert.equal((jumps.match(/Q\d+ (?:185|445) \d+ (?:300|560)/g) || []).length, 11);
+  assert.equal((jumps.match(/>\+12<\/text>/g) || []).length, 11);
 
-  for (const [file, width, height] of [["ch05_m09_eleven-by-twelve-array.svg", "70", "45"], ["ch05_m10_rectangle-area.svg", "70", "45"]]) {
-    const svg = await fs.readFile(path.join(vectorDir, file), "utf8");
-    assert.match(svg, new RegExp(`<pattern id="g" x="180" y="150" width="${width}" height="${height}"`));
-    assert.match(svg, /width="840" height="495" fill="url\(#g\)"/);
-  }
+  const exactArray = await fs.readFile(path.join(vectorDir, "ch05_m09_eleven-by-twelve-array.svg"), "utf8");
+  assert.match(exactArray, /<pattern id="g" x="180" y="150" width="70" height="45"/);
+  assert.match(exactArray, /width="840" height="495" fill="url\(#g\)"/);
+  const areaArray = await fs.readFile(path.join(vectorDir, "ch05_m10_rectangle-area.svg"), "utf8");
+  assert.match(areaArray, /<pattern id="g" x="180" y="145" width="70" height="40"/);
+  assert.match(areaArray, /width="840" height="440" fill="url\(#g\)"/);
   const bags = await fs.readFile(path.join(vectorDir, "ch05_m11_eleven-groups.svg"), "utf8");
-  const bagGroup = (bags.match(/<g class="bags-eleven">[\s\S]*?<\/g>\s*<path/) || [""])[0];
-  const dozen = (bags.match(/<g id="dozen"[\s\S]*?<\/g>/) || [""])[0];
-  assert.equal((bagGroup.match(/<use href="#bag"/g) || []).length, 11);
-  assert.equal((dozen.match(/<circle\b/g) || []).length, 12);
-  assert.match(bags, /class="total-tray"/);
+  assert.equal((bags.match(/>12<\/text>/g) || []).length, 11);
+  assert(bags.includes("group 1") && bags.includes("group 11"));
+  assert.match(bags, /M90 625v35h955v-35/);
 
   const doubled = await fs.readFile(path.join(vectorDir, "ch05_m13_double-and-halve.svg"), "utf8");
   const sixGroups = (doubled.match(/<g class="six-groups-of-twenty-two"[\s\S]*?<\/g>/) || [""])[0];
@@ -538,13 +537,14 @@ test("CH09 has exact accessible vector art for all ten fraction-comparison metho
   assert.match(bars, /x="240" y="450" width="500" height="110"/);
   assert.match(bars, /width="800" height="110"/);
   const line = await fs.readFile(path.join(vectorDir, "ch09_m02_number-line-placement.svg"), "utf8");
-  assert.match(line, /M180 420H980/);
-  assert.match(line, /cx="660" cy="420"/);
-  assert.match(line, /cx="680" cy="420"/);
-  assert(line.includes("0.025 farther right"));
+  assert.match(line, /M100 300H1100/);
+  assert.match(line, /cx="700" cy="300"/);
+  assert.match(line, /cx="725" cy="300"/);
+  assert(line.includes("0.025 = 1/40 farther right"));
+  assert(line.includes("MAGNIFIED: 0.600 TO 0.625"));
   const half = await fs.readFile(path.join(vectorDir, "ch09_m03_half-benchmark-gaps.svg"), "utf8");
-  assert.match(half, /M600 300v-35h80v35/);
-  assert.match(half, /M600 560v35h100v-35/);
+  assert.match(half, /M240 180v-35h640v35/);
+  assert.match(half, /M240 420v-35h800v35/);
   assert(half.includes("1/10") && half.includes("1/8"));
   const fortieths = await fs.readFile(path.join(vectorDir, "ch09_m04_common-denominator-fortieths.svg"), "utf8");
   assert.match(fortieths, /pattern id="grid" x="230" width="20"/);
@@ -553,7 +553,8 @@ test("CH09 has exact accessible vector art for all ten fraction-comparison metho
   assert(fortieths.includes("24/40") && fortieths.includes("25/40"));
   const cross = await fs.readFile(path.join(vectorDir, "ch09_m05_cross-products.svg"), "utf8");
   for (const equation of ["3 × 8 = 24", "5 × 5 = 25", "24 &lt; 25, so 3/5 &lt; 5/8"]) assert(cross.includes(equation));
-  assert.match(cross, /markerUnits="userSpaceOnUse"/);
+  assert.match(cross, /M360 252H405 M625 252H690/);
+  assert.match(cross, /M360 477H405 M625 477H690/);
   const decimals = await fs.readFile(path.join(vectorDir, "ch09_m06_aligned-decimals.svg"), "utf8");
   for (const value of ["3 ÷ 5", "5 ÷ 8", "0.600", "0.625"]) assert(decimals.includes(value));
   const complements = await fs.readFile(path.join(vectorDir, "ch09_m07_complements-to-one.svg"), "utf8");
@@ -563,11 +564,10 @@ test("CH09 has exact accessible vector art for all ten fraction-comparison metho
   const retrieval = await fs.readFile(path.join(vectorDir, "ch09_m08_retrieve-then-verify.svg"), "utf8");
   assert(retrieval.includes("RETRIEVE") && retrieval.includes("VERIFY") && retrieval.includes("5/8 &gt; 3/5"));
   const twentieths = await fs.readFile(path.join(vectorDir, "ch09_m09_twentieths-half-unit.svg"), "utf8");
-  assert.match(twentieths, /pattern id="grid" x="230" width="40"/);
-  assert.match(twentieths, /x="230" y="465" width="500" height="110"/);
-  assert.match(twentieths, /M710 455v130/);
-  assert.match(twentieths, /M730 455v130/);
-  assert(twentieths.includes("12.5/20") && twentieths.includes("not 13 full units"));
+  assert.equal((twentieths.match(/<rect x="\d+" y="245" width="70" height="95"/g) || []).length, 13);
+  assert.match(twentieths, /x="935" y="245" width="35" height="95"/);
+  assert.match(twentieths, /MAGNIFIED THIRTEENTH CELL/);
+  assert(twentieths.includes("12 1/2 twentieths = 5/8"));
   const proof = await fs.readFile(path.join(vectorDir, "ch09_m10_estimate-then-prove.svg"), "utf8");
   assert.match(proof, /pattern id="grid" x="230" width="12"/);
   assert.match(proof, /width="288" height="70"/);
@@ -608,8 +608,8 @@ test("CH10 has exact accessible vector art for all ten division-context methods"
   assert.equal((m05.match(/<use href="#b"/g) || []).length, 5);
   assert(m05.includes("3 × 5 = 15 fifth-pieces") && m05.includes("3 pieces per bowl = 3/5 candy"));
   const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
-  assert.equal((m06.match(/<path d="M(?:160|340|520|700) 465Q/g) || []).length, 4);
-  for (const value of [">0</text>", ">5</text>", ">10</text>", ">15</text>", ">20</text>", ">23</text>", ">25</text>"]) assert(m06.includes(value));
+  assert.equal((m06.match(/<path d="M(?:160|360|560|760) 450Q/g) || []).length, 4);
+  for (const value of [">0</text>", ">5</text>", ">10</text>", ">15</text>", ">20</text>", ">23</text>"]) assert(m06.includes(value));
   const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
   for (const value of ["4 × 5 = 20", "23 − 20 = 3", "23 ÷ 5 = 4 R3"]) assert(m07.includes(value));
   const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
@@ -643,16 +643,17 @@ test("CH11 has exact accessible vector art for all eighteen multiplication metho
   const m01 = await fs.readFile(path.join(vectorDir, assets[0]), "utf8");
   assert(m01.includes("30 × 40 ≈ 1,200") && m01.includes("Exact 1,242"));
   const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
-  assert.match(m02, /x="180" y="175" width="696" height="380"/);
-  assert.match(m02, /x="876" y="175" width="104\.4" height="380"/);
+  assert.match(m02, /x="165" y="165" width="650" height="400"/);
+  assert.match(m02, /x="815" y="165" width="98" height="400"/);
+  assert(m02.includes("ENLARGED STRIP"));
   assert(m02.includes("1,080 + 162 = 1,242"));
   const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
   assert.match(m03, /x="250" y="451\.3" width="700" height="103\.7"/);
   assert(m03.includes("920 + 322 = 1,242"));
   const m04 = await fs.readFile(path.join(vectorDir, assets[3]), "utf8");
-  assert.equal((m04.match(/M150 \d+h500/g) || []).length, 30);
-  assert.equal((m04.match(/M150 (?:639|656|673)h500/g) || []).length, 3);
-  assert(m04.includes("1,380 − 138") && m04.includes("27 rows remain"));
+  assert.equal((m04.match(/>10 × 46<\/text>/g) || []).length, 3);
+  assert.equal((m04.match(/>460<\/text>/g) || []).length, 3);
+  assert(m04.includes("1,380 − 138") && m04.includes("remove 3 × 46"));
   const m05 = await fs.readFile(path.join(vectorDir, assets[4]), "utf8");
   assert(m05.includes("27 × 50 = 1,350") && m05.includes("27 × 4 = 108") && m05.includes("1,350 − 108"));
   const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
@@ -667,18 +668,22 @@ test("CH11 has exact accessible vector art for all eighteen multiplication metho
   assert.equal((m09.match(/M\d+ 3(?:40v80|50v60)/g) || []).length, 27);
   for (const milestone of ["10 → 460", "20 → 920", "27 → 1,242"]) assert(m09.includes(milestone));
   const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
-  assert.match(m10, /x="210" y="170" width="696" height="378"/);
-  assert.match(m10, /x="906" y="170" width="104\.4" height="378"/);
+  assert.match(m10, /x="90" y="170" width="720" height="420"/);
+  assert.match(m10, /x="715" y="170" width="95" height="420"/);
+  assert(m10.includes("ENLARGED 6-COLUMN STRIP"));
   assert(m10.includes("27 × 40 = 1,080") && m10.includes("27 × 6") && m10.includes("= 162"));
   const m11 = await fs.readFile(path.join(vectorDir, assets[10]), "utf8");
   for (const value of [">162</text>", ">1,080</text>", ">1,242</text>"]) assert(m11.includes(value));
   const m12 = await fs.readFile(path.join(vectorDir, assets[11]), "utf8");
   assert(m12.includes("27 × 40 = 1,080") && m12.includes("27 × 6 = 162") && m12.includes("same math, different format"));
   const m13 = await fs.readFile(path.join(vectorDir, assets[12]), "utf8");
-  assert(m13.includes("27 × [40-unit bundle]") && m13.includes("27 × [6 singles]") && m13.includes("40 units"));
+  assert(m13.includes("40-unit bundle") && m13.includes("6-unit bundle"));
+  assert(m13.includes("27 × 40") && m13.includes("27 × 6"));
   const m14 = await fs.readFile(path.join(vectorDir, assets[13]), "utf8");
-  for (const product of ["2×4 = 08", "7×4 = 28", "2×6 = 12", "7×6 = 42"]) assert(m14.includes(product));
-  assert(m14.includes("14 → write 4, carry 1") && m14.includes("12 → write 2, carry 1"));
+  assert.match(m14, /x="120" y="215" width="440" height="440"/);
+  assert.equal((m14.match(/M(?:120|340) (?:215|435)l220 220/g) || []).length, 4);
+  assert(m14.includes("B · sum 14 → write 4") && m14.includes("C · sum 12 → write 2, carry 1"));
+  assert(m14.includes("carry 1 into the next diagonal"));
   const m15 = await fs.readFile(path.join(vectorDir, assets[14]), "utf8");
   assert(m15.includes("800 + 120 + 280 + 42 = 1,242"));
   const m16 = await fs.readFile(path.join(vectorDir, assets[15]), "utf8");
@@ -737,8 +742,9 @@ test("CH12 has exact accessible vector art for all eleven three-addend methods",
   assert.equal((m10.match(/marker-end="url\(#a\)"/g) || []).length, 3);
   assert.match(m10, /markerUnits="userSpaceOnUse"/);
   const m11 = await fs.readFile(path.join(vectorDir, assets[10]), "utf8");
-  assert(!/<use\b/i.test(m11), "M11 must remain an abstract conservation diagram without concrete transfer tokens");
-  assert(m11.includes("+4 at 596") && m11.includes("−4 at 247") && m11.includes("(596 + 4) + (247 − 4) = 596 + 247"));
+  assert(!/<use\b/i.test(m11));
+  assert.equal((m11.match(/<circle\b/g) || []).length, 6, "M11 should show four moving units plus source and destination points");
+  assert(m11.includes("destination: 596 + 4") && m11.includes("source: 247 − 4") && m11.includes("378 + 600 + 243 = 1,221"));
 });
 
 test("CH13 has exact accessible vector art for all ten unlike-denominator methods", async () => {
@@ -774,16 +780,16 @@ test("CH13 has exact accessible vector art for all ten unlike-denominator method
   assert.match(m04, /width="206\.25" height="70"/);
   assert.match(m04, /markerUnits="userSpaceOnUse"/);
   const m05 = await fs.readFile(path.join(vectorDir, assets[4]), "utf8");
-  assert.equal((m05.match(/q10-30 20 0/g) || []).length, 15);
-  assert.match(m05, /cx="420" cy="455"/);
-  assert.match(m05, /cx="720" cy="455"/);
-  assert(m05.includes("Eight jumps reach one whole; seven continue beyond it."));
+  assert.equal((m05.match(/marker-end="url\(#a\)"/g) || []).length, 2);
+  assert.match(m05, /cx="420" cy="502"/);
+  assert.match(m05, /cx="720" cy="502"/);
+  assert(m05.includes("+8/24 reaches 1 whole") && m05.includes("+7/24 beyond"));
   const m06 = await fs.readFile(path.join(vectorDir, assets[5]), "utf8");
   assert.match(m06, /M684 255v90/);
   assert(m06.includes("ESTIMATE") && m06.includes("EXACT") && m06.includes("1 7/24 ≈ 1.292"));
   const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
-  assert(m07.includes("2 × 8 = 16") && m07.includes("5 × 3 = 15") && m07.includes("3 × 8 = 24 — not 3 + 8"));
-  assert.match(m07, /markerUnits="userSpaceOnUse"/);
+  assert(m07.includes("× 8/8") && m07.includes("= 16/24") && m07.includes("× 3/3") && m07.includes("= 15/24"));
+  assert(m07.includes("3 × 8 = 24—not 3 + 8"));
   const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
   assert.match(m08, /width="840" height="100"/);
   assert.match(m08, /width="245" height="100"/);
@@ -818,8 +824,8 @@ test("CH14 has exact accessible vector art for all ten three-fraction methods", 
   assert(m01.includes("9/12 + 8/12 + 5/12 = 22/12"));
   const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
   for (const value of ["9/12 + 5/12 = 14/12", "14/12 ÷ 2/2 = 7/6", "7/6 + 4/6 = 11/6", "11/6 = 1 5/6"]) assert(m02.includes(value));
-  assert.match(m02, /x="100" y="390" width="68" height="66"/);
-  assert.match(m02, /x="690" y="390" width="340" height="66"/);
+  assert.equal((m02.match(/<circle cx="35" cy="35" r="28"/g) || []).length, 3);
+  assert.equal((m02.match(/width="330" height="350"/g) || []).length, 3);
   const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
   assert(m03.includes("9/12 + 8/12") && m03.includes("= 17/12") && m03.includes("17/12 + 5/12") && m03.includes("= 22/12"));
   const m04 = await fs.readFile(path.join(vectorDir, assets[3]), "utf8");
@@ -934,11 +940,14 @@ test("repository validates and build emits every manifest page", async () => {
     await fs.access(path.join(ch02Output, `ch02_${method}_raster.png`));
   }
   const ch05Output = path.join(ROOT, "_site", "assets", "figures", "ch05");
-  for (const method of ["m17_fingers-group-counter", "m18_tap-each-twelve"]) {
+  for (const method of ["m18_tap-each-twelve"]) {
     const composite = await fs.readFile(path.join(ch05Output, `ch05_${method}.svg`), "utf8");
     assert.match(composite, /<image href="data:image\/png;base64,/);
     await fs.access(path.join(ch05Output, `ch05_${method}_raster.png`));
   }
+  const ch05Tallies = await fs.readFile(path.join(ch05Output, "ch05_m17_fingers-group-counter.svg"), "utf8");
+  assert(!/<image\b/i.test(ch05Tallies));
+  assert.equal((ch05Tallies.match(/<line\b/g) || []).length, 11);
   const ch06Output = path.join(ROOT, "_site", "assets", "figures", "ch06");
   const ch06Composite = await fs.readFile(path.join(ch06Output, "ch06_m09_finger-group-counter.svg"), "utf8");
   assert.match(ch06Composite, /<image href="data:image\/png;base64,/);

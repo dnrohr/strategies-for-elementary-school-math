@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Find one fourth of twenty, then make three copies</title>
   <desc id="desc">A twenty-unit bar is divided into four equal five-unit sections. One section is bracketed as one fourth, then three exact copies appear below and total fifteen.</desc>
-  <defs><pattern id="m02-dot" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.5" fill="#2764B8"/></pattern><marker id="m02-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12z" fill="#7652A8"/></marker></defs>
+  <defs><pattern id="m02-dot" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.5" fill="#2764B8"/></pattern><marker id="m02-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0L12 6 0 12z" fill="#7652A8"/></marker></defs>
   <rect width="1200" height="800" fill="#FFFDF8"/>
   <text x="64" y="72" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#24312D">Find the unit fraction; then copy it</text>
   <text x="64" y="112" font-family="Arial,sans-serif" font-size="24" fill="#52605A">1/4 of 20 = 5</text>

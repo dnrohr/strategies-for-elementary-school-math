@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Split thirty-seven and forty-eight into tens and ones</title>
   <desc id="desc">A two-column place-value table aligns thirty above forty in the tens column and seven above eight in the ones column. The tens column totals seventy, the ones column totals fifteen, and the two partial sums combine to eighty-five.</desc>
-  <defs><marker id="a" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5 0 11z" fill="#7652A8"/></marker></defs>
+  <defs><marker id="a" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 11 11"><path d="M0 0L11 5.5 0 11z" fill="#7652A8"/></marker></defs>
   <rect width="1200" height="800" fill="#FFFDF8"/>
   <g font-family="Arial,sans-serif" fill="#24312D">
     <text x="60" y="68" font-size="38" font-weight="700">Separate place values, then recombine</text>
@@ -10,9 +10,9 @@
       <text x="115" y="230" font-size="28">37 =</text><rect x="225" y="175" width="210" height="85" rx="18" fill="#E7EEF8" stroke="#2764B8" stroke-width="6"/><text x="330" y="230" font-size="34">30</text><rect x="480" y="175" width="180" height="85" rx="18" fill="#F7EFE3" stroke="#D97706" stroke-width="6"/><text x="570" y="230" font-size="34">7</text>
       <text x="115" y="355" font-size="28">48 =</text><text x="185" y="355" font-size="34">+</text><rect x="225" y="300" width="210" height="85" rx="18" fill="#E7EEF8" stroke="#2764B8" stroke-width="6"/><text x="330" y="355" font-size="34">40</text><rect x="480" y="300" width="180" height="85" rx="18" fill="#F7EFE3" stroke="#D97706" stroke-width="6"/><text x="570" y="355" font-size="34">8</text>
       <path d="M205 425H680" stroke="#24312D" stroke-width="5"/>
-      <text x="330" y="460" font-size="21" fill="#2764B8">30 + 40</text><text x="570" y="460" font-size="21" fill="#D97706">7 + 8</text>
+      <text x="330" y="460" font-size="24" fill="#2764B8">30 + 40</text><text x="570" y="460" font-size="24" fill="#D97706">7 + 8</text>
       <rect x="225" y="485" width="210" height="95" rx="18" fill="#E7EEF8" stroke="#2764B8" stroke-width="7"/><text x="330" y="545" font-size="38">70</text><rect x="480" y="485" width="180" height="95" rx="18" fill="#F7EFE3" stroke="#D97706" stroke-width="7"/><text x="570" y="545" font-size="38">15</text>
-      <path d="M700 532H830" stroke="#7652A8" stroke-width="7" stroke-dasharray="8 11" marker-end="url(#a)"/><text x="765" y="495" font-size="23" fill="#7652A8">combine</text>
+      <path d="M700 532H830" stroke="#7652A8" stroke-width="7" stroke-dasharray="8 11" marker-end="url(#a)"/><text x="765" y="495" font-size="26" fill="#7652A8">combine</text>
       <rect x="875" y="445" width="220" height="175" rx="34" fill="#E8F3ED" stroke="#287A55" stroke-width="10"/><rect x="889" y="459" width="192" height="147" rx="25" fill="none" stroke="#287A55" stroke-width="4"/><text x="985" y="553" font-size="62">85</text>
     </g>
     <text x="600" y="705" text-anchor="middle" font-size="36" font-weight="700">70 + 15 = 85</text>

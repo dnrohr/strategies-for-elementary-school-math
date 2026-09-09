@@ -1,37 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">Twenty-seven times forty-six equals one thousand two hundred forty-two</title>
-  <desc id="desc">An area model partitions 46 into 40 and 6. The two exact rectangles are 27 by 40, with area 1080, and 27 by 6, with area 162. Their combined area is 1242.</desc>
-  <style>
-    .ink { fill: #24312d; }
-    .muted { fill: #5b6962; }
-    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 3; }
-    .green { fill: #347c5a; stroke: #24312d; stroke-width: 3; }
-    .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
-    text { font-family: Georgia, serif; }
-    .label { font-size: 31px; }
-    .math { font-size: 39px; font-weight: 700; }
-    .small { font-size: 21px; }
-  </style>
-  <rect width="1200" height="800" fill="#fffdf8"/>
-  <text x="68" y="76" class="ink math">27 × 46 = 1,242</text>
-  <text x="68" y="116" class="muted small">Partitioning 46 exposes two exact place-value products.</text>
-  <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
-  <text x="96" y="208" class="ink label">Area model · 27 by 46</text>
-  <text x="96" y="260" class="muted small">27 rows</text>
-  <rect x="188" y="278" width="440" height="180" rx="8" class="orange"/>
-  <rect x="628" y="278" width="66" height="180" rx="8" class="green"/>
-  <text x="350" y="370" class="ink label">27 × 40 = 1,080</text>
-  <text x="637" y="370" class="ink small">27 × 6 = 162</text>
-  <text x="188" y="500" class="ink label">46 = 40 + 6</text>
-  <path d="M188 526h506" stroke="#24312d" stroke-width="2"/>
-  <text x="188" y="574" class="ink label">1,080 + 162 = 1,242</text>
-  <rect x="840" y="160" width="292" height="470" rx="16" class="panel"/>
-  <text x="868" y="218" class="ink label">Place-value route</text>
-  <text x="868" y="292" class="ink label">27 × 40</text>
-  <text x="868" y="344" class="ink label">= 1,080</text>
-  <text x="868" y="410" class="ink label">27 × 6</text>
-  <text x="868" y="462" class="ink label">= 162</text>
-  <path d="M868 490h220" stroke="#24312d" stroke-width="2"/>
-  <text x="868" y="548" class="ink label">= 1,242</text>
-  <text x="868" y="588" class="muted small">exact partial products</text>
-</svg>
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility"><title id="title">Twenty-seven times forty-six split into forty and six</title><desc id="desc">A large area model splits forty-six into a wide forty region and a narrow six region. The narrow region is repeated in a labeled enlarged inset, so both partial products are legible before they combine to 1,242.</desc><rect width="1200" height="800" fill="#F8F2E7"/><text x="64" y="78" font-family="Arial,sans-serif" fill="#18324A" font-size="34" font-weight="700">27 × 46 = 27 × 40 + 27 × 6</text>
+  <rect x="90" y="165" width="760" height="390" fill="#B9D8D5" stroke="#18324A" stroke-width="5"/><rect x="850" y="165" width="114" height="390" fill="#F2B35F" stroke="#18324A" stroke-width="5" stroke-dasharray="12 8"/><text x="470" y="340" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="39" font-weight="700">27 × 40 = 1,080</text><text x="907" y="360" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="27" font-weight="700" transform="rotate(-90 907 360)">27 × 6</text>
+  <path d="M964 285H995" stroke="#7652A8" stroke-width="4"/><rect x="995" y="200" width="175" height="205" rx="22" fill="#FFFDF8" stroke="#C66A12" stroke-width="5"/><text x="1082" y="250" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="26" font-weight="700">ENLARGED</text><text x="1082" y="315" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="28">27 × 6</text><text x="1082" y="365" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="31" font-weight="700">= 162</text>
+  <path d="M90 605v30h760v-30M850 605v30h114v-30" fill="none" stroke="#18324A" stroke-width="4"/><text x="470" y="680" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="27">40 units wide</text><text x="907" y="680" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="27">6</text><text x="600" y="750" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#347C5A">1,080 + 162 = 1,242</text></svg>

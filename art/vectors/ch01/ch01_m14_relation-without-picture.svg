@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Method 14: Recognize the relation seven plus five equals ten plus two equals twelve</title>
   <desc id="desc">A sparse abstract network contains only three symbolic nodes: seven plus five, ten plus two, and twelve. Dotted connectors label the same-total relation and the fact that the sum is two more than ten. No objects, number line, fingers, or sensory imagery appear.</desc>
-  <defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="5.5" orient="auto"><path d="M0 0L11 5.5 0 11Z" fill="#087E8B"/></marker></defs>
+  <defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="5.5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 11 11"><path d="M0 0L11 5.5 0 11Z" fill="#087E8B"/></marker></defs>
   <style>text{font-family:"Trebuchet MS",Arial,sans-serif;fill:#24312D}.eyebrow{font-size:22px;font-weight:700;letter-spacing:2px}.heading{font-size:42px;font-weight:700}.sub{font-size:25px;fill:#52615B}.label{font-size:22px;font-weight:700}.node{font-size:46px;font-weight:700;text-anchor:middle}.answer{font-size:72px;font-weight:700;fill:#287A55;text-anchor:middle}.math{font-size:38px;font-weight:700}</style>
   <rect width="1200" height="800" fill="#FFFDF8"/><text x="70" y="62" class="eyebrow">METHOD 14 · ABSTRACT RELATION</text><text x="70" y="116" class="heading">A relation, without a scene</text><text x="70" y="154" class="sub">The mathematics is visible here; the account describes no picture or sound.</text>
   <rect x="64" y="190" width="1072" height="450" rx="28" fill="#F6F1E8" stroke="#D7D0C4" stroke-width="4"/>

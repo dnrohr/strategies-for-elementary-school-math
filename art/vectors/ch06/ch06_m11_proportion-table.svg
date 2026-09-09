@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">Scale six groups and twenty-four objects down to one group and four objects</title>
   <desc id="desc">A two-row proportion table maps six groups to twenty-four objects and one group to four objects. Down arrows divide both quantities by six, while an upward reverse arrow multiplies by six.</desc>
-  <defs><marker id="down" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#7652A8"/></marker><marker id="up" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#287A55"/></marker></defs>
+  <defs><marker id="down" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 10 10"><path d="M0 0L10 5L0 10Z" fill="#7652A8"/></marker><marker id="up" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 10 10"><path d="M0 0L10 5L0 10Z" fill="#287A55"/></marker></defs>
   <rect width="1200" height="800" fill="#FFFDF8"/>
   <g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
     <text x="600" y="65" font-size="38" font-weight="700">Scale both quantities by the same factor</text>
     <g font-size="29" font-weight="700"><rect x="220" y="135" width="760" height="380" rx="25" fill="#FFFDF8" stroke="#24312D" stroke-width="6"/><path d="M220 255H980M600 135V515" stroke="#24312D" stroke-width="5"/><text x="410" y="210">GROUPS</text><text x="790" y="210">OBJECTS</text><text x="410" y="335">6</text><text x="790" y="335">24</text><text x="410" y="465">1</text><text x="790" y="465">4</text></g>
     <g class="divide-by-six-arrows" stroke="#7652A8" stroke-width="7" marker-end="url(#down)"><path d="M485 315v125"/><path d="M865 315v125"/></g>
-    <g font-size="23" fill="#7652A8" font-weight="700"><text x="525" y="390">÷ 6</text><text x="905" y="390">÷ 6</text></g>
-    <path class="reverse-times-six-arrow" d="M1040 455V310" fill="none" stroke="#287A55" stroke-width="7" marker-end="url(#up)"/><text x="1080" y="390" font-size="23" fill="#287A55" font-weight="700">× 6</text>
+    <g font-size="26" fill="#7652A8" font-weight="700"><text x="525" y="390">÷ 6</text><text x="905" y="390">÷ 6</text></g>
+    <path class="reverse-times-six-arrow" d="M1040 455V310" fill="none" stroke="#287A55" stroke-width="7" marker-end="url(#up)"/><text x="1080" y="390" font-size="26" fill="#287A55" font-weight="700">× 6</text>
     <text x="600" y="630" font-size="35" font-weight="700">6 groups : 24 objects = 1 group : 4 objects</text>
     <text x="600" y="690" font-size="25" fill="#287A55" font-weight="700">reverse check: 6 × 4 = 24</text>
   </g>

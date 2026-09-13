@@ -568,8 +568,9 @@ test("CH09 has exact accessible vector art for all ten fraction-comparison metho
   const retrieval = await fs.readFile(path.join(vectorDir, "ch09_m08_retrieve-then-verify.svg"), "utf8");
   assert(retrieval.includes("RETRIEVE") && retrieval.includes("VERIFY") && retrieval.includes("5/8 &gt; 3/5"));
   const twentieths = await fs.readFile(path.join(vectorDir, "ch09_m09_twentieths-half-unit.svg"), "utf8");
-  assert.equal((twentieths.match(/<rect x="\d+" y="245" width="70" height="95"/g) || []).length, 13);
-  assert.match(twentieths, /x="935" y="245" width="35" height="95"/);
+  const twentiethCells = (twentieths.match(/<g class="thirteen-twentieth-cells"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((twentiethCells.match(/<rect x="\d+" y="180" width="70" height="95"/g) || []).length, 13);
+  assert.match(twentieths, /x="965" y="180" width="35" height="95"/);
   assert.match(twentieths, /MAGNIFIED THIRTEENTH CELL/);
   assert(twentieths.includes("12 1/2 twentieths = 5/8"));
   const proof = await fs.readFile(path.join(vectorDir, "ch09_m10_estimate-then-prove.svg"), "utf8");
@@ -621,7 +622,7 @@ test("CH10 has exact accessible vector art for all ten division-context methods"
   assert(m08.includes("25 − 2 = 23") && m08.includes("23 = 5 × 4 + 3"));
   const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
   assert.equal((m09.match(/<use href="#b"/g) || []).length, 5);
-  assert(m09.includes("separate remainder plate · 3") && m09.includes("3 &lt; 5"));
+  assert(m09.includes("3 candies remain") && m09.includes("3 &lt; 5"));
   const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
   assert.equal((m10.match(/<use href="#share"/g) || []).length, 6);
   assert.equal((m10.match(/<use href="#fraction-share"/g) || []).length, 5);
@@ -736,14 +737,16 @@ test("CH12 has exact accessible vector art for all eleven three-addend methods",
   const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
   assert(m07.includes("378 + 247 = 625") && m07.includes("625 + 596"));
   const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
-  assert(m08.includes("400 + 600 + 200") && m08.includes("≈ 1,200") && m08.includes("gap 21"));
-  assert.match(m08, /M890 535v70M900 535v70/);
+  assert(m08.includes("400 + 600 + 200") && m08.includes("≈ 1,200") && m08.includes("difference = 21"));
+  const roundingArrows = (m08.match(/<g stroke="#7652A8"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((roundingArrows.match(/<path\b/g) || []).length, 3);
   const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
   for (const value of ["10 hundreds", "20 tens", "21 ones", "1 thousand", "2 hundreds", "2 tens", "1 one"]) assert(m09.includes(value));
   const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
   for (const state of ["10 hundreds", "20 tens", "21 ones", "22 tens", "12 hundreds", "1 thousand", "2 hundreds", "2 tens", "1 one"]) assert(m10.includes(state));
   for (const trade of ["20 ones → 2 tens", "20 tens → 2 hundreds", "10 hundreds → 1 thousand"]) assert(m10.includes(trade));
-  assert.equal((m10.match(/marker-end="url\(#a\)"/g) || []).length, 3);
+  const tradeArrows = (m10.match(/<g stroke="#7652A8"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((tradeArrows.match(/<path\b/g) || []).length, 3);
   assert.match(m10, /markerUnits="userSpaceOnUse"/);
   const m11 = await fs.readFile(path.join(vectorDir, assets[10]), "utf8");
   assert(!/<use\b/i.test(m11));
@@ -802,9 +805,9 @@ test("CH13 has exact accessible vector art for all ten unlike-denominator method
   assert(m09.includes("1.291666…") && m09.includes("repeating / approximate display"));
   assert(m09.includes("2/3 = 16/24") && m09.includes("5/8 = 15/24"));
   const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
-  assert.equal((m10.match(/<rect\b/g) || []).length, 1);
+  assert.equal((m10.match(/<rect\b/g) || []).length, 4);
   assert.equal((m10.match(/marker-end="url\(#a\)"/g) || []).length, 2);
-  assert(m10.includes("Same common-unit mathematics; reported format may differ or be absent."));
+  assert(m10.includes("EXTERNAL EXPLANATORY RECORD") && m10.includes("ADD EQUAL-SIZED UNITS"));
 });
 
 test("CH14 has exact accessible vector art for all ten three-fraction methods", async () => {
@@ -853,9 +856,9 @@ test("CH14 has exact accessible vector art for all ten three-fraction methods", 
   for (const phrase of ["3/4 → 9 twelfths", "2/3 → 8 twelfths", "5/12 → 5 twelfths", "9 + 8 + 5 = 22 twelfths"]) assert(m09.includes(phrase));
   assert(m09.includes("constructed account") && m09.includes("not required for correct reasoning"));
   const m10 = await fs.readFile(path.join(vectorDir, assets[9]), "utf8");
-  assert.equal((m10.match(/<rect\b/g) || []).length, 1);
+  assert.equal((m10.match(/<rect\b/g) || []).length, 4);
   assert.equal((m10.match(/marker-end="url\(#a\)"/g) || []).length, 2);
-  assert(m10.includes("Same common-unit mathematics; reported format may differ or be absent."));
+  assert(m10.includes("EXTERNAL RELATION MAP") && m10.includes("ADD, SIMPLIFY"));
 });
 
 test("research CSV parser handles quoted commas and validates records", () => {

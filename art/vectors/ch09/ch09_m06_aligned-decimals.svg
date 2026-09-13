@@ -1,8 +1,16 @@
-<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
-  <title id="title">Aligned decimals compare zero point six hundred and zero point six two five</title>
-  <desc id="desc">Three fifths converts to 0.600 and five eighths to 0.625. Decimal points and place-value columns align, and a bracket identifies the exact difference of twenty-five thousandths on one shared whole.</desc>
-  <rect width="1200" height="800" fill="#F8F2E7"/><text x="100" y="105" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#18324A">Align place values</text>
-  <g font-family="Arial, sans-serif" fill="#18324A"><text x="150" y="265" font-size="28">3/5 = 3 ÷ 5</text><text x="150" y="445" font-size="28">5/8 = 5 ÷ 8</text><text x="470" y="265" font-size="72" font-weight="700">0.600</text><text x="470" y="445" font-size="72" font-weight="700">0.625</text></g>
-  <path d="M615 165V500M700 165V500M785 165V500M870 165V500" stroke="#A7A095" stroke-width="2" stroke-dasharray="8 8"/><g font-family="Arial, sans-serif" font-size="26" fill="#5A6570" text-anchor="middle"><text x="655" y="540">tenths</text><text x="742" y="570">hundredths</text><text x="827" y="600">thousandths</text></g>
-  <rect x="695" y="377" width="176" height="82" rx="10" fill="none" stroke="#C66A12" stroke-width="6"/><text x="600" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#7A2525">0.600 &lt; 0.625</text><text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#5A6570">0.600 = 600 thousandths · 0.625 = 625 thousandths</text>
-<path d="M470 705v24h260v-24" fill="none" stroke="#D97706" stroke-width="4"/><text x="600" y="765" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#7A2525">difference: 25 thousandths on the same whole</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
+  <title id="title">Align decimal place values to compare three fifths and five eighths</title>
+  <desc id="desc">Two spacious rows align 0.600 and 0.625 by place value. The second row highlights the extra twenty-five thousandths, and a final result card states that five eighths is larger.</desc>
+  <rect width="1200" height="800" fill="#F8F2E7"/>
+  <text x="70" y="78" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#18324A">Align the decimal points—and every place to the right</text>
+  <rect x="70" y="135" width="1060" height="470" rx="30" fill="#FFFDF8" stroke="#C9C2B5" stroke-width="4"/>
+  <text x="760" y="195" text-anchor="middle" font-family="Arial,sans-serif" fill="#5A6570" font-size="22" font-weight="700">same place-value columns</text>
+  <g stroke="#B8B1A5" stroke-width="2" stroke-dasharray="7 8"><path d="M710 210V555"/><path d="M830 210V555"/><path d="M960 210V555"/></g>
+  <g font-family="Arial,sans-serif" fill="#18324A">
+    <text x="120" y="320" font-size="30" font-weight="700">3/5 = 3 ÷ 5</text><text x="530" y="330" font-family="Consolas,monospace" font-size="76" font-weight="700">0.600</text>
+    <text x="120" y="500" font-size="30" font-weight="700">5/8 = 5 ÷ 8</text><rect x="515" y="408" width="485" height="118" rx="18" fill="#F6E7C8" stroke="#D97706" stroke-width="5"/><text x="530" y="505" font-family="Consolas,monospace" font-size="76" font-weight="700">0.625</text>
+    <text x="1015" y="470" font-size="22" fill="#8A450D">25 extra</text><text x="1015" y="500" font-size="22" fill="#8A450D">thousandths</text>
+  </g>
+  <rect x="240" y="650" width="720" height="105" rx="26" fill="#DDEDE4" stroke="#287A55" stroke-width="5"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle"><text x="600" y="695" font-size="30" fill="#18324A">600 thousandths &lt; 625 thousandths</text><text x="600" y="735" font-size="36" font-weight="700" fill="#287A55">3/5 &lt; 5/8</text></g>
+</svg>

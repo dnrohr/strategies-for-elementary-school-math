@@ -13,6 +13,8 @@ Use the book palette: blue for the first quantity, orange for the second, green 
 9. **Decimal verification:** an approximate repeating decimal display beside a distinct exact-equivalence card; never imply the decimal is the proof.
 10. **Abstract common unit:** sparse equation-only transformation with no concrete tokens or claim of a fixed cognitive identity.
 
+For the M10 redraw, use only three small equation nodes on an open field: `2/3 = 16/24`, `5/8 = 15/24`, and `16/24 + 15/24 = 31/24`. Add the external caption `An explanatory record, not a picture of an inner scene.` Do not show a brain, head silhouette, glow, or sensory icons.
+
 Every prompt must specify exact counts, equal partitions, accessible contrast, and a composite/vector overlay pass.
 
 ## Production provenance

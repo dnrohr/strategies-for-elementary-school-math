@@ -20,6 +20,7 @@ Before reading on, look at a rectangle 7 units tall and 9 units wide. What arriv
 **Phenomenology:** abstract + verbal
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “The answer is already there for me. Seven nines is sixty-three. I do not see nine rows or say every step; I recognize the multiplication fact and then check that the question asks for area.”
 
 ### Steps
@@ -44,6 +45,7 @@ Constructed account. Verified R01-002 supports overlapping multiplication strate
 **Phenomenology:** visual-concrete
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I start in the top-left square and count every little square once. I keep going across a row, then continue on the next row. When the last square gets number 63, I know the area.”
 
 ### Steps
@@ -68,6 +70,7 @@ Constructed account. Full-text-verified R01-002 supplies only broad multiplicati
 **Phenomenology:** visual-spatial + verbal
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I see seven horizontal rows. Each row has nine squares, so I say nine seven times: 9, 18, 27, 36, 45, 54, 63. The rows matter more than individual squares. I can mark one endpoint per row on a repeated-addition strip to keep the structure visible.”
 
 ### Steps
@@ -92,6 +95,7 @@ Constructed account. R01-002 documents repeated addition among measured multipli
 **Phenomenology:** visual-spatial
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I rotate the rectangle in my mind. Now there are nine rows, each with seven squares. Nine groups of seven are easier for me to organize: 7, 14, 21, 28, 35, 42, 49, 56, 63.”
 
 ### Steps
@@ -116,6 +120,7 @@ Constructed account. Verified R01-007 and R01-008 support only a general concept
 **Phenomenology:** visual-symbolic + spatial
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “Nine is almost ten. I picture seven rows of ten, which makes 70. Then I remove the extra square at the end of each row—seven squares. Seventy minus seven leaves 63. Each row loses one.”
 
 ### Steps
@@ -140,6 +145,7 @@ Constructed account. Verified R01-010 reports jump and compensation use in numbe
 **Phenomenology:** visual-geometric
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I cut the rectangle after five rows. The top piece is 5 × 9 = 45, and the bottom piece is 2 × 9 = 18. I put their areas together: 45 + 18 = 63.”
 
 ### Steps
@@ -164,6 +170,7 @@ Constructed account. Verified R01-002 and R01-013 support strategy repertoires a
 **Phenomenology:** visual-geometric + motor
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I draw a vertical line after five columns. Seven times five is 35, and seven times four is 28. I can almost feel two tiles, then slide their totals together: 35 + 28 = 63.”
 
 ### Steps
@@ -188,6 +195,7 @@ Constructed account. Verified R01-002 supports strategy variation; tactile “ti
 **Phenomenology:** visual-concrete + motor
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I imagine laying square tiles. I make one row of nine, then place seven rows. The finished patch is a rectangle. The area feels like the covered surface: 63 tiles. I check that the rows touch edge to edge, because gaps would change the covered surface and the count.”
 
 ### Steps
@@ -212,6 +220,7 @@ Constructed embodied account. Verified R02-F01 and R02-F02 support cautious asso
 **Phenomenology:** spatial + motor
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “My attention moves across the rows like a scanner. I jump nine squares at a time: 9, 18, 27, 36, 45, 54, 63. The movement gives me a route through the rectangle.”
 
 ### Steps
@@ -236,6 +245,7 @@ Constructed account. Verified R01-002 describes repeated addition in a changing 
 **Phenomenology:** geometric + abstract
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I do not see 63 little squares. I see a large rectangle made from a 7 × 5 rectangle and a 7 × 4 rectangle. Their areas are 35 and 28. The large region is their union, so 35 plus 28 is 63.”
 
 ### Steps
@@ -260,6 +270,7 @@ Constructed account. Verified R01-007 and R01-008 support interaction between co
 **Phenomenology:** visual-symbolic + inner speech
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I write 7 × 9 on an imagined page and calculate 63. I may not picture a rectangle at all—the page of numerals is my workspace. The word ‘area’ tells me to attach square units.”
 
 ### Steps
@@ -284,6 +295,7 @@ Constructed account. Verified R02-I04 and R02-I05 support format-sensitive worki
 **Phenomenology:** abstract + geometric
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “Sixty-three comes to mind from 7 × 9. Then I check the picture: seven rows of nine should be a little less than seven tens, so 63 makes sense. The shape is a reason to trust the answer, not the route that produced it.”
 
 ### Steps

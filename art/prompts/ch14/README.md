@@ -13,6 +13,8 @@ Use the book palette: blue, orange, and green for quantities/result, purple for 
 9. **Verbal unit story:** speech-like cards repeat the unit name while converting 3/4 and 2/3 and retaining 5/12; label the voice as constructed.
 10. **Abstract common unit:** sparse equation-only transformation with no concrete tokens or claim of a stable cognitive identity.
 
+For the M09 redraw, place the phrases `9 twelfths`, `8 twelfths`, and `5 twelfths` in a subtle thought ribbon above matching fraction cards, with the caption `one possible constructed inner script`. For M10, replace sensory imagery with a sparse relation map ending at `22/12 → 11/6` and caption it `record of the relations`. Neither image should contain a portrait, head silhouette, glow, or permanent thinker-type label.
+
 Every prompt must specify equal wholes, exact cell counts, accessible patterns, and a composite/vector overlay pass.
 
 ## Production provenance

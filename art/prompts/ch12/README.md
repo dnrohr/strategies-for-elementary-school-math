@@ -23,4 +23,9 @@ Format: eleven self-contained 1200×800 SVG assets, all vector-only. Every route
 
 All text is selectable. No raster image, rasterized text, stock asset, or external content is embedded. Every asset has a method-specific `<title>` and useful `<desc>`, `role="img"`, and `aria-labelledby="title desc"`. Color is supplemented by labels, outlines, arrows, dashes, position, or panel structure.
 
+## Clarification redraws
+
+- **M08 — benchmark estimate:** show dashed rounded cards `378 ≈ 400`, `596 ≈ 600`, and `247 ≈ 200` leading to `about 1,200`; beneath them, show solid exact columns ending at 1,221 and a `+21` difference bracket. Do not construct a frame from hundreds of tiny marks.
+- **M10 — place-value bead map:** use four labeled columns—ones, tens, hundreds, thousands—and explicitly call this an external bead map. Frame one shows 21 ones, 20 tens, and 10 hundreds. Circle every group of ten before replacing it with one bead in the next column. The final frame has exactly 1, 2, 2, and 1 beads from thousands through ones. Do not imply trained mental-abacus use.
+
 Provenance: authored as repository-native SVG from the CH12 manuscript briefs and BOOK_SPEC visual system. The existing chapter anchor remains unchanged. Per-method exactness and QA are recorded in `art/vectors/ch12/three-addends-regrouping.md`.

@@ -22,6 +22,11 @@ The existing `three-fourths-of-twenty.svg` remains the opening-spread anchor. Th
 7. **Twenty dollars:** four exact vector tokens labeled `$5`; select three using checks, hatch, and double outline; show `$15` and total `$20`.
 8. **Three groups / rhythm:** four five-dot group panels preserve the whole; put one numbered beat marker above each of the first three groups and align verbal totals `five`, `ten`, `fifteen`; do not imply twenty individual taps.
 9. **Proportion:** two aligned four-column bars; upper scale has one part per column and lower scale has five units per column; first three columns patterned; add `x/20 = 3/4`, `4x = 60`, `x = 15`.
+
+## Clarification redraws
+
+- **M04 — multiply, then divide:** first show three 20-unit bars, each split into four exact 5-unit sections. Reconfigure the same twelve sections into four groups of three sections, each totaling 15. Match section outlines across stages so no quantity appears or disappears. Do not use a literal stretched numerator.
+- **M09 — advanced ratio equation:** label the panel `advanced route`. Keep `x/20 = 3/4 → x = 15` separate from a smaller exact bar check containing four regions of five with three selected. The picture should identify a learned symbolic procedure, not imply a reported inner image.
 10. **Retrieval plus verification:** use restrained negative space for `3/4 of 20 → 15`, avoiding mystical/neural imagery; follow with four 5-unit tiles, three selected, to verify 15 against the whole 20.
 
 ## Deliberate exceptions

@@ -20,6 +20,7 @@ Three fractions can be coordinated in more than one order. Twelve is already a u
 **Phenomenology:** visual-symbolic + verbal
 **Math:** `3/4 = 9/12`, `2/3 = 8/12`; `9/12 + 8/12 + 5/12 = 22/12 = 11/6 = 1 5/6`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Twelve is a denominator that both 4 and 3 fit into. Three fourths becomes nine twelfths, two thirds becomes eight, and five twelfths stays five. I add 9 + 8 + 5 to get 22 equal pieces. Twelve make a whole, so the answer is one whole and ten twelfths, or one and five sixths.”
 ### Steps
 1. Rewrite the first two addends over 12. 2. Add `9 + 8 + 5 = 22`. 3. Reduce `22/12` to `11/6`.
@@ -37,6 +38,7 @@ Constructed account; verified R03-014 supports common-unit representation.
 **Phenomenology:** relational + visual
 **Math:** `3/4 + 5/12 = 9/12 + 5/12 = 14/12 = 7/6`; `7/6 + 2/3 = 7/6 + 4/6 = 11/6`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Three fourths and five twelfths naturally speak in twelfths. They make fourteen twelfths, or seven sixths. Then I rename two thirds as four sixths and add. I keep the intermediate fraction visible so the regrouping is part of the reasoning.”
 ### Steps
 1. Combine `3/4 + 5/12` as 14/12. 2. Simplify to 7/6. 3. Add 4/6 for 2/3.
@@ -54,6 +56,7 @@ Constructed route; strategic order is not claimed universally easier. R03-013 is
 **Phenomenology:** verbal + symbolic
 **Math:** `3/4 + 2/3 = 9/12 + 8/12 = 17/12`; `17/12 + 5/12 = 22/12 = 11/6`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I start with the two unlike denominators. Their shared unit is a twelfth, so the pair makes seventeen twelfths. The final five twelfths is already ready. I add five to seventeen and simplify at the end. The intermediate 17/12 keeps the first pairing visible, and 17/12 + 5/12 gives 22/12.”
 ### Steps
 1. Convert first two addends to twelfths. 2. Add to 17/12. 3. Add 5/12 and reduce.
@@ -71,6 +74,7 @@ Constructed account; verified R03-006 and R03-014 support only bounded discussio
 **Phenomenology:** visual-concrete + spatial
 **Math:** 9 twelfths + 8 twelfths + 5 twelfths = `22/12`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I draw equal-length bars. One has three of four parts shaded, one two of three, and one five of twelve. I redraw every bar with twelve equal marks. The shaded counts are 9, 8, and 5; the total extends past one whole.”
 ### Steps
 1. Draw equal wholes. 2. Subdivide into twelfths. 3. Accumulate 9 + 8 + 5.
@@ -88,6 +92,7 @@ Constructed model; verified R03-006 and R03-014 support only bounded coordinated
 **Phenomenology:** spatial + motor-imagined
 **Math:** `0 + 9/12 + 8/12 + 5/12 = 22/12 = 1 5/6`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “On a line divided into twelfths, I move nine steps, then eight, then five. Twelve steps reach one whole. Ten more twelfths remain, which is five sixths. The endpoint is 22/12. Every interval has equal length, so the three jumps preserve the common unit from start to finish.”
 ### Steps
 1. Partition a line into twelfths. 2. Move 9, 8, and 5 unit steps. 3. Read 22/12 as 11/6.
@@ -105,6 +110,7 @@ R03-005 supports bounded number-line intervention claims, not a universal mental
 **Phenomenology:** abstract + verbal
 **Math:** exact `22/12 = 11/6 ≈ 1.833`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Three fourths is near one, two thirds is near two thirds, and five twelfths is under one half. I expect a result between one and two, closer to two. Twenty-two twelfths, about 1.83, fits. The estimate catches a result that is too small or too large.”
 ### Steps
 1. Estimate the range. 2. Compute in twelfths. 3. Compare the exact result with the estimate.
@@ -122,6 +128,7 @@ R03-004 supports an association between magnitude knowledge and fraction arithme
 **Phenomenology:** visual-symbolic + motor
 **Math:** `(9 + 8 + 5)/12 = 22/12 = 11/6` after rewriting 3/4 and 2/3.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I write the fractions in a column. I change three fourths to nine twelfths and two thirds to eight twelfths. Now every denominator says 12, so I add only the numerator column. The denominator names the unit and stays put.”
 ### Steps
 1. Rewrite all addends over 12. 2. Add numerators. 3. Reduce 22/12 by 2.
@@ -139,6 +146,7 @@ Procedural fluency is not treated as conceptual proof; see verified R03-011 and 
 **Phenomenology:** concrete + relational
 **Math:** `22/12 = 12/12 + 10/12 = 1 + 5/6 = 11/6`.
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Twenty-two twelfths is not mysterious. I take twelve pieces as one whole; ten pieces remain. Ten twelfths reduces to five sixths. The mixed number is the same amount written to show the whole and remainder. I recombine 12/12 and 10/12 to verify that nothing changed during the rewrite.”
 ### Steps
 1. Separate 12 of 22 units. 2. Name them one whole. 3. Simplify the 10/12 remainder.
@@ -156,11 +164,12 @@ Constructed interpretation; do not infer a learner's preferred fraction subconst
 **Phenomenology:** verbal / auditory
 **Math:** three fourths = nine twelfths; two thirds = eight twelfths; total 22 twelfths.
 ### First-person account
-> “I say the unit aloud: ‘fourths are not the unit yet; change them to twelfths. Three fourths is nine twelfths. Two thirds is eight. Five twelfths stays five.’ The repeated word prevents me from adding 4 + 3 + 12.”
+**Constructed solver voice — not a participant quotation**
+> “One possible inner script is: ‘Rename every amount in twelfths. Three fourths is nine twelfths; two thirds is eight twelfths; five twelfths stays five twelfths.’ Repeating the unit word keeps the pieces comparable before I add `9 + 8 + 5`.”
 ### Steps
 1. State each denominator. 2. Translate all units to twelfths. 3. Add 9 + 8 + 5.
 ### Illustration brief
-Pair speech-wave motifs with equation cards; add all words and numerals as layout/vector overlays.
+Composite layout with a subtle, non-cartoon thought ribbon containing three short unit phrases added as vector text: `9 twelfths`, `8 twelfths`, `5 twelfths`. Align each phrase above a matching fraction card, then route the three cards to `22 twelfths`. Use a small caption, `one possible constructed inner script`; do not attach the words to a portrait or imply that inner speech is required.
 ### Mathematical note
 The denominator names the unit; only same units add directly.
 ### Research note
@@ -173,11 +182,12 @@ Constructed account; inner speech is not presented as required for correct addit
 **Phenomenology:** abstract / non-sensory
 **Math:** `3/4 + 2/3 + 5/12 = 9/12 + 8/12 + 5/12 = 22/12 = 11/6`.
 ### First-person account
-> “I do not see bars or hear words. I notice that twelve is shared, replace the first two fractions, add the numerators, and reduce. A diagram could be drawn afterward, but it is an explanation rather than what appeared while I solved.”
+**Constructed solver voice — not a participant quotation**
+> “I do not notice bars, words, or imagined movement. I recognize twelve as the common unit, rename the first two fractions, add the three numerators, and reduce. A diagram can record the relationships afterward without pretending to show an inner picture.”
 ### Steps
 1. Recognize 12 as common unit. 2. Transform 3/4 and 2/3. 3. Add and reduce.
 ### Illustration brief
-Use a restrained equation sequence on an open field with an optional diagram inset; do not imply a stable cognitive identity.
+Minimal vector relation map on a large open field. Show `3/4 → 9/12` and `2/3 → 8/12` as two thin branches joining unchanged `5/12`; merge them into `22/12 → 11/6`. Keep the diagram external and explanatory with the caption `record of the relations`. Use no head silhouette, glow, mystical light, sensory icons, or language suggesting a stable cognitive type.
 ### Mathematical note
 The computation matches Method 01; only reported format differs.
 ### Research note

@@ -21,6 +21,7 @@ Try the problem first. Does “of” feel like sharing, scaling, or selecting? T
 **Math:** `20 ÷ 4 × 3 = 5 × 3 = 15`
 
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might say: “I deal out twenty counters into four equal trays. Five land in each. Three trays are the part I want, so I gather fifteen. I leave the fourth tray visible as the unselected quarter, which lets me check that all twenty counters were shared exactly once.”
 
 ### Steps
@@ -40,6 +41,7 @@ Constructed mathematics. Verified R03-014 supports a bounded common-unit framewo
 **Phenomenology:** verbal + symbolic
 **Math:** `1/4 of 20 = 5; 3/4 of 20 = 3 × 5 = 15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I hear three copies of one fourth. I solve the smaller question—one fourth of twenty is five—then three fives make fifteen. I can reverse-check the unit by multiplying five by four: that rebuilds the original twenty before I select three copies.”
 ### Steps
 1. Rewrite `3/4` as `3 × 1/4`. 2. Compute `20 ÷ 4 = 5`. 3. Compute `3 × 5 = 15`.
@@ -57,6 +59,7 @@ Consistent with the unit-fraction framework in verified R03-014; phenomenology i
 **Phenomenology:** visual-symbolic
 **Math:** `(20 ÷ 4) × 3 = 15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I see a two-step recipe: divide by the bottom, multiply by the top. The mental symbols change from 20 to 5 to 15. The first operation finds the size of one equal share; the second counts three of those same-sized shares.”
 ### Steps
 1. Divide by 4. 2. Get 5. 3. Multiply by 3 to get 15.
@@ -74,11 +77,12 @@ This creates the equal share before selecting three shares.
 **Phenomenology:** abstract + verbal
 **Math:** `(20 × 3) ÷ 4 = 60 ÷ 4 = 15`
 ### First-person account
-> “I make three copies of twenty first—sixty—then spread that total across four equal shares. It feels like stretching the numerator. I check that dividing sixty by four gives an integer fifteen and that this matches the divide-first route exactly once.”
+**Constructed solver voice — not a participant quotation**
+> “I make three copies of twenty, giving sixty. Then I split that sixty into four equal shares. Each share is fifteen, so three fourths of twenty is fifteen. I can compare this with finding one fourth first; both operation orders give the same result.”
 ### Steps
 1. `20 × 3 = 60`. 2. `60 ÷ 4 = 15`. 3. Check `15 × 4 = 60`.
 ### Illustration brief
-Three equal 20-unit bars combine, then split into four equal 15-unit bars.
+Two-stage vector transformation. Stage one shows three separate 20-unit bars, each subdivided into four equal 5-unit sections, combining to a 60-unit total. Stage two rearranges the same twelve 5-unit sections into four congruent groups of three sections, so each group totals 15. Preserve every unit across the transition with matching outlines; avoid a literal “stretching numerator” animation, which could imply that only one part of a fraction changes.
 ### Mathematical note
 For this exact value, `(20 × 3)/4 = (20/4)×3`.
 ### Research note
@@ -91,6 +95,7 @@ Mathematical variant; no source establishes this as a typical choice.
 **Phenomenology:** geometric + visual
 **Math:** three of four equal regions represent 15
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Twenty is one long bar. I cut it into four equal regions and shade three. Each region is five, so the shaded length is fifteen. Equal region widths matter: if one section were wider, the picture would no longer represent fourths of the same whole.”
 ### Steps
 1. Draw a bar labeled 20. 2. Partition into four equal regions. 3. Shade three regions of 5. 4. Add to 15.
@@ -108,6 +113,7 @@ R03-005 supports a tested contrast between number-line and area training, not a 
 **Phenomenology:** visual-spatial
 **Math:** `4 × 5 = 20; 3 × 5 = 15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I lay out twenty dots as four rows of five. Three rows are three quarters. I can see fifteen without counting every dot. I still scan the row structure—three rows with five in each—to verify that the selected rectangle contains exactly fifteen.”
 ### Steps
 1. Arrange 20 as 4 equal rows. 2. Count 5 per row. 3. Select 3 rows. 4. Count 15 selected dots.
@@ -125,6 +131,7 @@ Multiple representations are a design choice. Verified R03-006 and R03-014 suppo
 **Phenomenology:** visual-concrete + verbal
 **Math:** `3/4 of $20 = $15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I imagine twenty dollars as four equal five-dollar shares. Taking three gives fifteen dollars. The context changes the objects, not the fraction. I keep the equal-share condition explicit, because four unequal piles of money would not provide a valid fourths model.”
 ### Steps
 1. Represent $20 as four $5 shares. 2. Select three. 3. Add to $15.
@@ -142,6 +149,7 @@ Illustrative context only; no claim that money is universally helpful.
 **Phenomenology:** rhythmic verbal + motor
 **Math:** `5 + 5 + 5 = 15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Once I know a quarter is five, I tap three times and say five, ten, fifteen. The taps mark groups, not twenty individual objects. I stop after the third beat and use a fourth imagined beat to confirm that four groups would return to twenty.”
 ### Steps
 1. Find `20 ÷ 4 = 5`. 2. Add three 5s. 3. Stop at 15.
@@ -154,20 +162,21 @@ R03-014 supports unit-fraction composition; no source supports fixed “rhythmic
 ### Tags
 `repeated-addition`, `motor`, `rhythm`
 
-## Method 09 — A proportion
+## Method 09 — An advanced ratio equation
 **Strategy class:** proportional reasoning
 **Phenomenology:** relational + symbolic
 **Math:** `x/20 = 3/4; 4x = 60; x = 15`
 ### First-person account
-> “I match an unknown part of twenty to three parts out of four. Cross-multiplying gives sixty, and four equal shares of sixty leave fifteen. I read the proportion as equal ratios, then substitute fifteen to check that fifteen out of twenty reduces to three fourths.”
+**Constructed solver voice — not a participant quotation**
+> “I write the relationship as `x/20 = 3/4`. This is a learned symbolic route: multiplying both sides by twenty gives `x = 15`. I check the equation by substituting fifteen, because fifteen twentieths simplifies to three fourths.”
 ### Steps
 1. Set `x/20 = 3/4`. 2. `4x = 3 × 20 = 60`. 3. `x = 15`.
 ### Illustration brief
-Aligned schematic bars for 4 parts and 20 units, with equality sign and clear note that drawing is not to scale.
+Symbolic vector panel explicitly labeled `advanced route`. On the left, show `x/20 = 3/4`; in the center, an equality-preserving arrow marked `×20 on both sides`; on the right, show `x = 15`. Beneath it, add a small exact bar check: a 20-unit bar partitioned into four equal 5-unit regions with three regions selected. Keep the symbolic derivation visually separate from the concrete check so the picture does not imply that cross-multiplication was a spontaneous visual experience.
 ### Mathematical note
 The equation preserves the ratio `3:4`.
 ### Research note
-Constructed advanced route; do not imply a universal developmental order.
+Constructed account of a learned, advanced symbolic route; do not imply spontaneous child use or a universal developmental order.
 ### Tags
 `proportion`, `relational`, `symbolic`
 
@@ -176,6 +185,7 @@ Constructed advanced route; do not imply a universal developmental order.
 **Phenomenology:** abstract + visual-symbolic
 **Math:** `3/4 × 20 = 15`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Fifteen appears, perhaps because I have seen quarters of twenty. I check it afterward: four fives make twenty and three fives make fifteen. The quick arrival and the later justification are separate parts of my report; retrieval does not make the equality uncheckable.”
 ### Steps
 1. Retrieve 15. 2. Reconstruct `20 ÷ 4 = 5`. 3. Verify `5 × 3 = 15`.

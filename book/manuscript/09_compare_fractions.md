@@ -20,6 +20,7 @@ Compare two fractions with the same whole. `3/5 = 0.6`; `5/8 = 0.625`, so `5/8` 
 **Phenomenology:** visual-concrete
 **Math:** `3/5 = 0.600` and `5/8 = 0.625`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > A solver might say: “I put both fractions on bars the same length. Three of five pieces covers a little less than five of eight pieces, so the eighths picture reaches farther. I align both bars at zero and keep their wholes equal, because different whole lengths would make the visual comparison invalid.”
 ### Steps
 1. Draw equal whole bars. 2. Partition one into fifths and shade 3. 3. Partition one into eighths and shade 5. 4. Compare lengths.
@@ -37,6 +38,7 @@ Area reasoning is constructed. No instructional-effect claim is attached to this
 **Phenomenology:** spatial
 **Math:** `3/5 = 0.6`; `5/8 = 0.625`; `5/8 > 3/5`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I treat each fraction as one point between zero and one. The point for five-eighths sits just to the right of three-fifths. I use the same number line for both points and check their decimal locations, 0.600 and 0.625, rather than judging two separate scales.”
 ### Steps
 1. Mark 0 and 1. 2. Locate 3/5 at 0.6. 3. Locate 5/8 at 0.625. 4. Read left-to-right order.
@@ -54,6 +56,7 @@ R03-005 and R03-007 are verified intervention evidence for tested tasks, not one
 **Phenomenology:** verbal + relational
 **Math:** `3/5 − 1/2 = 1/10`; `5/8 − 1/2 = 1/8`; `1/8 > 1/10`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Both are above one half. Three-fifths is one tenth above it, while five-eighths is one eighth above it. An eighth is the bigger extra piece. Since both extras begin at the same benchmark, the fraction with the larger positive gap must lie farther to the right.”
 ### Steps
 1. Find `3/5 − 1/2 = 1/10`. 2. Find `5/8 − 1/2 = 1/8`. 3. Compare the two excesses.
@@ -71,6 +74,7 @@ Comparing numerators or denominators as isolated whole numbers can give a wrong 
 **Phenomenology:** symbolic
 **Math:** `3/5 = 24/40`; `5/8 = 25/40`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I ask for a common unit. Forty works: three-fifths is twenty-four fortieths, and five-eighths is twenty-five. Twenty-five wins. The denominators now name identical-sized pieces, so comparing the numerators is legitimate and shows a difference of exactly one fortieth unit overall.”
 ### Steps
 1. Choose 40, common to 5 and 8. 2. `3/5 = 24/40`. 3. `5/8 = 25/40`. 4. Compare.
@@ -88,6 +92,7 @@ R03-014 supports unit-fraction composition in tested addition contexts, not this
 **Phenomenology:** visual-symbolic
 **Math:** `3×8 = 24`; `5×5 = 25`; `3/5 < 5/8`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “I draw an X across the fractions. Three times eight is twenty-four; five times five is twenty-five. The cross-products compare them without changing either value. Both denominators are positive, so multiplying by their common product preserves the ordering; twenty-five is greater by one.”
 ### Steps
 1. Multiply 3 by 8. 2. Multiply 5 by 5. 3. Compare 24 and 25. 4. State the inequality.
@@ -105,11 +110,12 @@ Valid procedure does not alone demonstrate conceptual understanding; R03-012 is 
 **Phenomenology:** verbal + symbolic
 **Math:** `3 ÷ 5 = 0.6`; `5 ÷ 8 = 0.625`
 ### First-person account
-> “I hear each fraction as a division problem. Six tenths is smaller than six hundred twenty-five thousandths, so five-eighths is larger. I align the decimal places as 0.600 and 0.625 before comparing, which keeps the tenths, hundredths, and thousandths positions from drifting.”
+**Constructed solver voice — not a participant quotation**
+> “I treat each fraction as division. Three fifths is 0.600 and five eighths is 0.625. Six hundred twenty-five thousandths is twenty-five thousandths more than six hundred thousandths, so five eighths is larger.”
 ### Steps
 1. Divide 3 by 5. 2. Divide 5 by 8. 3. Compare 0.600 and 0.625.
 ### Illustration brief
-Two aligned decimal scales showing trailing zeros; equal whole reference.
+Vector place-value comparison with `0.600` directly above `0.625`, decimal points vertically aligned. Use three labeled columns—tenths, hundredths, thousandths—and ghosted trailing zeros to show that 0.6 and 0.600 are equal. A bracket isolates `600` versus `625` thousandths, with a 25-thousandths difference marker. Include one shared 0–1 scale beneath both values; do not compare them on separate scales.
 ### Mathematical note
 Decimal notation gives both fractions a common base-ten representation.
 ### Research note
@@ -120,13 +126,14 @@ Exact conversion here; no developmental frequency claim is made.
 ## Method 07 — Compare missing pieces to one
 **Strategy class:** complement reasoning
 **Phenomenology:** spatial + relational
-**Math:** `1−3/5=2/5=0.4`; `1−5/8=3/8=0.375`
+**Math:** `1−3/5=2/5=16/40`; `1−5/8=3/8=15/40`
 ### First-person account
-> “I look at what each fraction still needs to reach one. Five-eighths leaves the smaller gap, so it must be the larger fraction. The gaps are 0.400 and 0.375 on the same whole; subtracting less from one leaves the greater starting amount.”
+**Constructed solver voice — not a participant quotation**
+> “I compare what each fraction still needs to reach one. Three fifths is missing two fifths, or sixteen fortieths. Five eighths is missing three eighths, or fifteen fortieths. The smaller missing piece belongs to the larger starting fraction, so five eighths is larger.”
 ### Steps
-1. Compute `1 − 3/5 = 0.4`. 2. Compute `1 − 5/8 = 0.375`. 3. Choose the smaller gap.
+1. Compute `1 − 3/5 = 2/5`. 2. Compute `1 − 5/8 = 3/8`. 3. Rename the gaps as `16/40` and `15/40`. 4. Choose the fraction with the smaller gap.
 ### Illustration brief
-Equal bars ending at 1, with gaps labeled 0.4 and 0.375 using outlines and hatching.
+Two equal-length bars share the same zero and one endpoints. Fill `3/5` on the first and `5/8` on the second; leave the complements unfilled but hatched. Beneath the bars, refine only the missing regions into fortieths and label them `16/40 missing` and `15/40 missing`. A short comparison arrow points from the smaller missing region to the larger original fraction. Equal-whole alignment, hatching, and labels must carry the comparison without relying on color.
 ### Mathematical note
 For fractions below one, smaller complement means larger value.
 ### Research note
@@ -134,33 +141,35 @@ Complement route is mathematical inference, not a claim about typical strategy.
 ### Tags
 `complement`, `benchmark-one`, `spatial`
 
-## Method 08 — Retrieve and check
+## Method 08 — Recognize, then verify
 **Strategy class:** direct retrieval + verification
 **Phenomenology:** abstract
 **Math:** `3/5 = 0.6`; `5/8 = 0.625`
 ### First-person account
-> “The ordering arrives quietly: 0.6, then 0.625. I explain it afterward by dividing each numerator by its denominator. I also rename them as 24/40 and 25/40, so the remembered ordering has an exact fraction check rather than relying only on decimal recall.”
+**Constructed solver voice — not a participant quotation**
+> “Five eighths seems larger before I have worked through a comparison. I treat that as a prediction, then verify it: three fifths is twenty-four fortieths and five eighths is twenty-five fortieths. The check, not the quick impression, establishes the order.”
 ### Steps
-1. Retrieve decimal values. 2. Order them. 3. Verify by division or a bar.
+1. Notice an initial prediction. 2. Rename both fractions in fortieths. 3. Compare 24 and 25. 4. Mark the prediction as confirmed.
 ### Illustration brief
-Minimal numeral sequence with verification inset; do not portray retrieval as fixed ability.
+Split vector composition with two explicitly labeled zones. The small upper zone says `prediction` and shows only a tentative `5/8 ? 3/5` with a dotted question arrow. The larger lower zone says `exact check` and shows equal 40-cell bars filled to 24 and 25 cells. End with a solid comparison sign only in the check zone. Avoid glowing symbols, brains, portraits, or any cue that treats quick recognition as a fixed ability.
 ### Mathematical note
 Retrieval supplies a result; checking exposes an auditable route.
 ### Research note
-Related magnitude evidence in R03-004 and R03-007 does not license this phenomenological claim.
+The quick impression is a constructed possibility. R03-004 and R03-007 support fraction-magnitude reasoning but do not document this exact phenomenological report.
 ### Tags
 `retrieval`, `abstract`, `verification`
 
-## Method 09 — Use twentieths
+## Method 09 — Split each twentieth in half
 **Strategy class:** common-unit concrete model
 **Phenomenology:** visual-concrete
-**Math:** `3/5 = 12/20`; `5/8 = 12.5/20`
+**Math:** `3/5 = 12/20 = 24/40`; `5/8 = 12.5/20 = 25/40`
 ### First-person account
-> “I use twenty equal units. Three-fifths fills twelve; five-eighths fills twelve and a half. The half-piece makes the difference visible. I mark the endpoint halfway through the thirteenth unit, not at thirteen, because 12.5/20 is the exact equivalent of five-eighths.”
+**Constructed solver voice — not a participant quotation**
+> “With twentieths, three fifths fills twelve cells and five eighths fills twelve and a half. I split every twentieth into two equal half-cells, making fortieths. Now the endpoints are twenty-four and twenty-five fortieths, so the one-half-cell difference is exact and easy to count.”
 ### Steps
-1. Repartition a whole into 20 units. 2. Show `3/5 = 12/20`. 3. Show `5/8 = 12.5/20`. 4. Compare.
+1. Partition both equal wholes into 20 cells. 2. Locate `12/20` and `12.5/20`. 3. Bisect every cell to make 40 equal half-cells. 4. Compare `24/40` with `25/40`.
 ### Illustration brief
-Equal bars with 20ths; 5/8 ends halfway through the thirteenth unit, not at 13 full units.
+Two-phase exact vector diagram. The top phase shows two equal 20-cell bars: one ending after 12 cells and one halfway through cell 13; `5/8 ends halfway through the thirteenth unit, not at 13 full units`. The lower phase repeats the same bars after every twentieth has been bisected with a lighter secondary rule, yielding 40 equal cells and integer endpoints at 24 and 25. Connect corresponding endpoints with vertical guides so readers see refinement rather than a change of value. The half-cell must be exactly half the width of a twentieth.
 ### Mathematical note
 A common unit may produce fractional counts; exact subdivision matters.
 ### Research note
@@ -173,6 +182,7 @@ Constructed diagram; no curriculum-effect claim is made.
 **Phenomenology:** mixed spatial + verbal
 **Math:** `24/40 < 25/40`
 ### First-person account
+**Constructed solver voice — not a participant quotation**
 > “Both are just above one-half, so I expect a close comparison. Then I rename them in fortieths and find the one-unit difference. The estimate tells me the result should be close; the exact 24-versus-25 comparison tells me which fraction is larger.”
 ### Steps
 1. Estimate from 1/2. 2. Choose denominator 40. 3. Compare 24/40 and 25/40. 4. Confirm.

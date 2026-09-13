@@ -19,3 +19,8 @@ The assets use labels, outlines, dashed boundaries, hatching, grouping, and posi
 Provenance: authored as repository-native SVG for this task from the CH10 manuscript briefs and BOOK_SPEC visual system. Per-method mathematical and accessibility checks are recorded in `art/vectors/ch10/METHOD_ART_LEDGER.md`.
 
 Final coordinator QA inspected every desktop figure, representative 390 px placements, Method 10 in grayscale, and the integrated chapter at 390 px. Exact whole counts, separate remainder regions, four-jump routes, 23-cell bar, 15 fifth-piece redistribution, and the hard scenario divider all passed. Evidence is in `artifacts/ui/art-ch10-methods/`.
+
+## Clarification redraws
+
+- **M09 — remainder condition:** five identical bowls each contain exactly four whole candies; a separate tray contains exactly three. Place `23 = 5 × 4 + 3` beside `3 < 5`. Use no emotional or interpersonal cues: the arithmetic, not a portrait, establishes equal sharing.
+- **M10 — two answer forms:** begin with one shared `4 each, 3 left` panel, then fork. The whole-candy branch ends at `4 R3`. The divisible branch cuts each of the three remainder bars into five equal pieces and distributes three fifth-pieces to each of five groups, ending at `4 3/5`. Never mix cut and uncut outcomes.

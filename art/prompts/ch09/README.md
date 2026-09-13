@@ -22,6 +22,13 @@ Exact construction rules:
 - Twentieths use 40-unit cells: `12/20` occupies 480 units and `12.5/20` occupies 500, ending halfway through the thirteenth cell.
 - Decimal and complement views retain the exact equivalences `0.600`, `0.625`, `0.400`, and `0.375`.
 
+## Clarification redraws
+
+- **M06 — decimal place value:** align `0.600` over `0.625` in labeled tenths, hundredths, and thousandths columns. Bracket 600 versus 625 thousandths and mark the exact difference of 25 thousandths on one shared 0–1 scale.
+- **M07 — complements to one:** use equal bars with common endpoints. Hatch the missing regions and refine them to `16/40 missing` and `15/40 missing`; connect the smaller gap to the larger original fraction.
+- **M08 — recognize, then verify:** divide the image into a small dotted `prediction` zone and a larger solid `exact check` zone. Only the check zone may contain the final comparison sign; it uses 40-cell bars filled to 24 and 25.
+- **M09 — refine the unit:** top bars show 12 twentieths versus 12 and one-half twentieths. Lower bars bisect every cell, producing 24 versus 25 fortieths. Vertical guides must demonstrate that the values remain fixed while the unit becomes finer.
+
 Provenance: authored as repository-native SVG for this task from the manuscript briefs and BOOK_SPEC visual system. No generated raster, external image, stock asset, or empirical participant material was used. Per-method checks and filenames are recorded in `art/vectors/ch09/METHOD_ART_LEDGER.md`.
 
 Final coordinator QA inspected all ten desktop figures, representative 390 px placements, Method 09 in grayscale, and the integrated chapter at 390 px. Review corrected cross-product marker occlusion, separated colliding place-value captions, and restored explicit source-fraction labels in the decimal route. Evidence is in `artifacts/ui/art-ch09-methods/`.

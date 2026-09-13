@@ -12,6 +12,12 @@ Priority briefs:
 
 QA every asset against the chapter’s mathematical note, count, direction, and color semantics.
 
+## Clarification redraws
+
+- **M06 — nearby known product:** show a 46-wide rectangle split into heights 23 and 4, with a prerequisite card `known: 23 × 46 = 1,058`. Label the regions 1,058 and 184 and recombine the side as 27. Do not use square imagery.
+- **M13 — forty-bundles and units:** enlarge one representative group containing one neutral 40-unit packet and six single tokens, then show 27 repetitions through labeled multiplicity rather than hundreds of marks. Merge `27 × 40 = 1,080` and `27 × 6 = 162` at 1,242. Avoid currency cues.
+- **M14 — learned lattice:** caption the exact 2×2 grid `learned written algorithm`. Put each two-digit cell product on the correct sides of its diagonal, show diagonal addition and carries explicitly, and describe the layout as an external procedure rather than spontaneous imagery.
+
 ## Method-level production record
 
 Task: `ART-CH11-METHODS`

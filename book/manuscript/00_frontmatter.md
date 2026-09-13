@@ -39,9 +39,9 @@ The invitation is simple: solve first, then compare. There is no prize for havin
 
 You may find that a method that feels natural for addition feels awkward for fractions. You may also find that the same method feels different when the numbers, setting, or time available changes. The pages use “might” and “could” deliberately: introspection is partial, and a book cannot see every step of a person’s thinking.
 
-### A note on the first-person accounts
+### A note on constructed solver voices
 
-Unless a page explicitly identifies a published interview or research report, every first-person voice in this book is a **constructed representative account**. It is written to make a mathematically plausible route vivid:
+Unless a page explicitly identifies a published interview or research report, every first-person voice in this book is a **constructed representative account**. It is written to make a mathematically plausible route vivid. Every method repeats the label **Constructed solver voice — not a participant quotation**, so this disclosure remains visible even when a strategy page is read apart from the introduction:
 
 > A solver might describe the experience this way: “I start at seven and count five more: eight, nine, ten, eleven, twelve.”
 
@@ -85,6 +85,7 @@ The book’s small visual system keeps the two axes readable:
 
 | Mark | Meaning | Typical example |
 |---|---|---|
+| **Constructed solver voice** | An editorial example, never an unattributed participant quotation | “I start at seven…” |
 | **Route tag** | The mathematical transformation | `make ten`, `retrieve`, `count on` |
 | **Format tag** | A possible representational form | `verbal`, `spatial`, `motor` |
 | **Blue arrows** | Forward movement or adding a part | jumps from 7 toward 12 |
@@ -94,6 +95,7 @@ The book’s small visual system keeps the two axes readable:
 | **Solid outlines** | A written or physically present object | counters on a table |
 | **Small “same math” badge** | Same computation, alternate format | `10 × 12 + 12` shown as words and an array |
 | **Question bubble** | A reader-facing observation prompt | “What appeared first?” |
+| **Explanatory diagram caption** | The picture records the mathematics but does not claim to reproduce an inner scene | a sparse equality map for a non-sensory account |
 
 Color is never the only cue: arrows, labels, line style, and grouping carry the meaning too. Precise numerals and mathematical labels belong to the layout layer, not inside generated raster art.
 

@@ -337,7 +337,8 @@ test("CH05 has exact accessible art for all twenty methods", async () => {
     assert.match(svg, /<title id="title">[\s\S]+<\/title>/);
     assert.match(svg, /<desc id="desc">[\s\S]+<\/desc>/);
     for (const value of ["11", "12", "132"]) assert(svg.includes(value), `${file} must include ${value}`);
-    if (directory === vectorDir || file.includes("m17")) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must not contain raster imagery`);
+    if (directory === vectorDir) assert(!/<image\b|<foreignObject\b/i.test(svg), `${file} must not contain raster imagery`);
+    else if (file.includes("m17")) assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch05\/ch05_m17_[a-z0-9_-]+_raster\.png"/);
     else assert.match(svg, /<image href="\.\.\/\.\.\/raster\/ch05\/ch05_m18_[a-z0-9_-]+_raster\.png"/);
   }
 
@@ -374,9 +375,12 @@ test("CH05 has exact accessible art for all twenty methods", async () => {
   assert.equal((sixGroups.match(/<rect\b/g) || []).length, 6);
   assert.equal((sixGroups.match(/>22<\/text>/g) || []).length, 6);
   const fingers = await fs.readFile(path.join(compositeDir, "ch05_m17_fingers-group-counter.svg"), "utf8");
-  const tallies = (fingers.match(/<g class="tally-eleven"[\s\S]*?<\/g>/) || [""])[0];
+  const fingerGroups = (fingers.match(/<g class="ten-finger-groups"[\s\S]*?<\/g>/) || [""])[0];
+  const externalTally = (fingers.match(/<g class="external-tally"[\s\S]*?<\/g>/) || [""])[0];
   const counters = (fingers.match(/<g class="counters-twelve"[\s\S]*?<\/g>/) || [""])[0];
-  assert.equal((tallies.match(/<line\b/g) || []).length, 11);
+  assert.equal((fingerGroups.match(/<circle\b/g) || []).length, 10);
+  assert.equal((externalTally.match(/<line\b/g) || []).length, 1);
+  assert(fingers.includes("Ten fingers track groups 1–10") && fingers.includes("group 11"));
   assert.equal((counters.match(/<circle\b/g) || []).length, 12);
   const tapping = await fs.readFile(path.join(compositeDir, "ch05_m18_tap-each-twelve.svg"), "utf8");
   const elevenBeats = (tapping.match(/<g class="beat-eleven"[\s\S]*?<\/g>/) || [""])[0];
@@ -946,8 +950,12 @@ test("repository validates and build emits every manifest page", async () => {
     await fs.access(path.join(ch05Output, `ch05_${method}_raster.png`));
   }
   const ch05Tallies = await fs.readFile(path.join(ch05Output, "ch05_m17_fingers-group-counter.svg"), "utf8");
-  assert(!/<image\b/i.test(ch05Tallies));
-  assert.equal((ch05Tallies.match(/<line\b/g) || []).length, 11);
+  assert.match(ch05Tallies, /<image href="data:image\/png;base64,/);
+  await fs.access(path.join(ch05Output, "ch05_m17_fingers-group-counter_raster.png"));
+  const ch05FingerGroups = (ch05Tallies.match(/<g class="ten-finger-groups"[\s\S]*?<\/g>/) || [""])[0];
+  const ch05ExternalTally = (ch05Tallies.match(/<g class="external-tally"[\s\S]*?<\/g>/) || [""])[0];
+  assert.equal((ch05FingerGroups.match(/<circle\b/g) || []).length, 10);
+  assert.equal((ch05ExternalTally.match(/<line\b/g) || []).length, 1);
   const ch06Output = path.join(ROOT, "_site", "assets", "figures", "ch06");
   const ch06Composite = await fs.readFile(path.join(ch06Output, "ch06_m09_finger-group-counter.svg"), "utf8");
   assert.match(ch06Composite, /<image href="data:image\/png;base64,/);

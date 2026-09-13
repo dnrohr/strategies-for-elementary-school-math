@@ -1,5 +1,32 @@
-<svg data-qa-image-fixes="2026-09-08" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility"><title id="title">Eleven tallies count groups while one card defines a group of twelve</title><desc id="desc">Eleven large tally marks are grouped five, five, and one. A separate twelve-dot card defines one group. No hands are shown, avoiding an irrelevant ten-finger quantity while preserving exact group tracking.</desc><rect width="1200" height="800" fill="#F8F2E7"/><text x="64" y="78" font-family="Arial,sans-serif" fill="#18324A" font-size="34" font-weight="700">Tallies—not fingers—count the eleven groups</text>
-  <rect x="65" y="155" width="760" height="390" rx="28" fill="#FFFDF8" stroke="#2764B8" stroke-width="5"/><text x="445" y="215" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="26" font-weight="700">exactly 11 group tallies</text>
-  <g class="tally-eleven" stroke="#2764B8" stroke-width="11" stroke-linecap="round"><line x1="130" y1="285" x2="130" y2="410"/><line x1="191" y1="285" x2="191" y2="410"/><line x1="252" y1="285" x2="252" y2="410"/><line x1="313" y1="285" x2="313" y2="410"/><line x1="374" y1="285" x2="374" y2="410"/><line x1="435" y1="285" x2="435" y2="410"/><line x1="496" y1="285" x2="496" y2="410"/><line x1="557" y1="285" x2="557" y2="410"/><line x1="618" y1="285" x2="618" y2="410"/><line x1="679" y1="285" x2="679" y2="410"/><line x1="740" y1="285" x2="740" y2="410"/></g><path d="M115 455v25h300v-25M425 455v25h300v-25M735 455v25h61v-25" fill="none" stroke="#176B73" stroke-width="5"/><g font-family="Arial,sans-serif" fill="#18324A" font-size="26" text-anchor="middle"><text x="265" y="520">5 groups</text><text x="575" y="520">5 groups</text><text x="765" y="520">1 group</text></g>
-  <rect x="875" y="155" width="260" height="390" rx="28" fill="#FFF3DF" stroke="#C66A12" stroke-width="5" stroke-dasharray="12 8"/><text x="1005" y="215" text-anchor="middle" font-family="Arial,sans-serif" fill="#18324A" font-size="25" font-weight="700">one group = 12</text><g class="counters-twelve" fill="#F2B35F" stroke="#18324A" stroke-width="2"><circle cx="930" cy="285" r="18"/><circle cx="1005" cy="285" r="18"/><circle cx="1080" cy="285" r="18"/><circle cx="930" cy="350" r="18"/><circle cx="1005" cy="350" r="18"/><circle cx="1080" cy="350" r="18"/><circle cx="930" cy="415" r="18"/><circle cx="1005" cy="415" r="18"/><circle cx="1080" cy="415" r="18"/><circle cx="930" cy="480" r="18"/><circle cx="1005" cy="480" r="18"/><circle cx="1080" cy="480" r="18"/></g>
-  <rect x="270" y="625" width="660" height="95" rx="28" fill="#DDEDE4" stroke="#347C5A" stroke-width="5"/><text x="600" y="686" text-anchor="middle" font-family="Arial,sans-serif" font-size="37" font-weight="700" fill="#347C5A">11 groups × 12 = 132</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
+  <title id="title">Ten fingers and one external tally track eleven groups of twelve</title>
+  <desc id="desc">Two anatomically plausible hands provide exactly ten finger positions for groups one through ten. A separate tally card marks group eleven. A twelve-dot unit card and equation show that eleven groups of twelve equal 132.</desc>
+  <defs>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity=".18"/></filter>
+  </defs>
+  <image href="../../raster/ch05/ch05_m17_fingers-group-counter_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="55" y="35" width="1090" height="235" rx="28" fill="#FFFDF8" fill-opacity=".95" stroke="#18324A" stroke-width="4" filter="url(#soft)"/>
+  <g font-family="Arial,sans-serif" fill="#18324A">
+    <text x="90" y="88" font-size="31" font-weight="700">Ten fingers track groups 1–10; one separate mark tracks group 11.</text>
+    <g class="counters-twelve" fill="#2764B8" stroke="#18324A" stroke-width="2">
+      <circle cx="105" cy="145" r="11"/><circle cx="135" cy="145" r="11"/><circle cx="165" cy="145" r="11"/><circle cx="195" cy="145" r="11"/>
+      <circle cx="105" cy="178" r="11"/><circle cx="135" cy="178" r="11"/><circle cx="165" cy="178" r="11"/><circle cx="195" cy="178" r="11"/>
+      <circle cx="105" cy="211" r="11"/><circle cx="135" cy="211" r="11"/><circle cx="165" cy="211" r="11"/><circle cx="195" cy="211" r="11"/>
+    </g>
+    <text x="150" y="250" text-anchor="middle" font-size="21" font-weight="700">one group = 12</text>
+    <text x="300" y="175" font-size="34" font-weight="700">10 groups × 12 = 120</text>
+    <text x="676" y="175" font-size="34" font-weight="700">+</text>
+    <g class="external-tally">
+      <rect x="715" y="115" width="150" height="112" rx="18" fill="#F6E7C8" stroke="#D97706" stroke-width="5"/>
+      <line x1="790" y1="138" x2="790" y2="186" stroke="#D97706" stroke-width="10" stroke-linecap="round"/>
+      <text x="790" y="214" text-anchor="middle" font-size="20" font-weight="700">group 11</text>
+    </g>
+    <text x="890" y="175" font-size="28" font-weight="700">1 group × 12 = 12</text>
+    <text x="1085" y="238" text-anchor="end" font-size="34" font-weight="700" fill="#287A55">120 + 12 = 132</text>
+  </g>
+  <g class="ten-finger-groups" font-family="Arial,sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFDF8" stroke="#18324A" stroke-width="2">
+    <circle cx="255" cy="480" r="21"/><circle cx="310" cy="455" r="21"/><circle cx="360" cy="440" r="21"/><circle cx="410" cy="470" r="21"/><circle cx="470" cy="570" r="21"/>
+    <circle cx="755" cy="575" r="21"/><circle cx="790" cy="480" r="21"/><circle cx="835" cy="440" r="21"/><circle cx="890" cy="465" r="21"/><circle cx="940" cy="500" r="21"/>
+    <g fill="#18324A" stroke="none"><text x="255" y="487">1</text><text x="310" y="462">2</text><text x="360" y="447">3</text><text x="410" y="477">4</text><text x="470" y="577">5</text><text x="755" y="582">6</text><text x="790" y="487">7</text><text x="835" y="447">8</text><text x="890" y="472">9</text><text x="940" y="507">10</text></g>
+  </g>
+</svg>

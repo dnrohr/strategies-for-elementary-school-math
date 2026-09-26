@@ -5,7 +5,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | Order | Chapter | Problem | Audit | Markups | Revisions | Visual evidence | State | Implementation commit | Notes |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | CH01 | `7 + 5 = ?` | 15/15 | 15/15 | complete | `artifacts/ui/QA-IMAGE-FIXES-CH01/` and `QA-IMAGE-FIXES-CH01-R2/` | `complete` | `1b29e7f`, follow-up `08f9612` | Baseline pass and reusable standards established. |
-| 2 | CH02 | `15 − 8 = ?` | — | — | — | — | `queued` | — | Next chapter. Historical `image_review_ch02.md` is input only. |
+| 2 | CH02 | `15 − 8 = ?` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH02/` | `complete` | `2e215c8` | `QA-IMAGE-PASS-CH02`; 10 pictures revised, 3 retained with rationale; visual QA and full checks passed. |
 | 3 | CH03 | `37 + 48 = ?` | — | — | — | — | `queued` | — | — |
 | 4 | CH04 | `72 − 39 = ?` | — | — | — | — | `queued` | — | — |
 | 5 | CH05 | `11 × 12 = ?` | — | — | — | — | `queued` | — | — |

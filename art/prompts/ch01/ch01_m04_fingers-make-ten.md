@@ -17,3 +17,13 @@ Correct only the center panel's right hand. Remove the extra digit so that this 
 ## Selection note
 
 The first generation was rejected because its center panel contained more than three motion arrows. A later full-resolution audit found six visible digits on the center-right hand despite the earlier selection note. The 2026-09-08 targeted edit removes that extra digit while preserving three motion arrows and all other accepted quantities. The final production raster was manually inspected at full resolution.
+
+## Editorial-style refinement prompt — 2026-09-25
+
+Use case: `precise-object-edit`.
+
+Refine only the visual style and panel consistency of the supplied three-panel hand sequence. Preserve the exact composition and arithmetic states: panel 1 shows exactly seven raised fingers across two anatomically correct hands (five on the left hand, two on the right); panel 2 shows exactly ten raised fingers across two anatomically correct hands, with exactly three subtle upward teal movement arrows; panel 3 shows exactly ten raised fingers across two anatomically correct hands plus exactly two separate orange counters at the far right. Keep the same top-down viewpoint and left-to-right sequence. Use a restrained editorial nonfiction, lightly stylized ink-and-gouache treatment on warm paper, with identical wrist baselines and consistent hand scale. Include no text, numerals, labels, symbols, logos, watermarks, extra objects, extra hands, fused fingers, or altered quantities.
+
+## 2026-09-25 selection note
+
+The refined image was accepted after full-resolution inspection. It preserves the exact 7 → 10 → 10 + 2 sequence, five digits per visible hand, exactly three teal arrows, exactly two orange counters, consistent scale, and a text-free raster. The composite now explains in vector text that the two counters are the part of the added five not used to make ten.

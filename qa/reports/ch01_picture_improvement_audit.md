@@ -286,9 +286,34 @@ The audit assesses the picture as a communication object, not only whether its f
 4. Reduce redundant equation rails and repeated labels across Methods 02, 03, 08, 09, 12, and 14.
 5. Run quantity, grayscale, narrow-width, and alt-text checks after revisions.
 
+## Resolution record — 2026-09-25
+
+All recommendations above were implemented in source order and visually inspected in the rebuilt edition.
+
+| Picture | Resolution |
+| --- | --- |
+| Opening | Replaced the single spanning arch with five equal hops, reorganized 7 as a five-pattern plus two, preserved addend identity with blue/hatching, and reduced the repeated title to a small kicker. |
+| Method 01 | Rebuilt the touch route as an exact serpentine `1 → 12` path, moved the finish to 12, and removed the heavy grouping brackets. |
+| Method 02 | Replaced field-like tap boxes with five equal tap marks, strengthened landings, and removed the duplicate equation rail. |
+| Method 03 | Reduced commutativity to a compact premise, enlarged the seven-hop route, lightened the arc system, and attached start/landing labels to 5 and 12. |
+| Method 04 | Refined the organic illustration with the built-in image-generation edit workflow, preserved exact anatomy and quantities, normalized panel scale, strengthened the three motion cues, and explicitly identified the two counters as the unused part of the added five. |
+| Method 05 | Added a five-unit source state and five trace paths, aligned the residual pair with the same unit scale, and reduced equation dominance. |
+| Method 06 | Kept the decomposed 7 entirely blue, kept the untouched 5 hatched orange, enclosed `7 = 5 + 2`, and separately braced the two fives as 10. |
+| Method 07 | Preserved filled dots beneath the two X marks, gave the second seven a stable hatched identity, and attached the correction label directly to that group. |
+| Method 08 | Removed the process arrow and answer box, named the optional counting check, and used quiet typographic equality. |
+| Method 09 | Shifted emphasis to perceptual pattern matching, simplified the enclosing structure, and shortened the explanatory footer. |
+| Method 10 | Cropped to the active 7–12 range, enlarged all five equal intervals, softened the `+1` labels, and retained only one final summary. |
+| Method 11 | Standardized every block to the same dimensions, traced three source blocks into their destination cells, left two visibly loose, and simplified before/after labels. |
+| Method 12 | Replaced bar-like marks with equal beat discs, removed the repeated spoken-number footer, reduced the tap-label weight, and shrank the held-start card. |
+| Method 13 | Rewrote the derivation so no term disappears, moved actions into the top-to-bottom reading path, and reduced the pen cue. |
+| Method 14 | Removed boxes and arrows, placed all three expressions on one equality baseline, and removed the duplicate equation rail. |
+
+Current visual evidence is stored in `artifacts/ui/QA-IMAGE-FIXES-CH01/`.
+
 ## Audit status
 
 - Pictures audited: **15 of 15**.
 - Markups supplied: **15 of 15**.
-- Source artwork changed: **none**; this task is a review artifact only.
+- Source artwork revised: **15 of 15 pictures**.
+- Implementation status: **all recorded recommendations resolved**.
 - New sources/citations: **none**; no empirical claim was added.

@@ -21,3 +21,7 @@ Start `R01`, `R02`, `R03`, and `DESIGN` together. Once their first verified hand
 ## Merge discipline
 
 Agents authorized to publish should fetch immediately before a direct push to `main`, stage explicit owned paths only, and never force-push. If two agents need a shared file, one produces an inbox/handoff artifact and the designated maintainer performs the merge.
+
+## Serial chapter image-quality lane
+
+For a full picture-by-picture audit, markup, implementation, and visual-QA pass, use the copy-ready goal in `coordination/chapter-image-passes/GENERIC_GOAL.md`. This lane is intentionally serial: the progress file chooses the next chapter, and one agent completes that chapter before another run advances the sequence.

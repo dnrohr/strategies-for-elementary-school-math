@@ -11,10 +11,10 @@
 | Method | Asset | Visual mapping and exact check | Status |
 | --- | --- | --- | --- |
 | 01 Count every object | `ch01_m01_count-every-object.svg` | 7 solid blue + 5 hatched orange counters; one serpentine center-to-center trail runs 1–12 and finishes on 12 | complete |
-| 02 Count on from seven | `ch01_m02_count-on-from-seven.svg` | held 7; exactly five unit jumps, landings, and equal tap discs, 8–12 | complete |
-| 03 Count on from five | `ch01_m03_count-on-from-five.svg` | commutative swap; held 5; exactly seven unit jumps, 6–12 | complete |
-| 04 Fingers as counters | `art/composites/ch01/ch01_m04_fingers-make-ten.svg` + `art/raster/ch01/ch01_m04_fingers-make-ten_raster.png` | sequential hand panels: 7 raised; 10 raised with exactly 3 arrows; 10 raised + 2 counters; vector labels preserve `7+3+2=10+2=12`; five digits per hand manually checked | complete composite |
-| 05 Make ten | `ch01_m05_make-ten.svg` | five ghosted source units trace to 3 hatched frame fills + 2 hatched residuals; `10+2` | complete |
+| 02 Count on from seven | `ch01_m02_count-on-from-seven.svg` | held 7; exactly five unit jumps with clean line/head joins; each tap dot precedes its spoken landing, 8–12 | complete |
+| 03 Count on from five | `ch01_m03_count-on-from-five.svg` | curved matching lines visualize the commutative swap; held 5; exactly seven unit jumps with clean line/head joins, 6–12 | complete |
+| 04 Fingers as counters | `art/composites/ch01/ch01_m04_fingers-make-ten.svg` + `art/raster/ch01/ch01_m04_fingers-make-ten_raster.png` | panel 1 uses five plus thumb-and-index; panel 2 extends middle/ring/pinky beneath exactly 3 arrows; panel 3 shows 10 + 2 counters; five digits per hand manually checked | complete composite |
+| 05 Make ten | `ch01_m05_make-ten.svg` | source label sits above five ghosted units; unobstructed traces lead to 3 hatched frame fills + 2 hatched residuals; `10+2` | complete |
 | 06 Use five plus five | `ch01_m06_five-plus-five.svg` | blue 7-card remains `5+2`; untouched 5 is hatched; brace pairs the two five-patterns as 10 | complete |
 | 07 Double seven, subtract two | `ch01_m07_double-seven-subtract-two.svg` | 14 filled dots in two patterned groups of 7; exactly 2 remain visible beneath X marks; 12 uncancelled | complete |
 | 08 Retrieve the fact | `ch01_m08_retrieve-the-fact.svg` | quiet symbolic `7+5=12`; detached dashed counting check; no arrow or countable objects | complete |
@@ -22,7 +22,7 @@
 | 10 Hop on a number line | `ch01_m10_number-line-hops.svg` | focused ticks 7–12; five spacious, equal, separately drawn `+1` arcs | complete |
 | 11 Build with ten-frame blocks | `ch01_m11_ten-frame-blocks.svg` | identical 52×52 blocks in before/after stages; 3 trajectories enter the frame and 2 remain loose | complete |
 | 12 Say a counting rhythm | `ch01_m12_counting-rhythm.svg` | exactly five equal beat discs mapped one-to-one to 8–12; no magnitude, volume, or tempo encoding | complete |
-| 13 Write a tiny mental algorithm | `ch01_m13_tiny-mental-algorithm.svg` | four exact selectable full expressions preserve every term through split, regroup, and make-ten | complete |
+| 13 Write a tiny mental algorithm | `ch01_m13_tiny-mental-algorithm.svg` | four exact selectable full expressions preserve every term; connectors have clean line/head joins; a detailed fountain pen remains secondary | complete |
 | 14 Recognize a relation | `ch01_m14_relation-without-picture.svg` | typographic equality `7+5=10+2=12`; no nodes, arrows, or sensory/object imagery | complete |
 
 ## Preserved opening anchor

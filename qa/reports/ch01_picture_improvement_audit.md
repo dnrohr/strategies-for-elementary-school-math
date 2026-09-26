@@ -317,3 +317,22 @@ Current visual evidence is stored in `artifacts/ui/QA-IMAGE-FIXES-CH01/`.
 - Source artwork revised: **15 of 15 pictures**.
 - Implementation status: **all recorded recommendations resolved**.
 - New sources/citations: **none**; no empirical claim was added.
+
+## Follow-up resolution — 2026-09-26
+
+- Removed all 14 repeated `Constructed solver voice — not a participant quotation` lines from Chapter 1. Every account still begins `A solver might describe the experience this way`, so its editorial framing remains explicit without duplicated boilerplate.
+- Method 02: separated every arc stroke from its arrowhead and paired each tap dot before its spoken landing, including the first dot before 8.
+- Method 03: separated arc strokes from arrowheads and added curved matching lines that trace the same addends into switched positions across `7 + 5 = 5 + 7`.
+- Method 04: changed the two-finger state to the anatomical right hand's inward thumb plus index, preserved one left/right hand pair in every panel, then aligned exactly three arrows above that right hand's middle, ring, and pinky as they extend to make ten.
+- Method 05: moved `the added 5` above its dotted source boxes, leaving the trajectory lane clear.
+- Method 13: separated connector strokes from their arrowheads and replaced the abstract nib polygon with a recognizable small fountain pen.
+
+### Transferable notes for later chapters
+
+1. **Terminate connector strokes at the base of arrowheads.** Do not let a stroke continue beneath a filled head; inspect the join at final reading size, not only in source view.
+2. **Put tracking marks before the words they trigger.** In tap, beat, or count sequences, every spoken value—including the first—needs the same preceding cue and one-to-one alignment.
+3. **Visualize commutativity as conservation plus exchange.** Repeated addends should be visibly matched across their swapped positions; a bare equality can be mathematically correct yet visually under-explain the transformation.
+4. **Stage finger changes with a natural starting gesture.** Choose the exact folded/extended fingers first, then place motion cues directly above only the digits that change state.
+5. **Reserve clear lanes for labels and trajectories.** Put source labels above source objects when downward paths leave those objects; never make the reader look through text to follow motion.
+6. **Make object cues recognizable but subordinate.** Pens, tools, and other props need enough silhouette detail to read immediately, while remaining smaller and quieter than the mathematical content.
+7. **Avoid redundant constructed-account boilerplate.** Where an account already begins `A solver might describe the experience this way` and the book-level disclosure is present, do not repeat a separate quotation disclaimer on every method page.

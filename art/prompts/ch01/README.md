@@ -22,20 +22,21 @@ Do not add decorative dots, blocks, ticks, taps, or other countable marks. Quant
 
 - File: `art/vectors/ch01/ch01_m02_count-on-from-seven.svg`
 - Mark 7 as the held starting total, then draw exactly five equal `+1` jumps with landings `8, 9, 10, 11, 12`.
-- Add exactly five equal tap discs aligned one-to-one with the jumps; label the shared relation `five landings · five taps`.
+- End each arc at the base of its separate arrowhead so the stroke never runs beneath the head.
+- Add exactly five equal tap discs aligned one-to-one with the jumps and put each disc immediately before its spoken number, including the first disc before `8`; label the shared relation `five landings · five tap-and-say beats`.
 - Do not depict a jump onto 7.
 
 ### M03 — Count on from five
 
 - File: `art/vectors/ch01/ch01_m03_count-on-from-five.svg`
-- Show the equality `7 + 5 = 5 + 7`, then mark 5 as the starting total.
+- Show the equality `7 + 5 = 5 + 7` with curved matching lines that visibly connect each repeated addend across its swapped position, then mark 5 as the starting total.
 - Draw exactly seven equal `+1` jumps with landings `6` through `12`.
-- Keep the commutative equality as a compact premise above the enlarged route; attach `held start` and `seventh landing` directly to 5 and 12.
+- Keep the commutative equality as a compact premise above the enlarged route; attach `held start` and `seventh landing` directly to 5 and 12. End every arc at the base of its separate arrowhead.
 
 ### M04 — Fingers as counters (raster/vector composite)
 
 - Composite file: `art/composites/ch01/ch01_m04_fingers-make-ten.svg`; organic base: `art/raster/ch01/ch01_m04_fingers-make-ten_raster.png`.
-- Three sequential panels use the same pair of anatomically plausible hands: 7 raised fingers; then 10 raised fingers with exactly 3 motion arrows; then 10 raised fingers plus exactly 2 separate counters.
+- Three sequential panels use the same pair of anatomically plausible hands: panel 1 shows five on one hand plus thumb and index on the other; panel 2 opens that hand's middle, ring, and pinky to make 10, with exactly 3 motion arrows directly above those fingertips; panel 3 shows 10 raised fingers plus exactly 2 separate counters.
 - Vector overlay labels preserve `7`, `+3 → 10`, and `10 + 2 = 12`; the raster contains no text. Manual anatomy/digit review and the full generation record are in `art/raster/ch01/ch01_m04_fingers-make-ten_raster.md` and `art/prompts/ch01/ch01_m04_fingers-make-ten.md`.
 
 ### M05 — Make ten
@@ -43,6 +44,7 @@ Do not add decorative dots, blocks, ticks, taps, or other countable marks. Quant
 - File: `art/vectors/ch01/ch01_m05_make-ten.svg`
 - Draw one exact 2×5 ten-frame. Fill 7 cells with blue solid counters, the 3 remaining cells with orange hatched counters, and place 2 same-size orange hatched residual counters outside.
 - Show five faint source tiles and trace three to the empty frame cells and two to the residual positions; label the full frame `10` and the residual group `2`.
+- Place `the added 5` above the five dotted source tiles so no label crosses their trajectory lines.
 - Required chain: `7 + 5 = 7 + 3 + 2 = 10 + 2 = 12`.
 
 ### M06 — Use five plus five
@@ -99,7 +101,8 @@ Do not add decorative dots, blocks, ticks, taps, or other countable marks. Quant
 - File: `art/vectors/ch01/ch01_m13_tiny-mental-algorithm.svg`
 - Use a vector-only imagined page with four selectable full expressions: `7 + 5`, `= 7 + (3 + 2)`, `= (7 + 3) + 2`, `= 10 + 2 = 12`.
 - Connect the reading order vertically with short action labels `split 5`, `regroup`, and `make 10`; no term may disappear between lines.
-- A non-countable pen-nib silhouette may cue inner writing; it must not obscure text.
+- End each connector before its arrowhead so the stroke does not show through the head.
+- A small, recognizable fountain pen with barrel, cap, clip, metal section, and nib may cue inner writing; it must not obscure text.
 
 ### M14 — Recognize a relation without a picture
 

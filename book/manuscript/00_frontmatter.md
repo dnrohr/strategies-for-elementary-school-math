@@ -41,7 +41,7 @@ You may find that a method that feels natural for addition feels awkward for fra
 
 ### A note on constructed solver voices
 
-Unless a page explicitly identifies a published interview or research report, every first-person voice in this book is a **constructed representative account**. It is written to make a mathematically plausible route vivid. Every method repeats the label **Constructed solver voice — not a participant quotation**, so this disclosure remains visible even when a strategy page is read apart from the introduction:
+Unless a page explicitly identifies a published interview or research report, every first-person voice in this book is a **constructed representative account**. It is written to make a mathematically plausible route vivid. Method accounts are introduced as something “a solver might describe,” preserving that framing even when a strategy page is read apart from the introduction:
 
 > A solver might describe the experience this way: “I start at seven and count five more: eight, nine, ten, eleven, twelve.”
 

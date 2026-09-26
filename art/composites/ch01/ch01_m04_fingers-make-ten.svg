@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
   <title id="title">Seven fingers become ten, with two counters from the added five remaining</title>
-  <desc id="desc">Three equal panels use consistently scaled, anatomically plausible illustrated hands. The first shows seven raised fingers. The second shows ten raised fingers and exactly three teal arrows. The third shows ten raised fingers plus exactly two orange counters, explicitly identified as the part of the added five not used to make ten.</desc>
+  <desc id="desc">Three equal panels use consistently scaled, anatomically plausible illustrated hands. The first shows five fingers plus a thumb-and-index gesture for two. The second extends that hand's middle, ring, and pinky to show ten, with exactly three teal arrows above those fingertips. The third shows ten raised fingers plus exactly two orange counters, explicitly identified as the part of the added five not used to make ten.</desc>
   <image href="../../raster/ch01/ch01_m04_fingers-make-ten_raster.png" x="0" y="0" width="1200" height="800" preserveAspectRatio="xMidYMid meet"/>
   <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle" fill="#24312D">
     <g transform="translate(45 25)"><rect width="300" height="66" rx="28" fill="#FFFDF8" fill-opacity=".94" stroke="#2764B8" stroke-width="4"/><text x="150" y="43" font-size="27" font-weight="700">1 · show 7 fingers</text></g>

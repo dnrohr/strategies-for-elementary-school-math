@@ -5,4 +5,4 @@
 - Canvas: 1200×800 SVG viewBox; selectable text; no raster text or external assets.
 - Exact checks: `72 = 60 + 12`; removal leaves 33; distance jumps `+1 +30 +2 = 33`; both routes represent `72 − 39 = 33`.
 - Accessibility: SVG `role="img"` with title and description; route headings, quantities, and labels distinguish removal from distance without relying on color alone.
-- Review state: coordinator-generated vector implementation; final visual contrast and narrow-width inspection remain part of art sign-off.
+- Review state: passed `QA-IMAGE-PASS-CH04` after native-size, 390 px narrow-width, and material grayscale inspection; all three distance spans have explicit terminal heads.

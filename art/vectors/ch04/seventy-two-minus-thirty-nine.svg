@@ -13,6 +13,7 @@
     .math { font-size: 40px; font-weight: 700; }
     .small { font-size: 21px; }
   </style>
+  <defs><marker id="gap-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0l12 6-12 6z" fill="#467a9b"/></marker></defs>
   <rect width="1200" height="800" fill="#fffdf8"/>
   <text x="68" y="76" class="ink math">72 − 39 = 33</text>
   <text x="68" y="116" class="muted small">The same difference can be modeled as removing or measuring a gap.</text>
@@ -32,7 +33,9 @@
   <line x1="668" y1="356" x2="1080" y2="356" stroke="#24312d" stroke-width="4"/>
   <circle cx="668" cy="356" r="9" class="blue"/><circle cx="716" cy="356" r="9" class="blue"/><circle cx="956" cy="356" r="9" class="blue"/><circle cx="1080" cy="356" r="9" class="blue"/>
   <text x="650" y="402" class="ink small">39</text><text x="704" y="402" class="ink small">40</text><text x="944" y="402" class="ink small">70</text><text x="1060" y="402" class="ink small">72</text>
-  <path d="M676 330h32 M724 330h224 M964 330h108" stroke="#467a9b" stroke-width="6"/>
+  <path d="M676 330h32" stroke="#467a9b" stroke-width="6" marker-end="url(#gap-arrow)"/>
+  <path d="M724 330h224" stroke="#467a9b" stroke-width="6" marker-end="url(#gap-arrow)"/>
+  <path d="M964 330h108" stroke="#467a9b" stroke-width="6" marker-end="url(#gap-arrow)"/>
   <text x="680" y="304" class="ink small">+1</text><text x="818" y="304" class="ink small">+30</text><text x="1010" y="304" class="ink small">+2</text>
   <path d="M668 470h412" stroke="#24312d" stroke-width="2"/>
   <text x="648" y="530" class="ink label">1 + 30 + 2 = 33</text>

@@ -9,7 +9,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | 3 | CH03 | `37 + 48 = ?` | 15/15 | 15/15 | complete | `artifacts/ui/QA-IMAGE-PASS-CH03/` | `complete` | `204e1f8` | `QA-IMAGE-PASS-CH03`; 4 pictures revised, 11 retained with rationale; visual QA and full checks passed. |
 | 4 | CH04 | `72 − 39 = ?` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH04/` | `complete` | `39645de` | `QA-IMAGE-PASS-CH04`; 8 pictures revised, 5 retained with rationale; visual QA and full checks passed. |
 | 5 | CH05 | `11 × 12 = ?` | 21/21 | 21/21 | complete | `artifacts/ui/QA-IMAGE-PASS-CH05/` | `complete` | `db83312` | `QA-IMAGE-PASS-CH05`; 6 pictures revised, 15 retained with rationale; both native rasters inspected; visual QA and full checks passed. |
-| 6 | CH06 | `24 ÷ 6 = ?` | — | — | — | — | `queued` | — | — |
+| 6 | CH06 | `24 ÷ 6 = ?` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH06/` | `complete` | `527a2ce` | `QA-IMAGE-PASS-CH06`; 7 pictures revised or synchronized, 6 retained with rationale; native hand raster inspected; visual QA and full checks passed. |
 | 7 | CH07 | `7 × 9 rectangle` | — | — | — | — | `queued` | — | — |
 | 8 | CH08 | `3/4 of 20 = ?` | — | — | — | — | `queued` | — | — |
 | 9 | CH09 | `3/5 or 5/8?` | — | — | — | — | `queued` | — | — |

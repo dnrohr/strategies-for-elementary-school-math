@@ -33,3 +33,7 @@ Read these as inspection prompts, not automatic edit instructions. Apply a rule 
 
 13. **Label an embodied snapshot between steps.** When a hand or tool sits between two marks in a longer sequence, distinguish completed from pending marks with shape/outline as well as color and name the moment explicitly (for example, “after tap 4”). Origin: CH02.
 14. **Strike only the place-value unit being exchanged.** In a regrouping rewrite, crossing an entire numeral can imply deletion of the value; mark only the digit or unit that changes and state the conserved equivalent form nearby. Origin: CH02.
+
+## Equation relationships
+
+15. **Do not place equality signs between complete related equations.** When fact-family cards each contain a full equation, connect them with labeled relational arrows or captions; an equality sign between cards can create a false chain even when every card is individually true. Origin: CH06.

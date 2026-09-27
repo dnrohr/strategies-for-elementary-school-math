@@ -10,7 +10,7 @@ Required visual set:
 - Tactile tile composite with one hand placing a final square tile; anatomically credible hand, no raster text.
 - Comparison of 70 and 63 as a benchmark/check.
 
-Check every asset for exactly 63 cells, no gaps or overlaps, correct row/column orientation, and accessible contrast without relying on color alone.
+Check every asset for exactly 63 cells, square unit geometry or proportionally exact region dimensions, no gaps or overlaps, correct row/column orientation, and accessible contrast without relying on color alone. Keep path directions embedded in their routes and place labels outside countable grids when they would hide cells.
 
 ## Production-vector record
 
@@ -18,4 +18,4 @@ Eleven accessible 1200×800 vector-only SVGs implement Methods 01–07 and 09–
 
 Method 08 is deliberately omitted from this vector set and is coordinator-owned as a generated-hand tile composite. Preserve exact vector row/column braces and `63 square units` as overlays; the organic layer must show an anatomically credible hand placing the final tile without covering or duplicating a cell.
 
-Exact route notes and alt-text intent are recorded in `art/vectors/ch07/METHOD_ART_LEDGER.md`. The final Method 08 generated-hand/vector composite, every placed-size desktop figure, representative narrow figures, and the composite in grayscale passed coordinator review; evidence is in `artifacts/ui/art-ch07-methods/`.
+Exact route notes and alt-text intent are recorded in `art/vectors/ch07/METHOD_ART_LEDGER.md`. The 2026-09-27 chapter image pass restored square unit geometry and proportional region dimensions, embedded direction cues in their routes, and moved obstructive partition labels outside the grids. The final Method 08 generated-hand/vector composite, every placed-size desktop figure, representative narrow figures, and material grayscale samples passed current review; evidence is in `artifacts/ui/QA-IMAGE-PASS-CH07/`.

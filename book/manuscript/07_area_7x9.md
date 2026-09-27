@@ -20,7 +20,6 @@ Before reading on, look at a rectangle 7 units tall and 9 units wide. What arriv
 **Phenomenology:** abstract + verbal
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “The answer is already there for me. Seven nines is sixty-three. I do not see nine rows or say every step; I recognize the multiplication fact and then check that the question asks for area.”
 
 ### Steps
@@ -45,7 +44,6 @@ Constructed account. Verified R01-002 supports overlapping multiplication strate
 **Phenomenology:** visual-concrete
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I start in the top-left square and count every little square once. I keep going across a row, then continue on the next row. When the last square gets number 63, I know the area.”
 
 ### Steps
@@ -54,7 +52,7 @@ Constructed account. Verified R01-002 supports overlapping multiplication strate
 3. Report 63 square units.
 
 ### Illustration brief
-Precise vector 7-by-9 grid with a single path visiting all 63 cells once; mark only checkpoints 1, 9, 18, …, 63. Verify no extra cells.
+Precise square-celled 7-by-9 vector grid with one continuous serpentine route through all 63 cell centers; embed a direction head in each row and keep checkpoints 1, 9, 18, …, 63 outside the grid. Verify no extra cells or detached direction cues.
 
 ### Mathematical note
 Counting unit squares directly measures area; the count agrees with 7 groups of 9.
@@ -70,7 +68,6 @@ Constructed account. Full-text-verified R01-002 supplies only broad multiplicati
 **Phenomenology:** visual-spatial + verbal
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I see seven horizontal rows. Each row has nine squares, so I say nine seven times: 9, 18, 27, 36, 45, 54, 63. The rows matter more than individual squares. I can mark one endpoint per row on a repeated-addition strip to keep the structure visible.”
 
 ### Steps
@@ -79,7 +76,7 @@ Constructed account. Full-text-verified R01-002 supplies only broad multiplicati
 3. Add 9 seven times to reach 63.
 
 ### Illustration brief
-Vector grid with 7 rows in alternating blue/teal bands; overlay `9 + 9 + 9 + 9 + 9 + 9 + 9 = 63`.
+Square-celled vector grid with 7 rows in alternating blue/teal bands; keep cumulative totals outside the grid and show `9 + 9 + 9 + 9 + 9 + 9 + 9 = 63` below.
 
 ### Mathematical note
 Multiplication is compact repeated addition: 7 × 9 is seven groups of 9.
@@ -95,7 +92,6 @@ Constructed account. R01-002 documents repeated addition among measured multipli
 **Phenomenology:** visual-spatial
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I rotate the rectangle in my mind. Now there are nine rows, each with seven squares. Nine groups of seven are easier for me to organize: 7, 14, 21, 28, 35, 42, 49, 56, 63.”
 
 ### Steps
@@ -104,7 +100,7 @@ Constructed account. R01-002 documents repeated addition among measured multipli
 3. Conclude 9 × 7 = 63 square units.
 
 ### Illustration brief
-Two exact vector rectangles, 7-by-9 and rotated 9-by-7, linked by a rotation arrow. Both contain 63 cells.
+Two exact square-celled vector rectangles, 7-by-9 and rotated 9-by-7, linked by a clearly headed 90-degree rotation arrow. Both contain the same 63 cells.
 
 ### Mathematical note
 The commutative property gives 7 × 9 = 9 × 7; rotation preserves the unit-square count.
@@ -120,7 +116,6 @@ Constructed account. Verified R01-007 and R01-008 support only a general concept
 **Phenomenology:** visual-symbolic + spatial
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “Nine is almost ten. I picture seven rows of ten, which makes 70. Then I remove the extra square at the end of each row—seven squares. Seventy minus seven leaves 63. Each row loses one.”
 
 ### Steps
@@ -129,7 +124,7 @@ Constructed account. Verified R01-007 and R01-008 support only a general concept
 3. Remove 7 extra squares: 70 − 7 = 63.
 
 ### Illustration brief
-Vector 7-by-10 grid with its rightmost column marked orange as exactly 7 excess cells; overlay `70 − 7`.
+Square-celled vector 7-by-10 grid with its rightmost column hatched and crossed as exactly 7 excess cells; show `70 − 7 = 63` outside the grid.
 
 ### Mathematical note
 Because 9 = 10 − 1, 7 × 9 = 7 × (10 − 1) = 70 − 7 = 63.
@@ -145,7 +140,6 @@ Constructed account. Verified R01-010 reports jump and compensation use in numbe
 **Phenomenology:** visual-geometric
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I cut the rectangle after five rows. The top piece is 5 × 9 = 45, and the bottom piece is 2 × 9 = 18. I put their areas together: 45 + 18 = 63.”
 
 ### Steps
@@ -154,7 +148,7 @@ Constructed account. Verified R01-010 reports jump and compensation use in numbe
 3. Add the pieces: 45 + 18 = 63.
 
 ### Illustration brief
-Exact 7-by-9 vector rectangle split after row 5; label regions `45` and `18`. Verify horizontal boundary and no missing cells.
+Exact square-celled 7-by-9 vector rectangle split after row 5; align external cards `5 × 9 = 45` and `2 × 9 = 18` with their regions so no cell is covered. Verify the horizontal boundary and no missing cells.
 
 ### Mathematical note
 (5 + 2) × 9 = 5 × 9 + 2 × 9 = 45 + 18 = 63.
@@ -170,7 +164,6 @@ Constructed account. Verified R01-002 and R01-013 support strategy repertoires a
 **Phenomenology:** visual-geometric + motor
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I draw a vertical line after five columns. Seven times five is 35, and seven times four is 28. I can almost feel two tiles, then slide their totals together: 35 + 28 = 63.”
 
 ### Steps
@@ -179,7 +172,7 @@ Constructed account. Verified R01-002 and R01-013 support strategy repertoires a
 3. Combine 35 + 28 to get 63.
 
 ### Illustration brief
-Exact vector rectangle split into 5-column and 4-column regions labeled `35` and `28`; verify 7 rows in both.
+Exact square-celled vector rectangle split into 5-column and 4-column regions; put `7 × 5 = 35` and `7 × 4 = 28` in the exterior label lane so all 63 cells remain visible. Verify 7 rows in both.
 
 ### Mathematical note
 7 × (5 + 4) = 7 × 5 + 7 × 4 = 35 + 28 = 63.
@@ -195,7 +188,6 @@ Constructed account. Verified R01-002 supports strategy variation; tactile “ti
 **Phenomenology:** visual-concrete + motor
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I imagine laying square tiles. I make one row of nine, then place seven rows. The finished patch is a rectangle. The area feels like the covered surface: 63 tiles. I check that the rows touch edge to edge, because gaps would change the covered surface and the count.”
 
 ### Steps
@@ -220,7 +212,6 @@ Constructed embodied account. Verified R02-F01 and R02-F02 support cautious asso
 **Phenomenology:** spatial + motor
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “My attention moves across the rows like a scanner. I jump nine squares at a time: 9, 18, 27, 36, 45, 54, 63. The movement gives me a route through the rectangle.”
 
 ### Steps
@@ -229,7 +220,7 @@ Constructed embodied account. Verified R02-F01 and R02-F02 support cautious asso
 3. Stop at 63 after seven rows.
 
 ### Illustration brief
-Vector 7-by-9 grid with a teal path and six arrows between row totals; each jump is exactly 9 and endpoint is 63.
+Square-celled vector 7-by-9 grid with seven row scans, six small headed turns between rows, and exterior totals; each completed row adds exactly 9 and the endpoint is 63.
 
 ### Mathematical note
 Skip-counting by 9 seven times is repeated addition and equals 7 × 9 = 63.
@@ -245,7 +236,6 @@ Constructed account. Verified R01-002 describes repeated addition in a changing 
 **Phenomenology:** geometric + abstract
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I do not see 63 little squares. I see a large rectangle made from a 7 × 5 rectangle and a 7 × 4 rectangle. Their areas are 35 and 28. The large region is their union, so 35 plus 28 is 63.”
 
 ### Steps
@@ -254,7 +244,7 @@ Constructed account. Verified R01-002 describes repeated addition in a changing 
 3. Add non-overlapping areas to obtain 63.
 
 ### Illustration brief
-Minimal vector area model with adjacent regions labeled `7 × 5 = 35` and `7 × 4 = 28`; verify no gap or overlap.
+Minimal proportional vector area model with adjacent 7-by-5 and 7-by-4 regions at one consistent unit scale, labeled `35` and `28`; verify no gap, overlap, or distorted side ratio.
 
 ### Mathematical note
 Areas of adjacent non-overlapping regions add: 7 × 9 = 7 × 5 + 7 × 4 = 63.
@@ -270,7 +260,6 @@ Constructed account. Verified R01-007 and R01-008 support interaction between co
 **Phenomenology:** visual-symbolic + inner speech
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “I write 7 × 9 on an imagined page and calculate 63. I may not picture a rectangle at all—the page of numerals is my workspace. The word ‘area’ tells me to attach square units.”
 
 ### Steps
@@ -295,7 +284,6 @@ Constructed account. Verified R02-I04 and R02-I05 support format-sensitive worki
 **Phenomenology:** abstract + geometric
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might describe the experience this way: “Sixty-three comes to mind from 7 × 9. Then I check the picture: seven rows of nine should be a little less than seven tens, so 63 makes sense. The shape is a reason to trust the answer, not the route that produced it.”
 
 ### Steps

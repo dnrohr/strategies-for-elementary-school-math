@@ -22,7 +22,7 @@
       <text x="790" y="214" text-anchor="middle" font-size="20" font-weight="700">group 11</text>
     </g>
     <text x="890" y="175" font-size="28" font-weight="700">1 group × 12 = 12</text>
-    <text x="1085" y="238" text-anchor="end" font-size="34" font-weight="700" fill="#287A55">120 + 12 = 132</text>
+    <text x="1085" y="258" text-anchor="end" font-size="30" font-weight="700" fill="#287A55">120 + 12 = 132</text>
   </g>
   <g class="ten-finger-groups" font-family="Arial,sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFDF8" stroke="#18324A" stroke-width="2">
     <circle cx="255" cy="480" r="21"/><circle cx="310" cy="455" r="21"/><circle cx="360" cy="440" r="21"/><circle cx="410" cy="470" r="21"/><circle cx="470" cy="570" r="21"/>

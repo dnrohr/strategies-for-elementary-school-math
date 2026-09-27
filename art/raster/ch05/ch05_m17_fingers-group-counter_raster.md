@@ -4,3 +4,4 @@
 - The raster supplies exactly two anatomically plausible hands, a cream surface, texture, and shadows. The hands are neutral embodied context and are not counted as eleven fingers. Exactly eleven group tallies, the twelve-counter unit, numerals, and all text are vector overlays.
 - Accepted on first generation after anatomy, two-hand count, orientation, negative-space, and no-raster-text inspection.
 - Native dimensions: 1536×1024 PNG; placed in a 1200×800 SVG composite.
+- `QA-IMAGE-PASS-CH05` re-inspected the native raster on 2026-09-26: both hands remain anatomically plausible with five digits each, a consistent left/right pair, natural wrists, and no raster text or mathematical marks.

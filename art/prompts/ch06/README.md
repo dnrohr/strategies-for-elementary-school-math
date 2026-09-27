@@ -19,7 +19,7 @@ Use exact vector diagrams for arrays, bars, number lines, equations, arrows, and
 
 ## Production-vector record
 
-Eleven 1200×800 accessible vector-only SVGs implement Methods 01–08 and 10–12. Each uses selectable labels, `role="img"`, canonical `aria-labelledby="title desc"`, and exact division quantities. M01/M08 show six receiving spaces with four tokens each; M02 shows four counted groups of six; M04 and M05 count four equal operations; M06 is 4×6; M07 nests division by 2 then 3; M10 has six congruent bar sections; M11 preserves 6:24 = 1:4; M12 separates estimation from exact multiplication verification.
+Eleven 1200×800 accessible vector-only SVGs implement Methods 01–08 and 10–12. Each uses selectable labels, `role="img"`, canonical `aria-labelledby="title desc"`, and exact division quantities. M01/M08 show six receiving spaces with four tokens each; M02 shows four counted groups of six; M03 uses labeled relational arrows rather than false equality between complete facts; M04 and M05 count four equal operations; M06 is 4×6; M07 nests division by 2 then 3 with a separate result lane; M10 has six congruent bar sections; M11 preserves 6:24 = 1:4; M12 separates estimation from exact multiplication verification with 24 countable dots.
 
 Method 09 is deliberately omitted from the vector-only set and is coordinator-owned as an accepted organic four-raised-finger raster plus exact vector overlay. Never substitute crude SVG anatomy. The final composite must show four—not six or twenty-four—raised fingers, with four +6 jumps and anatomy/orientation QA.
 
@@ -28,4 +28,4 @@ Method 09 is deliberately omitted from the vector-only set and is coordinator-ow
 - **M11 — scale six groups down to one:** make a two-row ratio table with rows `groups` and `objects`. Pair 6 with 24 in the first column and 1 with 4 in the second. Parallel `÷6` arrows must connect both rows; a subordinate reverse `×6` arrow checks 4→24. Caption it `an exact relational representation`, not a spontaneous-child claim.
 - **M12 — verify with multiplication:** show exactly four congruent blocks of six dots. Connect `4 × 6 = 24` to `24 ÷ 6 = 4` with a closed verification loop. Any estimate cue is tentative and visually secondary; the multiplication equality is the evidence.
 
-Full provenance, alt-text intent, static counts, and accepted visual QA evidence are in `art/vectors/ch06/METHOD_ART_LEDGER.md` and `artifacts/ui/art-ch06-methods/`.
+Full provenance, alt-text intent, static counts, and current accepted visual QA evidence are in `art/vectors/ch06/METHOD_ART_LEDGER.md` and `artifacts/ui/QA-IMAGE-PASS-CH06/`.

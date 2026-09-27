@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Method 03 related facts grayscale proof</title>
+  <desc id="desc">Method 03 related facts rendered without hue to verify redundant structure, labels, outlines, and patterns.</desc>
+  <defs><filter id="gray"><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <image href="../../../art/vectors/ch06/ch06_m03_inverse-six-times-four.svg" width="1200" height="800" filter="url(#gray)"/>
+</svg>

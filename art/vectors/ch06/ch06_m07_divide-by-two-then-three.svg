@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
   <title id="title">Divide twenty-four by two and then each half by three</title>
-  <desc id="desc">Twenty-four branches into two equal groups of twelve. Each twelve visibly branches into three equal groups of four, making six terminal groups of four and verifying division by six.</desc>
+  <desc id="desc">Twenty-four branches into two equal groups of twelve. Each twelve visibly branches into three equal groups of four, making six terminal groups of four. Separate captions label both three-way splits, and a contained summary states twenty-four divided by six equals four.</desc>
   <rect width="1200" height="800" fill="#FFFDF8"/>
   <g font-family="Arial,sans-serif" text-anchor="middle" fill="#24312D">
     <text x="600" y="55" font-size="36" font-weight="700">Factor 6 as 2 × 3</text>
@@ -11,7 +11,8 @@
     <g class="six-terminal-groups" fill="#E8F3ED" stroke="#287A55" stroke-width="6"><rect x="55" y="500" width="150" height="90" rx="18"/><rect x="225" y="500" width="150" height="90" rx="18"/><rect x="395" y="500" width="150" height="90" rx="18"/><rect x="655" y="500" width="150" height="90" rx="18"/><rect x="825" y="500" width="150" height="90" rx="18"/><rect x="995" y="500" width="150" height="90" rx="18"/></g>
     <g font-size="31" font-weight="700"><text x="130" y="556">4</text><text x="300" y="556">4</text><text x="470" y="556">4</text><text x="730" y="556">4</text><text x="900" y="556">4</text><text x="1070" y="556">4</text></g>
     <g stroke="#2764B8" stroke-width="6" fill="none"><path d="M55 620v28h490v-28"/><path d="M655 620v28h490v-28"/></g>
-    <g font-size="24" font-weight="700"><text x="300" y="686">12 ÷ 3 → three groups of 4</text><text x="900" y="686">12 ÷ 3 → three groups of 4</text></g>
-    <text x="600" y="760" font-size="29" font-weight="700">six groups of 4 · 24 ÷ 6 = 4</text>
+    <g font-size="21" font-weight="700"><text x="300" y="682">12 ÷ 3 = 3 groups of 4</text><text x="900" y="682">12 ÷ 3 = 3 groups of 4</text></g>
+    <rect x="335" y="710" width="530" height="68" rx="24" fill="#FFFDF8" stroke="#287A55" stroke-width="5"/>
+    <text x="600" y="754" font-size="27" font-weight="700">six groups of 4 · 24 ÷ 6 = 4</text>
   </g>
 </svg>

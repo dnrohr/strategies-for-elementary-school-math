@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">10 six-part bar · retain congruent parts</title>
+  <desc id="desc">Callout 1 marks six congruent sections labeled four.</desc>
+  <rect width="1200" height="900" fill="#fff"/>
+  <image href="../../../art/vectors/ch06/ch06_m10_six-part-bar.svg" y="100" width="1200" height="800"/>
+  <g font-family="Arial,sans-serif" font-weight="700">
+    <rect width="1200" height="100" fill="#18324A"/>
+    <text x="40" y="62" fill="#fff" font-size="30">10 six-part bar · retain congruent parts</text>
+    <circle cx="600" cy="500" r="34" fill="#FFD166" stroke="#7A2525" stroke-width="6"/>
+    <text x="600" y="512" font-size="32" text-anchor="middle">1</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="870" viewBox="0 0 390 870" role="img" aria-labelledby="title desc">
+  <title id="title">narrow-03-m06-m08 narrow-width proof</title>
+  <desc id="desc">CH06 pictures rendered at 390 pixel artwork width for containment and legibility inspection.</desc>
+  <rect width="390" height="870" fill="#18324A"/>
+  <text x="12" y="21" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">method 06</text>
+  <image href="../../../art/vectors/ch06/ch06_m06_four-by-six-array.svg" x="0" y="30" width="390" height="260"/>
+  <text x="12" y="311" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">method 07</text>
+  <image href="../../../art/vectors/ch06/ch06_m07_divide-by-two-then-three.svg" x="0" y="320" width="390" height="260"/>
+  <text x="12" y="601" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">method 08</text>
+  <image href="../../../art/vectors/ch06/ch06_m08_six-coin-piles.svg" x="0" y="610" width="390" height="260"/>
+</svg>

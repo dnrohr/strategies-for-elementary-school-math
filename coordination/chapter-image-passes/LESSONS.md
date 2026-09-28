@@ -37,3 +37,4 @@ Read these as inspection prompts, not automatic edit instructions. Apply a rule 
 ## Equation relationships
 
 15. **Do not place equality signs between complete related equations.** When fact-family cards each contain a full equation, connect them with labeled relational arrows or captions; an equality sign between cards can create a false chain even when every card is individually true. Origin: CH06.
+16. **Keep original partitions traceable after refining to a common unit.** When unlike fraction bars are subdivided into the same finer unit, retain subordinate boundaries for each source denominator; do not impose one grouping rhythm on both bars merely because their fine cells now match. Origin: CH09.

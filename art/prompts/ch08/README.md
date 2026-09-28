@@ -16,18 +16,18 @@ The existing `three-fourths-of-twenty.svg` remains the opening-spread anchor. Th
 1. **Four equal trays:** four separate outlined trays, five counters per tray; first three hatched/solid-selected, fourth gray/dashed; bracket `3 trays × 5 = 15`.
 2. **One fourth, then triple:** a 20-unit bar split into four exactly equal sections labeled 5; bracket the first quarter, then show three identical 5-unit copies totaling 15.
 3. **Divide, then multiply:** sparse mental-workspace flow `20 → ÷4 → 5 → ×3 → 15`; add a subordinate four-group verification strip without competing quantities.
-4. **Multiply, then divide:** stack three same-length bars labeled 20 to establish 60; directional transformation into four same-length shares labeled 15; state `(20 × 3) ÷ 4 = 15`.
-5. **Fraction bar:** one long 20 bar with four mathematically equal regions labeled 5; hatch the first three; use a heavy double bracket for selected 15.
+4. **Multiply, then divide:** show twelve identical, individually labeled 5-unit tiles first grouped as three rows of four (20 each), then regrouped as four rows of three (15 each); retain identical tile size, hatch, outline, and count across stages; state `(20 × 3) ÷ 4 = 15`.
+5. **Fraction bar:** one long 20 bar with four mathematically equal regions labeled 5; hatch the first three; use a heavy double bracket for selected 15; keep the whole label in a clear lane above its bracket rail.
 6. **Four-by-five array:** exactly twenty dots in four horizontal rows of five; select three whole rows using solid bands, leave one row dashed; row labels and a brace reinforce grouping.
 7. **Twenty dollars:** four exact vector tokens labeled `$5`; select three using checks, hatch, and double outline; show `$15` and total `$20`.
-8. **Three groups / rhythm:** four five-dot group panels preserve the whole; put one numbered beat marker above each of the first three groups and align verbal totals `five`, `ten`, `fifteen`; do not imply twenty individual taps.
-9. **Proportion:** two aligned four-column bars; upper scale has one part per column and lower scale has five units per column; first three columns patterned; add `x/20 = 3/4`, `4x = 60`, `x = 15`.
+8. **Three groups / rhythm:** four five-dot group panels preserve the whole; put one numbered beat marker above each of the first three selected groups and align verbal totals `five`, `ten`, `fifteen`; keep the unselected fourth group visible as the whole-20 check; do not imply twenty individual taps.
+9. **Proportion:** two aligned four-column bars; upper scale has one part per column and lower scale has five units per column; first three columns patterned; show the equality-preserving route `x/20 = 3/4 → x = 20 × 3/4 → x = 15`, with the connector labeled `×20 on both sides`.
 
 ## Clarification redraws
 
 - **M04 — multiply, then divide:** first show three 20-unit bars, each split into four exact 5-unit sections. Reconfigure the same twelve sections into four groups of three sections, each totaling 15. Match section outlines across stages so no quantity appears or disappears. Do not use a literal stretched numerator.
-- **M09 — advanced ratio equation:** label the panel `advanced route`. Keep `x/20 = 3/4 → x = 15` separate from a smaller exact bar check containing four regions of five with three selected. The picture should identify a learned symbolic procedure, not imply a reported inner image.
-10. **Retrieval plus verification:** use restrained negative space for `3/4 of 20 → 15`, avoiding mystical/neural imagery; follow with four 5-unit tiles, three selected, to verify 15 against the whole 20.
+- **M09 — advanced ratio equation:** label the panel `advanced route`. Keep `x/20 = 3/4 → x = 20 × 3/4 → x = 15` separate from an exact aligned bar check containing four regions of five with three selected. Label the first transformation `×20 on both sides`; do not imply a reported inner image.
+10. **Retrieval plus verification:** use restrained negative space for `3/4 of 20 → 15`, avoiding mystical/neural imagery; follow with four 5-unit tiles, three selected, to verify 15 against the whole 20; break the vertical check connector around its text label.
 
 ## Deliberate exceptions
 

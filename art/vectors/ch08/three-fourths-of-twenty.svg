@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
   <title id="title">Three fourths of twenty equals fifteen</title>
-  <desc id="desc">Twenty unit squares are arranged in four equal groups of five. Three groups are selected, representing three fourths of twenty, or fifteen units. One group of five remains unselected.</desc>
+  <desc id="desc">Twenty equal unit tiles are arranged in four groups of five. Three green groups are selected, representing three fourths of twenty, or fifteen units. One gray dashed group of five remains unselected.</desc>
   <style>
     .ink { fill: #24312d; }
     .muted { fill: #5b6962; }
-    .orange { fill: #d98b2b; stroke: #24312d; stroke-width: 2; }
+    .unselected { fill: #f2f2ef; stroke: #68707a; stroke-width: 3; stroke-dasharray: 10 7; }
     .green { fill: #347c5a; stroke: #24312d; stroke-width: 2; }
     .panel { fill: #f5efe3; stroke: #24312d; stroke-width: 3; }
     text { font-family: Georgia, serif; }
@@ -23,7 +23,7 @@
       <rect x="112" y="344" width="112" height="64" rx="8"/><rect x="232" y="344" width="112" height="64" rx="8"/><rect x="352" y="344" width="112" height="64" rx="8"/><rect x="472" y="344" width="112" height="64" rx="8"/><rect x="592" y="344" width="112" height="64" rx="8"/>
       <rect x="112" y="426" width="112" height="64" rx="8"/><rect x="232" y="426" width="112" height="64" rx="8"/><rect x="352" y="426" width="112" height="64" rx="8"/><rect x="472" y="426" width="112" height="64" rx="8"/><rect x="592" y="426" width="112" height="64" rx="8"/>
     </g>
-    <g class="orange">
+    <g class="unselected">
       <rect x="112" y="508" width="112" height="64" rx="8"/><rect x="232" y="508" width="112" height="64" rx="8"/><rect x="352" y="508" width="112" height="64" rx="8"/><rect x="472" y="508" width="112" height="64" rx="8"/><rect x="592" y="508" width="112" height="64" rx="8"/>
     </g>
   </g>

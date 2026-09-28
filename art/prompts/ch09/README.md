@@ -24,6 +24,7 @@ Exact construction rules:
 
 ## Clarification redraws
 
+- **M04 — source partitions within fortieths:** retain all forty exact unit rules, then overlay contained fifth boundaries on the `3/5` bar and contained eighth boundaries on the `5/8` bar. Do not use one grouping interval for both source fractions.
 - **M06 — decimal place value:** align `0.600` over `0.625` in labeled tenths, hundredths, and thousandths columns. Bracket 600 versus 625 thousandths and mark the exact difference of 25 thousandths on one shared 0–1 scale.
 - **M07 — complements to one:** use equal bars with common endpoints. Hatch the missing regions and refine them to `16/40 missing` and `15/40 missing`; connect the smaller gap to the larger original fraction.
 - **M08 — recognize, then verify:** divide the image into a small dotted `prediction` zone and a larger solid `exact check` zone. Only the check zone may contain the final comparison sign; it uses 40-cell bars filled to 24 and 25.
@@ -32,3 +33,9 @@ Exact construction rules:
 Provenance: authored as repository-native SVG for this task from the manuscript briefs and BOOK_SPEC visual system. No generated raster, external image, stock asset, or empirical participant material was used. Per-method checks and filenames are recorded in `art/vectors/ch09/METHOD_ART_LEDGER.md`.
 
 Final coordinator QA inspected all ten desktop figures, representative 390 px placements, Method 09 in grayscale, and the integrated chapter at 390 px. Review corrected cross-product marker occlusion, separated colliding place-value captions, and restored explicit source-fraction labels in the decimal route. Evidence is in `artifacts/ui/art-ch09-methods/`.
+
+## Chapter image-quality pass
+
+Task: `QA-IMAGE-PASS-CH09`
+
+The opening and all ten methods were re-audited individually. M04 now preserves distinct fifth and eighth source groupings inside the common-fortieth bars. M06 supplies explicit place-value columns, ghosted trailing zeros, a 25-thousandths bracket, and one shared 0–1 scale. M07 rules only the missing regions into 16 and 15 fortieths. M08 verifies the prediction with two equal forty-cell bars. M09 shows two complete equal wholes in twentieths and again in fortieths, with endpoint guides preserving value across the refinement. The other six pictures were retained after exactness and composition review. Current final, narrow, and grayscale evidence is in `artifacts/ui/QA-IMAGE-PASS-CH09/`.

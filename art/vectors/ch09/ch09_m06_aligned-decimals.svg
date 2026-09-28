@@ -1,16 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
-  <title id="title">Align decimal place values to compare three fifths and five eighths</title>
-  <desc id="desc">Two spacious rows align 0.600 and 0.625 by place value. The second row highlights the extra twenty-five thousandths, and a final result card states that five eighths is larger.</desc>
+  <title id="title">Align decimal place values and verify the difference on one scale</title>
+  <desc id="desc">Three fifths is written as 0.600 directly above five eighths as 0.625 in labeled tenths, hundredths, and thousandths columns. A bracket compares 600 with 625 thousandths, and one shared zero-to-one scale confirms a difference of 0.025.</desc>
   <rect width="1200" height="800" fill="#F8F2E7"/>
-  <text x="70" y="78" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#18324A">Align the decimal points—and every place to the right</text>
-  <rect x="70" y="135" width="1060" height="470" rx="30" fill="#FFFDF8" stroke="#C9C2B5" stroke-width="4"/>
-  <text x="760" y="195" text-anchor="middle" font-family="Arial,sans-serif" fill="#5A6570" font-size="22" font-weight="700">same place-value columns</text>
-  <g stroke="#B8B1A5" stroke-width="2" stroke-dasharray="7 8"><path d="M710 210V555"/><path d="M830 210V555"/><path d="M960 210V555"/></g>
-  <g font-family="Arial,sans-serif" fill="#18324A">
-    <text x="120" y="320" font-size="30" font-weight="700">3/5 = 3 ÷ 5</text><text x="530" y="330" font-family="Consolas,monospace" font-size="76" font-weight="700">0.600</text>
-    <text x="120" y="500" font-size="30" font-weight="700">5/8 = 5 ÷ 8</text><rect x="515" y="408" width="485" height="118" rx="18" fill="#F6E7C8" stroke="#D97706" stroke-width="5"/><text x="530" y="505" font-family="Consolas,monospace" font-size="76" font-weight="700">0.625</text>
-    <text x="1015" y="470" font-size="22" fill="#8A450D">25 extra</text><text x="1015" y="500" font-size="22" fill="#8A450D">thousandths</text>
+  <text x="64" y="72" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#18324A">Align every decimal place</text>
+  <rect x="64" y="112" width="1072" height="470" rx="28" fill="#FFFDF8" stroke="#C9C2B5" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" fill="#5A6570" font-size="19" font-weight="700" text-anchor="middle"><text x="630" y="165">tenths</text><text x="760" y="165">hundredths</text><text x="890" y="165">thousandths</text></g>
+  <g stroke="#B8B1A5" stroke-width="2" stroke-dasharray="7 8"><path d="M575 180V420"/><path d="M695 180V420"/><path d="M825 180V420"/><path d="M955 180V420"/></g>
+  <g font-family="Arial,sans-serif" fill="#18324A" font-size="27" font-weight="700"><text x="105" y="270">3/5 = 3 ÷ 5</text><text x="105" y="390">5/8 = 5 ÷ 8</text></g>
+  <g font-family="Consolas,monospace" font-size="68" font-weight="700" fill="#18324A" text-anchor="middle">
+    <text x="520" y="285">0.</text><text x="630" y="285">6</text><text x="760" y="285" fill="#7B8490">0</text><text x="890" y="285" fill="#7B8490">0</text>
+    <text x="520" y="405">0.</text><text x="630" y="405">6</text><text x="760" y="405">2</text><text x="890" y="405">5</text>
   </g>
-  <rect x="240" y="650" width="720" height="105" rx="26" fill="#DDEDE4" stroke="#287A55" stroke-width="5"/>
-  <g font-family="Arial,sans-serif" text-anchor="middle"><text x="600" y="695" font-size="30" fill="#18324A">600 thousandths &lt; 625 thousandths</text><text x="600" y="735" font-size="36" font-weight="700" fill="#287A55">3/5 &lt; 5/8</text></g>
+  <path d="M600 435v26h320v-26" fill="none" stroke="#D97706" stroke-width="5"/>
+  <text x="760" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#8A450D">625 − 600 = 25 thousandths</text>
+  <text x="995" y="270" font-family="Arial,sans-serif" font-size="18" fill="#5A6570">trailing zeros</text><text x="995" y="297" font-family="Arial,sans-serif" font-size="18" fill="#5A6570">do not change 0.6</text>
+  <g font-family="Arial,sans-serif" fill="#18324A"><text x="64" y="630" font-size="25" font-weight="700">One shared 0–1 scale</text><path d="M270 680H1050" stroke="#18324A" stroke-width="6"/><path d="M270 655v50M738 645v70M758 645v70M1050 655v50" stroke="#18324A" stroke-width="4"/><text x="270" y="745" font-size="22" text-anchor="middle">0</text><text x="738" y="745" font-size="22" text-anchor="middle">0.600</text><text x="758" y="625" font-size="22" text-anchor="middle">0.625</text><text x="1050" y="745" font-size="22" text-anchor="middle">1</text></g>
+  <circle cx="738" cy="680" r="10" fill="#FFFDF8" stroke="#176B73" stroke-width="5"/><circle cx="758" cy="680" r="10" fill="#C66A12" stroke="#18324A" stroke-width="2"/>
 </svg>

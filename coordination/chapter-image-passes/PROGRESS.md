@@ -11,7 +11,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | 5 | CH05 | `11 × 12 = ?` | 21/21 | 21/21 | complete | `artifacts/ui/QA-IMAGE-PASS-CH05/` | `complete` | `db83312` | `QA-IMAGE-PASS-CH05`; 6 pictures revised, 15 retained with rationale; both native rasters inspected; visual QA and full checks passed. |
 | 6 | CH06 | `24 ÷ 6 = ?` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH06/` | `complete` | `527a2ce` | `QA-IMAGE-PASS-CH06`; 7 pictures revised or synchronized, 6 retained with rationale; native hand raster inspected; visual QA and full checks passed. |
 | 7 | CH07 | `7 × 9 rectangle` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH07/` | `complete` | `6c1d4c1` | `QA-IMAGE-PASS-CH07`; 8 pictures revised, 5 retained with rationale; native hand raster inspected; visual QA and full checks passed. |
-| 8 | CH08 | `3/4 of 20 = ?` | — | — | — | — | `queued` | — | — |
+| 8 | CH08 | `3/4 of 20 = ?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH08/` | `complete` | `a621f7d` | `QA-IMAGE-PASS-CH08`; 6 pictures revised, 5 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 9 | CH09 | `3/5 or 5/8?` | — | — | — | — | `queued` | — | — |
 | 10 | CH10 | `23 shared by 5` | — | — | — | — | `queued` | — | — |
 | 11 | CH11 | `27 × 46 = ?` | — | — | — | — | `queued` | — | — |

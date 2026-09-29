@@ -14,8 +14,8 @@
     .small { font-size: 21px; }
   </style>
   <rect width="1200" height="800" fill="#fffdf8"/>
-  <text x="68" y="76" class="ink math">23 ÷ 5 = 4 R3 = 4 3/5</text>
-  <text x="68" y="116" class="muted small">The notation changes when the leftover units are shared again.</text>
+  <text x="68" y="76" class="ink math">23 ÷ 5 has two context-dependent answers</text>
+  <text x="68" y="116" class="muted small">Whole units: 4 R3 · Divisible units: 4 3/5 each</text>
   <rect x="68" y="160" width="720" height="470" rx="16" class="panel"/>
   <text x="96" y="208" class="ink label">Whole-unit sharing</text>
   <g aria-label="Five groups of four and three remainder units">

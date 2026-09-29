@@ -13,15 +13,15 @@ All ten assets are repository-native vector-only SVGs with a 1200×800 viewBox. 
 | Method | Asset | Exact mathematical check | Non-color and accessibility check |
 | --- | --- | --- | --- |
 | M01 | `ch10_m01_deal-equal-rounds.svg` | Five bowls × four candies = 20; separate remainder dish = 3; total 23. | Every bowl and the dashed remainder dish are individually labeled. |
-| M02 | `ch10_m02_repeated-subtraction.svg` | Exactly four `−5` jumps: `23→18→13→8→3`. | Arrow direction, intermediate values, four written `−5` labels, and remainder statement. |
+| M02 | `ch10_m02_repeated-subtraction.svg` | Exactly four `−5` jumps: `23→18→13→8→3`. | One joined head per arc, landing dots, intermediate values, four written `−5` labels, and remainder statement. |
 | M03 | `ch10_m03_complete-groups-and-remainder.svg` | Four rows × five candies = 20; separate group = 3; `23−20=3`. | Complete rows have solid matching outlines; remainder has dashed red outline and label. |
 | M04 | `ch10_m04_twenty-three-unit-bar.svg` | Twenty-three equal 34-unit cells; first 20 form four five-cell blocks; last three form one tail. | Heavy five-unit boundaries, ruled cells, hatching, bracket, and “not a fifth share” label. |
-| M05 | `ch10_m05_partition-leftovers-into-fifths.svg` | Three candies × five equal sectors = 15 pieces; five bowls × three pieces = 15. | BEFORE/AFTER panels and arrow prevent double-counting; every recipient shows three pieces. |
+| M05 | `ch10_m05_partition-leftovers-into-fifths.svg` | Three candies × five equal sectors = 15 pieces; five bowls × three pieces = 15. | BEFORE/AFTER panels prevent double-counting; A/B/C labels trace one piece from each source into every recipient. |
 | M06 | `ch10_m06_skip-count-to-twenty.svg` | Exactly four `+5` jumps `0→5→10→15→20`; 23 and 25 are marked; remainder distance is 3. | Equal arcs, written endpoints, remainder segment, and explicit next-group note. |
-| M07 | `ch10_m07_long-division-workspace.svg` | Quotient 4; `4×5=20`; `23−20=3`; result `4 R3`. | Large selectable numerals, operation arrows, subtraction bar, and outlined remainder. |
-| M08 | `ch10_m08_benchmark-twenty-five.svg` | Benchmark has five groups × five = 25; two are crossed out; resolution states `23=5×4+3`. | BENCHMARK/RESOLVE panels, crossed-out objects, directional arrow, and separate-remainder wording. |
+| M07 | `ch10_m07_long-division-workspace.svg` | Quotient 4; `4×5=20`; `23−20=3`; result `4 R3`. | Large selectable numerals, two thin numbered leaders outside the numeral column, subtraction bar, and outlined remainder. |
+| M08 | `ch10_m08_benchmark-twenty-five.svg` | Benchmark has five groups × five = 25; two are crossed out; resolution shows four rows × five plus a separate three and states `23=5×4+3`. | BENCHMARK/RESOLVE panels, crossed-out objects, four ruled rows, and a dashed remainder group. |
 | M09 | `ch10_m09_fairness-check.svg` | Five equal bowls × four = 20; separate remainder plate = 3; `3<5`. | Identical bowl shapes/counts and physically separate dashed remainder plate. |
-| M10 | `ch10_m10_context-changes-answer-format.svg` | Indivisible panel: five shares × four with remainder 3. Divisible panel: each of five shares has four wholes plus three fifth-pieces, totaling `4 3/5` each. | Strong divider, distinct scenario headings, separate remainder only on indivisible side, and explicit per-bowl labels. |
+| M10 | `ch10_m10_context-changes-answer-format.svg` | Shared stage: five shares × four with remainder 3. Whole branch keeps three intact; divisible branch partitions three source bars into fifths and gives three pieces to each of five recipients. | One shared stage and explicit fork; bordered outcome panels; A/B/C source labels; intact and cut outcomes never mix. |
 
 ## Review status
 

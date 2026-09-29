@@ -20,7 +20,6 @@ What does “shared equally” permit? With indivisible candies, each child gets
 **Phenomenology:** motor + visual-concrete
 **Math:** `23 = 5×4 + 3`; quotient `4 R3`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > A solver might say: “I deal five candies around, again and again. Four rounds use twenty. Three candies are still in my hand, so everyone has four and three are left. I check fairness after each round: every child receives exactly one candy before anyone receives the next.”
 ### Steps
 1. Deal one to each of 5 children four times. 2. Count 20 dealt. 3. Record 3 remaining. 4. State `4 R3`.
@@ -38,7 +37,6 @@ Equal sharing is a constructed mathematical scenario, not evidence for a univers
 **Phenomenology:** verbal + symbolic
 **Math:** `23 − 5 − 5 − 5 − 5 = 3`, so 4 groups and remainder 3
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I remove a group of five children’s shares four times. After twenty candies, only three remain—too few for another complete round. The four subtractions count complete shares, while the final three records a remainder rather than a fifth full group.”
 ### Steps
 1. Subtract 5 from 23 repeatedly. 2. Stop at 3 after 4 subtractions. 3. Count subtractions as quotient. 4. Record remainder.
@@ -56,7 +54,6 @@ R03-011 is screened and applies to earlier multiplication/division models; do no
 **Phenomenology:** relational + symbolic
 **Math:** `5 × 4 = 20`; `23 − 20 = 3`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I know four groups of five use twenty. I compare twenty with twenty-three and see three left over. The quotient is four with remainder three. Multiplying the quotient back gives twenty, and adding the remainder restores twenty-three, so the division statement checks.”
 ### Steps
 1. Find largest whole `q` with `5q ≤ 23`. 2. `5 × 4 = 20`. 3. Subtract: `23 − 20 = 3`.
@@ -74,7 +71,6 @@ This is a mathematical inverse relation; any account of retrieval is constructed
 **Phenomenology:** visual-spatial
 **Math:** `23 = 20 + 3 = 5×4 + 3`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I draw a 23-long bar. The first 20 is a clean rectangle made of four groups of five. A short tail of three cannot make another group. I keep every unit the same width, so the tail visibly represents three candies rather than an arbitrary leftover length.”
 ### Steps
 1. Draw a bar of length 23. 2. Partition 20 into four 5-unit sections. 3. Leave a 3-unit tail. 4. Label `4 R3`.
@@ -92,12 +88,11 @@ The quotient interpretation and visual model are mathematical/editorial construc
 **Phenomenology:** visual-concrete + symbolic
 **Math:** `23 ÷ 5 = 4 + 3/5 = 4 3/5`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “After four whole candies each, I cut each of the three leftovers into five equal pieces. Each child receives one fifth from each leftover candy: three fifths more. This answer assumes the candies are divisible; without that contextual permission, the three whole leftovers must remain a remainder.”
 ### Steps
 1. Give each child 4 whole candies. 2. There are 3 candies left. 3. Partition each leftover into 5 equal pieces. 4. Give each child 3 pieces: `4 3/5`.
 ### Illustration brief
-Three candies subdivided into fifths, with one fifth from each sent to each of five bowls; exact 15 pieces.
+Three candies subdivided into fifths, with one fifth from each sent to each of five bowls; exact 15 pieces. Keep the three source candies traceable as A, B, and C through the redistribution.
 ### Mathematical note
 When the material is divisible, the remainder becomes the fraction `3/5` of one candy.
 ### Research note
@@ -110,7 +105,6 @@ The distinction here is mathematical and contextual, not a developmental claim.
 **Phenomenology:** rhythmic verbal + spatial
 **Math:** `5, 10, 15, 20` gives 4 complete jumps; 3 remains
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I chant the size of one complete round: five, ten, fifteen, twenty. That is four rounds. I stop before twenty-five because I only have twenty-three. The distance from twenty to twenty-three is three, so the line records both the quotient count and remainder.”
 ### Steps
 1. Start at 0. 2. Jump by 5 four times to 20. 3. Compare 23 with 20. 4. Record remainder 3.
@@ -128,12 +122,11 @@ No source here supports a preferred rhythm or auditory mode; account is construc
 **Phenomenology:** visual-symbolic + motor
 **Math:** `5 ⟌ 23 = 4 R3`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I write 5 outside and 23 inside. Five goes into two zero times, then into twenty-three four times. Four fives make twenty; three stays below. I label that final three as a remainder so the written workspace does not imply an unfinished subtraction.”
 ### Steps
 1. Set up `23 ÷ 5`. 2. Write 4 because `4×5=20`. 3. Subtract 20. 4. Write remainder 3.
 ### Illustration brief
-Vector written algorithm with arrows from 4×5 to 20 and remainder 3; numerals added in layout.
+Vector written algorithm with two thin numbered leader callouts: `4 × 5 = 20` and `23 − 20 = 3`. Keep leaders outside the numeral workspace and leave the remainder visibly enclosed.
 ### Mathematical note
 The algorithm records the same quotient–remainder decomposition as physical sharing.
 ### Research note
@@ -146,12 +139,11 @@ Procedural success should not be treated as complete conceptual understanding; v
 **Phenomenology:** abstract + relational
 **Math:** `25 ÷ 5 = 5`; 23 is 2 less, so quotient is 4 remainder 3
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “Twenty-five would give five each. We have two fewer candies, so one whole share disappears and three candies remain after four shares. I verify the adjustment by comparing 25 = 5×5 with 23 = 5×4 + 3 as an exact check.”
 ### Steps
 1. Use nearby multiple 25. 2. `25 ÷ 5 = 5`. 3. Subtract 2 to reach 23. 4. Recompute: `23 = 5×4 + 3`.
 ### Illustration brief
-Two panels: complete 25-candy benchmark, then remove two and show 4 groups plus 3; exact counts required.
+Two panels: a complete 25-candy benchmark with two visibly removed, then an exact resolve panel with four ruled five-candy rows plus a separate three-candy remainder; exact counts required.
 ### Mathematical note
 The estimate guides the search; the final equation verifies it.
 ### Research note
@@ -164,7 +156,6 @@ Compensation route is a constructed mathematical strategy, not a claim about typ
 **Phenomenology:** verbal + relational
 **Math:** `4 + 4 + 4 + 4 + 4 + 3 = 23`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I test four candies per child. Five groups of four use twenty candies, leaving three. Because three is less than the five children, I cannot give everyone another whole candy. That proves four is the greatest equal whole-number share and three is the remainder.”
 ### Steps
 1. Propose 4 per child. 2. Compute `5×4=20`. 3. Compare with 23. 4. Check leftover is 3 and less than 5.
@@ -182,7 +173,6 @@ This is a constructed verification account grounded in equal sharing; it makes n
 **Phenomenology:** metacognitive + mixed
 **Math:** indivisible: `4 R3`; divisible: `4 3/5`
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “First I get four each with three left. Then I ask what the story allows. If the candies must stay whole, the answer is `4 R3`. If each candy can be divided into five equal parts, the same remainder becomes three fifths more for each child, or `4 3/5`.”
 ### Steps
 1. Identify whether units are divisible. 2. Compute `23 = 5×4 + 3`. 3. Keep `4 R3` for whole candies. 4. Convert remainder to `3/5` if cutting is allowed.

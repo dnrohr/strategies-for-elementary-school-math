@@ -13,7 +13,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | 7 | CH07 | `7 × 9 rectangle` | 13/13 | 13/13 | complete | `artifacts/ui/QA-IMAGE-PASS-CH07/` | `complete` | `6c1d4c1` | `QA-IMAGE-PASS-CH07`; 8 pictures revised, 5 retained with rationale; native hand raster inspected; visual QA and full checks passed. |
 | 8 | CH08 | `3/4 of 20 = ?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH08/` | `complete` | `a621f7d` | `QA-IMAGE-PASS-CH08`; 6 pictures revised, 5 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 9 | CH09 | `3/5 or 5/8?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH09/` | `complete` | `f236c11` | `QA-IMAGE-PASS-CH09`; 5 pictures revised, 6 retained with rationale; vector-only chapter, visual QA and full checks passed. |
-| 10 | CH10 | `23 shared by 5` | — | — | — | — | `queued` | — | — |
+| 10 | CH10 | `23 shared by 5` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH10/` | `complete` | `8772d12` | `QA-IMAGE-PASS-CH10`; 6 pictures revised, 5 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 11 | CH11 | `27 × 46 = ?` | — | — | — | — | `queued` | — | — |
 | 12 | CH12 | `378 + 596 + 247 = ?` | — | — | — | — | `queued` | — | — |
 | 13 | CH13 | `2/3 + 5/8 = ?` | — | — | — | — | `queued` | — | — |

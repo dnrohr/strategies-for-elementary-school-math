@@ -21,7 +21,6 @@ Three addends can be kept in their given order, rearranged, decomposed by place 
 **Math:** `378+596=974; 974+247=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I start with 378 and 596. I make 974, hold it, then add 247. I keep the running total visible so I do not accidentally add one number twice. I split the last addition at one thousand: 26 reaches 1,000, then the remaining 221 gives 1,221.”
 
 ### Steps
@@ -47,7 +46,6 @@ R02-I04 and R02-I07 support cautious discussion of working-memory demands; this 
 **Math:** `378+(596+247)=378+843=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “The second and third numbers look like a useful pair. I combine 596 and 247 to make 843, then add 378. The parentheses move, but the three quantities do not change. I check the final addition by decomposing 378 into 300, 70, and 8, which brings 843 to 1,221.”
 
 ### Steps
@@ -73,7 +71,6 @@ This is a constructed account; no claim that pairing is universally preferred.
 **Math:** `596+4=600; 247−4=243; 378+600+243=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I move four from 247 to 596. One addend becomes the friendly 600, and the other becomes 243. The total stays put because what one addend gains, the other loses. Now 378 + 600 + 243 is easier to group, and it still totals 1,221.”
 
 ### Steps
@@ -99,7 +96,6 @@ R01-010 is verified for cautious discussion of compensation flexibility in a dif
 **Math:** `(300+500+200)+(70+90+40)+(8+6+7)=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I make three columns in my head: hundreds, tens, and ones. First the hundreds make 1,000, then the tens make 200, then the ones make 21. The columns are easier than carrying three whole numbers. Combining those place-value subtotals gives 1,000 + 200 + 21 = 1,221.”
 
 ### Steps
@@ -125,7 +121,6 @@ R01-007/008 support separating conceptual and procedural knowledge; account is c
 **Math:** column sums `8+6+7=21`, `7+9+4+2=22`, `3+5+2+2=12` → `1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I line up the three addends. I add the ones and write 1, carrying 2 tens; then the tens and carry; then the hundreds and carry. The alignment is doing part of the remembering for me. Each carry records ten units traded into the next place, and the final column reads 1,221.”
 
 ### Steps
@@ -151,7 +146,6 @@ R01-007 and R01-008 support conceptual/procedural distinction; written procedure
 **Math:** `378+596+247 = 378+(596+247) = 378+843 = (378+622)+(843−622) = 1,000+221 = 1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I ask how much 378 needs to reach 1,000: 622. I take 596 and 247 together, which is 843, so after supplying 622, 221 remains. One thousand plus 221 is 1,221. I check that 622 + 221 rebuilds 843, so no amount was lost in the transfer.”
 
 ### Steps
@@ -177,7 +171,6 @@ Constructed relational route; no empirical frequency claim.
 **Math:** `378+247=625; 625+596=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I pair the 378 with 247 because their ones make 15 and their tens make 110. That gives 625. Then I add 596. I have not changed any quantity; I only changed the order. The final sum 625 + 596 reaches 1,221, matching the original left-to-right route.”
 
 ### Steps
@@ -203,7 +196,6 @@ R01-007 and R01-008 support only the general conceptual/procedural distinction; 
 **Math:** `378+596+247=1,221`, near `400+600+200=1,200`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “Rounded numbers tell me to expect about 1,200. I then calculate exactly with the addends. The estimate is a guardrail: if my exact total were 2,221, I would know to look again. The exact column work gives 1,221, only 21 above the benchmark, so its scale is plausible.”
 
 ### Steps
@@ -229,7 +221,6 @@ Constructed account; no claim about estimation’s developmental timing.
 **Math:** 378 + 596 + 247 = 1,221 units
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I make three piles: 378, 596, and 247 blocks. I join hundreds first, then tens, then loose ones. Ten loose blocks become a ten-rod, and ten rods become a hundred-flat. The trades keep the total unchanged. The regrouped collection contains one thousand, two hundreds, two tens, and one one.”
 
 ### Steps
@@ -238,7 +229,7 @@ Constructed account; no claim about estimation’s developmental timing.
 3. Read 1,221 units.
 
 ### Illustration brief
-Vector base-ten blocks with exact grouped counts and one clear regrouping sequence.
+Vector base-ten inventory with three labeled source piles. Each pile shows its exact hundreds, tens, and ones multiplicities; the combined raw inventory `10H + 20T + 21O` then passes through the three exact exchanges to `1Th + 2H + 2T + 1O`.
 
 ### Mathematical note
 Regrouping changes representation, not quantity.
@@ -249,14 +240,13 @@ Constructed model; avoid claiming blocks are necessary for place-value understan
 ### Tags
 `concrete`, `place-value`, `regrouping`
 
-## Method 10 — I use a place-value bead map
+## Method 10 — I use a place-value record
 **Strategy class:** place-value organization
-**Phenomenology:** spatial + motor
+**Phenomenology:** spatial + visual-symbolic
 **Math:** ones 21, tens 220, hundreds 1,000 → `1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
-> “I use a bead map with columns for ones, tens, hundreds, and thousands. I combine the raw place-value totals, then trade ten units in one column for one unit in the next. After the trades, the columns show one thousand, two hundreds, two tens, and one one: 1,221.”
+> “I keep a place-value record for ones, tens, hundreds, and thousands. I write the raw place-value totals, then record each ten-for-one trade in the next place. After the trades, the record shows one thousand, two hundreds, two tens, and one one: 1,221.”
 
 ### Steps
 1. Gather the raw place sums: 10 hundreds, 20 tens, and 21 ones.
@@ -264,7 +254,7 @@ Constructed model; avoid claiming blocks are necessary for place-value understan
 3. Trade 10 of the resulting 12 hundreds for 1 thousand; read 1 thousand, 2 hundreds, 2 tens, and 1 one.
 
 ### Illustration brief
-External place-value bead map—not a mental abacus—with four vertical columns labeled `ones`, `tens`, `hundreds`, and `thousands`. Show the raw totals in a first frame: 21 one-beads, 20 ten-beads, and 10 hundred-beads. In two intermediate frames, circle each traded set of ten and replace it with one bead in the next column. The final frame must contain exactly 1 thousand-bead, 2 hundred-beads, 2 ten-beads, and 1 one-bead. Use arrows and grouping rings so no trade depends on color alone.
+External four-state place-value record—not a mental abacus. Show the raw totals in frame 1: 10 hundreds, 20 tens, and 21 ones. Then record `20 ones → 2 tens`, `20 tens → 2 hundreds`, and `10 hundreds → 1 thousand` in separate numbered frames. The final frame must show exactly 1 thousand, 2 hundreds, 2 tens, and 1 one. Use headings, outlines, and arrows so no trade depends on color alone.
 
 ### Mathematical note
 The place map is a concrete organization of the same column sums.
@@ -273,7 +263,7 @@ The place map is a concrete organization of the same column sums.
 Constructed external place-value representation; it does not imply abacus training, mental-abacus imagery, or transfer effects.
 
 ### Tags
-`place-value-map`, `spatial`, `motor`, `place-value`
+`place-value-record`, `spatial`, `visual-symbolic`, `place-value`
 
 ## Method 11 — I move four without changing the total
 **Strategy class:** conservation by redistribution
@@ -281,7 +271,6 @@ Constructed external place-value representation; it does not imply abacus traini
 **Math:** `378+596+247=378+600+243=1,221`
 
 ### First-person account
-**Constructed solver voice — not a participant quotation**
 > “I slide four units from 247 to 596. The two addends become 600 and 243, which are easier to combine. The total is conserved because the arrow has two ends: plus four here, minus four there. Adding 378 to the transformed pair produces the same 1,221 as the untouched expression.”
 
 ### Steps

@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
   <title id="title">An explanatory record shows three exact common-unit steps</title>
-  <desc id="desc">Three large connected cards record the original sum, the renaming in twenty-fourths, and the final improper and mixed-number forms. The image is explicitly an external explanation rather than a picture of an inner scene.</desc>
-  <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0l12 6-12 6z" fill="#7652A8"/></marker></defs>
+  <desc id="desc">Three large connected cards record the original sum, the renaming in twenty-fourths, and the final improper and mixed-number forms. The image is explicitly an external explanation rather than a picture of an inner scene.</desc><defs><marker id="a" markerWidth="12" markerHeight="12" refX="0" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0L12 6L0 12Z" fill="#7652A8"/></marker></defs>
+
   <rect width="1200" height="800" fill="#F8F2E7"/><text x="600" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#5A6570">EXTERNAL EXPLANATORY RECORD · NOT A PICTURE OF AN INNER SCENE</text>
   <g font-family="Arial,sans-serif" text-anchor="middle">
     <rect x="150" y="120" width="900" height="150" rx="30" fill="#FFFDF8" stroke="#18324A" stroke-width="4"/><text x="220" y="165" text-anchor="start" font-size="22" font-weight="700" fill="#5A6570">1 · START</text><text x="600" y="225" font-size="52" font-weight="700" fill="#18324A">2/3 + 5/8</text>
-    <path d="M600 280V330" stroke="#7652A8" stroke-width="6" marker-end="url(#a)"/>
+    <path d="M600 280V318" marker-end="url(#a)" stroke="#7652A8" stroke-width="6"/>
     <rect x="150" y="345" width="900" height="165" rx="30" fill="#F4EBFA" stroke="#7652A8" stroke-width="5" stroke-dasharray="12 8"/><text x="220" y="390" text-anchor="start" font-size="22" font-weight="700" fill="#553A78">2 · RENAME BOTH AS TWENTY-FOURTHS</text><text x="600" y="470" font-size="50" font-weight="700" fill="#18324A">16/24 + 15/24</text>
-    <path d="M600 520V570" stroke="#7652A8" stroke-width="6" marker-end="url(#a)"/>
+    <path d="M600 520V558" marker-end="url(#a)" stroke="#7652A8" stroke-width="6"/>
     <rect x="150" y="585" width="900" height="150" rx="30" fill="#DDEDE4" stroke="#287A55" stroke-width="6"/><text x="220" y="630" text-anchor="start" font-size="22" font-weight="700" fill="#12545A">3 · ADD EQUAL-SIZED UNITS</text><text x="600" y="695" font-size="52" font-weight="700" fill="#287A55">31/24 = 1 7/24</text>
   </g>
 </svg>

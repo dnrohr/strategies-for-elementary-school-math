@@ -39,3 +39,7 @@ Read these as inspection prompts, not automatic edit instructions. Apply a rule 
 15. **Do not place equality signs between complete related equations.** When fact-family cards each contain a full equation, connect them with labeled relational arrows or captions; an equality sign between cards can create a false chain even when every card is individually true. Origin: CH06.
 16. **Keep original partitions traceable after refining to a common unit.** When unlike fraction bars are subdivided into the same finer unit, retain subordinate boundaries for each source denominator; do not impose one grouping rhythm on both bars merely because their fine cells now match. Origin: CH09.
 17. **Show compound place-value exchanges as ordered states.** When incoming units change the amount available in the next place, label the exchange from that updated state (for example, `21 ones → 22 tens → 12 hundreds`) rather than attaching independent trade captions to the raw inventory. Origin: CH12.
+
+## Pattern placement
+
+18. **Anchor repeated partition patterns to each model's origin.** A user-space SVG pattern reused on a translated bar or grid can create partial edge cells even when the whole width is an exact multiple of the cell width. Set each model's pattern origin explicitly or draw its boundaries locally; verify the first and last cells in the render, especially when the translation is not a multiple of the cell pitch. Origin: CH13 opening and Method 03.

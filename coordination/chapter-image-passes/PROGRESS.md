@@ -16,7 +16,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | 10 | CH10 | `23 shared by 5` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH10/` | `complete` | `8772d12` | `QA-IMAGE-PASS-CH10`; 6 pictures revised, 5 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 11 | CH11 | `27 × 46 = ?` | 19/19 | 19/19 | complete | `artifacts/ui/QA-IMAGE-PASS-CH11/` | `complete` | `b89be3f` | `QA-IMAGE-PASS-CH11`; 2 pictures revised, 17 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 12 | CH12 | `378 + 596 + 247 = ?` | 12/12 | 12/12 | complete | `artifacts/ui/QA-IMAGE-PASS-CH12/` | `complete` | `238f568` | `QA-IMAGE-PASS-CH12`; 2 production SVGs revised, 10 production pictures retained with rationale; vector-only chapter, visual QA and full checks passed. |
-| 13 | CH13 | `2/3 + 5/8 = ?` | — | — | — | — | `queued` | — | — |
+| 13 | CH13 | `2/3 + 5/8 = ?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH13/` | `complete` | `547cb1c` | `QA-IMAGE-PASS-CH13`; 8 production SVGs revised, 3 retained with rationale; 16 findings resolved or retained; all 11 final pictures inspected, narrow/grayscale QA and full checks passed. |
 | 14 | CH14 | `3/4 + 2/3 + 5/12 = ?` | — | — | — | — | `queued` | — | — |
 
 ## Progress update rules

@@ -43,3 +43,7 @@ Read these as inspection prompts, not automatic edit instructions. Apply a rule 
 ## Pattern placement
 
 18. **Anchor repeated partition patterns to each model's origin.** A user-space SVG pattern reused on a translated bar or grid can create partial edge cells even when the whole width is an exact multiple of the cell width. Set each model's pattern origin explicitly or draw its boundaries locally; verify the first and last cells in the render, especially when the translation is not a multiple of the cell pitch. Origin: CH13 opening and Method 03.
+
+## Fraction reduction notation
+
+19. **Show numerator and denominator reduction separately.** To explain reducing a fraction, write `(22 ÷ 2)/(12 ÷ 2) = 11/6`, or visibly divide each component by two. Dividing the whole fraction by `2/2` preserves its value because `2/2 = 1`, but does not show the two component divisions. Keep mixed-number interpretation on a separate line when combining it with reduction makes the notation crowded. Origin: CH14 Methods 02, 03, 07, and 08.

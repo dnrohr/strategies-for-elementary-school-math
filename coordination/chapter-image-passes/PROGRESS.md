@@ -17,7 +17,7 @@ States: `queued` → `in_progress` → `complete`. Use `blocked` only when the c
 | 11 | CH11 | `27 × 46 = ?` | 19/19 | 19/19 | complete | `artifacts/ui/QA-IMAGE-PASS-CH11/` | `complete` | `b89be3f` | `QA-IMAGE-PASS-CH11`; 2 pictures revised, 17 retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 12 | CH12 | `378 + 596 + 247 = ?` | 12/12 | 12/12 | complete | `artifacts/ui/QA-IMAGE-PASS-CH12/` | `complete` | `238f568` | `QA-IMAGE-PASS-CH12`; 2 production SVGs revised, 10 production pictures retained with rationale; vector-only chapter, visual QA and full checks passed. |
 | 13 | CH13 | `2/3 + 5/8 = ?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH13/` | `complete` | `547cb1c` | `QA-IMAGE-PASS-CH13`; 8 production SVGs revised, 3 retained with rationale; 16 findings resolved or retained; all 11 final pictures inspected, narrow/grayscale QA and full checks passed. |
-| 14 | CH14 | `3/4 + 2/3 + 5/12 = ?` | — | — | — | — | `queued` | — | — |
+| 14 | CH14 | `3/4 + 2/3 + 5/12 = ?` | 11/11 | 11/11 | complete | `artifacts/ui/QA-IMAGE-PASS-CH14/` | `complete` | `c00bf7d` | `QA-IMAGE-PASS-CH14`; 9 SVGs revised (M09 metadata only), 2 pictures retained; 16 findings resolved, 2 retained with rationale. All 11 final pictures, narrow/grayscale QA, and full checks passed; user-authorized three-assertion test handoff applied. |
 
 ## Progress update rules
 

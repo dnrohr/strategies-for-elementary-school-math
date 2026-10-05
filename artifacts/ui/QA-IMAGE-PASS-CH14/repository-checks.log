@@ -1,0 +1,60 @@
+
+> how-we-think-about-arithmetic@0.1.0 check
+> npm run validate && npm test && npm run build && npm run verify:export
+
+
+> how-we-think-about-arithmetic@0.1.0 validate
+> node scripts/validate.mjs
+
+Validated 16 production entries and 42 canonical research source record(s).
+
+> how-we-think-about-arithmetic@0.1.0 test
+> node --test
+
+✔ front matter parser preserves body and typed chapter number (0.8861ms)
+✔ chapter validator reports schema drift (0.2376ms)
+✔ chapter validator enforces the method schema when methods are present (0.5659ms)
+✔ all 175 constructed method accounts meet the 40–120 word contract (16.5298ms)
+✔ renderer escapes raw HTML while rendering basic Markdown (0.6953ms)
+✔ renderer converts pipe-delimited Markdown tables to semantic HTML (0.1978ms)
+✔ renderer can place method art immediately after its matching heading (0.3789ms)
+✔ renderer gives repeated method subheadings unique scoped IDs (0.2834ms)
+✔ CH09 twentieths model preserves the half-unit endpoint (1.1832ms)
+✔ chapter vector assets carry accessible, raster-free metadata (13.7432ms)
+✔ CH08 has one accessible production SVG for every method (15.6886ms)
+✔ CH01 has exact vector and composite art for all fourteen methods (25.3862ms)
+✔ CH02 has exact vector and composite art for all twelve methods (13.7243ms)
+✔ CH03 has exact vector art for all fourteen methods (17.1747ms)
+✔ CH04 has exact vector art for all twelve methods (13.0239ms)
+✔ CH05 has exact accessible art for all twenty methods (23.4138ms)
+✔ CH06 has exact accessible art for all twelve division methods (16.3002ms)
+✔ CH07 has exact accessible art for all twelve area methods (15.8368ms)
+✔ CH09 has exact accessible vector art for all ten fraction-comparison methods (12.9399ms)
+✔ CH10 has exact accessible vector art for all ten division-context methods (12.842ms)
+✔ CH11 has exact accessible vector art for all eighteen multiplication methods (21.6663ms)
+✔ CH12 has exact accessible vector art for all eleven three-addend methods (12.308ms)
+✔ CH13 has exact accessible vector art for all ten unlike-denominator methods (13.3277ms)
+✔ CH14 has exact accessible vector art for all ten three-fraction methods (11.8962ms)
+✔ research CSV parser handles quoted commas and validates records (0.9671ms)
+✔ working bibliography matches canonical source verification statuses (2.7456ms)
+✔ reader-facing manuscript cites only full-text-verified source records (13.3496ms)
+Built 16 production entries in _site.
+✔ repository validates and build emits every manifest page (478.201ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1169.6072
+
+> how-we-think-about-arithmetic@0.1.0 build
+> node scripts/build.mjs
+
+Built 16 production entries in _site.
+
+> how-we-think-about-arithmetic@0.1.0 verify:export
+> node scripts/verify-export.mjs
+
+Verified two self-contained HTML editions, 190 embedded figures each, 24 verified sources, and two non-empty PDFs.

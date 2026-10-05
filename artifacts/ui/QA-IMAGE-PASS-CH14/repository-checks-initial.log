@@ -1,0 +1,69 @@
+
+> how-we-think-about-arithmetic@0.1.0 check
+> npm run validate && npm test && npm run build && npm run verify:export
+
+
+> how-we-think-about-arithmetic@0.1.0 validate
+> node scripts/validate.mjs
+
+Validated 16 production entries and 42 canonical research source record(s).
+
+> how-we-think-about-arithmetic@0.1.0 test
+> node --test
+
+✔ front matter parser preserves body and typed chapter number (0.8549ms)
+✔ chapter validator reports schema drift (0.2366ms)
+✔ chapter validator enforces the method schema when methods are present (0.5325ms)
+✔ all 175 constructed method accounts meet the 40–120 word contract (14.3117ms)
+✔ renderer escapes raw HTML while rendering basic Markdown (0.7095ms)
+✔ renderer converts pipe-delimited Markdown tables to semantic HTML (0.2067ms)
+✔ renderer can place method art immediately after its matching heading (0.3743ms)
+✔ renderer gives repeated method subheadings unique scoped IDs (0.2977ms)
+✔ CH09 twentieths model preserves the half-unit endpoint (0.9893ms)
+✔ chapter vector assets carry accessible, raster-free metadata (10.4006ms)
+✔ CH08 has one accessible production SVG for every method (14.1371ms)
+✔ CH01 has exact vector and composite art for all fourteen methods (20.4463ms)
+✔ CH02 has exact vector and composite art for all twelve methods (11.8086ms)
+✔ CH03 has exact vector art for all fourteen methods (10.7312ms)
+✔ CH04 has exact vector art for all twelve methods (9.4167ms)
+✔ CH05 has exact accessible art for all twenty methods (17.0718ms)
+✔ CH06 has exact accessible art for all twelve division methods (15.3487ms)
+✔ CH07 has exact accessible art for all twelve area methods (12.5075ms)
+✔ CH09 has exact accessible vector art for all ten fraction-comparison methods (10.2721ms)
+✔ CH10 has exact accessible vector art for all ten division-context methods (11.897ms)
+✔ CH11 has exact accessible vector art for all eighteen multiplication methods (18.5726ms)
+✔ CH12 has exact accessible vector art for all eleven three-addend methods (11.1312ms)
+✔ CH13 has exact accessible vector art for all ten unlike-denominator methods (7.1475ms)
+✖ CH14 has exact accessible vector art for all ten three-fraction methods (10.6084ms)
+✔ research CSV parser handles quoted commas and validates records (1.2753ms)
+✔ working bibliography matches canonical source verification statuses (2.9703ms)
+✔ reader-facing manuscript cites only full-text-verified source records (11.3518ms)
+Built 16 production entries in _site.
+✔ repository validates and build emits every manifest page (456.9867ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 27
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1068.3617
+
+✖ failing tests:
+
+test at test\pipeline.test.mjs:813:1
+✖ CH14 has exact accessible vector art for all ten three-fraction methods (10.6084ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert(m02.includes(value))
+
+      at TestContext.<anonymous> (file:///C:/Users/dnroh/Documents/strategies-for-elementary-school-math/test/pipeline.test.mjs:833:105)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

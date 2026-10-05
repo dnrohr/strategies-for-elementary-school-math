@@ -830,7 +830,7 @@ test("CH14 has exact accessible vector art for all ten three-fraction methods", 
   for (const width of ["495", "440", "275"]) assert(m01.includes(`width="${width}" height="72"`));
   assert(m01.includes("9/12 + 8/12 + 5/12 = 22/12"));
   const m02 = await fs.readFile(path.join(vectorDir, assets[1]), "utf8");
-  for (const value of ["9/12 + 5/12 = 14/12", "14/12 ÷ 2/2 = 7/6", "7/6 + 4/6 = 11/6", "11/6 = 1 5/6"]) assert(m02.includes(value));
+  for (const value of ["9/12 + 5/12 = 14/12", "(14 ÷ 2)/(12 ÷ 2) = 7/6", "7/6 + 4/6 = 11/6", "11/6 = 1 5/6"]) assert(m02.includes(value));
   assert.equal((m02.match(/<circle cx="35" cy="35" r="28"/g) || []).length, 3);
   assert.equal((m02.match(/width="330" height="350"/g) || []).length, 3);
   const m03 = await fs.readFile(path.join(vectorDir, assets[2]), "utf8");
@@ -847,11 +847,11 @@ test("CH14 has exact accessible vector art for all ten three-fraction methods", 
   assert.match(m06, /M936 260v90/);
   assert(m06.includes("ESTIMATE") && m06.includes("EXACT") && m06.includes("11/6 = 1 5/6 ≈ 1.833"));
   const m07 = await fs.readFile(path.join(vectorDir, assets[6]), "utf8");
-  for (const value of ["3/4 × 3/3 = 9/12", "2/3 × 4/4 = 8/12", "+ 5/12", "22/12", "÷ 2/2 → 11/6 = 1 5/6"]) assert(m07.includes(value));
+  for (const value of ["3/4 × 3/3 = 9/12", "2/3 × 4/4 = 8/12", "+ 5/12", "22/12", "(22 ÷ 2)/(12 ÷ 2) = 11/6", "11/6 = 1 5/6"]) assert(m07.includes(value));
   const m08 = await fs.readFile(path.join(vectorDir, assets[7]), "utf8");
   assert.match(m08, /width="600" height="95"/);
   assert.match(m08, /width="500" height="95"/);
-  assert(m08.includes("10/12 ÷ 2/2") && m08.includes("= 5/6"));
+  assert(m08.includes("(10 ÷ 2)/(12 ÷ 2)") && m08.includes("= 5/6"));
   const m09 = await fs.readFile(path.join(vectorDir, assets[8]), "utf8");
   for (const phrase of ["3/4 → 9 twelfths", "2/3 → 8 twelfths", "5/12 → 5 twelfths", "9 + 8 + 5 = 22 twelfths"]) assert(m09.includes(phrase));
   assert(m09.includes("constructed account") && m09.includes("not required for correct reasoning"));
